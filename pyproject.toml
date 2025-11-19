@@ -1,0 +1,37 @@
+[project]
+name = "react-agent-engine"
+version = "0.1.0"
+description = "idk"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "aiohttp>=3.13.2",
+    "asyncio>=4.0.0",
+    "langchain>=1.0.7",
+    "langchain-google-genai>=3.0.3",
+    "langchain-tavily>=0.2.13",
+    "langgraph>=1.0.3",
+    "langgraph-cli[inmem]>=0.4.7",
+    "onnxruntime>=1.23.2",
+    "pandas>=2.3.3",
+    "pillow>=12.0.0",
+    "python-dotenv>=1.2.1",
+    "qdrant-client>=1.16.0",
+    "requests>=2.32.5",
+    "scipy>=1.16.3",
+    "torch>=2.9.1",
+    "transformers>=4.57.1",
+]
+
+[project.optional-dependencies]
+torch-cpu = [
+    "torch>=2.0.0; platform_machine != 'arm64'",
+]
+
+[tool.uv.sources]
+torch = { index = "pytorch-cpu" }
+
+[[tool.uv.index]]
+name = "pytorch-cpu"
+url = "https://download.pytorch.org/whl/cpu"
+explicit = true
