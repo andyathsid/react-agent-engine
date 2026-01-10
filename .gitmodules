@@ -1,0 +1,3 @@
+[submodule "evaluation/eli5"]
+	path = evaluation/eli5
+	url = https://github.com/xuro-langchain/eli5

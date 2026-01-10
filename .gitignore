@@ -1,8 +1,13 @@
-data
-models
 .venv
 __pycache__
 .langgraph_api
 .env
 src/react_agent_engine.egg-info
 *-venv/
+data/knowledge_base/
+old/
+owlv2.onnx
+yolov11/
+yolov12
+.deepeval/
+notebooks/
