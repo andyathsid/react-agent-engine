@@ -1,0 +1,536 @@
+[
+  {
+    "class": "apple black rot",
+    "status": "diseased",
+    "management": "Remove all infected leaves, fruit, and mummified fruit from tree and destroy by burning to prevent ascospore production. Prune infected young shoots with cracked, coarse bark during winter. Practice good sanitation by removing all crop debris after harvest. Apply protective fungicides from silver tip to harvest, particularly copper-based fungicides or Bordeaux mixture when wet periods are forecast. Fungal fruiting bodies appear as dots arranged in circular patterns on fruit. The disease overwinters in twigs and fruit remaining on trees, spreading during rainfall.",
+    "source": "PlantVillage: https://plantvillage.psu.edu/topics/apple/infos"
+  },
+  {
+    "class": "apple leaf",
+    "status": "healthy",
+    "maintenance": "Maintain fertile, well-drained, loamy-sandy soil with pH 5.5-6.5. Test soil and amend with organic matter, lime, or sulfur as needed. Provide adequate moisture especially during flowering and fruiting. In hotter regions, implement regular irrigation. For tropical cultivation, practice careful management including bending shoots, tip pruning, and defoliation. Apply balanced fertilization and monitor for nutrient deficiencies (particularly iron, which causes yellowing of new growth). Prune to maintain good air circulation and tree structure. Established trees may not require fertilization if growing vigorously.",
+    "source": "PlantVillage: https://plantvillage.psu.edu/topics/apple/infos"
+  },
+  {
+    "class": "apple mosaic virus",
+    "status": "diseased",
+    "management": "Prevention is essential as there is no cure. Use only certified virus-free rootstock and scion wood for all propagation. Remove and destroy infected plants immediately. The virus spreads primarily through grafting and infected propagation material. Maintain strict sanitation when grafting or pruning. Control potential insect vectors in the orchard. When establishing new plantings, source all material from certified clean stock programs. Monitor regularly for symptoms including mosaic patterns, leaf distortion, and reduced vigor.",
+    "source": "PlantVillage mentions viral diseases; Additional: University Extension Services including Cornell Cooperative Extension and Penn State Extension on fruit tree viruses"
+  },
+  {
+    "class": "apple scab",
+    "status": "diseased",
+    "management": "Apple scab (Venturia inaequalis) is a major fungal disease. Collect and burn fallen leaves and twigs to prevent ascospore production. Prune infected young shoots with cracked bark during winter. Apply urea (2 kg/acre) at pre-leaf fall and dolomitic lime (2.5 tons/acre) in autumn on fallen leaves to accelerate decomposition. Apply systemic fungicides like triazoles (e.g., Systhane) which are effective as preventive, curative, and eradicant. Captan (contact fungicide) is effective and not prone to resistance development. Apply fungicides from silver tip stage through growing season. The disease causes dark, scabby marks on fruit and leaves with olive-green velvety lesions. Fungus overwinters on plant debris.",
+    "source": "PlantVillage: https://plantvillage.psu.edu/topics/apple/infos"
+  },
+  {
+    "class": "apple rust",
+    "status": "diseased",
+    "management": "Cedar apple rust requires two hosts: apple and Eastern red cedar (Juniperus virginiana). Plant resistant apple varieties (such as Dayton and Delicious) where possible. Remove nearby Eastern red cedar trees within 1/4 mile if feasible. If growing susceptible varieties in proximity to cedar, follow a protective fungicide program. Spores from cedar galls are released in spring after warm rains and can travel 2-3 miles by wind. Apply fungicides preventatively during the infection period in spring. The fungus forms galls on cedar, producing spores that infect apple leaves and fruit, causing bright orange or yellow patches surrounded by red bands.",
+    "source": "PlantVillage: https://plantvillage.psu.edu/topics/apple/infos; Additional: Iowa State University Extension on cedar apple rust"
+  },
+  {
+    "class": "banana leaf",
+    "status": "healthy",
+    "maintenance": "Ensure well-drained soil and consistent moisture without waterlogging. Bananas require regular watering, especially during dry periods. Apply mulch around base to conserve moisture and suppress weeds. Fertilize regularly with balanced nutrients including nitrogen, phosphorus, and potassium. Remove dead leaves and pseudostems promptly. Prune suckers to maintain 2-3 stems per plant for optimal production. Monitor for pests and diseases regularly. Ensure good air circulation between plants. In commercial production, practice debudding (removing male buds) to prevent disease spread and improve fruit quality.",
+    "source": "PlantVillage: https://plantvillage.psu.edu/topics/banana/infos"
+  },
+  {
+    "class": "banana Panama disease",
+    "status": "diseased",
+    "management": "This is a lethal Fusarium wilt disease with no cure. Management focuses on prevention and containment: Use disease-free planting material from tissue culture. Remove and destroy all infected plants immediately including the rhizome. Disinfect all farm equipment and tools between uses. Avoid movement of soil, water, and plant materials from infected to clean areas. Practice crop rotation with non-host crops where possible. Improve drainage to reduce pathogen spread through water. Plant resistant varieties where available. The fungus infects roots, grows in xylem vessels causing vascular discoloration (reddish-brown), leaf yellowing, pseudostem splitting, wilting, and plant death. It spreads through soil, running water, and infected rhizomes.",
+    "source": "PlantVillage: https://plantvillage.psu.edu/topics/banana/infos"
+  },
+  {
+    "class": "basil downy mildew",
+    "status": "diseased",
+    "management": "Grow tolerant or resistant varieties (lemon and spice basils show resistance). Apply protective fungicides preventatively. Ensure good air circulation around plants especially in greenhouse settings. Use drip irrigation to avoid wetting foliage - water at the base of plants instead of overhead. Symptoms include yellowing leaves with discoloration often beginning around middle vein, gray fuzzy or downy growth on lower leaf surfaces, and brown to black angular necrotic patches. The disease can spread by contaminated seed. Remove infected plants promptly. Avoid working in wet conditions that favor spore spread.",
+    "source": "PlantVillage: https://plantvillage.psu.edu/topics/basil/infos"
+  },
+  {
+    "class": "basil leaf",
+    "status": "healthy",
+    "maintenance": "Basil thrives in warm conditions with daytime temperatures consistently above 21°C (70°F) and nighttime temperatures above 15.5°C (60°F). Plant in fertile, well-draining soil with pH 6.0-7.5 in full sunlight. Water regularly at base of plant, more frequently for outdoor crops. Avoid wetting leaves to prevent downy mildew. Practice careful manual weeding. Harvest regularly to encourage bushy growth. Pinch off flower buds to maintain leaf production. Basil is an annual herb that may survive multiple seasons with proper care, reaching 30-130 cm height depending on variety.",
+    "source": "PlantVillage: https://plantvillage.psu.edu/topics/basil/infos"
+  },
+  {
+    "class": "bean halo blight",
+    "status": "diseased",
+    "management": "Plant only certified disease-free seed. Rotate crops regularly with non-host plants. Remove all crop debris from field after harvest. Avoid working in fields when foliage is wet to prevent bacterial spread. The bacterium (Pseudomonas syringae pv. phaseolicola) overwinters in crop residue and is more severe when foliage remains wet for extended periods. Symptoms include small angular water-soaked spots on leaf undersides that turn necrotic, with characteristic yellow halos surrounding lesions. Lesions on expanding leaves may cause distortion. Red-brown lesions may appear on pods, sometimes oozing or turning tan. Copper-based bactericides may provide some control when applied preventatively.",
+    "source": "PlantVillage: https://plantvillage.psu.edu/topics/bean/infos"
+  },
+  {
+    "class": "bean leaf",
+    "status": "healthy",
+    "maintenance": "Plant in fertile, well-draining soil with adequate organic matter. Beans are legumes and can fix atmospheric nitrogen, so generally require less nitrogen fertilization if properly inoculated with Rhizobacteria. Ensure consistent moisture especially during flowering and pod development. Provide support for climbing varieties. Practice crop rotation to prevent soil-borne diseases. Maintain proper plant spacing for air circulation. Monitor regularly for pests and diseases. Harvest regularly to encourage continued production. Bush beans and pole beans have different spacing requirements - follow variety-specific guidelines.",
+    "source": "PlantVillage: https://plantvillage.psu.edu/topics/bean/infos"
+  },
+  {
+    "class": "bean mosaic virus",
+    "status": "diseased",
+    "management": "No cure exists for viral infections. Prevention is critical: use only certified virus-free seed as Bean Common Mosaic Virus (BCMV) is seed-transmitted in Phaseolus species. Remove and bag infected plants immediately to prevent aphid transmission to healthy plants. The virus spreads among plants by aphids in a non-persistent manner (aphids acquire virus by tasting infected plants and transmit to next plant they taste). Insecticides are ineffective because transmission occurs before aphids can be killed. Plant resistant varieties where available. Control weed hosts near bean plantings. Symptoms include mottled dark and light green patterns on leaves, leaf distortion, yellow dots, stunted growth, and black root necrosis.",
+    "source": "PlantVillage: https://plantvillage.psu.edu/topics/bean/infos"
+  },
+  {
+    "class": "bean rust",
+    "status": "diseased",
+    "management": "Grow resistant varieties where available. Remove and destroy infected crop debris after harvest. Follow crop rotation with non-host plants. Keep fields weed-free. Apply suitable fungicides if disease becomes severe. The fungus (Uromyces appendiculatus) produces raised brick-red rust pustules (uredinia) surrounded by yellow halos, initially appearing as small yellow/white spots. Premature leaf drop may occur with severe infections. Urediniospores spread between fields by air. Black teliospores formed at end of season overwinter in field debris and serve as inoculum for next season. Favor resistant varieties as primary control method.",
+    "source": "PlantVillage: https://plantvillage.psu.edu/topics/bean/infos"
+  },
+  {
+    "class": "bell pepper leaf",
+    "status": "healthy",
+    "maintenance": "Grow in well-drained, fertile soil with pH 6.0-6.8 in full sun. Maintain consistent soil moisture through regular watering, especially during fruit development. Apply mulch to conserve moisture and suppress weeds. Fertilize with balanced nutrients, particularly calcium to prevent blossom end rot. Provide support for plants as needed. Practice crop rotation. Monitor for pests including aphids, whiteflies, and thrips. Ensure good air circulation between plants. Peppers are warm-season crops requiring temperatures above 15°C (60°F) for optimal growth.",
+    "source": "PlantVillage: https://plantvillage.psu.edu/topics/pepper-bell/infos; Additional: University Extension vegetable growing guides"
+  },
+  {
+    "class": "bell pepper leaf spot",
+    "status": "diseased",
+    "management": "Practice crop rotation with non-solanaceous crops. Use disease-free seed and transplants. Remove and destroy infected plant debris. Avoid overhead irrigation to reduce leaf wetness. Apply copper-based bactericides or appropriate fungicides depending on pathogen (bacterial or fungal). Ensure good air circulation. Common leaf spots on peppers include bacterial spot (Xanthomonas), cercospora leaf spot, and anthracnose. Symptoms vary but typically include dark spots with possible yellow halos, which may coalesce causing leaf drop and fruit damage.",
+    "source": "PlantVillage information on related crops; Additional: University Extension Services including North Carolina State University and University of Florida IFAS on pepper diseases"
+  },
+  {
+    "class": "blueberry leaf",
+    "status": "healthy",
+    "maintenance": "Blueberries require acidic soil with pH 4.0-5.5. Test soil and amend with sulfur if needed to lower pH. Plant in well-drained soil with high organic matter. Provide consistent moisture through drip irrigation; blueberries have shallow roots. Apply acid-forming fertilizers (ammonium sulfate or specially formulated blueberry fertilizer). Mulch with pine bark or pine needles to maintain soil acidity and moisture. Prune annually during dormancy to remove dead wood and maintain plant vigor. Cross-pollination improves fruit set - plant multiple varieties. Monitor for mummy berry disease and remove infected fruit.",
+    "source": "PlantVillage: https://plantvillage.psu.edu/topics/blueberry/infos; Additional: University Extension blueberry production guides"
+  },
+  {
+    "class": "blueberry rust",
+    "status": "diseased",
+    "management": "Remove and destroy infected leaves and debris. Ensure good air circulation through proper plant spacing and pruning. Avoid overhead irrigation or irrigate early in day to allow foliage to dry. Apply fungicides if disease pressure is high, particularly during wet periods. Rust diseases on blueberry show orange pustules on leaf undersides. The disease is favored by wet, humid conditions. Prune to improve light penetration and air movement. Maintain plant vigor through proper nutrition and water management.",
+    "source": "PlantVillage reference to rust diseases on berries; Additional: University Extension blueberry disease management from Michigan State University and Penn State"
+  },
+  {
+    "class": "broccoli downy mildew",
+    "status": "diseased",
+    "management": "Downy mildew appears as yellow spots on upper leaf surfaces with gray-purple fuzzy growth on undersides. Use resistant varieties when available. Ensure good air circulation through proper spacing. Avoid overhead irrigation. Apply preventive fungicides (copper-based or specific downy mildew fungicides) during periods favorable for disease development. Remove infected lower leaves. Practice crop rotation with non-cruciferous crops. The pathogen (Peronospora parasitic) is favored by cool, moist conditions. Remove crop residue after harvest. Use drip irrigation to keep foliage dry.",
+    "source": "PlantVillage: https://plantvillage.psu.edu/topics/broccoli/infos; Additional: University Extension crucifer disease management guides"
+  },
+  {
+    "class": "broccoli leaf",
+    "status": "healthy",
+    "maintenance": "Broccoli is a cool-season crop growing best at 15-21°C (60-70°F). Plant in fertile, well-drained soil with pH 6.0-7.0. Ensure consistent moisture throughout growth. Apply balanced fertilization with adequate nitrogen for leaf development. Side-dress with nitrogen fertilizer 2-3 weeks after transplanting. Maintain weed control. Monitor for cabbage worms, aphids, and flea beetles. Harvest heads when florets are tight and before flowering begins. Broccoli benefits from cool weather and can tolerate light frost.",
+    "source": "PlantVillage: https://plantvillage.psu.edu/topics/broccoli/infos"
+  },
+  {
+    "class": "cabbage alternaria leaf spot",
+    "status": "diseased",
+    "management": "Alternaria diseases on crucifers cause circular brown spots that may enlarge and develop concentric rings (target-like appearance). Practice 2-3 year crop rotation with non-cruciferous crops. Use disease-free seed and transplants. Remove and destroy infected plant debris. Apply fungicides preventatively during wet periods. Ensure good air circulation through proper spacing. Avoid overhead irrigation. The fungus survives on crop debris and spreads via water splash and wind. Remove lower infected leaves. Harvest before disease becomes severe.",
+    "source": "PlantVillage: https://plantvillage.psu.edu/topics/cabbage-red-white-savoy/infos; Additional: Cornell Cooperative Extension and University of California IPM on crucifer diseases"
+  },
+  {
+    "class": "cabbage leaf",
+    "status": "healthy",
+    "maintenance": "Cabbage thrives in cool weather (15-21°C / 60-70°F). Plant in fertile, well-drained soil with pH 6.0-6.8. Ensure consistent moisture - cabbage requires 1-1.5 inches of water per week. Apply balanced fertilization with adequate nitrogen. Side-dress with nitrogen 3-4 weeks after transplanting. Control cabbage worms, aphids, and flea beetles. Maintain weed control. Practice crop rotation. Harvest when heads are firm and before splitting occurs. Mulch to conserve moisture and maintain consistent soil temperature.",
+    "source": "PlantVillage: https://plantvillage.psu.edu/topics/cabbage-red-white-savoy/infos"
+  },
+  {
+    "class": "carrot cavity spot",
+    "status": "diseased",
+    "management": "Cavity spot is caused by the soil-borne oomycete Pythium spp. and appears as small sunken lesions on carrot roots that enlarge into cavities. Practice long crop rotations (4+ years) between carrot crops. Improve soil drainage as disease is favored by wet, poorly drained soils. Avoid over-irrigation. Maintain soil pH near neutral (6.5-7.0). Use resistant varieties where available. Raised beds can improve drainage. Fungicide seed treatments may provide some protection. The pathogen persists in soil for extended periods.",
+    "source": "University Extension Services; Additional: Vegetable Production Handbooks from Penn State Extension and UK sources on carrot diseases"
+  },
+  {
+    "class": "cauliflower alternaria leaf spot",
+    "status": "diseased",
+    "management": "Alternaria diseases produce circular brown spots with concentric rings (target pattern) on leaves and heads. Rotate crops for 2-3 years with non-cruciferous plants. Use certified disease-free seed and transplants. Remove infected plant debris promptly and destroy. Apply preventive fungicides during periods of frequent rain or overhead irrigation. Ensure proper plant spacing for air circulation. Avoid working in wet fields. The pathogen overwinters on crop debris and spreads via water splash. Remove and destroy severely infected plants.",
+    "source": "PlantVillage: https://plantvillage.psu.edu/topics/cauliflower/infos; Additional: Extension guides on brassica diseases"
+  },
+  {
+    "class": "cauliflower leaf",
+    "status": "healthy",
+    "maintenance": "Cauliflower requires cool growing conditions (15-21°C / 60-70°F). Plant in fertile, well-drained soil with pH 6.0-7.0. Provide consistent moisture (1-1.5 inches per week). Apply balanced fertilization with adequate nitrogen and boron. Side-dress with nitrogen fertilizer as needed. Many varieties require blanching (tying leaves over developing head) to maintain white color. Monitor for cabbage worms, aphids, and root maggots. Practice crop rotation. Harvest when heads are compact and before curds begin to separate.",
+    "source": "PlantVillage: https://plantvillage.psu.edu/topics/cauliflower/infos"
+  },
+  {
+    "class": "celery anthracnose",
+    "status": "diseased",
+    "management": "Anthracnose causes sunken lesions with dark borders on petioles and leaves. Use disease-free seed and transplants. Practice crop rotation with non-umbelliferous crops. Remove and destroy crop debris after harvest. Avoid overhead irrigation or irrigate early in day. Apply fungicides preventatively during wet weather. The pathogen (Colletotrichum spp.) survives on crop debris and spreads via water splash. Ensure good air circulation through proper spacing. Harvest during dry conditions when possible.",
+    "source": "PlantVillage: https://plantvillage.psu.edu/topics/celery/infos; Additional: University Extension vegetable disease management guides"
+  },
+  {
+    "class": "celery early blight",
+    "status": "diseased",
+    "management": "Early blight (Cercospora apii) causes small yellow spots that enlarge into irregular brown lesions. Use disease-free seed treated with hot water or fungicide. Rotate crops for 2 years with non-celery crops. Apply preventive fungicides beginning early in season, especially during warm, humid weather. Remove infected lower leaves. Improve air circulation through proper spacing. Avoid overhead irrigation. The fungus overwinters on crop debris - remove and destroy after harvest. Maintain plant vigor through proper fertility and water management.",
+    "source": "PlantVillage: https://plantvillage.psu.edu/topics/celery/infos"
+  },
+  {
+    "class": "celery leaf",
+    "status": "healthy",
+    "maintenance": "Celery requires cool temperatures (15-21°C / 60-70°F) and consistent moisture. Plant in deep, fertile, well-drained soil with high organic matter and pH 6.0-7.0. Provide consistent moisture - celery is very sensitive to water stress. Apply balanced fertilization with adequate nitrogen. Side-dress with nitrogen fertilizer throughout season. Blanch stalks by hilling soil or using collars if desired. Monitor for aphids, celery worm, and leaf miners. Practice crop rotation. Harvest when plants reach desired size before flowering.",
+    "source": "PlantVillage: https://plantvillage.psu.edu/topics/celery/infos"
+  },
+  {
+    "class": "cherry leaf",
+    "status": "healthy",
+    "maintenance": "Cherry trees require well-drained soil with pH 6.0-7.0 in full sun. Ensure adequate but not excessive nitrogen - over-fertilization increases disease susceptibility. Prune during dry weather to maintain open canopy for air circulation and light penetration. Remove water sprouts and maintain tree structure. Apply balanced fertilization in early spring. Ensure adequate irrigation during fruit development but avoid wetting foliage. Monitor for brown rot, leaf spot, and bacterial canker. Sweet cherries generally require cross-pollination. Protect from birds as fruit ripens.",
+    "source": "PlantVillage: https://plantvillage.psu.edu/topics/cherry-including-sour/infos; Additional: University Extension cherry production guides"
+  },
+  {
+    "class": "cherry leaf spot",
+    "status": "diseased",
+    "management": "Caused by fungus Blumeriella jaapii (formerly Coccomyces hiemalis). Remove and destroy fallen leaves to reduce overwintering inoculum. Apply protective fungicides beginning at petal fall and continuing at regular intervals through harvest. Fungicides should include materials effective against cherry leaf spot. Prune to improve air circulation and light penetration. The disease causes purple spots on leaves that develop into small holes ('shot-hole' appearance), leading to premature defoliation. Severe defoliation weakens trees and reduces fruit production. Resistant varieties are available.",
+    "source": "PlantVillage: https://plantvillage.psu.edu/topics/cherry-including-sour/infos; Additional: Michigan State University Extension and other fruit disease resources"
+  },
+  {
+    "class": "cherry powdery mildew",
+    "status": "diseased",
+    "management": "Powdery mildew appears as white powdery growth on leaves, shoots, and fruit. Apply fungicides at first sign of disease and continue on regular schedule. Prune to improve air circulation and light penetration through canopy. Remove infected shoots during dormant pruning. The disease is favored by moderate temperatures and high humidity but does not require leaf wetness. Young, succulent growth is most susceptible. Reduce excessive nitrogen fertilization. Some cherry varieties show resistance. Apply sulfur or other fungicides labeled for powdery mildew on cherries.",
+    "source": "PlantVillage mentions powdery mildew diseases; Additional: University Extension tree fruit disease management programs"
+  },
+  {
+    "class": "citrus canker",
+    "status": "diseased",
+    "management": "Citrus canker (Xanthomonas citri) is a highly contagious bacterial disease. Use disease-free nursery stock. Remove and destroy infected trees and surrounding trees within quarantine radius. Apply preventive copper sprays during periods of new growth, especially during rainy season. Windbreaks can reduce wind-driven rain spread. The disease causes raised corky lesions on fruit, leaves, and stems. It spreads by wind-driven rain, contaminated equipment, and human activity. Decontaminate all tools and equipment. Follow quarantine regulations. There is no cure - management focuses on prevention and eradication. Plant resistant citrus varieties where available.",
+    "source": "University Extension Services; Additional: USDA APHIS, University of Florida IFAS, and California Department of Food and Agriculture resources on citrus canker"
+  },
+  {
+    "class": "citrus greening disease",
+    "status": "diseased",
+    "management": "Citrus greening (Huanglongbing/HLB) is caused by bacteria Candidatus Liberibacter spp. and transmitted by Asian citrus psyllid. There is no cure. Management strategy includes: 1) Use disease-free nursery stock from certified sources. 2) Control psyllid vector with systemic insecticides (multiple applications per year). 3) Remove infected trees immediately to reduce inoculum. 4) Scout frequently for symptoms and psyllids. 5) Apply nutritional programs to maintain tree health. 6) Plant under protective screens in nurseries. Symptoms include blotchy mottling on leaves, yellow shoots, lopsided bitter fruit, and eventual tree death. Plant more tolerant varieties (e.g., grapefruit more tolerant than sweet orange). Area-wide management programs are most effective.",
+    "source": "USDA APHIS: https://www.aphis.usda.gov/plant-pests-diseases/citrus-diseases/citrus-greening-and-asian-citrus-psyllid; Additional: University of Florida CREC, UC Riverside Center for Invasive Species Research, peer-reviewed scientific literature on HLB management"
+  },
+  {
+    "class": "coffee leaf",
+    "status": "healthy",
+    "maintenance": "Coffee grows best in tropical highlands with temperatures between 15-24°C (59-75°F). Plant in well-drained, fertile volcanic soils with pH 6.0-6.5 in partial shade. Provide consistent moisture without waterlogging. Apply balanced fertilization with adequate nitrogen, phosphorus, and potassium. Prune to maintain height at 1.5-2 meters for easier harvesting. Remove dead branches and thin canopy for air circulation. Provide shade trees (30-50% shade) to reduce stress. Monitor for coffee berry borer and leaf rust. Harvest ripe cherries selectively for best quality.",
+    "source": "PlantVillage: https://plantvillage.psu.edu/topics/coffee/infos"
+  },
+  {
+    "class": "coffee leaf rust",
+    "status": "diseased",
+    "management": "Coffee leaf rust (Hemileia vastatrix) is one of the most devastating coffee diseases. Apply protective copper-based fungicides before rainy season and throughout wet periods. Plant resistant varieties (e.g., Arabica varieties with resistance genes). Remove infected leaves and fallen debris. Improve air circulation through proper spacing and pruning. The disease appears as orange-yellow powdery pustules on leaf undersides, causing premature defoliation. Optimal conditions: 21-25°C with high humidity and leaf wetness. Maintain tree vigor through proper nutrition and shade management. Biological control agents (Bacillus, Pseudomonas, white halo fungus) show promise but are not yet commercially viable.",
+    "source": "PlantVillage: https://plantvillage.psu.edu/topics/coffee/infos"
+  },
+  {
+    "class": "corn gray leaf spot",
+    "status": "diseased",
+    "management": "Gray leaf spot (Cercospora zeae-maydis) causes rectangular lesions 1-6 cm long with sharp, parallel edges that turn gray with maturity. Plant resistant hybrids - this is the most effective control. Practice crop rotation with non-corn crops. Use minimum tillage carefully as disease favors continuous corn with minimum tillage. Remove crop debris or plow under deeply. Apply foliar fungicides when necessary in high-pressure situations. The disease emerges in humid, foggy conditions with prolonged wetness. Lesions are opaque and have parallel edges following leaf veins. Can cause rapid leaf blighting and yield loss.",
+    "source": "PlantVillage: https://plantvillage.psu.edu/topics/corn-maize/infos"
+  },
+  {
+    "class": "corn leaf",
+    "status": "healthy",
+    "maintenance": "Corn requires warm temperatures (21-30°C / 70-86°F), full sun, and fertile, well-drained soil with pH 6.0-6.8. Plant after last frost when soil temperature reaches 15°C (60°F). Ensure consistent moisture especially during tasseling and ear development - critical periods for yield. Apply nitrogen fertilizer: side-dress when plants are 30-45 cm tall. Plant in blocks rather than single rows for better pollination. Control weeds especially during first 6 weeks. Monitor for corn earworm, European corn borer, and fall armyworm. Practice crop rotation to prevent disease and pest buildup.",
+    "source": "PlantVillage: https://plantvillage.psu.edu/topics/corn-maize/infos"
+  },
+  {
+    "class": "corn northern leaf blight",
+    "status": "diseased",
+    "management": "Northern leaf blight (Exserohilum turcicum) produces cigar-shaped gray-green to tan lesions 2.5-15 cm long. Plant resistant hybrids - most effective control method. Practice crop rotation with non-host crops (2-3 years). Plow under or remove crop residue where pathogen overwinters. Apply fungicides when disease appears on lower leaves before tasseling. The disease is favored by moderate temperatures (18-27°C) and high humidity. Lesions may coalesce causing extensive blighting. Most important in continuous corn production areas.",
+    "source": "PlantVillage: https://plantvillage.psu.edu/topics/corn-maize/infos; Additional: University Extension corn disease guides"
+  },
+  {
+    "class": "corn rust",
+    "status": "diseased",
+    "management": "Common rust produces small, circular to elongate brown pustules on both leaf surfaces. Southern rust has orange pustules mainly on upper surface. Plant resistant hybrids - most effective method. Apply fungicides when disease appears on lower leaves and environmental conditions favor disease development (moderate temperatures 16-23°C with high humidity for common rust; warmer for southern rust). Scout fields regularly. The disease can develop rapidly under favorable conditions. Pustules contain masses of spores that spread by wind. Usually not economically important until after tasseling.",
+    "source": "PlantVillage: https://plantvillage.psu.edu/topics/corn-maize/infos"
+  },
+  {
+    "class": "corn smut",
+    "status": "diseased",
+    "management": "Common smut (Ustilago maydis) causes tumor-like galls on any above-ground plant tissue - ears, tassels, stalks, leaves. Galls are initially silvery-white, turning dark brown/black as spores mature. Plant resistant hybrids. Remove galls before they mature and release spores. Deep plow crop residue. Avoid mechanical injury to plants. Practice crop rotation. Reduce nitrogen fertilization if smut is a problem. The fungus overwinters as spores in soil and infects through wounds. Young, actively growing tissue is most susceptible. In Mexico, immature galls (huitlacoche) are considered a delicacy.",
+    "source": "PlantVillage: https://plantvillage.psu.edu/topics/corn-maize/infos"
+  },
+  {
+    "class": "cucumber angular leaf spot",
+    "status": "diseased",
+    "management": "Angular leaf spot (Pseudomonas syringae pv. lachrymans) is a bacterial disease causing angular water-soaked spots confined by leaf veins. Use disease-free seed and transplants. Practice crop rotation with non-cucurbit crops (2-3 years). Remove infected plant debris. Avoid overhead irrigation. Apply copper-based bactericides preventatively. The bacterium overwinters on crop debris and spreads by water splash and contaminated tools. Symptoms include angular spots on leaves that may dry and drop out, and white bacterial ooze on lesions. Fruit lesions appear water-soaked and may crack.",
+    "source": "PlantVillage: https://plantvillage.psu.edu/topics/cucumber/infos; Additional: Extension vegetable disease management guides"
+  },
+  {
+    "class": "cucumber bacterial wilt",
+    "status": "diseased",
+    "management": "Bacterial wilt (Erwinia tracheiphila) is transmitted by cucumber beetles. Control cucumber beetles early and throughout season using row covers, insecticides, or beetle traps. Plant resistant varieties where available. Remove and destroy infected plants immediately to prevent beetle spread. The disease causes sudden wilting of vines with bacterial ooze visible when stems are cut and pulled apart (bacterial streaming test). There is no chemical control once plants are infected. Prevention through beetle control is essential. Practice crop rotation. Remove wild cucurbit hosts near fields.",
+    "source": "PlantVillage: https://plantvillage.psu.edu/topics/cucumber/infos"
+  },
+  {
+    "class": "cucumber leaf",
+    "status": "healthy",
+    "maintenance": "Cucumbers require warm weather (18-30°C / 65-85°F), full sun, and fertile, well-drained soil with pH 6.0-7.0. Plant after frost danger when soil is warm. Provide consistent moisture (1-2 inches per week) especially during fruiting. Mulch to conserve moisture and prevent soil-borne diseases. Train vining types on trellises for better air circulation and easier harvest. Apply balanced fertilization; side-dress with nitrogen when vines begin running. Monitor for cucumber beetles, aphids, and spider mites. Practice crop rotation. Harvest regularly when fruit reaches desired size.",
+    "source": "PlantVillage: https://plantvillage.psu.edu/topics/cucumber/infos"
+  },
+  {
+    "class": "cucumber powdery mildew",
+    "status": "diseased",
+    "management": "Powdery mildew appears as white powdery spots on leaves that coalesce to cover entire leaves. Plant resistant varieties. Apply fungicides (sulfur, potassium bicarbonate, or synthetic fungicides) at first sign and continue on 7-10 day schedule. Improve air circulation through spacing and pruning. Avoid overhead irrigation. Remove severely infected leaves. The disease is favored by moderate temperatures, high humidity, and shade but doesn't require leaf wetness. Can cause significant yield loss by reducing photosynthesis and causing premature leaf drop.",
+    "source": "PlantVillage: https://plantvillage.psu.edu/topics/cucumber/infos"
+  },
+  {
+    "class": "eggplant cercospora leaf spot",
+    "status": "diseased",
+    "management": "Cercospora leaf spot causes small circular spots with gray centers and dark margins. Use disease-free seed and transplants. Practice crop rotation with non-solanaceous crops (3-4 years). Remove and destroy infected plant debris. Apply protective fungicides during wet weather. Ensure good air circulation through proper spacing. Avoid overhead irrigation or water early in day. The fungus overwinters on crop debris and spreads via water splash. Maintain plant vigor through proper fertility. Remove lower infected leaves.",
+    "source": "PlantVillage: https://plantvillage.psu.edu/topics/eggplant/infos; Additional: Extension vegetable disease management resources"
+  },
+  {
+    "class": "eggplant leaf",
+    "status": "healthy",
+    "maintenance": "Eggplant requires warm weather (21-30°C / 70-86°F), full sun, and fertile, well-drained soil with pH 5.5-6.5. Plant after all frost danger when soil is warm. Provide consistent moisture (1-2 inches per week). Mulch to conserve moisture and suppress weeds. Stake plants to support fruit weight. Apply balanced fertilization with adequate nitrogen and potassium. Monitor for flea beetles, Colorado potato beetle, and aphids. Remove first flowers on young plants to encourage vegetative growth. Practice crop rotation. Harvest fruit when glossy and firm before seeds harden.",
+    "source": "PlantVillage: https://plantvillage.psu.edu/topics/eggplant/infos"
+  },
+  {
+    "class": "garlic leaf",
+    "status": "healthy",
+    "maintenance": "Garlic requires cool weather for bulb formation and full sun. Plant in well-drained, fertile soil with pH 6.0-7.0 in fall (4-6 weeks before ground freezes in cold climates). Space cloves 10-15 cm apart, planting 5 cm deep. Ensure consistent moisture during active growth but reduce watering as bulbs mature. Apply nitrogen fertilizer in early spring. Mulch to suppress weeds and conserve moisture. Remove flower scapes on hardneck varieties to direct energy to bulb development. Harvest when lower leaves turn brown. Cure bulbs in warm, dry location with good air circulation.",
+    "source": "PlantVillage: https://plantvillage.psu.edu/topics/garlic/infos; Additional: Extension garlic production guides"
+  },
+  {
+    "class": "garlic leaf blight",
+    "status": "diseased",
+    "management": "Leaf blight (Botrytis spp. or Alternaria porri) causes elongated tan to brown lesions on leaves. Use certified disease-free seed cloves. Practice crop rotation (3-4 years). Plant in well-drained locations to avoid prolonged leaf wetness. Apply protective fungicides if disease pressure is high during wet weather. Ensure good air circulation. Remove infected plant debris after harvest. The pathogens overwinter on crop debris. Disease is favored by cool, moist conditions. Maintain plant vigor through proper fertility and water management.",
+    "source": "PlantVillage mentions Botrytis diseases; Additional: University Extension resources on allium diseases"
+  },
+  {
+    "class": "garlic rust",
+    "status": "diseased",
+    "management": "Rust (Puccinia allii) appears as orange to brown pustules on leaves and stems. Use disease-free planting stock. Plant in locations with good air circulation. Avoid overhead irrigation. Apply fungicides labeled for rust on alliums when disease first appears. Remove volunteer garlic and wild allium species near plantings. The disease is favored by moderate temperatures and high humidity. Severe infections can cause premature leaf death and reduced bulb size. Destroy infected plant debris after harvest.",
+    "source": "PlantVillage mentions rust diseases on vegetables; Additional: Extension guides on allium rust management"
+  },
+  {
+    "class": "ginger leaf",
+    "status": "healthy",
+    "maintenance": "Ginger thrives in warm, humid conditions (25-30°C / 77-86°F) with partial shade. Plant in well-drained, fertile soil rich in organic matter with pH 6.0-6.5. Ensure consistent moisture without waterlogging - ginger has high water requirements. Apply organic mulch to conserve moisture and suppress weeds. Fertilize regularly with balanced nutrients emphasizing potassium for rhizome development. Protect from strong winds. Monitor for rhizome rot, bacterial wilt, and leaf spot. Harvest rhizomes 8-10 months after planting when leaves yellow and dry. Careful handling during harvest to avoid injury.",
+    "source": "PlantVillage: https://plantvillage.psu.edu/topics/ginger/infos"
+  },
+  {
+    "class": "ginger leaf spot",
+    "status": "diseased",
+    "management": "Leaf spot diseases on ginger (caused by Phyllosticta or other fungi) appear as small brown spots that may enlarge and coalesce. Use disease-free seed rhizomes. Treat seed rhizomes with fungicide before planting. Ensure good drainage and avoid overcrowding. Remove infected leaves promptly. Apply protective fungicides during rainy periods. The diseases are favored by warm, humid conditions with overhead moisture. Improve air circulation. Avoid excessive nitrogen fertilization which produces succulent, disease-susceptible growth.",
+    "source": "PlantVillage: https://plantvillage.psu.edu/topics/ginger/infos"
+  },
+  {
+    "class": "ginger sheath blight",
+    "status": "diseased",
+    "management": "Sheath blight (Rhizoctonia solani) causes water-soaked lesions on leaf sheaths and pseudostems that turn brown. Use disease-free seed rhizomes. Practice crop rotation. Improve field drainage. Avoid dense planting - ensure adequate spacing. Remove and destroy infected plant debris. Apply fungicides labeled for Rhizoctonia when disease appears. The pathogen survives in soil and is favored by warm, humid conditions. Maintain field sanitation. Avoid mechanical injury to plants during cultivation.",
+    "source": "PlantVillage: https://plantvillage.psu.edu/topics/ginger/infos; Additional: Extension tropical crop disease guides"
+  },
+  {
+    "class": "grape black rot",
+    "status": "diseased",
+    "management": "Black rot (Guignardia bidwellii) is a major disease of grapes causing fruit mummification. Remove and destroy all mummified fruit and infected canes during dormant pruning. Apply protective fungicides beginning at bud break and continuing through fruit set, with special attention during bloom. Prune vines to improve air circulation and light penetration. The fungus overwinters in mummified fruit and infected canes. Symptoms include circular reddish-brown leaf spots and rotted berries. Sanitation is critical - remove all infected material from vineyard. Plant in locations with good air drainage.",
+    "source": "PlantVillage mentions black rot on grapes; Additional: Penn State Extension, Michigan State University Extension on grape diseases"
+  },
+  {
+    "class": "grape downy mildew",
+    "status": "diseased",
+    "management": "Downy mildew (Plasmopara viticola) causes yellow-white oily spots on upper leaf surfaces with white downy growth on undersides. Apply protective fungicides from early shoot growth through harvest, intensifying during wet periods. Ensure good air circulation through canopy management (shoot positioning, leaf removal around clusters). Remove infected leaves early in season. The disease requires free moisture and is favored by moderate temperatures. Scout regularly during wet periods. Resistant varieties show varying levels of tolerance. Use combination of cultural practices and fungicide program.",
+    "source": "PlantVillage mentions downy mildew; Additional: University Extension grape disease management programs including Penn State, Cornell, and UC Davis"
+  },
+  {
+    "class": "grape leaf",
+    "status": "healthy",
+    "maintenance": "Grapes require full sun, well-drained soil with pH 5.5-7.0, and good air circulation. Train vines on trellis systems for support and air flow. Prune annually during dormancy to manage crop load and maintain vine structure. Apply balanced fertilization - avoid excessive nitrogen which promotes disease-susceptible growth. Ensure moderate, consistent moisture - avoid water stress but also avoid wet conditions. Remove weeds and maintain clean vineyard floor. Monitor for diseases (powdery mildew, downy mildew, black rot) and insects (Japanese beetle, grape berry moth). Thin fruit clusters if necessary for quality.",
+    "source": "PlantVillage: https://plantvillage.psu.edu/topics/grape/infos"
+  },
+  {
+    "class": "grape leaf spot",
+    "status": "diseased",
+    "management": "Several leaf spot diseases affect grapes including black rot (early symptoms), Phomopsis, and Isariopsis. Apply protective fungicides starting at bud break. Prune to improve air circulation and remove infected canes during dormant season. Remove fallen leaves and debris. Symptoms vary but typically include circular spots that may have target-like appearance or cause shot-hole effect. Practice good vineyard sanitation. Avoid overhead irrigation. Time sprays to protect new growth and during wet periods when infection is most likely.",
+    "source": "PlantVillage references to grape diseases; Additional: Extension grape IPM and disease management guides"
+  },
+  {
+    "class": "grapevine leafroll disease",
+    "status": "diseased",
+    "management": "Leafroll disease is caused by viruses (Grapevine leafroll-associated viruses) transmitted by mealybugs and scale insects. Use certified virus-free planting material. Control mealybug and scale insect vectors through monitoring and insecticides. Remove and destroy infected vines - there is no cure. Rogue infected vines before they serve as source for vector transmission. Symptoms include downward rolling of leaf margins, reddish discoloration (red varieties) or yellowing (white varieties) between veins, delayed fruit ripening, and reduced sugar content. The disease reduces yield and fruit quality significantly.",
+    "source": "UC Davis, Washington State University, and other university extension services on grapevine viral diseases"
+  },
+  {
+    "class": "lettuce downy mildew",
+    "status": "diseased",
+    "management": "Downy mildew (Bremia lactucae) causes angular yellow spots on upper leaf surfaces with white fuzzy growth on undersides. Plant resistant varieties - numerous resistant cultivars are available. Ensure good air circulation through proper spacing. Avoid overhead irrigation or irrigate early in day. Apply preventive fungicides if conditions favor disease (cool, moist weather). Remove infected plants. The pathogen is spread by wind-borne spores and splashing water. Improve field drainage. Avoid planting in low, poorly ventilated areas. Rotate crops.",
+    "source": "PlantVillage: https://plantvillage.psu.edu/topics/lettuce/infos; Additional: University of California IPM on lettuce diseases"
+  },
+  {
+    "class": "lettuce leaf",
+    "status": "healthy",
+    "maintenance": "Lettuce is a cool-season crop growing best at 15-18°C (60-65°F). Plant in well-drained, fertile soil with pH 6.0-7.0 in full sun to partial shade. Ensure consistent moisture - lettuce has shallow roots and requires frequent watering. Apply balanced fertilization with adequate nitrogen. Thin seedlings to proper spacing. Use mulch to conserve moisture and suppress weeds. Monitor for aphids, slugs, and leaf miners. Harvest when heads are firm (heading types) or by cutting leaves (loose-leaf types). Protect from heat - lettuce bolts (goes to seed) in hot weather.",
+    "source": "PlantVillage: https://plantvillage.psu.edu/topics/lettuce/infos"
+  },
+  {
+    "class": "lettuce mosaic virus",
+    "status": "diseased",
+    "management": "Lettuce mosaic virus is transmitted by aphids and through infected seed. Use certified virus-free seed. Control aphids through monitoring, insecticidal soaps, or insecticides - though control is difficult as transmission is rapid. Remove infected plants immediately. Eliminate weed hosts (especially sowthistle) near fields. The virus causes mottling, leaf distortion, stunting, and yellowing. There is no cure. Reflective mulches may deter aphid landing. Plant resistant varieties where available. Avoid planting near older lettuce fields that may harbor disease.",
+    "source": "PlantVillage: https://plantvillage.psu.edu/topics/lettuce/infos"
+  },
+  {
+    "class": "maple leaf",
+    "status": "healthy",
+    "maintenance": "Maple trees generally require minimal maintenance once established. Grow in well-drained soil with adequate moisture. Most maples prefer slightly acidic to neutral soil (pH 5.5-7.0). Provide water during extended dry periods, especially for young trees. Mulch around base to conserve moisture and suppress weeds. Prune to remove dead or crossing branches and maintain structure - prune in late summer/fall to avoid sap bleeding. Monitor for leaf scorch (environmental stress), anthracnose, and tar spot. Avoid mechanical injury to bark. Many maple species are hardy and adaptable to various conditions.",
+    "source": "University Extension tree care resources and arboriculture guides"
+  },
+  {
+    "class": "maple tar spot",
+    "status": "diseased",
+    "management": "Tar spot (Rhytisma acerinum and related species) causes raised black spots on maple leaves. The disease is primarily cosmetic and rarely requires treatment. Rake and remove fallen leaves to reduce overwintering spores. Ensure good air circulation around trees. Maintain tree vigor through proper watering and fertilization. Fungicides are generally not recommended as the disease causes little harm. The fungus overwinters on fallen leaves and produces spores that infect new leaves in spring. Symptoms appear as yellow spots in early summer that develop into characteristic black tar-like spots by late summer.",
+    "source": "University Extension resources on tree diseases; Additional: USDA Forest Service and state forestry guides on maple diseases"
+  },
+  {
+    "class": "peach leaf",
+    "status": "healthy",
+    "maintenance": "Peach trees require full sun, well-drained soil with pH 6.0-7.0, and consistent care. Prune annually during dormancy to maintain open center for air circulation and light penetration. Thin fruit when marble-sized to improve fruit size and quality. Apply balanced fertilization in early spring. Ensure adequate water during fruit development but avoid overhead irrigation. Monitor for brown rot, bacterial spot, and peach leaf curl. Protect from late spring frosts during bloom. Control peach tree borers and oriental fruit moth. Harvest when fruit softens and develops full color.",
+    "source": "PlantVillage: https://plantvillage.psu.edu/topics/peach/infos; Additional: Extension tree fruit production guides"
+  },
+  {
+    "class": "peach leaf curl",
+    "status": "diseased",
+    "management": "Peach leaf curl (Taphrina deformans) causes puckered, distorted leaves that become reddish and eventually drop. Apply protective fungicides (copper-based or synthetic) during dormancy before bud swell in late winter/early spring. One well-timed application provides season-long control. A second application may be needed in high rainfall areas just before bud break. The fungus overwinters on tree bark and bud scales. Prune to improve air circulation. Remove and destroy infected leaves. There are no effective treatments once infection occurs. Plant resistant varieties where available. Disease is most severe in cool, wet springs.",
+    "source": "PlantVillage: https://plantvillage.psu.edu/topics/peach/infos; Additional: University Extension stone fruit disease management"
+  },
+  {
+    "class": "plum leaf",
+    "status": "healthy",
+    "maintenance": "Plum trees require full sun, well-drained soil with pH 6.0-7.0, and regular care. Prune annually during dormancy to maintain vase or open-center shape for air circulation. Thin fruit when thumbnail-sized to improve size and prevent branch breakage. Apply balanced fertilization in spring. Ensure adequate but not excessive water - overwatering increases disease. Monitor for brown rot, black knot, and bacterial spot. Many plum varieties are self-sterile and require cross-pollination. Control plum curculio and aphids. Harvest when fruit yields slightly to pressure and develops characteristic color.",
+    "source": "PlantVillage: https://plantvillage.psu.edu/topics/plum-and-prune/infos"
+  },
+  {
+    "class": "plum pocket disease",
+    "status": "diseased",
+    "management": "Plum pocket (Taphrina pruni) causes fruit to become swollen, distorted, and bladder-like without developing seeds. Apply fungicides (copper or lime sulfur) during dormancy and again at bud swell before bloom. Prune to improve air circulation and remove diseased wood. Remove and destroy infected fruit before spores are released. The fungus overwinters in bark and bud scales. Disease is favored by cool, wet weather during bloom. Sanitation is important - remove mummified fruit. Plant resistant varieties if available. American plums are more susceptible than European plums.",
+    "source": "Extension stone fruit disease resources; Additional: Cornell Cooperative Extension, Penn State Extension on plum diseases"
+  },
+  {
+    "class": "potato early blight",
+    "status": "diseased",
+    "management": "Early blight (Alternaria solani) causes dark brown spots with concentric rings (target pattern) on older leaves. Use certified disease-free seed potatoes. Practice crop rotation (3-4 years) with non-solanaceous crops. Apply protective fungicides when disease appears or preventatively if conditions favor disease (warm, humid weather with leaf wetness). Remove and destroy crop debris. Ensure adequate but not excessive nitrogen. Maintain plant vigor through proper fertility and water. The fungus overwinters on crop debris and infected tubers. Symptoms appear first on lower, older leaves and progress upward.",
+    "source": "PlantVillage mentions potato diseases; Additional: University Extension potato production guides including Penn State, University of Idaho, and others"
+  },
+  {
+    "class": "potato late blight",
+    "status": "diseased",
+    "management": "Late blight (Phytophthora infestans) is the most destructive potato disease. Use certified disease-free seed potatoes. Plant resistant varieties where available. Apply protective fungicides preventatively starting when conditions favor disease (moderate temperatures with high humidity and leaf wetness). Scout fields regularly using prediction models (e.g., Blightcast). Remove volunteer potatoes and nightshade weeds. Hill soil over tubers to prevent spore wash-down. Destroy infected plants and cull piles. The pathogen produces water-soaked lesions on leaves with white fuzzy growth on undersides during wet weather, causing rapid plant death. Tuber rot occurs if spores wash into soil.",
+    "source": "PlantVillage blog posts and related information; Additional: USABlight.org, university extension late blight management programs"
+  },
+  {
+    "class": "potato leaf",
+    "status": "healthy",
+    "maintenance": "Potatoes require cool growing conditions (15-20°C / 60-68°F), full sun, and well-drained, fertile soil with pH 5.0-6.5. Plant certified disease-free seed potatoes 10-15 cm deep. Hill soil around plants as they grow to prevent greening of tubers. Ensure consistent moisture (2.5-5 cm per week) especially during tuber formation. Apply balanced fertilization emphasizing potassium. Monitor for Colorado potato beetle, aphids, and diseases. Practice crop rotation (3-4 years minimum). Harvest when vines die back naturally or 2 weeks after killing vines. Cure tubers before storage.",
+    "source": "PlantVillage: https://plantvillage.psu.edu/topics/potato/infos"
+  },
+  {
+    "class": "raspberry leaf",
+    "status": "healthy",
+    "maintenance": "Raspberries require full sun, well-drained soil with pH 5.5-6.5, and consistent moisture. Plant in raised beds in heavy soils. Provide support with trellis or posts and wire. Prune summer-bearing types by removing fruited canes after harvest; prune fall-bearing types to ground in late winter. Apply balanced fertilization in spring. Mulch to conserve moisture and suppress weeds. Ensure good air circulation through proper spacing and pruning. Monitor for anthracnose, spur blight, cane borers, and raspberry fruitworms. Thin canes to 6-8 per linear foot for best production.",
+    "source": "PlantVillage: https://plantvillage.psu.edu/topics/raspberry/infos; Additional: Extension small fruit production guides"
+  },
+  {
+    "class": "rice blast",
+    "status": "diseased",
+    "management": "Rice blast (Magnaporthe oryzae) is one of the most important rice diseases worldwide. Plant resistant varieties - most effective control. Avoid over-fertilization with nitrogen which increases susceptibility. Ensure good water management to prevent drought stress. Apply systemic fungicides where available and economically feasible. The disease causes diamond-shaped lesions on leaves with gray centers and brown margins. It can also infect nodes (neck blast) and panicles, causing severe yield loss. The fungus produces spores that spread by wind. Disease favored by high humidity, moderate temperatures, and nitrogen excess.",
+    "source": "PlantVillage: https://plantvillage.psu.edu/topics/rice/infos"
+  },
+  {
+    "class": "rice leaf",
+    "status": "healthy",
+    "maintenance": "Rice requires warm temperatures (20-37°C / 68-99°F) and abundant water or high rainfall (800-2000mm). Plant in fields that can be flooded or have adequate irrigation. For lowland rice, maintain standing water at proper depth. Ensure adequate nitrogen, phosphorus, and potassium fertilization. Control weeds which compete for nutrients and harbor pests. Monitor for blast, bacterial blight, and sheath blight diseases. Control stem borers, plant hoppers, and other insects. Drain fields before harvest when grain is mature. Most rice is grown at 0-2500m elevation in humid lowlands and deltas.",
+    "source": "PlantVillage: https://plantvillage.psu.edu/topics/rice/infos"
+  },
+  {
+    "class": "rice sheath blight",
+    "status": "diseased",
+    "management": "Sheath blight (Rhizoctonia solani) appears as oblong or elliptical lesions on leaf sheaths with pale centers and purple-brown margins. Avoid over-fertilizing with nitrogen as excessive nitrogen increases susceptibility. Time fungicide applications so first application is made at maximum tillering and second at early heading stages. Ensure proper water management. The disease occurs in all rice-growing areas and is second in importance only to blast. It spreads rapidly via irrigation water and lesions can cover entire sheaths and stems, leading to poorly filled grains. Most damaging in intensive rice production systems.",
+    "source": "PlantVillage: https://plantvillage.psu.edu/topics/rice/infos"
+  },
+  {
+    "class": "soybean leaf",
+    "status": "healthy",
+    "maintenance": "Soybeans require warm weather (20-30°C / 68-86°F), full sun, and well-drained soil with pH 6.0-7.0. Plant after frost danger when soil temperature reaches 15°C (60°F). Inoculate seed with proper Bradyrhizobium strain if soybeans haven't been grown in field before. Soybeans fix atmospheric nitrogen so require little nitrogen fertilizer. Ensure adequate phosphorus and potassium. Maintain moisture especially during pod fill. Control weeds early in season. Monitor for soybean aphids, Japanese beetles, and stink bugs. Practice crop rotation. Harvest when leaves drop and pods rattle.",
+    "source": "PlantVillage: https://plantvillage.psu.edu/topics/soybean/infos"
+  },
+  {
+    "class": "squash leaf",
+    "status": "healthy",
+    "maintenance": "Squash requires warm weather (18-30°C / 65-85°F), full sun, and fertile, well-drained soil with pH 6.0-6.8. Plant after frost danger when soil is warm. Provide hills or mounds for good drainage. Ensure consistent moisture (2.5-5 cm per week) especially during fruit development. Mulch to conserve moisture and suppress weeds. Apply balanced fertilization at planting and side-dress when vines begin running. Train vining types on trellises if desired. Monitor for squash vine borers, squash bugs, and cucumber beetles. Practice crop rotation. Harvest regularly to encourage continued production.",
+    "source": "PlantVillage: https://plantvillage.psu.edu/topics/squash/infos"
+  },
+  {
+    "class": "squash powdery mildew",
+    "status": "diseased",
+    "management": "Powdery mildew appears as white powdery spots on leaves that rapidly expand to cover entire leaves. Plant resistant varieties (many modern cucurbit varieties have PM resistance). Apply fungicides (sulfur, potassium bicarbonate, or synthetic materials) at first sign and continue on 7-10 day intervals. Improve air circulation through spacing and pruning. Avoid overhead irrigation. Remove heavily infected leaves. The disease doesn't require leaf wetness and develops rapidly in warm, dry conditions with high humidity. Can cause severe defoliation leading to sunscald of fruit and reduced yields.",
+    "source": "PlantVillage: https://plantvillage.psu.edu/topics/squash/infos"
+  },
+  {
+    "class": "strawberry anthracnose",
+    "status": "diseased",
+    "management": "Anthracnose (Colletotrichum species) causes brown sunken lesions on fruit and black lesions on crowns, stolons, and petioles. Use disease-free plants. Apply protective fungicides during bloom and fruit development, especially during wet weather. Ensure good air circulation through proper spacing and weed control. Use raised beds or plastic mulch to reduce fruit contact with soil. Remove infected plant debris. Drip irrigation reduces disease spread compared to overhead irrigation. The disease is favored by warm, wet conditions. Rotate planting sites. Some varieties show resistance.",
+    "source": "PlantVillage: https://plantvillage.psu.edu/topics/strawberry/infos; Additional: Extension small fruit disease management guides"
+  },
+  {
+    "class": "strawberry leaf",
+    "status": "healthy",
+    "maintenance": "Strawberries require full sun, well-drained soil with pH 5.5-6.5, and consistent moisture. Plant in raised beds in heavy soils. Use plastic mulch or straw mulch to keep fruit clean and reduce disease. Renovate June-bearing types after harvest by mowing and narrowing rows. Remove old leaves and thin plants. Apply balanced fertilization after renovation and in early spring. Ensure adequate but not excessive nitrogen. Maintain consistent moisture through drip irrigation. Monitor for spider mites, tarnished plant bugs, and diseases. Remove daughter plants beyond desired row width. Replace plantings every 3-4 years.",
+    "source": "PlantVillage: https://plantvillage.psu.edu/topics/strawberry/infos"
+  },
+  {
+    "class": "strawberry leaf scorch",
+    "status": "diseased",
+    "management": "Leaf scorch (Diplocarpon earlianum) causes numerous small purple spots on leaves that enlarge and coalesce, giving leaves a scorched appearance. Use disease-free plants. Apply fungicides starting at bloom and continuing through harvest. Renovate plantings promptly after harvest to remove diseased foliage. Ensure good air circulation and avoid overhead irrigation or water early in day. Remove and destroy infected leaves. The disease is favored by warm, humid weather. Maintain plant vigor through proper fertility. Some varieties show tolerance. Practice site rotation for new plantings.",
+    "source": "PlantVillage: https://plantvillage.psu.edu/topics/strawberry/infos"
+  },
+  {
+    "class": "tobacco leaf",
+    "status": "healthy",
+    "maintenance": "Tobacco requires warm weather (20-30°C / 68-86°F), full sun, and well-drained, fertile soil with pH 5.5-6.5. Start from transplants. Ensure consistent moisture especially during leaf development. Apply balanced fertilization with adequate nitrogen and potassium - fertility requirements vary by tobacco type. Top plants (remove flower heads) to direct growth to leaves. Sucker (remove axillary shoots) regularly for some types. Monitor for tobacco hornworm, aphids, and flea beetles. Watch for viral diseases and bacterial infections. Cure leaves properly after harvest according to tobacco type (air-cured, flue-cured, or fire-cured).",
+    "source": "PlantVillage: https://plantvillage.psu.edu/topics/tobacco/infos"
+  },
+  {
+    "class": "tobacco mosaic virus",
+    "status": "diseased",
+    "management": "Tobacco mosaic virus (TMV) is extremely stable and infectious. Use resistant varieties where available. TMV survives in dried plant material and on contaminated tools, clothing, and hands. Wash hands thoroughly with soap before handling plants. Disinfect tools with 10% bleach solution or trisodium phosphate. Avoid tobacco use near plants as virus survives in cured tobacco products. Remove infected plants immediately. Control aphids which can transmit mechanically. There is no cure. The virus causes mottling, mosaic patterns, and distortion of leaves. It has a very wide host range including tomato, pepper, and many ornamentals.",
+    "source": "PlantVillage: https://plantvillage.psu.edu/topics/tobacco/infos; Additional: Extension resources on TMV management in various crops"
+  },
+  {
+    "class": "tomato bacterial leaf spot",
+    "status": "diseased",
+    "management": "Bacterial spot (Xanthomonas species) causes small water-soaked spots that become necrotic, giving leaves a blighted appearance. Use disease-free seed and transplants treated with hot water or biological treatments. Practice crop rotation (3-4 years) with non-solanaceous crops. Avoid overhead irrigation. Apply copper-based bactericides preventatively. Remove infected plant debris. Disinfect tools and greenhouse surfaces. The bacteria overwinter on crop debris and spread by water splash. Some varieties show resistance. Maintain good air circulation. Fruit lesions appear as raised spots with white halos.",
+    "source": "PlantVillage: https://plantvillage.psu.edu/topics/tomato/infos"
+  },
+  {
+    "class": "tomato early blight",
+    "status": "diseased",
+    "management": "Early blight (Alternaria solani) causes dark brown spots with concentric rings (target pattern) on lower, older leaves first. Use disease-free transplants. Practice crop rotation (3-4 years). Stake and prune plants to improve air circulation. Mulch to prevent soil splash. Remove lower infected leaves. Apply protective fungicides when disease appears or conditions favor development (warm, humid weather). The fungus overwinters on crop debris. Water at base of plants. Maintain plant vigor through proper fertility. Remove crop debris after harvest. Some varieties show tolerance.",
+    "source": "PlantVillage: https://plantvillage.psu.edu/topics/tomato/infos"
+  },
+  {
+    "class": "tomato late blight",
+    "status": "diseased",
+    "management": "Late blight (Phytophthora infestans) is the most destructive tomato disease. Plant resistant varieties (Mountain Magic, Plum Regal, Defiant). Use disease-free transplants. Apply protective fungicides (copper or synthetic) preventatively when conditions favor disease (cool, wet weather). Remove infected plants immediately. Prune to improve air circulation and remove lower leaves. Avoid overhead watering. The pathogen produces water-soaked lesions on leaves and stems with white fuzzy growth on undersides during wet weather. Can cause total crop loss. Scout regularly and destroy infected fruit and plants.",
+    "source": "PlantVillage: https://plantvillage.psu.edu/topics/tomato/infos"
+  },
+  {
+    "class": "tomato leaf",
+    "status": "healthy",
+    "maintenance": "Tomatoes require warm weather (18-29°C / 65-85°F), full sun, and well-drained soil with pH 6.0-6.8. Stake or cage plants for support and better air circulation. Apply mulch to conserve moisture and prevent soil-borne diseases. Water consistently at base of plants (2.5-5 cm per week). Apply balanced fertilization at planting and side-dress during fruit development. Remove suckers on indeterminate varieties. Monitor for hornworms, whiteflies, and aphids. Practice crop rotation. Harvest when fruit is fully colored and slightly soft. Proper calcium prevents blossom end rot.",
+    "source": "PlantVillage: https://plantvillage.psu.edu/topics/tomato/infos"
+  },
+  {
+    "class": "tomato leaf mold",
+    "status": "diseased",
+    "management": "Leaf mold (Passalora fulva, formerly Cladosporium fulvum) causes yellow spots on upper leaf surface with olive-green to gray-brown fuzzy growth on undersides. Primarily a greenhouse disease. Ensure good ventilation and air circulation. Lower humidity through heating and ventilation. Space plants properly. Avoid overhead irrigation. Apply fungicides if necessary. Remove infected leaves. The disease is favored by high humidity (>85%) and moderate temperatures. Resistant varieties are available. Prune to improve air movement through canopy.",
+    "source": "PlantVillage: https://plantvillage.psu.edu/topics/tomato/infos"
+  },
+  {
+    "class": "tomato mosaic virus",
+    "status": "diseased",
+    "management": "Tomato mosaic virus (ToMV) and tobacco mosaic virus cause mottling, distortion, and stunting. Use resistant varieties. Buy certified virus-free transplants. Disinfect tools and hands with 10% bleach or milk solution. The virus is mechanically transmitted and very stable. Avoid tobacco use near plants. Remove infected plants immediately. Control aphids. There is no cure. Symptoms include light and dark green mottling, leaf distortion, and internal browning of fruit. ToMV is seed-borne so use clean seed sources. Virus remains infectious in dried plant debris.",
+    "source": "PlantVillage: https://plantvillage.psu.edu/topics/tomato/infos"
+  },
+  {
+    "class": "tomato septoria leaf spot",
+    "status": "diseased",
+    "management": "Septoria leaf spot (Septoria lycopersici) causes numerous small circular spots with dark borders and gray centers containing tiny black fruiting bodies. Remove lower infected leaves. Stake and prune plants to improve air circulation. Mulch to prevent soil splash. Avoid overhead irrigation. Apply protective fungicides when disease appears. The fungus overwinters on crop debris and spreads by water splash. Remove crop debris after harvest. Practice crop rotation. Disease progresses from lower to upper leaves and can cause severe defoliation. Water at base of plants.",
+    "source": "PlantVillage: https://plantvillage.psu.edu/topics/tomato/infos"
+  },
+  {
+    "class": "tomato yellow leaf curl virus",
+    "status": "diseased",
+    "management": "Tomato yellow leaf curl virus (TYLCV) is transmitted by whiteflies (Bemisia tabaci). Control whiteflies through monitoring and insecticides (particularly systemic products). Use reflective mulches to deter whitefly landing. Remove infected plants immediately. Plant resistant varieties - many TYLCV-resistant varieties available. Use physical barriers (insect screening) in greenhouses. Eliminate weed hosts around fields. The virus causes upward leaf curling, yellowing, stunting, and greatly reduced fruit set. Vector control is essential as there is no cure. Scout regularly for whiteflies and TYLCV symptoms.",
+    "source": "PlantVillage: https://plantvillage.psu.edu/topics/tomato/infos"
+  },
+  {
+    "class": "zucchini yellow mosaic virus",
+    "status": "diseased",
+    "management": "Zucchini yellow mosaic virus (ZYMV) is transmitted by aphids in a non-persistent manner. Control is difficult. Use reflective mulches to deter aphid landing. Plant virus-free seed. Remove infected plants immediately. Control weeds that serve as virus reservoirs. Insecticides are ineffective because transmission is rapid. Use physical barriers (row covers) on young plants but remove for pollination. Some squash varieties show tolerance. Symptoms include yellow mosaic patterns, distortion, and stunting of leaves and fruit. Severely infected plants may die. Fruit is often unmarketable.",
+    "source": "Extension vegetable disease resources; Additional: University of California IPM, Cornell Cooperative Extension on cucurbit viruses"
+  }
+]

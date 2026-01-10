@@ -1,0 +1,1871 @@
+{
+  "0000_apple_black_rot.jpg": {
+    "label": "AppleBlackRot",
+    "caption": "Apple black rot typically appears as circular, sunken, black lesions on the fruit, surrounded by a velvety greenish-black spore mass.",
+    "class": "apple black rot",
+    "status": "diseased",
+    "original_path": "data\\plantwild\\images\\apple black rot\\google_0174.jpg"
+  },
+  "0001_apple_black_rot.jpg": {
+    "label": "AppleBlackRot",
+    "caption": "Apple black rot causes circular, sunken, black lesions with concentric rings and orange spore masses on fruit.",
+    "class": "apple black rot",
+    "status": "diseased",
+    "original_path": "data\\plantwild\\images\\apple black rot\\187.jpg"
+  },
+  "0002_apple_black_rot.jpg": {
+    "label": "AppleBlackRot",
+    "caption": "Apple black rot appears as circular, sunken, and black lesions on the fruit, often surrounded by a yellow halo.",
+    "class": "apple black rot",
+    "status": "diseased",
+    "original_path": "data\\plantwild\\images\\apple black rot\\12.jpg"
+  },
+  "0003_apple_mosaic_virus.jpg": {
+    "label": "AppleMosaicVirus",
+    "caption": "Apple mosaic virus causes green and yellow mosaic patterns on leaves, which may distort and curl them.",
+    "class": "apple mosaic virus",
+    "status": "diseased",
+    "original_path": "data\\plantwild\\images\\apple mosaic virus\\google_0012.jpg"
+  },
+  "0004_apple_mosaic_virus.jpg": {
+    "label": "AppleMosaicVirus",
+    "caption": "Apple mosaic virus causes mottling and distortion of leaves, as well as a mosaic pattern on fruit.",
+    "class": "apple mosaic virus",
+    "status": "diseased",
+    "original_path": "data\\plantwild\\images\\apple mosaic virus\\google_0003.jpg"
+  },
+  "0005_apple_mosaic_virus.jpg": {
+    "label": "AppleMosaicVirus",
+    "caption": "Apple mosaic virus causes light and dark green mosaic patterns on the leaves of infected apple trees.",
+    "class": "apple mosaic virus",
+    "status": "diseased",
+    "original_path": "data\\plantwild\\images\\apple mosaic virus\\9.jpg"
+  },
+  "0006_apple_rust.jpg": {
+    "label": "AppleRust",
+    "caption": "Apple rust appears as bright orange or yellowish-orange spots on the leaves and fruit of infected trees.",
+    "class": "apple rust",
+    "status": "diseased",
+    "original_path": "data\\plantwild\\images\\apple rust\\34.jpg"
+  },
+  "0007_apple_rust.jpg": {
+    "label": "AppleRust",
+    "caption": "Apple rust is characterized by bright orange or yellowish circular spots on the leaves and fruit.",
+    "class": "apple rust",
+    "status": "diseased",
+    "original_path": "data\\plantwild\\images\\apple rust\\19.jpg"
+  },
+  "0008_apple_rust.jpg": {
+    "label": "AppleRust",
+    "caption": "Apple rust appears as orange or yellowish-orange spots on the leaves and fruit of apple trees.",
+    "class": "apple rust",
+    "status": "diseased",
+    "original_path": "data\\plantwild\\images\\apple rust\\google_0206.jpg"
+  },
+  "0009_apple_scab.jpg": {
+    "label": "AppleScab",
+    "caption": "Apple scab is characterized by raised, dark-colored lesions on the fruit's surface, resembling scabs.",
+    "class": "apple scab",
+    "status": "diseased",
+    "original_path": "data\\plantwild\\images\\apple scab\\5.jpg"
+  },
+  "0010_apple_scab.jpg": {
+    "label": "AppleScab",
+    "caption": "Apple scab appears as dark, scaly lesions on the surface of the fruit and leaves.",
+    "class": "apple scab",
+    "status": "diseased",
+    "original_path": "data\\plantwild\\images\\apple scab\\google_0199.jpg"
+  },
+  "0011_apple_scab.jpg": {
+    "label": "AppleScab",
+    "caption": "Apple scab appears as dark, scaly, and raised lesions on the fruit and leaves.",
+    "class": "apple scab",
+    "status": "diseased",
+    "original_path": "data\\plantwild\\images\\apple scab\\23.jpg"
+  },
+  "0012_banana_panama_disease.jpg": {
+    "label": "BananaPanamaDisease",
+    "caption": "Banana Panama disease causes wilting, yellowing of leaves, and decay of the plant's vascular system.",
+    "class": "banana panama disease",
+    "status": "diseased",
+    "original_path": "data\\plantwild\\images\\banana panama disease\\112.jpg"
+  },
+  "0013_banana_panama_disease.jpg": {
+    "label": "BananaPanamaDisease",
+    "caption": "Banana Panama disease appears as wilting of leaves, yellowing of veins, and dark streaks in the stem.",
+    "class": "banana panama disease",
+    "status": "diseased",
+    "original_path": "data\\plantwild\\images\\banana panama disease\\16.jpg"
+  },
+  "0014_banana_panama_disease.jpg": {
+    "label": "BananaPanamaDisease",
+    "caption": "Banana Panama disease causes wilting, yellowing leaves, and dark brown streaks on the stems.",
+    "class": "banana panama disease",
+    "status": "diseased",
+    "original_path": "data\\plantwild\\images\\banana panama disease\\addition (10).jpg"
+  },
+  "0015_basil_downy_mildew.jpg": {
+    "label": "BasilDownyMildew",
+    "caption": "Basil downy mildew appears as yellowing and browning of leaves with fuzzy gray or purple spores.",
+    "class": "basil downy mildew",
+    "status": "diseased",
+    "original_path": "data\\plantwild\\images\\basil downy mildew\\google_0039.jpg"
+  },
+  "0016_basil_downy_mildew.jpg": {
+    "label": "BasilDownyMildew",
+    "caption": "Basil downy mildew appears as yellowish-green spotty lesions on the upper surface of leaves.",
+    "class": "basil downy mildew",
+    "status": "diseased",
+    "original_path": "data\\plantwild\\images\\basil downy mildew\\google_0102 - Copy (2).jpg"
+  },
+  "0017_basil_downy_mildew.jpg": {
+    "label": "BasilDownyMildew",
+    "caption": "Basil downy mildew displays grayish-purple fuzz on the undersides of leaves, with yellowing and wilting.",
+    "class": "basil downy mildew",
+    "status": "diseased",
+    "original_path": "data\\plantwild\\images\\basil downy mildew\\google_0167.jpg"
+  },
+  "0018_bean_halo_blight.jpg": {
+    "label": "BeanHaloBlight",
+    "caption": "Bean halo blight appears as small, yellowish halos surrounding dark-brown spots on the leaves and pods.",
+    "class": "bean halo blight",
+    "status": "diseased",
+    "original_path": "data\\plantwild\\images\\bean halo blight\\14.jpg"
+  },
+  "0019_bean_halo_blight.jpg": {
+    "label": "BeanHaloBlight",
+    "caption": "Bean halo blight appears as yellow halos surrounded by brown areas on the leaves and pods.",
+    "class": "bean halo blight",
+    "status": "diseased",
+    "original_path": "data\\plantwild\\images\\bean halo blight\\google_0081.jpg"
+  },
+  "0020_bean_halo_blight.jpg": {
+    "label": "BeanHaloBlight",
+    "caption": "Bean halo blight appears as small, yellow-green halos surrounding dark spots on the leaves and pods.",
+    "class": "bean halo blight",
+    "status": "diseased",
+    "original_path": "data\\plantwild\\images\\bean halo blight\\google_0000.jpg"
+  },
+  "0021_bean_mosaic_virus.jpg": {
+    "label": "BeanMosaicVirus",
+    "caption": "Bean mosaic virus causes mottled and distorted leaves in bean plants with distinct mosaic-like patterns.",
+    "class": "bean mosaic virus",
+    "status": "diseased",
+    "original_path": "data\\plantwild\\images\\bean mosaic virus\\google_0107.jpg"
+  },
+  "0022_bean_mosaic_virus.jpg": {
+    "label": "BeanMosaicVirus",
+    "caption": "Bean mosaic virus causes mottled yellow and green patterns on the leaves of infected bean plants.",
+    "class": "bean mosaic virus",
+    "status": "diseased",
+    "original_path": "data\\plantwild\\images\\bean mosaic virus\\google_0077.jpg"
+  },
+  "0023_bean_mosaic_virus.jpg": {
+    "label": "BeanMosaicVirus",
+    "caption": "Bean mosaic virus typically causes mottled or mosaic-like patterns on bean leaves, with yellowing and stunted growth.",
+    "class": "bean mosaic virus",
+    "status": "diseased",
+    "original_path": "data\\plantwild\\images\\bean mosaic virus\\google_0104.jpg"
+  },
+  "0024_bean_rust.jpg": {
+    "label": "BeanRust",
+    "caption": "Bean rust appears as reddish-brown pustules on the leaves and stems of infected plants.",
+    "class": "bean rust",
+    "status": "diseased",
+    "original_path": "data\\plantwild\\images\\bean rust\\google_0096.jpg"
+  },
+  "0025_bean_rust.jpg": {
+    "label": "BeanRust",
+    "caption": "Bean rust appears as small, orange-red spots or pustules on the leaves, stems, and pods of infected plants.",
+    "class": "bean rust",
+    "status": "diseased",
+    "original_path": "data\\plantwild\\images\\bean rust\\google_0050.jpg"
+  },
+  "0026_bean_rust.jpg": {
+    "label": "BeanRust",
+    "caption": "Bean rust appears as reddish-brown powdery pustules on the undersides of leaves, with yellowing and defoliation.",
+    "class": "bean rust",
+    "status": "diseased",
+    "original_path": "data\\plantwild\\images\\bean rust\\52.jpg"
+  },
+  "0027_bell_pepper_leaf.jpg": {
+    "label": "BellPepperLeaf",
+    "caption": "Bell pepper leaves are typically dark green, smooth, and have a glossy texture.",
+    "class": "bell pepper leaf",
+    "status": "healthy",
+    "original_path": "data\\plantwild\\images\\bell pepper leaf\\47.jpg"
+  },
+  "0028_bell_pepper_leaf.jpg": {
+    "label": "BellPepperLeaf",
+    "caption": "The bell pepper leaf appears glossy green with a smooth surface and distinctive veins.",
+    "class": "bell pepper leaf",
+    "status": "healthy",
+    "original_path": "data\\plantwild\\images\\bell pepper leaf\\91.jpg"
+  },
+  "0029_bell_pepper_leaf.jpg": {
+    "label": "BellPepperLeaf",
+    "caption": "The bell pepper leaf appears dark green with a smooth surface and a slightly waxy sheen.",
+    "class": "bell pepper leaf",
+    "status": "healthy",
+    "original_path": "data\\plantwild\\images\\bell pepper leaf\\242.jpg"
+  },
+  "0030_bell_pepper_leaf_spot.jpg": {
+    "label": "BellPepperLeafSpot",
+    "caption": "Bell pepper leaf spot is characterized by circular, dark brown lesions with yellow halos on the leaves.",
+    "class": "bell pepper leaf spot",
+    "status": "diseased",
+    "original_path": "data\\plantwild\\images\\bell pepper leaf spot\\google_0216.jpg"
+  },
+  "0031_bell_pepper_leaf_spot.jpg": {
+    "label": "BellPepperLeafSpot",
+    "caption": "Bell pepper leaf spot appears as circular or irregular, dark brown or black spots on the leaves.",
+    "class": "bell pepper leaf spot",
+    "status": "diseased",
+    "original_path": "data\\plantwild\\images\\bell pepper leaf spot\\google_0307.jpg"
+  },
+  "0032_bell_pepper_leaf_spot.jpg": {
+    "label": "BellPepperLeafSpot",
+    "caption": "Circular or irregular dark brown spots with yellow halos on the leaves of bell pepper plants.",
+    "class": "bell pepper leaf spot",
+    "status": "diseased",
+    "original_path": "data\\plantwild\\images\\bell pepper leaf spot\\1.jpg"
+  },
+  "0033_blueberry_rust.jpg": {
+    "label": "BlueberryRust",
+    "caption": "Blueberry rust appears as bright orange pustules on the undersides of the leaves.",
+    "class": "blueberry rust",
+    "status": "diseased",
+    "original_path": "data\\plantwild\\images\\blueberry rust\\google_0127.jpg"
+  },
+  "0034_blueberry_rust.jpg": {
+    "label": "BlueberryRust",
+    "caption": "Blueberry rust appears as orange-yellow pustules on the undersides of leaves and causes defoliation.",
+    "class": "blueberry rust",
+    "status": "diseased",
+    "original_path": "data\\plantwild\\images\\blueberry rust\\google_0152.jpg"
+  },
+  "0035_blueberry_rust.jpg": {
+    "label": "BlueberryRust",
+    "caption": "Blueberry rust appears as orange, rusty spore masses on the underside of infected leaves.",
+    "class": "blueberry rust",
+    "status": "diseased",
+    "original_path": "data\\plantwild\\images\\blueberry rust\\37.jpg"
+  },
+  "0036_broccoli_downy_mildew.jpg": {
+    "label": "BroccoliDownyMildew",
+    "caption": "Broccoli downy mildew appears as yellow or pale green spots that eventually turn brown or black.",
+    "class": "broccoli downy mildew",
+    "status": "diseased",
+    "original_path": "data\\plantwild\\images\\broccoli downy mildew\\google_0171.jpg"
+  },
+  "0037_broccoli_downy_mildew.jpg": {
+    "label": "BroccoliDownyMildew",
+    "caption": "Broccoli downy mildew appears as yellowish-brown lesions on the leaves with a downy growth on the underside.",
+    "class": "broccoli downy mildew",
+    "status": "diseased",
+    "original_path": "data\\plantwild\\images\\broccoli downy mildew\\google_0070 - Copy.jpg"
+  },
+  "0038_broccoli_downy_mildew.jpg": {
+    "label": "BroccoliDownyMildew",
+    "caption": "Broccoli downy mildew appears as yellowish-brown patches on the leaves with a fuzzy growth underneath.",
+    "class": "broccoli downy mildew",
+    "status": "diseased",
+    "original_path": "data\\plantwild\\images\\broccoli downy mildew\\google_0045.jpg"
+  },
+  "0039_cabbage_alternaria_leaf_spot.jpg": {
+    "label": "CabbageAlternariaLeafSpot",
+    "caption": "Cabbage alternaria leaf spot appears as dark brown to black spots with concentric rings on the leaves.",
+    "class": "cabbage alternaria leaf spot",
+    "status": "diseased",
+    "original_path": "data\\plantwild\\images\\cabbage alternaria leaf spot\\9.jpg"
+  },
+  "0040_cabbage_alternaria_leaf_spot.jpg": {
+    "label": "CabbageAlternariaLeafSpot",
+    "caption": "Cabbage alternaria leaf spot appears as small, dark brown to black circular lesions with concentric rings.",
+    "class": "cabbage alternaria leaf spot",
+    "status": "diseased",
+    "original_path": "data\\plantwild\\images\\cabbage alternaria leaf spot\\google_0027.jpg"
+  },
+  "0041_cabbage_alternaria_leaf_spot.jpg": {
+    "label": "CabbageAlternariaLeafSpot",
+    "caption": "Cabbage alternaria leaf spot appears as small, dark brown to black lesions with a concentric ring pattern.",
+    "class": "cabbage alternaria leaf spot",
+    "status": "diseased",
+    "original_path": "data\\plantwild\\images\\cabbage alternaria leaf spot\\google_0105.jpg"
+  },
+  "0042_carrot_cavity_spot.jpg": {
+    "label": "CarrotCavitySpot",
+    "caption": "Carrot cavity spot appears as small, dark, sunken lesions on the root surface.",
+    "class": "carrot cavity spot",
+    "status": "diseased",
+    "original_path": "data\\plantwild\\images\\carrot cavity spot\\google_0025.jpg"
+  },
+  "0043_carrot_cavity_spot.jpg": {
+    "label": "CarrotCavitySpot",
+    "caption": "Carrot cavity spot appears as sunken, brown to black lesions on the surface of the root.",
+    "class": "carrot cavity spot",
+    "status": "diseased",
+    "original_path": "data\\plantwild\\images\\carrot cavity spot\\google_0022.jpg"
+  },
+  "0044_carrot_cavity_spot.jpg": {
+    "label": "CarrotCavitySpot",
+    "caption": "Carrot cavity spot appears as dark, circular lesions with sunken centers on the surface of the carrot.",
+    "class": "carrot cavity spot",
+    "status": "diseased",
+    "original_path": "data\\plantwild\\images\\carrot cavity spot\\google_0193.jpg"
+  },
+  "0045_cauliflower_alternaria_leaf_spot.jpg": {
+    "label": "CauliflowerAlternariaLeafSpot",
+    "caption": "Cauliflower alternaria leaf spot appears as circular lesions with brown centers and yellow halos on the leaves.",
+    "class": "cauliflower alternaria leaf spot",
+    "status": "diseased",
+    "original_path": "data\\plantwild\\images\\cauliflower alternaria leaf spot\\3.jpg"
+  },
+  "0046_cauliflower_alternaria_leaf_spot.jpg": {
+    "label": "CauliflowerAlternariaLeafSpot",
+    "caption": "Cauliflower alternaria leaf spot appears as small, brown to black spots with concentric rings on the leaves.",
+    "class": "cauliflower alternaria leaf spot",
+    "status": "diseased",
+    "original_path": "data\\plantwild\\images\\cauliflower alternaria leaf spot\\google_0031 - Copy.jpg"
+  },
+  "0047_cauliflower_alternaria_leaf_spot.jpg": {
+    "label": "CauliflowerAlternariaLeafSpot",
+    "caption": "Cauliflower alternaria leaf spot appears as small, dark brown to black lesions with concentric rings.",
+    "class": "cauliflower alternaria leaf spot",
+    "status": "diseased",
+    "original_path": "data\\plantwild\\images\\cauliflower alternaria leaf spot\\google_0031 - Copy (2).jpg"
+  },
+  "0048_celery_anthracnose.jpg": {
+    "label": "CeleryAnthracnose",
+    "caption": "Celery anthracnose appears as small, sunken, dark lesions on the leaves, stems, and petioles.",
+    "class": "celery anthracnose",
+    "status": "diseased",
+    "original_path": "data\\plantwild\\images\\celery anthracnose\\google_0061.jpg"
+  },
+  "0049_celery_anthracnose.jpg": {
+    "label": "CeleryAnthracnose",
+    "caption": "Brown, circular lesions with dark, sunken centers, surrounded by yellow halos, on celery stems and leaves.",
+    "class": "celery anthracnose",
+    "status": "diseased",
+    "original_path": "data\\plantwild\\images\\celery anthracnose\\google_0013.jpg"
+  },
+  "0050_celery_anthracnose.jpg": {
+    "label": "CeleryAnthracnose",
+    "caption": "Celery anthracnose appears as brown, sunken lesions with dark borders, causing plant tissue deterioration.",
+    "class": "celery anthracnose",
+    "status": "diseased",
+    "original_path": "data\\plantwild\\images\\celery anthracnose\\5.jpg"
+  },
+  "0051_celery_early_blight.jpg": {
+    "label": "CeleryEarlyBlight",
+    "caption": "Celery early blight displays small, dark brown, irregularly shaped lesions on the leaves and stems.",
+    "class": "celery early blight",
+    "status": "diseased",
+    "original_path": "data\\plantwild\\images\\celery early blight\\google_0024.jpg"
+  },
+  "0052_celery_early_blight.jpg": {
+    "label": "CeleryEarlyBlight",
+    "caption": "Celery early blight appears as circular, brown spots with a yellow halo on the leaves.",
+    "class": "celery early blight",
+    "status": "diseased",
+    "original_path": "data\\plantwild\\images\\celery early blight\\8.jpg"
+  },
+  "0053_celery_early_blight.jpg": {
+    "label": "CeleryEarlyBlight",
+    "caption": "Celery early blight is characterized by the appearance of brown, irregularly shaped lesions on the leaves.",
+    "class": "celery early blight",
+    "status": "diseased",
+    "original_path": "data\\plantwild\\images\\celery early blight\\google_0003.jpg"
+  },
+  "0054_cherry_leaf_spot.jpg": {
+    "label": "CherryLeafSpot",
+    "caption": "Cherry leaf spot appears as small, circular and dark spots on the leaves of cherry trees.",
+    "class": "cherry leaf spot",
+    "status": "diseased",
+    "original_path": "data\\plantwild\\images\\cherry leaf spot\\55.jpg"
+  },
+  "0055_cherry_leaf_spot.jpg": {
+    "label": "CherryLeafSpot",
+    "caption": "Cherry leaf spot appears as small, circular, purple lesions on the leaves.",
+    "class": "cherry leaf spot",
+    "status": "diseased",
+    "original_path": "data\\plantwild\\images\\cherry leaf spot\\google_0081.jpg"
+  },
+  "0056_cherry_leaf_spot.jpg": {
+    "label": "CherryLeafSpot",
+    "caption": "Circular purple or reddish-brown lesions with yellow halos on cherry tree leaves.",
+    "class": "cherry leaf spot",
+    "status": "diseased",
+    "original_path": "data\\plantwild\\images\\cherry leaf spot\\34.jpg"
+  },
+  "0057_cherry_powdery_mildew.jpg": {
+    "label": "CherryPowderyMildew",
+    "caption": "Cherry powdery mildew appears as white, powdery patches on the leaves, stems, and fruit of cherry trees.",
+    "class": "cherry powdery mildew",
+    "status": "diseased",
+    "original_path": "data\\plantwild\\images\\cherry powdery mildew\\google_0035.jpg"
+  },
+  "0058_cherry_powdery_mildew.jpg": {
+    "label": "CherryPowderyMildew",
+    "caption": "White powdery patches on the leaves and fruit of cherry trees.",
+    "class": "cherry powdery mildew",
+    "status": "diseased",
+    "original_path": "data\\plantwild\\images\\cherry powdery mildew\\53.jpg"
+  },
+  "0059_cherry_powdery_mildew.jpg": {
+    "label": "CherryPowderyMildew",
+    "caption": "Cherry powdery mildew appears as white powdery patches on the leaves, stems, and fruit.",
+    "class": "cherry powdery mildew",
+    "status": "diseased",
+    "original_path": "data\\plantwild\\images\\cherry powdery mildew\\google_0143.jpg"
+  },
+  "0060_citrus_canker.jpg": {
+    "label": "CitrusCanker",
+    "caption": "Citrus canker appears as raised, corky lesions on citrus fruit, leaves, and stems.",
+    "class": "citrus canker",
+    "status": "diseased",
+    "original_path": "data\\plantwild\\images\\citrus canker\\99.jpg"
+  },
+  "0061_citrus_canker.jpg": {
+    "label": "CitrusCanker",
+    "caption": "Citrus canker appears as raised, corky lesions surrounded by a halo and a yellowish oily exudate.",
+    "class": "citrus canker",
+    "status": "diseased",
+    "original_path": "data\\plantwild\\images\\citrus canker\\319.jpg"
+  },
+  "0062_citrus_canker.jpg": {
+    "label": "CitrusCanker",
+    "caption": "Citrus canker appears as raised corky lesions on leaves, stems, and fruit of citrus trees.",
+    "class": "citrus canker",
+    "status": "diseased",
+    "original_path": "data\\plantwild\\images\\citrus canker\\181.jpg"
+  },
+  "0063_citrus_greening_disease.jpg": {
+    "label": "CitrusGreeningDisease",
+    "caption": "Citrus greening disease is characterized by blotchy mottling and yellowing of leaves, stunted growth, and misshapen fruit.",
+    "class": "citrus greening disease",
+    "status": "diseased",
+    "original_path": "data\\plantwild\\images\\citrus greening disease\\130.jpg"
+  },
+  "0064_citrus_greening_disease.jpg": {
+    "label": "CitrusGreeningDisease",
+    "caption": "Citrus greening disease causes stunted growth, yellowing leaves, and misshapen, bitter-tasting fruit in citrus plants.",
+    "class": "citrus greening disease",
+    "status": "diseased",
+    "original_path": "data\\plantwild\\images\\citrus greening disease\\google_0145.jpg"
+  },
+  "0065_citrus_greening_disease.jpg": {
+    "label": "CitrusGreeningDisease",
+    "caption": "Citrus greening disease displays blotchy yellowing of the leaves and distorted, stunted fruit.",
+    "class": "citrus greening disease",
+    "status": "diseased",
+    "original_path": "data\\plantwild\\images\\citrus greening disease\\65.jpg"
+  },
+  "0066_coffee_leaf_rust.jpg": {
+    "label": "CoffeeLeafRust",
+    "caption": "Coffee leaf rust appears as yellow-orange powdery spots on the undersides of coffee plant leaves.",
+    "class": "coffee leaf rust",
+    "status": "diseased",
+    "original_path": "data\\plantwild\\images\\coffee leaf rust\\google_0045.jpg"
+  },
+  "0067_coffee_leaf_rust.jpg": {
+    "label": "CoffeeLeafRust",
+    "caption": "Coffee leaf rust appears as yellow-orange powdery spots on the undersides of coffee leaves.",
+    "class": "coffee leaf rust",
+    "status": "diseased",
+    "original_path": "data\\plantwild\\images\\coffee leaf rust\\33.jpg"
+  },
+  "0068_coffee_leaf_rust.jpg": {
+    "label": "CoffeeLeafRust",
+    "caption": "Coffee leaf rust appears as orange-colored, powdery lesions on the leaves, eventually leading to defoliation.",
+    "class": "coffee leaf rust",
+    "status": "diseased",
+    "original_path": "data\\plantwild\\images\\coffee leaf rust\\google_0022 - Copy.jpg"
+  },
+  "0069_corn_gray_leaf_spot.jpg": {
+    "label": "CornGrayLeafSpot",
+    "caption": "Corn gray leaf spot appears as small gray to tan lesions with dark borders on the leaves.",
+    "class": "corn gray leaf spot",
+    "status": "diseased",
+    "original_path": "data\\plantwild\\images\\corn gray leaf spot\\39.jpg"
+  },
+  "0070_corn_gray_leaf_spot.jpg": {
+    "label": "CornGrayLeafSpot",
+    "caption": "Corn gray leaf spot appears as small, rectangular gray lesions with dark borders on the leaves.",
+    "class": "corn gray leaf spot",
+    "status": "diseased",
+    "original_path": "data\\plantwild\\images\\corn gray leaf spot\\google_0061.jpg"
+  },
+  "0071_corn_gray_leaf_spot.jpg": {
+    "label": "CornGrayLeafSpot",
+    "caption": "Corn gray leaf spot appears as small, gray or tan lesions with a dark border on the leaves.",
+    "class": "corn gray leaf spot",
+    "status": "diseased",
+    "original_path": "data\\plantwild\\images\\corn gray leaf spot\\google_0024.jpg"
+  },
+  "0072_corn_northern_leaf_blight.jpg": {
+    "label": "CornNorthernLeafBlight",
+    "caption": "Corn northern leaf blight appears as elongated, cigar-shaped lesions with tan centers and dark borders on corn leaves.",
+    "class": "corn northern leaf blight",
+    "status": "diseased",
+    "original_path": "data\\plantwild\\images\\corn northern leaf blight\\google_0000.jpg"
+  },
+  "0073_corn_northern_leaf_blight.jpg": {
+    "label": "CornNorthernLeafBlight",
+    "caption": "Corn northern leaf blight appears as long, narrow, brown lesions on the leaves of infected plants.",
+    "class": "corn northern leaf blight",
+    "status": "diseased",
+    "original_path": "data\\plantwild\\images\\corn northern leaf blight\\google_0055.jpg"
+  },
+  "0074_corn_northern_leaf_blight.jpg": {
+    "label": "CornNorthernLeafBlight",
+    "caption": "Corn northern leaf blight appears as long, narrow, grayish-green lesions with wavy edges on the leaves.",
+    "class": "corn northern leaf blight",
+    "status": "diseased",
+    "original_path": "data\\plantwild\\images\\corn northern leaf blight\\google_0133.jpg"
+  },
+  "0075_corn_rust.jpg": {
+    "label": "CornRust",
+    "caption": "Corn rust appears as orange or reddish-brown pustules on the leaves, stems, and husks of infected plants.",
+    "class": "corn rust",
+    "status": "diseased",
+    "original_path": "data\\plantwild\\images\\corn rust\\google_0000.jpg"
+  },
+  "0076_corn_rust.jpg": {
+    "label": "CornRust",
+    "caption": "Corn rust appears as small, orange pustules or blisters on the leaves, stems, and ears of the plant.",
+    "class": "corn rust",
+    "status": "diseased",
+    "original_path": "data\\plantwild\\images\\corn rust\\50.jpg"
+  },
+  "0077_corn_rust.jpg": {
+    "label": "CornRust",
+    "caption": "Corn rust appears as orange to reddish-brown pustules on the leaves, stems, and husks of corn plants.",
+    "class": "corn rust",
+    "status": "diseased",
+    "original_path": "data\\plantwild\\images\\corn rust\\google_0001.jpg"
+  },
+  "0078_corn_smut.jpg": {
+    "label": "CornSmut",
+    "caption": "Corn smut appears as large, gray-black, distorted galls or tumors on the ears, leaves, and stalks of corn plants.",
+    "class": "corn smut",
+    "status": "diseased",
+    "original_path": "data\\plantwild\\images\\corn smut\\google_0144.jpg"
+  },
+  "0079_corn_smut.jpg": {
+    "label": "CornSmut",
+    "caption": "Corn smut appears as large, swollen, grayish-black galls that distort the normal shape of corn ears.",
+    "class": "corn smut",
+    "status": "diseased",
+    "original_path": "data\\plantwild\\images\\corn smut\\google_0045.jpg"
+  },
+  "0080_corn_smut.jpg": {
+    "label": "CornSmut",
+    "caption": "Corn smut appears as swollen, gray-black galls with distorted shapes, often covered in powdery spores.",
+    "class": "corn smut",
+    "status": "diseased",
+    "original_path": "data\\plantwild\\images\\corn smut\\google_0082.jpg"
+  },
+  "0081_cucumber_angular_leaf_spot.jpg": {
+    "label": "CucumberAngularLeafSpot",
+    "caption": "Cucumber angular leaf spot appears as small, water-soaked lesions that develop into angular, yellowish-brown spots on leaves.",
+    "class": "cucumber angular leaf spot",
+    "status": "diseased",
+    "original_path": "data\\plantwild\\images\\cucumber angular leaf spot\\google_0011.jpg"
+  },
+  "0082_cucumber_angular_leaf_spot.jpg": {
+    "label": "CucumberAngularLeafSpot",
+    "caption": "Cucumber angular leaf spot appears as small, angular water-soaked lesions that later turn necrotic and brown.",
+    "class": "cucumber angular leaf spot",
+    "status": "diseased",
+    "original_path": "data\\plantwild\\images\\cucumber angular leaf spot\\google_0117.jpg"
+  },
+  "0083_cucumber_angular_leaf_spot.jpg": {
+    "label": "CucumberAngularLeafSpot",
+    "caption": "Cucumber angular leaf spot presents as dark, angular lesions with yellow halos on the leaves.",
+    "class": "cucumber angular leaf spot",
+    "status": "diseased",
+    "original_path": "data\\plantwild\\images\\cucumber angular leaf spot\\google_0004.jpg"
+  },
+  "0084_cucumber_bacterial_wilt.jpg": {
+    "label": "CucumberBacterialWilt",
+    "caption": "Cucumber bacterial wilt appears as wilting and yellowing leaves, with brown vascular discoloration in the stems.",
+    "class": "cucumber bacterial wilt",
+    "status": "diseased",
+    "original_path": "data\\plantwild\\images\\cucumber bacterial wilt\\184.jpg"
+  },
+  "0085_cucumber_bacterial_wilt.jpg": {
+    "label": "CucumberBacterialWilt",
+    "caption": "Cucumber bacterial wilt causes wilting and yellowing of leaves, often resulting in plant death.",
+    "class": "cucumber bacterial wilt",
+    "status": "diseased",
+    "original_path": "data\\plantwild\\images\\cucumber bacterial wilt\\46.jpg"
+  },
+  "0086_cucumber_bacterial_wilt.jpg": {
+    "label": "CucumberBacterialWilt",
+    "caption": "Cucumber bacterial wilt is characterized by sudden wilting of leaves despite adequate soil moisture.",
+    "class": "cucumber bacterial wilt",
+    "status": "diseased",
+    "original_path": "data\\plantwild\\images\\cucumber bacterial wilt\\google_0235.jpg"
+  },
+  "0087_cucumber_powdery_mildew.jpg": {
+    "label": "CucumberPowderyMildew",
+    "caption": "Cucumber powdery mildew appears as white powdery patches on the leaves and stems of the plant.",
+    "class": "cucumber powdery mildew",
+    "status": "diseased",
+    "original_path": "data\\plantwild\\images\\cucumber powdery mildew\\google_0075.jpg"
+  },
+  "0088_cucumber_powdery_mildew.jpg": {
+    "label": "CucumberPowderyMildew",
+    "caption": "Cucumber powdery mildew appears as white powdery patches on the leaves, stems, and fruits.",
+    "class": "cucumber powdery mildew",
+    "status": "diseased",
+    "original_path": "data\\plantwild\\images\\cucumber powdery mildew\\188.jpg"
+  },
+  "0089_cucumber_powdery_mildew.jpg": {
+    "label": "CucumberPowderyMildew",
+    "caption": "The leaves of cucumber plants infected with powdery mildew display a white powdery coating.",
+    "class": "cucumber powdery mildew",
+    "status": "diseased",
+    "original_path": "data\\plantwild\\images\\cucumber powdery mildew\\160.jpg"
+  },
+  "0090_eggplant_cercospora_leaf_spot.jpg": {
+    "label": "EggplantCercosporaLeafSpot",
+    "caption": "Circular or oval-shaped purple or brown spots with yellow halos on the leaves of eggplant.",
+    "class": "eggplant cercospora leaf spot",
+    "status": "diseased",
+    "original_path": "data\\plantwild\\images\\eggplant cercospora leaf spot\\google_0048.jpg"
+  },
+  "0091_eggplant_cercospora_leaf_spot.jpg": {
+    "label": "EggplantCercosporaLeafSpot",
+    "caption": "Circular dark brown spots with yellow halos on eggplant leaves, eventually leading to defoliation.",
+    "class": "eggplant cercospora leaf spot",
+    "status": "diseased",
+    "original_path": "data\\plantwild\\images\\eggplant cercospora leaf spot\\google_0028.jpg"
+  },
+  "0092_eggplant_cercospora_leaf_spot.jpg": {
+    "label": "EggplantCercosporaLeafSpot",
+    "caption": "Purple-brown circular lesions with yellow halos on eggplant leaves are characteristic of cercospora leaf spot.",
+    "class": "eggplant cercospora leaf spot",
+    "status": "diseased",
+    "original_path": "data\\plantwild\\images\\eggplant cercospora leaf spot\\98.jpg"
+  },
+  "0093_garlic_leaf_blight.jpg": {
+    "label": "GarlicLeafBlight",
+    "caption": "Garlic leaf blight appears as brown and yellow lesions on the leaves, eventually leading to their withering.",
+    "class": "garlic leaf blight",
+    "status": "diseased",
+    "original_path": "data\\plantwild\\images\\garlic leaf blight\\google_0295.jpg"
+  },
+  "0094_garlic_leaf_blight.jpg": {
+    "label": "GarlicLeafBlight",
+    "caption": "Garlic leaf blight is characterized by yellowing and browning of the leaves, eventually leading to defoliation.",
+    "class": "garlic leaf blight",
+    "status": "diseased",
+    "original_path": "data\\plantwild\\images\\garlic leaf blight\\47.jpg"
+  },
+  "0095_garlic_leaf_blight.jpg": {
+    "label": "GarlicLeafBlight",
+    "caption": "Garlic leaf blight is characterized by yellowing, withering, and browning of the leaves, eventually leading to their death.",
+    "class": "garlic leaf blight",
+    "status": "diseased",
+    "original_path": "data\\plantwild\\images\\garlic leaf blight\\google_0005.jpg"
+  },
+  "0096_garlic_rust.jpg": {
+    "label": "GarlicRust",
+    "caption": "Garlic rust is characterized by orange pustules or lesions on the leaves and stems of the plant.",
+    "class": "garlic rust",
+    "status": "diseased",
+    "original_path": "data\\plantwild\\images\\garlic rust\\146.jpg"
+  },
+  "0097_garlic_rust.jpg": {
+    "label": "GarlicRust",
+    "caption": "Garlic rust appears as orange-brown pustules on the leaves, stems, and bulbs of infected plants.",
+    "class": "garlic rust",
+    "status": "diseased",
+    "original_path": "data\\plantwild\\images\\garlic rust\\246.jpg"
+  },
+  "0098_garlic_rust.jpg": {
+    "label": "GarlicRust",
+    "caption": "Garlic rust appears as orange, yellow, or brown pustules or lesions on the leaves and stems.",
+    "class": "garlic rust",
+    "status": "diseased",
+    "original_path": "data\\plantwild\\images\\garlic rust\\11.jpg"
+  },
+  "0099_ginger_leaf_spot.jpg": {
+    "label": "GingerLeafSpot",
+    "caption": "Ginger leaf spot appears as small, dark brown to black spots on the leaves.",
+    "class": "ginger leaf spot",
+    "status": "diseased",
+    "original_path": "data\\plantwild\\images\\ginger leaf spot\\37.jpg"
+  },
+  "0100_ginger_leaf_spot.jpg": {
+    "label": "GingerLeafSpot",
+    "caption": "Ginger leaf spot appears as small, circular, dark brown lesions surrounded by a yellow halo.",
+    "class": "ginger leaf spot",
+    "status": "diseased",
+    "original_path": "data\\plantwild\\images\\ginger leaf spot\\50.jpg"
+  },
+  "0101_ginger_leaf_spot.jpg": {
+    "label": "GingerLeafSpot",
+    "caption": "Ginger leaf spot appears as small, circular or irregular dark brown lesions on the leaves.",
+    "class": "ginger leaf spot",
+    "status": "diseased",
+    "original_path": "data\\plantwild\\images\\ginger leaf spot\\30.jpg"
+  },
+  "0102_ginger_sheath_blight.jpg": {
+    "label": "GingerSheathBlight",
+    "caption": "Ginger sheath blight appears as dark brown lesions with rotting tissue surrounded by a white cottony mycelium.",
+    "class": "ginger sheath blight",
+    "status": "diseased",
+    "original_path": "data\\plantwild\\images\\ginger sheath blight\\14.jpg"
+  },
+  "0103_ginger_sheath_blight.jpg": {
+    "label": "GingerSheathBlight",
+    "caption": "Extensive brown lesions on ginger leaves and sheaths, often accompanied by white fungal growth.",
+    "class": "ginger sheath blight",
+    "status": "diseased",
+    "original_path": "data\\plantwild\\images\\ginger sheath blight\\28.jpg"
+  },
+  "0104_ginger_sheath_blight.jpg": {
+    "label": "GingerSheathBlight",
+    "caption": "Ginger sheath blight displays dark brown lesions on the leaf sheaths, followed by wilting and plant collapse.",
+    "class": "ginger sheath blight",
+    "status": "diseased",
+    "original_path": "data\\plantwild\\images\\ginger sheath blight\\google_0006.jpg"
+  },
+  "0105_grape_black_rot.jpg": {
+    "label": "GrapeBlackRot",
+    "caption": "Grape black rot appears as small black circular lesions on the fruit, leaves, and stems.",
+    "class": "grape black rot",
+    "status": "diseased",
+    "original_path": "data\\plantwild\\images\\grape black rot\\google_0325.jpg"
+  },
+  "0106_grape_black_rot.jpg": {
+    "label": "GrapeBlackRot",
+    "caption": "Grape black rot appears as small, black, circular lesions on the fruit, stems, and leaves.",
+    "class": "grape black rot",
+    "status": "diseased",
+    "original_path": "data\\plantwild\\images\\grape black rot\\google_0151.jpg"
+  },
+  "0107_grape_black_rot.jpg": {
+    "label": "GrapeBlackRot",
+    "caption": "Grape black rot appears as black, shriveled grapes with distinctive circular reddish-brown lesions on the fruit.",
+    "class": "grape black rot",
+    "status": "diseased",
+    "original_path": "data\\plantwild\\images\\grape black rot\\8 - Copy (2).jpg"
+  },
+  "0108_grape_downy_mildew.jpg": {
+    "label": "GrapeDownyMildew",
+    "caption": "Grape downy mildew appears as fuzzy, grayish-white patches on the undersides of leaves.",
+    "class": "grape downy mildew",
+    "status": "diseased",
+    "original_path": "data\\plantwild\\images\\grape downy mildew\\234.jpg"
+  },
+  "0109_grape_downy_mildew.jpg": {
+    "label": "GrapeDownyMildew",
+    "caption": "Grape downy mildew appears as yellowish-green lesions on the upper side of the leaves with fuzzy growth on the underside.",
+    "class": "grape downy mildew",
+    "status": "diseased",
+    "original_path": "data\\plantwild\\images\\grape downy mildew\\google_0212.jpg"
+  },
+  "0110_grape_downy_mildew.jpg": {
+    "label": "GrapeDownyMildew",
+    "caption": "Grape downy mildew appears as yellowish-green spots or patches on the upper surface of leaves.",
+    "class": "grape downy mildew",
+    "status": "diseased",
+    "original_path": "data\\plantwild\\images\\grape downy mildew\\google_0079.jpg"
+  },
+  "0111_grape_leaf_spot.jpg": {
+    "label": "GrapeLeafSpot",
+    "caption": "Grape leaf spot appears as small, dark, circular lesions with a yellow halo on the leaves.",
+    "class": "grape leaf spot",
+    "status": "diseased",
+    "original_path": "data\\plantwild\\images\\grape leaf spot\\42.jpg"
+  },
+  "0112_grape_leaf_spot.jpg": {
+    "label": "GrapeLeafSpot",
+    "caption": "Yellow or brown spots on grape leaves, often surrounded by a reddish or purplish halo.",
+    "class": "grape leaf spot",
+    "status": "diseased",
+    "original_path": "data\\plantwild\\images\\grape leaf spot\\google_0037.jpg"
+  },
+  "0113_grape_leaf_spot.jpg": {
+    "label": "GrapeLeafSpot",
+    "caption": "Grape leaf spot appears as dark-purple spots with yellow halos on the leaves.",
+    "class": "grape leaf spot",
+    "status": "diseased",
+    "original_path": "data\\plantwild\\images\\grape leaf spot\\75.jpg"
+  },
+  "0114_grapevine_leafroll_disease.jpg": {
+    "label": "GrapevineLeafrollDisease",
+    "caption": "Grapevine leafroll disease causes infected leaves to exhibit a reddish discoloration along the leaf veins.",
+    "class": "grapevine leafroll disease",
+    "status": "diseased",
+    "original_path": "data\\plantwild\\images\\grapevine leafroll disease\\68.jpg"
+  },
+  "0115_grapevine_leafroll_disease.jpg": {
+    "label": "GrapevineLeafrollDisease",
+    "caption": "Grapevine leafroll disease is characterized by red and yellow discoloration and rolling of grapevine leaves.",
+    "class": "grapevine leafroll disease",
+    "status": "diseased",
+    "original_path": "data\\plantwild\\images\\grapevine leafroll disease\\google_0018 - Copy.jpg"
+  },
+  "0116_grapevine_leafroll_disease.jpg": {
+    "label": "GrapevineLeafrollDisease",
+    "caption": "Grapevine leafroll disease is characterized by red or reddish-purple discoloration of grapevine leaves in late summer.",
+    "class": "grapevine leafroll disease",
+    "status": "diseased",
+    "original_path": "data\\plantwild\\images\\grapevine leafroll disease\\66.jpg"
+  },
+  "0117_lettuce_downy_mildew.jpg": {
+    "label": "LettuceDownyMildew",
+    "caption": "Lettuce downy mildew appears as yellowish-green patches on the upper surface of leaves, with a fuzzy grayish growth on the underside.",
+    "class": "lettuce downy mildew",
+    "status": "diseased",
+    "original_path": "data\\plantwild\\images\\lettuce downy mildew\\4.jpg"
+  },
+  "0118_lettuce_downy_mildew.jpg": {
+    "label": "LettuceDownyMildew",
+    "caption": "Lettuce downy mildew appears as yellowish-green or brownish lesions on the undersides of leaves.",
+    "class": "lettuce downy mildew",
+    "status": "diseased",
+    "original_path": "data\\plantwild\\images\\lettuce downy mildew\\google_0062.jpg"
+  },
+  "0119_lettuce_downy_mildew.jpg": {
+    "label": "LettuceDownyMildew",
+    "caption": "Lettuce downy mildew appears as fuzzy, grayish patches on the underside of leaves.",
+    "class": "lettuce downy mildew",
+    "status": "diseased",
+    "original_path": "data\\plantwild\\images\\lettuce downy mildew\\google_0018.jpg"
+  },
+  "0120_lettuce_mosaic_virus.jpg": {
+    "label": "LettuceMosaicVirus",
+    "caption": "Lettuce mosaic virus causes mosaic patterns on the leaves with light and dark green patches.",
+    "class": "lettuce mosaic virus",
+    "status": "diseased",
+    "original_path": "data\\plantwild\\images\\lettuce mosaic virus\\google_0060 - Copy (4).jpg"
+  },
+  "0121_lettuce_mosaic_virus.jpg": {
+    "label": "LettuceMosaicVirus",
+    "caption": "Lettuce mosaic virus causes mottled yellow and green patterns on the leaves of infected lettuce plants.",
+    "class": "lettuce mosaic virus",
+    "status": "diseased",
+    "original_path": "data\\plantwild\\images\\lettuce mosaic virus\\97.jpg"
+  },
+  "0122_lettuce_mosaic_virus.jpg": {
+    "label": "LettuceMosaicVirus",
+    "caption": "Lettuce mosaic virus causes mosaic-like patterns of light and dark patches on lettuce leaves.",
+    "class": "lettuce mosaic virus",
+    "status": "diseased",
+    "original_path": "data\\plantwild\\images\\lettuce mosaic virus\\google_0148.jpg"
+  },
+  "0123_maple_tar_spot.jpg": {
+    "label": "MapleTarSpot",
+    "caption": "Maple tar spot appears as black, tar-like raised spots on the leaves of maple trees.",
+    "class": "maple tar spot",
+    "status": "diseased",
+    "original_path": "data\\plantwild\\images\\maple tar spot\\google_0164.jpg"
+  },
+  "0124_maple_tar_spot.jpg": {
+    "label": "MapleTarSpot",
+    "caption": "Maple tar spot appears as black, tar-like spots or blotches on the leaves of maple trees.",
+    "class": "maple tar spot",
+    "status": "diseased",
+    "original_path": "data\\plantwild\\images\\maple tar spot\\google_0146.jpg"
+  },
+  "0125_maple_tar_spot.jpg": {
+    "label": "MapleTarSpot",
+    "caption": "Maple tar spot appears as black, tar-like spots on the leaves of maple trees.",
+    "class": "maple tar spot",
+    "status": "diseased",
+    "original_path": "data\\plantwild\\images\\maple tar spot\\google_0122.jpg"
+  },
+  "0126_peach_leaf_curl.jpg": {
+    "label": "PeachLeafCurl",
+    "caption": "Peach leaf curl causes red, curled, and distorted leaves with a blister-like appearance on peach trees.",
+    "class": "peach leaf curl",
+    "status": "diseased",
+    "original_path": "data\\plantwild\\images\\peach leaf curl\\google_0013.jpg"
+  },
+  "0127_peach_leaf_curl.jpg": {
+    "label": "PeachLeafCurl",
+    "caption": "Peach leaf curl causes red, puckered, and distorted leaves that may curl upwards or downwards.",
+    "class": "peach leaf curl",
+    "status": "diseased",
+    "original_path": "data\\plantwild\\images\\peach leaf curl\\46.jpg"
+  },
+  "0128_peach_leaf_curl.jpg": {
+    "label": "PeachLeafCurl",
+    "caption": "Peach leaf curl appears as red, puckered, and distorted leaves with a blister-like texture.",
+    "class": "peach leaf curl",
+    "status": "diseased",
+    "original_path": "data\\plantwild\\images\\peach leaf curl\\google_0107.jpg"
+  },
+  "0129_plum_pocket_disease.jpg": {
+    "label": "PlumPocketDisease",
+    "caption": "Plum pocket disease is characterized by swollen, malformed, and hollowed-out fruit with a powdery grey appearance.",
+    "class": "plum pocket disease",
+    "status": "diseased",
+    "original_path": "data\\plantwild\\images\\plum pocket disease\\google_0099.jpg"
+  },
+  "0130_plum_pocket_disease.jpg": {
+    "label": "PlumPocketDisease",
+    "caption": "The leaves of plum trees affected by plum pocket disease become swollen and deformed, resembling pockets.",
+    "class": "plum pocket disease",
+    "status": "diseased",
+    "original_path": "data\\plantwild\\images\\plum pocket disease\\8.jpg"
+  },
+  "0131_plum_pocket_disease.jpg": {
+    "label": "PlumPocketDisease",
+    "caption": "Plum pocket disease causes plum fruits to swell and develop greenish-brown pockets filled with spores.",
+    "class": "plum pocket disease",
+    "status": "diseased",
+    "original_path": "data\\plantwild\\images\\plum pocket disease\\25.jpg"
+  },
+  "0132_potato_early_blight.jpg": {
+    "label": "PotatoEarlyBlight",
+    "caption": "Potato early blight shows distinct concentric rings with dark brown lesions on leaves and stems.",
+    "class": "potato early blight",
+    "status": "diseased",
+    "original_path": "data\\plantwild\\images\\potato early blight\\google_0313 - Copy (3).jpg"
+  },
+  "0133_potato_early_blight.jpg": {
+    "label": "PotatoEarlyBlight",
+    "caption": "Potato early blight appears as small, circular, dark spots with concentric rings on the leaves and stems.",
+    "class": "potato early blight",
+    "status": "diseased",
+    "original_path": "data\\plantwild\\images\\potato early blight\\47.jpg"
+  },
+  "0134_potato_early_blight.jpg": {
+    "label": "PotatoEarlyBlight",
+    "caption": "Potato early blight appears as dark, circular lesions with concentric rings on the leaves and stems.",
+    "class": "potato early blight",
+    "status": "diseased",
+    "original_path": "data\\plantwild\\images\\potato early blight\\60.jpg"
+  },
+  "0135_potato_late_blight.jpg": {
+    "label": "PotatoLateBlight",
+    "caption": "Potato late blight appears as dark, water-soaked lesions on leaves, stems, and tubers.",
+    "class": "potato late blight",
+    "status": "diseased",
+    "original_path": "data\\plantwild\\images\\potato late blight\\google_0098 - Copy - Copy (2).jpg"
+  },
+  "0136_potato_late_blight.jpg": {
+    "label": "PotatoLateBlight",
+    "caption": "Potato late blight appears as dark, irregularly shaped lesions surrounded by a pale green halo.",
+    "class": "potato late blight",
+    "status": "diseased",
+    "original_path": "data\\plantwild\\images\\potato late blight\\39.jpg"
+  },
+  "0137_potato_late_blight.jpg": {
+    "label": "PotatoLateBlight",
+    "caption": "Potato late blight appears as dark, blotchy patches on the foliage and can progress to rotting tubers.",
+    "class": "potato late blight",
+    "status": "diseased",
+    "original_path": "data\\plantwild\\images\\potato late blight\\google_0183.jpg"
+  },
+  "0138_rice_blast.jpg": {
+    "label": "RiceBlast",
+    "caption": "Rice blast appears as small, oval lesions with gray centers and brown borders on rice leaves.",
+    "class": "rice blast",
+    "status": "diseased",
+    "original_path": "data\\plantwild\\images\\rice blast\\google_0065.jpg"
+  },
+  "0139_rice_blast.jpg": {
+    "label": "RiceBlast",
+    "caption": "Rice blast appears as small, oval-shaped lesions that are initially green and later turn brown or gray.",
+    "class": "rice blast",
+    "status": "diseased",
+    "original_path": "data\\plantwild\\images\\rice blast\\163.jpg"
+  },
+  "0140_rice_blast.jpg": {
+    "label": "RiceBlast",
+    "caption": "Rice blast is characterized by small, oval lesions surrounded by a yellow halo on the leaves or grains.",
+    "class": "rice blast",
+    "status": "diseased",
+    "original_path": "data\\plantwild\\images\\rice blast\\google_0047.jpg"
+  },
+  "0141_rice_sheath_blight.jpg": {
+    "label": "RiceSheathBlight",
+    "caption": "Rice sheath blight appears as elongated lesions with a dark brown border and white cottony growth.",
+    "class": "rice sheath blight",
+    "status": "diseased",
+    "original_path": "data\\plantwild\\images\\rice sheath blight\\52.jpg"
+  },
+  "0142_rice_sheath_blight.jpg": {
+    "label": "RiceSheathBlight",
+    "caption": "Rice sheath blight appears as elongated brown lesions on the leaf sheaths, leading to lodging and yield loss.",
+    "class": "rice sheath blight",
+    "status": "diseased",
+    "original_path": "data\\plantwild\\images\\rice sheath blight\\google_0029 - Copy (2).jpg"
+  },
+  "0143_rice_sheath_blight.jpg": {
+    "label": "RiceSheathBlight",
+    "caption": "Rice sheath blight appears as brown lesions on the upper leaves and sheaths, often accompanied by white mycelial growth.",
+    "class": "rice sheath blight",
+    "status": "diseased",
+    "original_path": "data\\plantwild\\images\\rice sheath blight\\87.jpg"
+  },
+  "0144_squash_powdery_mildew.jpg": {
+    "label": "SquashPowderyMildew",
+    "caption": "Squash powdery mildew appears as white, powdery spots or patches on the leaves and stems.",
+    "class": "squash powdery mildew",
+    "status": "diseased",
+    "original_path": "data\\plantwild\\images\\squash powdery mildew\\google_0365.jpg"
+  },
+  "0145_squash_powdery_mildew.jpg": {
+    "label": "SquashPowderyMildew",
+    "caption": "Squash powdery mildew appears as white powdery patches on the leaves, stems, and fruit of squash plants.",
+    "class": "squash powdery mildew",
+    "status": "diseased",
+    "original_path": "data\\plantwild\\images\\squash powdery mildew\\google_0044.jpg"
+  },
+  "0146_squash_powdery_mildew.jpg": {
+    "label": "SquashPowderyMildew",
+    "caption": "Squash powdery mildew appears as white powdery patches on the leaves and stems of the plant.",
+    "class": "squash powdery mildew",
+    "status": "diseased",
+    "original_path": "data\\plantwild\\images\\squash powdery mildew\\106.jpg"
+  },
+  "0147_strawberry_anthracnose.jpg": {
+    "label": "StrawberryAnthracnose",
+    "caption": "Strawberry anthracnose appears as dark, sunken lesions on the fruits, leaves, and stems of the plant.",
+    "class": "strawberry anthracnose",
+    "status": "diseased",
+    "original_path": "data\\plantwild\\images\\strawberry anthracnose\\google_0124.jpg"
+  },
+  "0148_strawberry_anthracnose.jpg": {
+    "label": "StrawberryAnthracnose",
+    "caption": "Strawberry anthracnose appears as dark, sunken lesions on the fruit and leaves, often surrounded by pinkish spore masses.",
+    "class": "strawberry anthracnose",
+    "status": "diseased",
+    "original_path": "data\\plantwild\\images\\strawberry anthracnose\\google_0150.jpg"
+  },
+  "0149_strawberry_anthracnose.jpg": {
+    "label": "StrawberryAnthracnose",
+    "caption": "Strawberry anthracnose appears as sunken, dark brown spots on the fruit and leaves.",
+    "class": "strawberry anthracnose",
+    "status": "diseased",
+    "original_path": "data\\plantwild\\images\\strawberry anthracnose\\27 - Copy (3).jpg"
+  },
+  "0150_strawberry_leaf_scorch.jpg": {
+    "label": "StrawberryLeafScorch",
+    "caption": "Strawberry leaf scorch appears as reddish-brown necrotic lesions that often have a purple border.",
+    "class": "strawberry leaf scorch",
+    "status": "diseased",
+    "original_path": "data\\plantwild\\images\\strawberry leaf scorch\\google_0154.jpg"
+  },
+  "0151_strawberry_leaf_scorch.jpg": {
+    "label": "StrawberryLeafScorch",
+    "caption": "Strawberry leaf scorch appears as brown or reddish-brown lesions along the margins of the leaves.",
+    "class": "strawberry leaf scorch",
+    "status": "diseased",
+    "original_path": "data\\plantwild\\images\\strawberry leaf scorch\\google_0037.jpg"
+  },
+  "0152_strawberry_leaf_scorch.jpg": {
+    "label": "StrawberryLeafScorch",
+    "caption": "Strawberry leaf scorch manifests as brown, necrotic areas on the edges and tips of strawberry plant leaves.",
+    "class": "strawberry leaf scorch",
+    "status": "diseased",
+    "original_path": "data\\plantwild\\images\\strawberry leaf scorch\\google_0062.jpg"
+  },
+  "0153_tobacco_mosaic_virus.jpg": {
+    "label": "TobaccoMosaicVirus",
+    "caption": "Tobacco mosaic virus causes distinct light and dark green mottling or mosaics on the leaves.",
+    "class": "tobacco mosaic virus",
+    "status": "diseased",
+    "original_path": "data\\plantwild\\images\\tobacco mosaic virus\\126.jpg"
+  },
+  "0154_tobacco_mosaic_virus.jpg": {
+    "label": "TobaccoMosaicVirus",
+    "caption": "Tobacco mosaic virus causes distinct mosaic patterns of light and dark green on the leaves.",
+    "class": "tobacco mosaic virus",
+    "status": "diseased",
+    "original_path": "data\\plantwild\\images\\tobacco mosaic virus\\213.jpg"
+  },
+  "0155_tobacco_mosaic_virus.jpg": {
+    "label": "TobaccoMosaicVirus",
+    "caption": "Tobacco mosaic virus causes mottled and discolored patterns on the leaves of infected plants.",
+    "class": "tobacco mosaic virus",
+    "status": "diseased",
+    "original_path": "data\\plantwild\\images\\tobacco mosaic virus\\38.jpg"
+  },
+  "0156_tomato_bacterial_leaf_spot.jpg": {
+    "label": "TomatoBacterialLeafSpot",
+    "caption": "Tomato bacterial leaf spot appears as dark, water-soaked lesions surrounded by a yellow halo on the leaves.",
+    "class": "tomato bacterial leaf spot",
+    "status": "diseased",
+    "original_path": "data\\plantwild\\images\\tomato bacterial leaf spot\\51.jpg"
+  },
+  "0157_tomato_bacterial_leaf_spot.jpg": {
+    "label": "TomatoBacterialLeafSpot",
+    "caption": "Tomato bacterial leaf spot shows dark, circular lesions on leaves and can cause defoliation and reduced yield.",
+    "class": "tomato bacterial leaf spot",
+    "status": "diseased",
+    "original_path": "data\\plantwild\\images\\tomato bacterial leaf spot\\google_0251.jpg"
+  },
+  "0158_tomato_bacterial_leaf_spot.jpg": {
+    "label": "TomatoBacterialLeafSpot",
+    "caption": "Small, dark spots with yellow halos on tomato leaves and stems.",
+    "class": "tomato bacterial leaf spot",
+    "status": "diseased",
+    "original_path": "data\\plantwild\\images\\tomato bacterial leaf spot\\10.jpg"
+  },
+  "0159_tomato_early_blight.jpg": {
+    "label": "TomatoEarlyBlight",
+    "caption": "Tomato early blight appears as brown, concentric lesions with a darker center surrounded by a yellow halo.",
+    "class": "tomato early blight",
+    "status": "diseased",
+    "original_path": "data\\plantwild\\images\\tomato early blight\\google_0002.jpg"
+  },
+  "0160_tomato_early_blight.jpg": {
+    "label": "TomatoEarlyBlight",
+    "caption": "Tomato early blight appears as small, dark brown spots with concentric rings on leaves and fruits.",
+    "class": "tomato early blight",
+    "status": "diseased",
+    "original_path": "data\\plantwild\\images\\tomato early blight\\google_0210.jpg"
+  },
+  "0161_tomato_early_blight.jpg": {
+    "label": "TomatoEarlyBlight",
+    "caption": "Tomato early blight appears as small, dark brown to black spots with concentric rings on leaves and fruits.",
+    "class": "tomato early blight",
+    "status": "diseased",
+    "original_path": "data\\plantwild\\images\\tomato early blight\\287.jpg"
+  },
+  "0162_tomato_late_blight.jpg": {
+    "label": "TomatoLateBlight",
+    "caption": "Tomato late blight appears as dark, water-soaked lesions on leaves, stems, and fruits, often covered with a fuzzy, white mold.",
+    "class": "tomato late blight",
+    "status": "diseased",
+    "original_path": "data\\plantwild\\images\\tomato late blight\\google_0202.jpg"
+  },
+  "0163_tomato_late_blight.jpg": {
+    "label": "TomatoLateBlight",
+    "caption": "Tomato late blight appears as large, dark brown lesions surrounded by a whitish mold on leaves and fruits.",
+    "class": "tomato late blight",
+    "status": "diseased",
+    "original_path": "data\\plantwild\\images\\tomato late blight\\190.jpg"
+  },
+  "0164_tomato_late_blight.jpg": {
+    "label": "TomatoLateBlight",
+    "caption": "Tomato late blight appears as dark, water-soaked lesions on leaves, stems, and fruit, with white, fuzzy spore masses in humid conditions.",
+    "class": "tomato late blight",
+    "status": "diseased",
+    "original_path": "data\\plantwild\\images\\tomato late blight\\google_0005.jpg"
+  },
+  "0165_tomato_leaf_mold.jpg": {
+    "label": "TomatoLeafMold",
+    "caption": "Tomato leaf mold appears as yellowish-green spots or patches with fuzzy gray or brown mold on the underside.",
+    "class": "tomato leaf mold",
+    "status": "diseased",
+    "original_path": "data\\plantwild\\images\\tomato leaf mold\\google_0185 - Copy.jpg"
+  },
+  "0166_tomato_leaf_mold.jpg": {
+    "label": "TomatoLeafMold",
+    "caption": "Tomato leaf mold appears as fuzzy, velvety gray or brown patches on the leaves.",
+    "class": "tomato leaf mold",
+    "status": "diseased",
+    "original_path": "data\\plantwild\\images\\tomato leaf mold\\google_0019.jpg"
+  },
+  "0167_tomato_leaf_mold.jpg": {
+    "label": "TomatoLeafMold",
+    "caption": "Tomato leaf mold appears as fuzzy white to gray patches on the upper surface of leaves.",
+    "class": "tomato leaf mold",
+    "status": "diseased",
+    "original_path": "data\\plantwild\\images\\tomato leaf mold\\64.jpg"
+  },
+  "0168_tomato_mosaic_virus.jpg": {
+    "label": "TomatoMosaicVirus",
+    "caption": "Tomato mosaic virus causes distinct mottled patterns of light and dark green on tomato leaves.",
+    "class": "tomato mosaic virus",
+    "status": "diseased",
+    "original_path": "data\\plantwild\\images\\tomato mosaic virus\\google_0098.jpg"
+  },
+  "0169_tomato_mosaic_virus.jpg": {
+    "label": "TomatoMosaicVirus",
+    "caption": "Tomato mosaic virus causes characteristic mosaic patterns and yellowing of leaves in tomato plants.",
+    "class": "tomato mosaic virus",
+    "status": "diseased",
+    "original_path": "data\\plantwild\\images\\tomato mosaic virus\\202.jpg"
+  },
+  "0170_tomato_mosaic_virus.jpg": {
+    "label": "TomatoMosaicVirus",
+    "caption": "Tomato mosaic virus causes mosaic-like patterns of mottled yellow or green spots and distorted leaves on tomatoes.",
+    "class": "tomato mosaic virus",
+    "status": "diseased",
+    "original_path": "data\\plantwild\\images\\tomato mosaic virus\\182.jpg"
+  },
+  "0171_tomato_septoria_leaf_spot.jpg": {
+    "label": "TomatoSeptoriaLeafSpot",
+    "caption": "Tomato septoria leaf spot appears as numerous small, dark brown spots with yellow halos on leaves.",
+    "class": "tomato septoria leaf spot",
+    "status": "diseased",
+    "original_path": "data\\plantwild\\images\\tomato septoria leaf spot\\google_0053.jpg"
+  },
+  "0172_tomato_septoria_leaf_spot.jpg": {
+    "label": "TomatoSeptoriaLeafSpot",
+    "caption": "Tomato septoria leaf spot appears as small, circular dark spots with yellow halos on the leaves.",
+    "class": "tomato septoria leaf spot",
+    "status": "diseased",
+    "original_path": "data\\plantwild\\images\\tomato septoria leaf spot\\google_0237.jpg"
+  },
+  "0173_tomato_septoria_leaf_spot.jpg": {
+    "label": "TomatoSeptoriaLeafSpot",
+    "caption": "Tomato septoria leaf spot appears as small, round, dark brown spots with yellow halos on leaves.",
+    "class": "tomato septoria leaf spot",
+    "status": "diseased",
+    "original_path": "data\\plantwild\\images\\tomato septoria leaf spot\\66.jpg"
+  },
+  "0174_tomato_yellow_leaf_curl_virus.jpg": {
+    "label": "TomatoYellowLeafCurlVirus",
+    "caption": "Tomato yellow leaf curl virus causes yellowing and curling of tomato leaves with stunted plant growth.",
+    "class": "tomato yellow leaf curl virus",
+    "status": "diseased",
+    "original_path": "data\\plantwild\\images\\tomato yellow leaf curl virus\\google_0105.jpg"
+  },
+  "0175_tomato_yellow_leaf_curl_virus.jpg": {
+    "label": "TomatoYellowLeafCurlVirus",
+    "caption": "Tomato yellow leaf curl virus causes yellowing and curling of tomato leaves, stunting growth and reducing yield.",
+    "class": "tomato yellow leaf curl virus",
+    "status": "diseased",
+    "original_path": "data\\plantwild\\images\\tomato yellow leaf curl virus\\google_0100.jpg"
+  },
+  "0176_tomato_yellow_leaf_curl_virus.jpg": {
+    "label": "TomatoYellowLeafCurlVirus",
+    "caption": "Tomato yellow leaf curl virus causes yellowing and curling of tomato plant leaves.",
+    "class": "tomato yellow leaf curl virus",
+    "status": "diseased",
+    "original_path": "data\\plantwild\\images\\tomato yellow leaf curl virus\\1.jpg"
+  },
+  "0177_zucchini_yellow_mosaic_virus.jpg": {
+    "label": "ZucchiniYellowMosaicVirus",
+    "caption": "Zucchini yellow mosaic virus causes mottled yellowing and mosaic patterns on the leaves of infected plants.",
+    "class": "zucchini yellow mosaic virus",
+    "status": "diseased",
+    "original_path": "data\\plantwild\\images\\zucchini yellow mosaic virus\\google_0129.jpg"
+  },
+  "0178_zucchini_yellow_mosaic_virus.jpg": {
+    "label": "ZucchiniYellowMosaicVirus",
+    "caption": "Zucchini yellow mosaic virus causes mosaic patterns and yellowing on zucchini leaves and fruits.",
+    "class": "zucchini yellow mosaic virus",
+    "status": "diseased",
+    "original_path": "data\\plantwild\\images\\zucchini yellow mosaic virus\\google_0001.jpg"
+  },
+  "0179_zucchini_yellow_mosaic_virus.jpg": {
+    "label": "ZucchiniYellowMosaicVirus",
+    "caption": "Zucchini yellow mosaic virus causes yellow mosaic patterns and stunted growth in zucchini plants.",
+    "class": "zucchini yellow mosaic virus",
+    "status": "diseased",
+    "original_path": "data\\plantwild\\images\\zucchini yellow mosaic virus\\google_0086.jpg"
+  },
+  "0180_apple_leaf.jpg": {
+    "label": "AppleLeaf",
+    "caption": "Apple leaf appearance is typically green, oval-shaped, serrated edges, and may turn yellow or brown with disease.",
+    "class": "apple leaf",
+    "status": "healthy",
+    "original_path": "data\\plantwild\\images\\apple leaf\\110.jpg"
+  },
+  "0181_apple_leaf.jpg": {
+    "label": "AppleLeaf",
+    "caption": "Wilting, yellowing, and curling of apple leaves with brown spots indicate potential disease.",
+    "class": "apple leaf",
+    "status": "healthy",
+    "original_path": "data\\plantwild\\images\\apple leaf\\160.jpg"
+  },
+  "0182_apple_leaf.jpg": {
+    "label": "AppleLeaf",
+    "caption": "Healthy apple leaves are typically oval in shape with a smooth texture, vibrant green color, and no visible blemishes.",
+    "class": "apple leaf",
+    "status": "healthy",
+    "original_path": "data\\plantwild\\images\\apple leaf\\291.jpg"
+  },
+  "0183_banana_leaf.jpg": {
+    "label": "BananaLeaf",
+    "caption": "The banana leaf is large, vibrant green, and elongated with distinct veins running through it.",
+    "class": "banana leaf",
+    "status": "healthy",
+    "original_path": "data\\plantwild\\images\\banana leaf\\google_0168.jpg"
+  },
+  "0184_banana_leaf.jpg": {
+    "label": "BananaLeaf",
+    "caption": "The banana leaf is large, oblong, and has a vibrant green color with prominent parallel veins.",
+    "class": "banana leaf",
+    "status": "healthy",
+    "original_path": "data\\plantwild\\images\\banana leaf\\google_0112.jpg"
+  },
+  "0185_banana_leaf.jpg": {
+    "label": "BananaLeaf",
+    "caption": "Broad, vibrant green leaf with prominent veins and a tapering shape, ending in a pointed tip.",
+    "class": "banana leaf",
+    "status": "healthy",
+    "original_path": "data\\plantwild\\images\\banana leaf\\google_0085.jpg"
+  },
+  "0186_basil_leaf.jpg": {
+    "label": "BasilLeaf",
+    "caption": "Healthy basil leaf is a vibrant green color, smooth in texture, and exhibits a crisp appearance.",
+    "class": "basil leaf",
+    "status": "healthy",
+    "original_path": "data\\plantwild\\images\\basil leaf\\87.jpg"
+  },
+  "0187_basil_leaf.jpg": {
+    "label": "BasilLeaf",
+    "caption": "Healthy basil leaves are typically green, smooth, and have a glossy appearance with no discoloration or spots.",
+    "class": "basil leaf",
+    "status": "healthy",
+    "original_path": "data\\plantwild\\images\\basil leaf\\393.jpg"
+  },
+  "0188_basil_leaf.jpg": {
+    "label": "BasilLeaf",
+    "caption": "The basil leaf is typically green, with a smooth and slightly glossy surface.",
+    "class": "basil leaf",
+    "status": "healthy",
+    "original_path": "data\\plantwild\\images\\basil leaf\\171.jpg"
+  },
+  "0189_bean_leaf.jpg": {
+    "label": "BeanLeaf",
+    "caption": "Bean leaf may have yellow or brown spots, wilting, curling, and may eventually turn completely brown and die.",
+    "class": "bean leaf",
+    "status": "healthy",
+    "original_path": "data\\plantwild\\images\\bean leaf\\96.jpg"
+  },
+  "0190_bean_leaf.jpg": {
+    "label": "BeanLeaf",
+    "caption": "Bean leaf may exhibit yellowing, wilting, necrosis, spots, or deformities depending on the specific disease present.",
+    "class": "bean leaf",
+    "status": "healthy",
+    "original_path": "data\\plantwild\\images\\bean leaf\\191.jpg"
+  },
+  "0191_bean_leaf.jpg": {
+    "label": "BeanLeaf",
+    "caption": "The bean leaf may exhibit yellowing, wilting, and necrotic spots, depending on the disease present.",
+    "class": "bean leaf",
+    "status": "healthy",
+    "original_path": "data\\plantwild\\images\\bean leaf\\194.jpg"
+  },
+  "0192_blueberry_leaf.jpg": {
+    "label": "BlueberryLeaf",
+    "caption": "The blueberry leaf appears yellowing, with irregular reddish-brown spots or lesions.",
+    "class": "blueberry leaf",
+    "status": "healthy",
+    "original_path": "data\\plantwild\\images\\blueberry leaf\\google_0290.jpg"
+  },
+  "0193_blueberry_leaf.jpg": {
+    "label": "BlueberryLeaf",
+    "caption": "Blueberry leaves with disease typically show discoloration, dark spots or patches, and wilting or curling.",
+    "class": "blueberry leaf",
+    "status": "healthy",
+    "original_path": "data\\plantwild\\images\\blueberry leaf\\135.jpg"
+  },
+  "0194_blueberry_leaf.jpg": {
+    "label": "BlueberryLeaf",
+    "caption": "Blueberry leaf may appear discolored, with spots or lesions, and may exhibit curling, wilting, or necrosis.",
+    "class": "blueberry leaf",
+    "status": "healthy",
+    "original_path": "data\\plantwild\\images\\blueberry leaf\\google_0482.jpg"
+  },
+  "0195_broccoli_leaf.jpg": {
+    "label": "BroccoliLeaf",
+    "caption": "Healthy broccoli leaf is green, lacy, and divided into smaller leaflets with a smooth and even texture.",
+    "class": "broccoli leaf",
+    "status": "healthy",
+    "original_path": "data\\plantwild\\images\\broccoli leaf\\351.jpg"
+  },
+  "0196_broccoli_leaf.jpg": {
+    "label": "BroccoliLeaf",
+    "caption": "Healthy broccoli leaves have a dark green color, with a crinkled texture and serrated edges.",
+    "class": "broccoli leaf",
+    "status": "healthy",
+    "original_path": "data\\plantwild\\images\\broccoli leaf\\36.jpg"
+  },
+  "0197_broccoli_leaf.jpg": {
+    "label": "BroccoliLeaf",
+    "caption": "The broccoli leaf appears green and leafy with a large central stalk and dense clusters of rounded leaves.",
+    "class": "broccoli leaf",
+    "status": "healthy",
+    "original_path": "data\\plantwild\\images\\broccoli leaf\\google_0418.jpg"
+  },
+  "0198_cabbage_leaf.jpg": {
+    "label": "CabbageLeaf",
+    "caption": "The cabbage leaf may appear wilted, discolored, or have spots or holes, indicating potential disease.",
+    "class": "cabbage leaf",
+    "status": "healthy",
+    "original_path": "data\\plantwild\\images\\cabbage leaf\\46.jpg"
+  },
+  "0199_cabbage_leaf.jpg": {
+    "label": "CabbageLeaf",
+    "caption": "The cabbage leaf appears wilted, with yellowing or bronzing of the foliage and spots or lesions on the surface.",
+    "class": "cabbage leaf",
+    "status": "healthy",
+    "original_path": "data\\plantwild\\images\\cabbage leaf\\228.jpg"
+  },
+  "0200_cabbage_leaf.jpg": {
+    "label": "CabbageLeaf",
+    "caption": "The cabbage leaf may display yellowing, wilting, or brown spots indicating a fungal or bacterial disease.",
+    "class": "cabbage leaf",
+    "status": "healthy",
+    "original_path": "data\\plantwild\\images\\cabbage leaf\\282.jpg"
+  },
+  "0201_cauliflower_leaf.jpg": {
+    "label": "CauliflowerLeaf",
+    "caption": "Cauliflower leaves have a dense, curd-like appearance with pale green coloration and a smooth surface.",
+    "class": "cauliflower leaf",
+    "status": "healthy",
+    "original_path": "data\\plantwild\\images\\cauliflower leaf\\google_0063.jpg"
+  },
+  "0202_cauliflower_leaf.jpg": {
+    "label": "CauliflowerLeaf",
+    "caption": "Cauliflower leaves typically have a vibrant green color with a smooth, waxy texture.",
+    "class": "cauliflower leaf",
+    "status": "healthy",
+    "original_path": "data\\plantwild\\images\\cauliflower leaf\\google_0101.jpg"
+  },
+  "0203_cauliflower_leaf.jpg": {
+    "label": "CauliflowerLeaf",
+    "caption": "Cauliflower leaves typically have a dense, compact arrangement of large, broad, and irregularly shaped green foliage.",
+    "class": "cauliflower leaf",
+    "status": "healthy",
+    "original_path": "data\\plantwild\\images\\cauliflower leaf\\google_0018.jpg"
+  },
+  "0204_celery_leaf.jpg": {
+    "label": "CeleryLeaf",
+    "caption": "The celery leaf may appear yellow or brown, with wilting or necrosis, indicating possible disease.",
+    "class": "celery leaf",
+    "status": "healthy",
+    "original_path": "data\\plantwild\\images\\celery leaf\\234.jpg"
+  },
+  "0205_celery_leaf.jpg": {
+    "label": "CeleryLeaf",
+    "caption": "The celery leaf is typically bright green, feathery, and has elongated, deeply incised leaflets.",
+    "class": "celery leaf",
+    "status": "healthy",
+    "original_path": "data\\plantwild\\images\\celery leaf\\google_0069.jpg"
+  },
+  "0206_celery_leaf.jpg": {
+    "label": "CeleryLeaf",
+    "caption": "Yellowing or wilting of celery leaves, sometimes with brown spots or discoloration, indicating potential disease or nutrient deficiency.",
+    "class": "celery leaf",
+    "status": "healthy",
+    "original_path": "data\\plantwild\\images\\celery leaf\\google_0183.jpg"
+  },
+  "0207_cherry_leaf.jpg": {
+    "label": "CherryLeaf",
+    "caption": "The cherry leaf appears green, glossy, and oval-shaped with serrated edges.",
+    "class": "cherry leaf",
+    "status": "healthy",
+    "original_path": "data\\plantwild\\images\\cherry leaf\\35.jpg"
+  },
+  "0208_cherry_leaf.jpg": {
+    "label": "CherryLeaf",
+    "caption": "Cherry leaves are typically oval-shaped, glossy green with serrated edges and a pointed tip.",
+    "class": "cherry leaf",
+    "status": "healthy",
+    "original_path": "data\\plantwild\\images\\cherry leaf\\88.jpg"
+  },
+  "0209_cherry_leaf.jpg": {
+    "label": "CherryLeaf",
+    "caption": "The leaves of a cherry tree may appear wilted, yellowing, and have dark spots or lesions.",
+    "class": "cherry leaf",
+    "status": "healthy",
+    "original_path": "data\\plantwild\\images\\cherry leaf\\google_0068.jpg"
+  },
+  "0210_coffee_leaf.jpg": {
+    "label": "CoffeeLeaf",
+    "caption": "Coffee leaf appears green, with dark brown spots or lesions, and may curl or deform.",
+    "class": "coffee leaf",
+    "status": "healthy",
+    "original_path": "data\\plantwild\\images\\coffee leaf\\google_0001.jpg"
+  },
+  "0211_coffee_leaf.jpg": {
+    "label": "CoffeeLeaf",
+    "caption": "Coffee leaf typically displays yellowing, wilting, and necrotic lesions, often leading to defoliation.",
+    "class": "coffee leaf",
+    "status": "healthy",
+    "original_path": "data\\plantwild\\images\\coffee leaf\\google_0044.jpg"
+  },
+  "0212_coffee_leaf.jpg": {
+    "label": "CoffeeLeaf",
+    "caption": "Coffee leaf displays angular chlorotic lesions with yellowing and browning of tissue, accompanied by necrotic spots.",
+    "class": "coffee leaf",
+    "status": "healthy",
+    "original_path": "data\\plantwild\\images\\coffee leaf\\google_0137.jpg"
+  },
+  "0213_corn_leaf.jpg": {
+    "label": "CornLeaf",
+    "caption": "The corn leaf may exhibit yellowing or browning, irregular spots, or wilting, indicating potential disease.",
+    "class": "corn leaf",
+    "status": "healthy",
+    "original_path": "data\\plantwild\\images\\corn leaf\\google_0225.jpg"
+  },
+  "0214_corn_leaf.jpg": {
+    "label": "CornLeaf",
+    "caption": "The appearance of a diseased corn leaf can vary, but it may exhibit discoloration, spots, or wilting.",
+    "class": "corn leaf",
+    "status": "healthy",
+    "original_path": "data\\plantwild\\images\\corn leaf\\36.jpg"
+  },
+  "0215_corn_leaf.jpg": {
+    "label": "CornLeaf",
+    "caption": "The corn leaf appears yellowed and necrotic, with dark brown lesions and wilting.",
+    "class": "corn leaf",
+    "status": "healthy",
+    "original_path": "data\\plantwild\\images\\corn leaf\\74.jpg"
+  },
+  "0216_cucumber_leaf.jpg": {
+    "label": "CucumberLeaf",
+    "caption": "The leaves of cucumber plants affected by disease may develop yellow, brown, or black spots and patches.",
+    "class": "cucumber leaf",
+    "status": "healthy",
+    "original_path": "data\\plantwild\\images\\cucumber leaf\\50.jpg"
+  },
+  "0217_cucumber_leaf.jpg": {
+    "label": "CucumberLeaf",
+    "caption": "Cucumber leaves may appear yellowing or withering, with visible spots or lesions indicating a potential disease.",
+    "class": "cucumber leaf",
+    "status": "healthy",
+    "original_path": "data\\plantwild\\images\\cucumber leaf\\151.jpg"
+  },
+  "0218_cucumber_leaf.jpg": {
+    "label": "CucumberLeaf",
+    "caption": "The cucumber leaf is typically large, broad, and dark green in color with a rough texture.",
+    "class": "cucumber leaf",
+    "status": "healthy",
+    "original_path": "data\\plantwild\\images\\cucumber leaf\\google_0044.jpg"
+  },
+  "0219_eggplant_leaf.jpg": {
+    "label": "EggplantLeaf",
+    "caption": "The eggplant leaf appears dark green with a smooth, glossy surface and an ovate shape.",
+    "class": "eggplant leaf",
+    "status": "healthy",
+    "original_path": "data\\plantwild\\images\\eggplant leaf\\118.jpg"
+  },
+  "0220_eggplant_leaf.jpg": {
+    "label": "EggplantLeaf",
+    "caption": "The eggplant leaf appears dark green, smooth, and glossy, with a slightly lobed or serrated edge.",
+    "class": "eggplant leaf",
+    "status": "healthy",
+    "original_path": "data\\plantwild\\images\\eggplant leaf\\google_0161.jpg"
+  },
+  "0221_eggplant_leaf.jpg": {
+    "label": "EggplantLeaf",
+    "caption": "Eggplant leaves are large, dark green, and have a smooth, shiny appearance with some variation in shape.",
+    "class": "eggplant leaf",
+    "status": "healthy",
+    "original_path": "data\\plantwild\\images\\eggplant leaf\\google_0147.jpg"
+  },
+  "0222_garlic_leaf.jpg": {
+    "label": "GarlicLeaf",
+    "caption": "Garlic leaf is typically long, narrow, and flat, with an overall green coloration.",
+    "class": "garlic leaf",
+    "status": "healthy",
+    "original_path": "data\\plantwild\\images\\garlic leaf\\300.jpg"
+  },
+  "0223_garlic_leaf.jpg": {
+    "label": "GarlicLeaf",
+    "caption": "The garlic leaf is long and narrow, with a dark green color and a waxy texture.",
+    "class": "garlic leaf",
+    "status": "healthy",
+    "original_path": "data\\plantwild\\images\\garlic leaf\\google_0068.jpg"
+  },
+  "0224_garlic_leaf.jpg": {
+    "label": "GarlicLeaf",
+    "caption": "The garlic leaf appears long and slender with a vibrant green color.",
+    "class": "garlic leaf",
+    "status": "healthy",
+    "original_path": "data\\plantwild\\images\\garlic leaf\\3.jpg"
+  },
+  "0225_ginger_leaf.jpg": {
+    "label": "GingerLeaf",
+    "caption": "The ginger leaf appears vibrant green with a long, slender shape and a slightly wavy edge.",
+    "class": "ginger leaf",
+    "status": "healthy",
+    "original_path": "data\\plantwild\\images\\ginger leaf\\10.jpg"
+  },
+  "0226_ginger_leaf.jpg": {
+    "label": "GingerLeaf",
+    "caption": "Healthy ginger leaves have a vibrant green color and a lanceolate shape with pointed tips.",
+    "class": "ginger leaf",
+    "status": "healthy",
+    "original_path": "data\\plantwild\\images\\ginger leaf\\20.jpg"
+  },
+  "0227_ginger_leaf.jpg": {
+    "label": "GingerLeaf",
+    "caption": "The ginger leaf is characterized by its lanceolate shape and vibrant green color with dark veins.",
+    "class": "ginger leaf",
+    "status": "healthy",
+    "original_path": "data\\plantwild\\images\\ginger leaf\\google_0253.jpg"
+  },
+  "0228_grape_leaf.jpg": {
+    "label": "GrapeLeaf",
+    "caption": "Healthy grape leaves are typically green, broad, and have a smooth, waxy texture with serrated edges.",
+    "class": "grape leaf",
+    "status": "healthy",
+    "original_path": "data\\plantwild\\images\\grape leaf\\113.jpg"
+  },
+  "0229_grape_leaf.jpg": {
+    "label": "GrapeLeaf",
+    "caption": "The grape leaf is typically green, elongated, and has a serrated edge with prominent veins.",
+    "class": "grape leaf",
+    "status": "healthy",
+    "original_path": "data\\plantwild\\images\\grape leaf\\163.jpg"
+  },
+  "0230_grape_leaf.jpg": {
+    "label": "GrapeLeaf",
+    "caption": "Grape leaves typically have a green color and are large, lobed, and toothed in appearance.",
+    "class": "grape leaf",
+    "status": "healthy",
+    "original_path": "data\\plantwild\\images\\grape leaf\\117.jpg"
+  },
+  "0231_lettuce_leaf.jpg": {
+    "label": "LettuceLeaf",
+    "caption": "The lettuce leaf appears green with a smooth texture and distinct veining.",
+    "class": "lettuce leaf",
+    "status": "healthy",
+    "original_path": "data\\plantwild\\images\\lettuce leaf\\google_0376.jpg"
+  },
+  "0232_lettuce_leaf.jpg": {
+    "label": "LettuceLeaf",
+    "caption": "Green, flat and textured, with a slightly crinkled surface and jagged edges.",
+    "class": "lettuce leaf",
+    "status": "healthy",
+    "original_path": "data\\plantwild\\images\\lettuce leaf\\17.jpg"
+  },
+  "0233_lettuce_leaf.jpg": {
+    "label": "LettuceLeaf",
+    "caption": "Bright green leaf with a smooth and slightly glossy surface, often forming a loose rosette shape.",
+    "class": "lettuce leaf",
+    "status": "healthy",
+    "original_path": "data\\plantwild\\images\\lettuce leaf\\google_0350.jpg"
+  },
+  "0234_maple_leaf.jpg": {
+    "label": "MapleLeaf",
+    "caption": "Healthy maple leaves are typically green with a recognizable, distinctive shape, consisting of lobes and serrated edges.",
+    "class": "maple leaf",
+    "status": "healthy",
+    "original_path": "data\\plantwild\\images\\maple leaf\\355.jpg"
+  },
+  "0235_maple_leaf.jpg": {
+    "label": "MapleLeaf",
+    "caption": "The maple leaf typically has a palmate shape with prominent veins and vibrant green color.",
+    "class": "maple leaf",
+    "status": "healthy",
+    "original_path": "data\\plantwild\\images\\maple leaf\\153.jpg"
+  },
+  "0236_maple_leaf.jpg": {
+    "label": "MapleLeaf",
+    "caption": "The maple leaf has a distinctive shape with multiple lobes and prominent veins running throughout.",
+    "class": "maple leaf",
+    "status": "healthy",
+    "original_path": "data\\plantwild\\images\\maple leaf\\google_0009.jpg"
+  },
+  "0237_peach_leaf.jpg": {
+    "label": "PeachLeaf",
+    "caption": "Peach leaf appears green and oval-shaped, with serrated edges and prominent veins running through it.",
+    "class": "peach leaf",
+    "status": "healthy",
+    "original_path": "data\\plantwild\\images\\peach leaf\\216.jpg"
+  },
+  "0238_peach_leaf.jpg": {
+    "label": "PeachLeaf",
+    "caption": "Peach leaf is typically green, oval-shaped, and has serrated edges with prominent veins.",
+    "class": "peach leaf",
+    "status": "healthy",
+    "original_path": "data\\plantwild\\images\\peach leaf\\26.jpg"
+  },
+  "0239_peach_leaf.jpg": {
+    "label": "PeachLeaf",
+    "caption": "Peach leaves typically appear green and oval-shaped, with serrated edges and a pointed tip.",
+    "class": "peach leaf",
+    "status": "healthy",
+    "original_path": "data\\plantwild\\images\\peach leaf\\google_0012.jpg"
+  },
+  "0240_plum_leaf.jpg": {
+    "label": "PlumLeaf",
+    "caption": "Plum leaf shows yellowing, wilting, and browning, with dark spots and irregular margins on the leaf.",
+    "class": "plum leaf",
+    "status": "healthy",
+    "original_path": "data\\plantwild\\images\\plum leaf\\28.jpg"
+  },
+  "0241_plum_leaf.jpg": {
+    "label": "PlumLeaf",
+    "caption": "Plum leaves with disease exhibit irregular brown spots and yellowing, eventually leading to defoliation.",
+    "class": "plum leaf",
+    "status": "healthy",
+    "original_path": "data\\plantwild\\images\\plum leaf\\google_0091.jpg"
+  },
+  "0242_plum_leaf.jpg": {
+    "label": "PlumLeaf",
+    "caption": "Plum leaf may exhibit discoloration, wilting, curling, or the presence of spots, blotches, or lesions.",
+    "class": "plum leaf",
+    "status": "healthy",
+    "original_path": "data\\plantwild\\images\\plum leaf\\212.jpg"
+  },
+  "0243_potato_leaf.jpg": {
+    "label": "PotatoLeaf",
+    "caption": "Yellowing and wilting of leaves with brown spots and necrotic lesions, often starting from the edges.",
+    "class": "potato leaf",
+    "status": "healthy",
+    "original_path": "data\\plantwild\\images\\potato leaf\\google_0319.jpg"
+  },
+  "0244_potato_leaf.jpg": {
+    "label": "PotatoLeaf",
+    "caption": "Yellowing and browning of potato leaf edges with dark spots or lesions, possibly leading to wilting or dieback.",
+    "class": "potato leaf",
+    "status": "healthy",
+    "original_path": "data\\plantwild\\images\\potato leaf\\google_0650.jpg"
+  },
+  "0245_potato_leaf.jpg": {
+    "label": "PotatoLeaf",
+    "caption": "Potato leaf may appear wilted, yellowing, or have brown lesions with a curled or distorted shape.",
+    "class": "potato leaf",
+    "status": "healthy",
+    "original_path": "data\\plantwild\\images\\potato leaf\\google_0547.jpg"
+  },
+  "0246_raspberry_leaf.jpg": {
+    "label": "RaspberryLeaf",
+    "caption": "Raspberry leaf appears with yellow or brown spots, curling, wilting, and eventually dropping.",
+    "class": "raspberry leaf",
+    "status": "healthy",
+    "original_path": "data\\plantwild\\images\\raspberry leaf\\google_0066.jpg"
+  },
+  "0247_raspberry_leaf.jpg": {
+    "label": "RaspberryLeaf",
+    "caption": "Raspberry leaves may have yellow or brown spots, curled edges, or holes caused by diseases.",
+    "class": "raspberry leaf",
+    "status": "healthy",
+    "original_path": "data\\plantwild\\images\\raspberry leaf\\google_0075.jpg"
+  },
+  "0248_raspberry_leaf.jpg": {
+    "label": "RaspberryLeaf",
+    "caption": "Raspberry leaf typically appears with small, yellow spots that eventually lead to browning and wilting.",
+    "class": "raspberry leaf",
+    "status": "healthy",
+    "original_path": "data\\plantwild\\images\\raspberry leaf\\92.jpg"
+  },
+  "0249_rice_leaf.jpg": {
+    "label": "RiceLeaf",
+    "caption": "Healthy rice leaves are typically long, slender, and vibrant green in color with no visible lesions.",
+    "class": "rice leaf",
+    "status": "healthy",
+    "original_path": "data\\plantwild\\images\\rice leaf\\184.jpg"
+  },
+  "0250_rice_leaf.jpg": {
+    "label": "RiceLeaf",
+    "caption": "Healthy rice leaf is green in color, elongated in shape with a pointed tip, and has parallel veins.",
+    "class": "rice leaf",
+    "status": "healthy",
+    "original_path": "data\\plantwild\\images\\rice leaf\\38.jpg"
+  },
+  "0251_rice_leaf.jpg": {
+    "label": "RiceLeaf",
+    "caption": "The rice leaf typically appears green with elongated shape, parallel veins, and a pointed tip.",
+    "class": "rice leaf",
+    "status": "healthy",
+    "original_path": "data\\plantwild\\images\\rice leaf\\250.jpg"
+  },
+  "0252_soybean_leaf.jpg": {
+    "label": "SoybeanLeaf",
+    "caption": "The soybean leaf appears green with a generally oval shape and serrated edges.",
+    "class": "soybean leaf",
+    "status": "healthy",
+    "original_path": "data\\plantwild\\images\\soybean leaf\\google_0535.jpg"
+  },
+  "0253_soybean_leaf.jpg": {
+    "label": "SoybeanLeaf",
+    "caption": "The soybean leaf typically has a green color with a serrated edge and lanceolate shape.",
+    "class": "soybean leaf",
+    "status": "healthy",
+    "original_path": "data\\plantwild\\images\\soybean leaf\\38.jpg"
+  },
+  "0254_soybean_leaf.jpg": {
+    "label": "SoybeanLeaf",
+    "caption": "Soybean leaves are typically green, oblong in shape, and have a serrated edge.",
+    "class": "soybean leaf",
+    "status": "healthy",
+    "original_path": "data\\plantwild\\images\\soybean leaf\\204.jpg"
+  },
+  "0255_squash_leaf.jpg": {
+    "label": "SquashLeaf",
+    "caption": "Squash leaves that are affected by a disease may display yellowing, wilting, and dark spots or lesions.",
+    "class": "squash leaf",
+    "status": "healthy",
+    "original_path": "data\\plantwild\\images\\squash leaf\\251.jpg"
+  },
+  "0256_squash_leaf.jpg": {
+    "label": "SquashLeaf",
+    "caption": "Yellowing of squash leaves with brown spots and powdery white growth indicates a potential fungal infection.",
+    "class": "squash leaf",
+    "status": "healthy",
+    "original_path": "data\\plantwild\\images\\squash leaf\\253.jpg"
+  },
+  "0257_squash_leaf.jpg": {
+    "label": "SquashLeaf",
+    "caption": "Squash leaves may develop yellow or brown spots, powdery mildew, or wilting due to various diseases.",
+    "class": "squash leaf",
+    "status": "healthy",
+    "original_path": "data\\plantwild\\images\\squash leaf\\zgoogle_0149.jpg"
+  },
+  "0258_strawberry_leaf.jpg": {
+    "label": "StrawberryLeaf",
+    "caption": "The strawberry leaf appears green with serrated edges and a sprawling shape.",
+    "class": "strawberry leaf",
+    "status": "healthy",
+    "original_path": "data\\plantwild\\images\\strawberry leaf\\google_0187.jpg"
+  },
+  "0259_strawberry_leaf.jpg": {
+    "label": "StrawberryLeaf",
+    "caption": "Strawberry leaves may have dark purple or red blotches, yellowing, curling, and white powdery growth indicating disease.",
+    "class": "strawberry leaf",
+    "status": "healthy",
+    "original_path": "data\\plantwild\\images\\strawberry leaf\\google_0079.jpg"
+  },
+  "0260_strawberry_leaf.jpg": {
+    "label": "StrawberryLeaf",
+    "caption": "Strawberry leaf appears as green, oval-shaped with toothed edges and sparse white spots or discoloration.",
+    "class": "strawberry leaf",
+    "status": "healthy",
+    "original_path": "data\\plantwild\\images\\strawberry leaf\\google_0178.jpg"
+  },
+  "0261_tobacco_leaf.jpg": {
+    "label": "TobaccoLeaf",
+    "caption": "The tobacco leaf has a broad, ovate shape with a smooth texture and prominent veins.",
+    "class": "tobacco leaf",
+    "status": "healthy",
+    "original_path": "data\\plantwild\\images\\tobacco leaf\\google_0020.jpg"
+  },
+  "0262_tobacco_leaf.jpg": {
+    "label": "TobaccoLeaf",
+    "caption": "The tobacco leaf is typically broad, green, and smooth-textured with distinctive veins running through it.",
+    "class": "tobacco leaf",
+    "status": "healthy",
+    "original_path": "data\\plantwild\\images\\tobacco leaf\\google_0027 - Copy (5).jpg"
+  },
+  "0263_tobacco_leaf.jpg": {
+    "label": "TobaccoLeaf",
+    "caption": "Typically green and smooth, with a slightly waxy texture and distinct veining patterns.",
+    "class": "tobacco leaf",
+    "status": "healthy",
+    "original_path": "data\\plantwild\\images\\tobacco leaf\\14 - Copy.jpg"
+  },
+  "0264_tomato_leaf.jpg": {
+    "label": "TomatoLeaf",
+    "caption": "Tomato leaf may appear yellow or wilted, with brown or black spots or lesions, and curling or twisting.",
+    "class": "tomato leaf",
+    "status": "healthy",
+    "original_path": "data\\plantwild\\images\\tomato leaf\\google_0346.jpg"
+  },
+  "0265_tomato_leaf.jpg": {
+    "label": "TomatoLeaf",
+    "caption": "The tomato leaf may turn yellow, display brown spots, and have curled or wilted sections.",
+    "class": "tomato leaf",
+    "status": "healthy",
+    "original_path": "data\\plantwild\\images\\tomato leaf\\google_0320.jpg"
+  },
+  "0266_tomato_leaf.jpg": {
+    "label": "TomatoLeaf",
+    "caption": "The tomato leaf can appear wilting, yellowing, or developing spots and lesions in various patterns.",
+    "class": "tomato leaf",
+    "status": "healthy",
+    "original_path": "data\\plantwild\\images\\tomato leaf\\google_0309.jpg"
+  }
+}
