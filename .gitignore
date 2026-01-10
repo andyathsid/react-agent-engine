@@ -11,3 +11,6 @@ yolov11/
 yolov12
 .deepeval/
 notebooks/
+data/plantwild/evaluation/images
+.vscode/
+agent.egg-info/
