@@ -8,6 +8,8 @@ and multimodal classification. It supports both full-image and region-based anal
 from collections import Counter
 from dataclasses import field
 from typing import Dict, List, Optional
+from typing_extensions import Annotated
+import operator
 import os
 import io
 import uuid
@@ -35,7 +37,7 @@ from langchain.agents.middleware.model_fallback import ModelFallbackMiddleware
 
 from agent.classifier import SCOLDClassifier
 from agent.detector import OWLv2Detector, YOLOv11Detector
-from agent.prompts import get_system_prompt
+from agent.prompts import get_system_prompt, get_system_prompt_no_tools, get_system_prompt_no_detection, get_system_prompt_no_retrieval
 
 # Load environment variables
 load_dotenv()
@@ -94,13 +96,19 @@ s3_client = boto3.client(
 
 # Type definitions
 class State(AgentState):
-    image_url: Optional[str] = field(default=None)
-    detections: List[Dict] = field(default_factory=list)
-    plant_disease_classifications: List[str] = field(default_factory=list)
-    visualization_url: Optional[str] = field(default=None)
+    # Store multiple images with their metadata for handling multiple uploads
+    images: Annotated[List[Dict], operator.add] = field(default_factory=list)
+    # Store detections - can be updated by multiple detection tools
+    detections: Annotated[List[Dict], operator.add] = field(default_factory=list)
+    # Store classification results - can be updated by multiple classification runs
+    plant_disease_classifications: Annotated[List[Dict], operator.add] = field(default_factory=list)
+    # Store visualization URLs - can be updated by multiple tools
+    visualization_urls: Annotated[List[str], operator.add] = field(default_factory=list)
+    # Current active image URL for backward compatibility (points to last uploaded image)
+    current_image_url: Optional[str] = field(default=None)
 
 # Initialize models and tools
-model = init_chat_model("gemini-2.5-flash", model_provider="google_genai", temperature=0)
+model = init_chat_model("gemini-3-flash-preview", model_provider="google_genai", temperature=0)
 
 # Global detector instances 
 _owlv2_detector = None
@@ -263,7 +271,7 @@ tool_retry_middleware = ToolRetryMiddleware(
 )
 
 model_fallback_middleware = ModelFallbackMiddleware(
-       init_chat_model("gemini-2.5-pro", model_provider="google_genai", temperature=0, thinking_budget=1024),
+       init_chat_model("gemini-3-pro-preview", model_provider="google_genai", temperature=0, thinking_budget=1024),
 )
 
 # Tool definitions
@@ -435,7 +443,7 @@ async def closed_set_leaf_detection(
     Returns:
         Detection summary with counts, bounding boxes, and visualization URL
     """
-    image_url = runtime.state.get("image_url")
+    image_url = runtime.state.get("current_image_url")
     if not image_url:
         raise ValueError("No plant image provided")
     
@@ -503,7 +511,7 @@ async def open_set_object_detection(
     Returns:
         Detection summary with counts, bounding boxes, and visualization URL
     """
-    image_url = runtime.state.get("image_url")
+    image_url = runtime.state.get("current_image_url")
     if not image_url:
         raise ValueError("No plant image provided")
 
@@ -556,57 +564,6 @@ async def open_set_object_detection(
         }
     )
     
-def rerank_with_jina(query: str, results, top_n: int = 5) -> dict:
-    """
-    Rerank search results using Jina's multimodal reranker API.
-    
-    Args:
-        query: Text query
-        results: Qdrant search results with image URLs in payload
-        top_n: Number of top results to return
-        
-    Returns:
-        Reranked results with relevance scores
-    """
-    if not Config.JINA_API_KEY:
-        print("Warning: JINA_API_KEY not found. Skipping reranking.")
-        return {"results": [{"index": i, "relevance_score": 0} for i in range(len(results.points))]}
-    
-    # Prepare documents for reranking
-    documents = []
-    for point in results.points:
-        doc = {
-            "image": point.payload.get("image_url", ""),
-            "text": point.payload.get("caption", "")
-        }
-        documents.append(doc)
-    
-    # Prepare request payload
-    payload = {
-        "model": Config.JINA_RERANK_MODEL,
-        "query": query,
-        "documents": documents,
-        "top_n": top_n,
-        "return_documents": False
-    }
-    
-    # Make API request
-    headers = {
-        "Content-Type": "application/json",
-        "Authorization": f"Bearer {Config.JINA_API_KEY}"
-    }
-    
-    try:
-        response = requests.post(Config.JINA_RERANK_URL, json=payload, headers=headers)
-        response.raise_for_status()
-        return response.json()
-    except requests.exceptions.RequestException as e:
-        print(f"Error calling Jina Reranker API: {e}")
-        if hasattr(e, 'response') and hasattr(e.response, 'text'):
-            print(f"Response: {e.response.text}")
-        return {"results": [{"index": i, "relevance_score": 0} for i in range(len(results.points))]}
-
-
 @tool
 async def plant_disease_identification(
     query_text: Optional[str] = None,
@@ -638,7 +595,7 @@ async def plant_disease_identification(
     Returns:
         Classification results with labels, confidence scores, image URLs, and top-k diseases
     """
-    image_url = runtime.state.get("image_url")
+    image_url = runtime.state.get("current_image_url")
     if not image_url:
         raise ValueError("No plant image provided")
 
@@ -729,7 +686,7 @@ async def plant_disease_identification(
     
     return Command(
         update={
-            "plant_disease_classifications": result,
+            "plant_disease_classifications": [result],
             "messages": [
                 ToolMessage(
                     summary,
@@ -748,3 +705,33 @@ graph = create_agent(
     state_schema=State
 )
 
+full_agent = create_agent(
+        model=model,
+        tools=[web_search, knowledgebase_search, closed_set_leaf_detection, open_set_object_detection, plant_disease_identification],
+        middleware=[get_system_prompt, handle_tool_errors, image_tool_middleware, model_retry_middleware, tool_retry_middleware, model_fallback_middleware],
+        name="thesis-agent-full",
+        state_schema=State
+    )
+
+no_detection_agent = create_agent(
+        model=model,
+        tools=[web_search, knowledgebase_search],  # No detection tools
+        middleware=[get_system_prompt_no_detection, handle_tool_errors, image_tool_middleware, model_retry_middleware, tool_retry_middleware, model_fallback_middleware],
+        name="thesis-agent-no-detection",
+        state_schema=State
+    )
+
+no_retrieval_agent = create_agent(
+        model=model,
+        tools=[closed_set_leaf_detection, open_set_object_detection, plant_disease_identification],  # No retrieval tools
+        middleware=[get_system_prompt_no_retrieval, handle_tool_errors, image_tool_middleware, model_retry_middleware, tool_retry_middleware, model_fallback_middleware],
+        name="thesis-agent-no-retrieval",
+        state_schema=State
+    )
+
+no_tools_agent = create_agent(
+        model=model,
+        middleware=[get_system_prompt_no_tools, model_retry_middleware,model_fallback_middleware],
+        name="thesis-agent-no-tools",
+        state_schema=State
+    )

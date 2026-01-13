@@ -1,69 +1,4 @@
 #!/usr/bin/env python3
-"""
-Plant Disease Identification Agent - Evaluation Suite
-
-This module provides comprehensive evaluation metrics for the plant disease identification agent,
-with full support for multimodal (text + image) evaluation and smart metric management to avoid rate limits.
-
-MULTIMODAL EVALUATION FEATURES:
-- All DeepEval metrics now support MLLMImage objects for direct image evaluation
-- LLM judges can see and analyze the actual images when evaluating agent performance
-- Robust handling of both image-present and text-only scenarios
-- Automatic fallback to text-only evaluation if image loading fails
-
-KEY METRICS:
-1. Faithfulness (DeepEval GEval) - Evaluates if agent's claims are grounded in evidence
-2. Disease Accuracy (DeepEval DAG) - Evaluates correctness of disease identification
-3. Goal Achievement (With/Without Reference) - Evaluates if agent achieved user's goal
-4. Trajectory Accuracy (With/Without Reference) - Evaluates tool usage efficiency
-5. Context Relevance (RAGAS) - Evaluates quality of retrieved context
-
-SMART METRIC MANAGEMENT (NEW):
-To avoid rate limits when running multiple metrics, this module provides:
-
-1. SEQUENTIAL METRIC EXECUTION:
-   - Run metrics one-by-one on existing experiments
-   - Automatic delays between metric runs
-   - Error handling with continuation
-
-2. BATCH PROCESSING:
-   - Process multiple experiments with specified metrics
-   - Configurable concurrency and delays
-
-3. ANALYSIS TOOLS:
-   - Analyze experiments to recommend appropriate metrics
-   - Identify missing metrics
-   - Check experiment health
-
-USAGE EXAMPLES:
-
-# Add metrics to existing experiment (avoids rate limits)
-await run_metrics_sequentially(
-    experiment_id="your-experiment-id",
-    metrics=["faithfulness", "context_relevance"],
-    max_concurrency=2,
-    delay_between_metrics=1.5
-)
-
-# Complete workflow with sequential metrics
-await run_full_evaluation_workflow(
-    dataset_name="thesis_vqa_type1_detailed",
-    experiment_name="my-eval",
-    description="Safe evaluation",
-    max_concurrency=4,
-    run_all_metrics_at_once=False  # Sequential mode
-)
-
-# Command line usage:
-python evaluation.py --analyze-exp "experiment-id"
-python evaluation.py --add-metrics "experiment-id" --metrics faithfulness context_relevance
-python evaluation.py --full-workflow "dataset-name" --name "experiment-name" --sequential
-
-Each metric automatically handles:
-- Missing image_url fields (falls back to text-only)
-- Invalid or inaccessible images (logs warning and continues)
-- Empty or malformed inputs (validation and normalization)
-"""
 
 import os
 import sys
@@ -604,14 +539,15 @@ Answer Yes (0.25) or No (0.0).
         )
 
         pathogen_type_check = BinaryJudgementNode(
-            criteria="""
-Based on agent and expected outputs:
-Is the agent's stated or implied pathogen type (fungal/bacterial/viral/pest) correct?
+            criteria=f"""
+Expected pathogen type: {expected_pathogen}
+
+Based on the agent's actual output:
+Is the agent's stated or implied pathogen type correct (should be: {expected_pathogen})?
 If agent made no specific claim about pathogen type, answer No.
 Answer Yes or No.
 """,
             evaluation_params=[
-                LLMTestCaseParams.EXPECTED_OUTPUT,
                 LLMTestCaseParams.ACTUAL_OUTPUT,
             ],
             children=[
@@ -621,14 +557,16 @@ Answer Yes or No.
         )
 
         disease_partial_match = BinaryJudgementNode(
-            criteria="""
-Based on agent and expected outputs:
-Is the expected disease mentioned in agent's differential (top 2-3 candidates) OR is the disease category/pattern strongly consistent?
-If yes AND pathogen type is correct, this leads to 0.75.
+            criteria=f"""
+Expected disease: {expected_disease}
+Expected pathogen type: {expected_pathogen}
+
+Based on the agent's actual output:
+Is the expected disease "{expected_disease}" mentioned in agent's differential (top 2-3 candidates) OR is the disease category/pattern strongly consistent?
+If yes AND pathogen type ({expected_pathogen}) is correct, this leads to 0.75.
 Answer Yes or No.
 """,
             evaluation_params=[
-                LLMTestCaseParams.EXPECTED_OUTPUT,
                 LLMTestCaseParams.ACTUAL_OUTPUT,
             ],
             children=[
@@ -638,15 +576,15 @@ Answer Yes or No.
         )
 
         primary_disease_correct = BinaryJudgementNode(
-            criteria="""
-Based on agent and expected outputs:
-Is the agent's PRIMARY disease identification exactly correct (allowing minor naming variants)?
-The expected disease should be extracted from the METADATA section.
+            criteria=f"""
+Expected disease: {expected_disease}
+
+Based on the agent's actual output:
+Is the agent's PRIMARY disease identification exactly "{expected_disease}" (allowing minor naming variants)?
 
 Answer Yes or No.
 """,
             evaluation_params=[
-                LLMTestCaseParams.EXPECTED_OUTPUT,
                 LLMTestCaseParams.ACTUAL_OUTPUT,
             ],
             children=[
@@ -656,18 +594,10 @@ Answer Yes or No.
         )
 
         healthy_plant_correct = BinaryJudgementNode(
-        criteria="""
-Look at the METADATA section in expected_output for the "is_healthy" field:
+        criteria=f"""
+This is a {"HEALTHY PLANT" if is_healthy_case else "DISEASE"} case (is_healthy: {is_healthy_case}).
 
-If is_healthy: True (HEALTHY PLANT case):
-  - Agent should correctly identify the plant as HEALTHY/no disease/no symptoms present as PRIMARY conclusion
-  - Agent may provide preventive care advice (this is appropriate)
-  - Agent may mention tool results with low confidence or ask clarifying questions (this is appropriate)
-  - Answer Yes if agent's primary conclusion is healthy, even when mentioning low-confidence possibilities
-  - Answer No only if agent definitively states a specific disease as the primary diagnosis
-
-If is_healthy: False (DISEASE case):
-  - This is NOT a healthy case, answer No to proceed to disease identification check
+{"HEALTHY PLANT case - The agent should correctly identify the plant as HEALTHY/no disease/no symptoms present as PRIMARY conclusion. The agent may provide preventive care advice, mention tool results with low confidence, or ask clarifying questions (all appropriate). Answer Yes if agent's primary conclusion is healthy, even when mentioning low-confidence possibilities. Answer No only if agent definitively states a specific disease as the primary diagnosis." if is_healthy_case else "DISEASE case - This is NOT a healthy plant. Answer No to proceed to disease identification check."}
 
 Answer Yes (1.0 for correct healthy identification) or No (proceed to disease check).
 """,
@@ -1350,10 +1280,13 @@ def create_deepeval_test_case(
     expected_pathogen_type = metadata.get("pathogen_type", "")
     
     # Detect healthy plant cases: class ends with "leaf" and no pathogen type
-    is_healthy_case = (
-        expected_disease.endswith("leaf") or 
-        expected_disease.endswith("healthy")
-    ) and not expected_pathogen_type
+    if expected_pathogen_type == "healthy":
+        is_healthy_case = True 
+        
+    # is_healthy_case = (
+    #     expected_disease.endswith("leaf") or 
+    #     expected_disease.endswith("healthy")
+    # ) and not expected_pathogen_type
     
     # Combine reference answer with structured metadata for DAG parsing
     if is_healthy_case:
