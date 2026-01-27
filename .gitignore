@@ -14,3 +14,7 @@ notebooks/
 data/plantwild/evaluation/images
 .vscode/
 agent.egg-info/
+data/corpus
+data/evaluation_cache
+.fastembed_cache
+models/scold
