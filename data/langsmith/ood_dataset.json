@@ -1,0 +1,3502 @@
+[
+  {
+    "inputs": {
+      "user_text": "black gram saya memiliki bintik-bintik hitam melingkar yang cekung dengan tepi kemerahan. Ini kira-kira kenapa ya dan bagaimana cara mengobatinya?",
+      "image_url": "https://thesis-assets.andyathsid.com/ood/evaluation/images/000_black_gram_anthracnose.jpg"
+    },
+    "outputs": {
+      "reference_answer": "Berdasarkan gejala pada gambar, tanaman black gram Anda kemungkinan besar menderita penyakit Antraknosa. Penyakit ini disebabkan oleh jamur dan menyebabkan bintik-bintik cekung berwarna hitam dengan tepi kemerahan pada daun dan bagian tanaman lainnya. Untuk penanganannya, disarankan untuk membuang dan memusnahkan bagian tanaman yang terinfeksi, menjaga kebersihan area tanam, serta menggunakan fungisida yang sesuai jika infeksi parah.",
+      "reference_goal": "Lakukan triase visual pada gejala black gram yang terlihat di gambar, gunakan alat identifikasi penyakit untuk mengonfirmasi Fungal (Colletotrichum lindemuthianum), lalu berikan panduan manajemen dan pengobatan berbasis bukti.",
+      "reference_context": "Tanaman: black gram. Penyakit: Black Gram Anthracnose. Gejala: Circular, black, sunken spots with dark center and bright red orange margins on leaves and pods. Severe infections spread entire leaf giving blighted appearance. Small, dark brown to black lesions on cotyledons; oval or eye-shaped lesions on stems which turn sunken and brown with purple to red margins.. Penanganan: ",
+      "reference_tool_calls": [
+        {
+          "name": "plant_disease_identification",
+          "args": {}
+        },
+        {
+          "name": "knowledgebase_search",
+          "args": {}
+        }
+      ]
+    },
+    "metadata": {
+      "class": "Black Gram Anthracnose",
+      "plant": "black gram",
+      "pathogen_type": "fungal",
+      "prompt_type": "scenario_1_diseased",
+      "filename": "000_black_gram_anthracnose.jpg",
+      "is_plant_related": true
+    }
+  },
+  {
+    "inputs": {
+      "user_text": "Saya punya tanaman black gram yang daunnya seperti ini. Ini apakah penyakit dan bagaimana cara menanganinya?",
+      "image_url": "https://thesis-assets.andyathsid.com/ood/evaluation/images/001_black_gram_anthracnose.jpg"
+    },
+    "outputs": {
+      "reference_answer": "Tanaman black gram Anda menunjukkan gejala Anthracnose. Untuk menanganinya, Anda dapat melakukan beberapa tindakan seperti sanitasi kebun, rotasi tanaman, penggunaan varietas tahan penyakit, dan aplikasi fungisida jika diperlukan.",
+      "reference_goal": "Lakukan triase visual pada gejala black gram yang terlihat di gambar, gunakan alat identifikasi penyakit untuk mengonfirmasi Fungal (Colletotrichum lindemuthianum), lalu berikan panduan manajemen dan pengobatan berbasis bukti.",
+      "reference_context": "Tanaman: black gram. Penyakit: Black Gram Anthracnose. Gejala: Circular, black, sunken spots with dark center and bright red orange margins on leaves and pods. Severe infections spread entire leaf giving blighted appearance. Small, dark brown to black lesions on cotyledons; oval or eye-shaped lesions on stems which turn sunken and brown with purple to red margins.. Penanganan: ",
+      "reference_tool_calls": [
+        {
+          "name": "closed_set_leaf_detection",
+          "args": {}
+        },
+        {
+          "name": "plant_disease_identification",
+          "args": {}
+        },
+        {
+          "name": "knowledgebase_search",
+          "args": {}
+        }
+      ]
+    },
+    "metadata": {
+      "class": "Black Gram Anthracnose",
+      "plant": "black gram",
+      "pathogen_type": "fungal",
+      "prompt_type": "scenario_2_diseased",
+      "filename": "001_black_gram_anthracnose.jpg",
+      "is_plant_related": true
+    }
+  },
+  {
+    "inputs": {
+      "user_text": "Tanaman saya kenapa ya? Apakah ini penyakit? Bagaimana cara mengatasinya?",
+      "image_url": "https://thesis-assets.andyathsid.com/ood/evaluation/images/002_black_gram_anthracnose.jpg"
+    },
+    "outputs": {
+      "reference_answer": "Berdasarkan gejala pada daun, kemungkinan tanaman Anda terserang penyakit Antraknosa. Penyakit ini disebabkan oleh jamur dan dapat menyebabkan bercak melingkar, cekung, berwarna hitam dengan tepi merah oranye pada daun dan polong.",
+      "reference_goal": "Lakukan triase visual pada gejala black gram yang terlihat di gambar, gunakan alat identifikasi penyakit untuk mengonfirmasi Fungal (Colletotrichum lindemuthianum), lalu berikan panduan manajemen dan pengobatan berbasis bukti.",
+      "reference_context": "Tanaman: black gram. Penyakit: Black Gram Anthracnose. Gejala: Circular, black, sunken spots with dark center and bright red orange margins on leaves and pods. Severe infections spread entire leaf giving blighted appearance. Small, dark brown to black lesions on cotyledons; oval or eye-shaped lesions on stems which turn sunken and brown with purple to red margins.. Penanganan: ",
+      "reference_tool_calls": [
+        {
+          "name": "plant_disease_identification",
+          "args": {}
+        },
+        {
+          "name": "knowledgebase_search",
+          "args": {}
+        }
+      ]
+    },
+    "metadata": {
+      "class": "Black Gram Anthracnose",
+      "plant": "black gram",
+      "pathogen_type": "fungal",
+      "prompt_type": "scenario_3_diseased",
+      "filename": "002_black_gram_anthracnose.jpg",
+      "is_plant_related": true
+    }
+  },
+  {
+    "inputs": {
+      "user_text": "black gram saya memiliki daun yang keriting dan permukaannya tidak rata. Ini kira-kira kenapa ya dan bagaimana cara mengobatinya?",
+      "image_url": "https://thesis-assets.andyathsid.com/ood/evaluation/images/000_black_gram_leaf_crinckle.jpg"
+    },
+    "outputs": {
+      "reference_answer": "Berdasarkan gejala daun black gram Anda yang keriting dan permukaannya tidak rata, kemungkinan besar tanaman Anda terserang virus mosaik, seperti Black Gram Yellow Mosaic Virus (BGYMV). Sayangnya, tidak ada obat langsung untuk penyakit virus. Penanganan berfokus pada pencegahan dan pengelolaan untuk membatasi penyebaran.",
+      "reference_goal": "Lakukan triase visual pada gejala black gram yang terlihat di gambar, gunakan alat identifikasi penyakit untuk mengonfirmasi Viral or genetic disorder, lalu berikan panduan manajemen dan pengobatan berbasis bukti.",
+      "reference_context": "Tanaman: black gram. Penyakit: Black Gram Leaf Crinckle. Gejala: Leaves show crinkling and distortion. Leaf surfaces become irregular and wavy. Plants may show stunted growth.. Penanganan: ",
+      "reference_tool_calls": [
+        {
+          "name": "closed_set_leaf_detection",
+          "args": {}
+        },
+        {
+          "name": "plant_disease_identification",
+          "args": {}
+        },
+        {
+          "name": "knowledgebase_search",
+          "args": {}
+        }
+      ]
+    },
+    "metadata": {
+      "class": "Black Gram Leaf Crinckle",
+      "plant": "black gram",
+      "pathogen_type": "viral",
+      "prompt_type": "scenario_1_diseased",
+      "filename": "000_black_gram_leaf_crinckle.jpg",
+      "is_plant_related": true
+    }
+  },
+  {
+    "inputs": {
+      "user_text": "Saya punya tanaman black gram yang daunnya seperti ini. Ini apakah penyakit dan bagaimana cara menanganinya?",
+      "image_url": "https://thesis-assets.andyathsid.com/ood/evaluation/images/001_black_gram_leaf_crinckle.jpg"
+    },
+    "outputs": {
+      "reference_answer": "Berdasarkan gambar, tanaman black gram Anda kemungkinan besar menderita Penyakit Keriting Daun Black Gram (Black Gram Leaf Crinkle Disease). Ini adalah penyakit virus. Penyakit ini dapat menyebabkan daun mengeriting, melengkung, dan pertumbuhan tanaman terhambat.",
+      "reference_goal": "Lakukan triase visual pada gejala black gram yang terlihat di gambar, gunakan alat identifikasi penyakit untuk mengonfirmasi Viral or genetic disorder, lalu berikan panduan manajemen dan pengobatan berbasis bukti.",
+      "reference_context": "Tanaman: black gram. Penyakit: Black Gram Leaf Crinckle. Gejala: Leaves show crinkling and distortion. Leaf surfaces become irregular and wavy. Plants may show stunted growth.. Penanganan: ",
+      "reference_tool_calls": [
+        {
+          "name": "plant_disease_identification",
+          "args": {}
+        },
+        {
+          "name": "knowledgebase_search",
+          "args": {}
+        }
+      ]
+    },
+    "metadata": {
+      "class": "Black Gram Leaf Crinckle",
+      "plant": "black gram",
+      "pathogen_type": "viral",
+      "prompt_type": "scenario_2_diseased",
+      "filename": "001_black_gram_leaf_crinckle.jpg",
+      "is_plant_related": true
+    }
+  },
+  {
+    "inputs": {
+      "user_text": "Kenapa tanaman saya jadi begini? Apa yang harus saya lakukan?",
+      "image_url": "https://thesis-assets.andyathsid.com/ood/evaluation/images/002_black_gram_leaf_crinckle.jpg"
+    },
+    "outputs": {
+      "reference_answer": "Berdasarkan gambar, tanaman Anda kemungkinan besar terserang Penyakit Keriting Daun (Leaf Crinkle Disease). Ini adalah penyakit virus yang menyebabkan daun mengeriting, berkerut, dan pertumbuhan tanaman terhambat. Untuk mengatasinya, Anda perlu mengelola serangga vektor yang menyebarkan virus, seperti kutu daun, dan membuang tanaman yang terinfeksi parah untuk mencegah penyebaran.",
+      "reference_goal": "Lakukan triase visual pada gejala black gram yang terlihat di gambar, gunakan alat identifikasi penyakit untuk mengonfirmasi Viral or genetic disorder, lalu berikan panduan manajemen dan pengobatan berbasis bukti.",
+      "reference_context": "Tanaman: black gram. Penyakit: Black Gram Leaf Crinckle. Gejala: Leaves show crinkling and distortion. Leaf surfaces become irregular and wavy. Plants may show stunted growth.. Penanganan: ",
+      "reference_tool_calls": [
+        {
+          "name": "closed_set_leaf_detection",
+          "args": {}
+        },
+        {
+          "name": "plant_disease_identification",
+          "args": {}
+        },
+        {
+          "name": "knowledgebase_search",
+          "args": {}
+        }
+      ]
+    },
+    "metadata": {
+      "class": "Black Gram Leaf Crinckle",
+      "plant": "black gram",
+      "pathogen_type": "viral",
+      "prompt_type": "scenario_3_diseased",
+      "filename": "002_black_gram_leaf_crinckle.jpg",
+      "is_plant_related": true
+    }
+  },
+  {
+    "inputs": {
+      "user_text": "black gram saya ada bercak-bercak putih seperti tepung di daunnya. Ini kira-kira kenapa ya dan bagaimana cara mengobatinya?",
+      "image_url": "https://thesis-assets.andyathsid.com/ood/evaluation/images/000_black_gram_powdery_mildew.jpg"
+    },
+    "outputs": {
+      "reference_answer": "Tanaman black gram Anda kemungkinan besar terserang Embun Tepung (Powdery Mildew). Ini adalah penyakit jamur yang umum, ditandai dengan bercak putih bertepung pada permukaan daun. Untuk penanganannya, Anda bisa membuang daun yang terinfeksi parah, meningkatkan sirkulasi udara, dan menggunakan fungisida organik atau kimia jika diperlukan.",
+      "reference_goal": "Lakukan triase visual pada gejala black gram yang terlihat di gambar, gunakan alat identifikasi penyakit untuk mengonfirmasi Fungal (Erysiphe polygoni), lalu berikan panduan manajemen dan pengobatan berbasis bukti.",
+      "reference_context": "Tanaman: black gram. Penyakit: Black Gram Powdery Mildew. Gejala: White, powdery fungal growth on leaf surfaces, particularly on upper surfaces. Leaves may yellow and die prematurely. Severe infections can cover entire leaf surfaces.. Penanganan: ",
+      "reference_tool_calls": [
+        {
+          "name": "plant_disease_identification",
+          "args": {}
+        },
+        {
+          "name": "knowledgebase_search",
+          "args": {}
+        }
+      ]
+    },
+    "metadata": {
+      "class": "Black Gram Powdery Mildew",
+      "plant": "black gram",
+      "pathogen_type": "fungal",
+      "prompt_type": "scenario_1_diseased",
+      "filename": "000_black_gram_powdery_mildew.jpg",
+      "is_plant_related": true
+    }
+  },
+  {
+    "inputs": {
+      "user_text": "Saya punya tanaman black gram yang daunnya seperti ini. Ini apakah penyakit dan bagaimana cara menanganinya?",
+      "image_url": "https://thesis-assets.andyathsid.com/ood/evaluation/images/001_black_gram_powdery_mildew.jpg"
+    },
+    "outputs": {
+      "reference_answer": "Berdasarkan gejala yang terlihat pada daun black gram Anda, kemungkinan besar tanaman Anda terserang penyakit embun tepung (powdery mildew). Ini adalah penyakit jamur umum yang ditandai dengan bercak putih seperti bubuk. Untuk penanganan, Anda bisa mencoba beberapa langkah seperti meningkatkan sirkulasi udara di sekitar tanaman, membuang daun yang terinfeksi parah, dan jika diperlukan, aplikasikan fungisida yang sesuai.",
+      "reference_goal": "Lakukan triase visual pada gejala black gram yang terlihat di gambar, gunakan alat identifikasi penyakit untuk mengonfirmasi Fungal (Erysiphe polygoni), lalu berikan panduan manajemen dan pengobatan berbasis bukti.",
+      "reference_context": "Tanaman: black gram. Penyakit: Black Gram Powdery Mildew. Gejala: White, powdery fungal growth on leaf surfaces, particularly on upper surfaces. Leaves may yellow and die prematurely. Severe infections can cover entire leaf surfaces.. Penanganan: ",
+      "reference_tool_calls": [
+        {
+          "name": "plant_disease_identification",
+          "args": {}
+        },
+        {
+          "name": "knowledgebase_search",
+          "args": {}
+        }
+      ]
+    },
+    "metadata": {
+      "class": "Black Gram Powdery Mildew",
+      "plant": "black gram",
+      "pathogen_type": "fungal",
+      "prompt_type": "scenario_2_diseased",
+      "filename": "001_black_gram_powdery_mildew.jpg",
+      "is_plant_related": true
+    }
+  },
+  {
+    "inputs": {
+      "user_text": "Tanaman saya kenapa ya? Apa yang salah dan bagaimana cara mengatasinya?",
+      "image_url": "https://thesis-assets.andyathsid.com/ood/evaluation/images/002_black_gram_powdery_mildew.jpg"
+    },
+    "outputs": {
+      "reference_answer": "Tanaman Anda kemungkinan besar terserang Embun Tepung (Powdery Mildew), yaitu penyakit jamur yang menyebabkan lapisan putih seperti tepung pada daun. Ini dapat diobati dengan fungisida atau solusi organik seperti semprotan minyak neem.",
+      "reference_goal": "Lakukan triase visual pada gejala black gram yang terlihat di gambar, gunakan alat identifikasi penyakit untuk mengonfirmasi Fungal (Erysiphe polygoni), lalu berikan panduan manajemen dan pengobatan berbasis bukti.",
+      "reference_context": "Tanaman: black gram. Penyakit: Black Gram Powdery Mildew. Gejala: White, powdery fungal growth on leaf surfaces, particularly on upper surfaces. Leaves may yellow and die prematurely. Severe infections can cover entire leaf surfaces.. Penanganan: ",
+      "reference_tool_calls": [
+        {
+          "name": "plant_disease_identification",
+          "args": {}
+        },
+        {
+          "name": "knowledgebase_search",
+          "args": {}
+        }
+      ]
+    },
+    "metadata": {
+      "class": "Black Gram Powdery Mildew",
+      "plant": "black gram",
+      "pathogen_type": "fungal",
+      "prompt_type": "scenario_3_diseased",
+      "filename": "002_black_gram_powdery_mildew.jpg",
+      "is_plant_related": true
+    }
+  },
+  {
+    "inputs": {
+      "user_text": "black gram saya memiliki pola mosaik kuning dan bercak-bercak kuning pada daunnya. Ini kira-kira kenapa ya dan bagaimana cara mengobatinya?",
+      "image_url": "https://thesis-assets.andyathsid.com/ood/evaluation/images/000_black_gram_yellow_mosaic.jpg"
+    },
+    "outputs": {
+      "reference_answer": "Tanaman black gram Anda menunjukkan gejala Yellow Mosaic Disease, kemungkinan disebabkan oleh virus. Penyakit ini sering disebarkan oleh serangga vektor seperti kutu kebul. Untuk penanganan, Anda bisa mencoba mengendalikan populasi serangga vektor dengan insektisida atau perangkap lengket, membuang tanaman yang terinfeksi parah untuk mencegah penyebaran, dan menanam varietas yang tahan penyakit.",
+      "reference_goal": "Lakukan triase visual pada gejala black gram yang terlihat di gambar, gunakan alat identifikasi penyakit untuk mengonfirmasi Viral (Mung bean yellow mosaic virus), lalu berikan panduan manajemen dan pengobatan berbasis bukti.",
+      "reference_context": "Tanaman: black gram. Penyakit: Black Gram Yellow Mosaic. Gejala: Yellow mosaic patterns on leaves with distinct yellow patches or streaks. Leaves may show chlorosis. Plants become stunted and produce fewer pods.. Penanganan: ",
+      "reference_tool_calls": [
+        {
+          "name": "closed_set_leaf_detection",
+          "args": {}
+        },
+        {
+          "name": "plant_disease_identification",
+          "args": {}
+        },
+        {
+          "name": "knowledgebase_search",
+          "args": {}
+        }
+      ]
+    },
+    "metadata": {
+      "class": "Black Gram Yellow Mosaic",
+      "plant": "black gram",
+      "pathogen_type": "viral",
+      "prompt_type": "scenario_1_diseased",
+      "filename": "000_black_gram_yellow_mosaic.jpg",
+      "is_plant_related": true
+    }
+  },
+  {
+    "inputs": {
+      "user_text": "Saya punya tanaman black gram. Apakah ini penyakit dan bagaimana cara mengatasinya?",
+      "image_url": "https://thesis-assets.andyathsid.com/ood/evaluation/images/001_black_gram_yellow_mosaic.jpg"
+    },
+    "outputs": {
+      "reference_answer": "Tanaman black gram Anda menunjukkan gejala Black gram yellow mosaic virus (BGYMV). Penyakit ini disebabkan oleh virus yang ditularkan oleh kutu kebul. Untuk penanganannya, disarankan untuk menggunakan varietas resisten, memusnahkan tanaman terinfeksi, dan mengendalikan kutu kebul.",
+      "reference_goal": "Lakukan triase visual pada gejala black gram yang terlihat di gambar, gunakan alat identifikasi penyakit untuk mengonfirmasi Viral (Mung bean yellow mosaic virus), lalu berikan panduan manajemen dan pengobatan berbasis bukti.",
+      "reference_context": "Tanaman: black gram. Penyakit: Black Gram Yellow Mosaic. Gejala: Yellow mosaic patterns on leaves with distinct yellow patches or streaks. Leaves may show chlorosis. Plants become stunted and produce fewer pods.. Penanganan: ",
+      "reference_tool_calls": [
+        {
+          "name": "plant_disease_identification",
+          "args": {}
+        },
+        {
+          "name": "knowledgebase_search",
+          "args": {}
+        }
+      ]
+    },
+    "metadata": {
+      "class": "Black Gram Yellow Mosaic",
+      "plant": "black gram",
+      "pathogen_type": "viral",
+      "prompt_type": "scenario_2_diseased",
+      "filename": "001_black_gram_yellow_mosaic.jpg",
+      "is_plant_related": true
+    }
+  },
+  {
+    "inputs": {
+      "user_text": "Tanaman saya kenapa ya? Apakah ini penyakit? Gimana cara mengatasinya?",
+      "image_url": "https://thesis-assets.andyathsid.com/ood/evaluation/images/002_black_gram_yellow_mosaic.jpg"
+    },
+    "outputs": {
+      "reference_answer": "Berdasarkan gejala pada gambar, tanaman Anda kemungkinan terinfeksi virus mosaik kuning. Ini adalah penyakit virus yang umum pada tanaman polong-polongan. Untuk mengatasinya, Anda perlu mengelola vektor serangga dan membuang tanaman yang terinfeksi.",
+      "reference_goal": "Lakukan triase visual pada gejala black gram yang terlihat di gambar, gunakan alat identifikasi penyakit untuk mengonfirmasi Viral (Mung bean yellow mosaic virus), lalu berikan panduan manajemen dan pengobatan berbasis bukti.",
+      "reference_context": "Tanaman: black gram. Penyakit: Black Gram Yellow Mosaic. Gejala: Yellow mosaic patterns on leaves with distinct yellow patches or streaks. Leaves may show chlorosis. Plants become stunted and produce fewer pods.. Penanganan: ",
+      "reference_tool_calls": [
+        {
+          "name": "closed_set_leaf_detection",
+          "args": {}
+        },
+        {
+          "name": "plant_disease_identification",
+          "args": {}
+        },
+        {
+          "name": "knowledgebase_search",
+          "args": {}
+        }
+      ]
+    },
+    "metadata": {
+      "class": "Black Gram Yellow Mosaic",
+      "plant": "black gram",
+      "pathogen_type": "viral",
+      "prompt_type": "scenario_3_diseased",
+      "filename": "002_black_gram_yellow_mosaic.jpg",
+      "is_plant_related": true
+    }
+  },
+  {
+    "inputs": {
+      "user_text": "Chili saya ada bintik-bintik di daunnya, beberapa terlihat abu-abu di tengah dan cokelat di pinggir. Ini kira-kira kenapa ya dan bagaimana cara mengobatinya?",
+      "image_url": "https://thesis-assets.andyathsid.com/ood/evaluation/images/000_chili_cercospora.jpg"
+    },
+    "outputs": {
+      "reference_answer": "Berdasarkan gejala bintik-bintik melingkar dengan pusat abu-abu dan tepi cokelat pada daun cabai Anda, kemungkinan besar tanaman Anda terserang penyakit Antraknosa. Penyakit ini disebabkan oleh jamur. Untuk penanganannya, Anda bisa membuang daun yang terinfeksi untuk mencegah penyebaran, memastikan sanitasi kebun yang baik, dan jika perlu, menggunakan fungisida yang sesuai.",
+      "reference_goal": "Lakukan triase visual pada gejala chili yang terlihat di gambar, gunakan alat identifikasi penyakit untuk mengonfirmasi Fungal (Cercospora capsici), lalu berikan panduan manajemen dan pengobatan berbasis bukti.",
+      "reference_context": "Tanaman: chili. Penyakit: Chili Cercospora. Gejala: Small, circular spots on leaves with gray centers and brown margins. Spots may coalesce to form larger necrotic areas. Leaves may yellow and drop prematurely.. Penanganan: ",
+      "reference_tool_calls": [
+        {
+          "name": "plant_disease_identification",
+          "args": {}
+        },
+        {
+          "name": "knowledgebase_search",
+          "args": {}
+        }
+      ]
+    },
+    "metadata": {
+      "class": "Chili Cercospora",
+      "plant": "chili",
+      "pathogen_type": "fungal",
+      "prompt_type": "scenario_1_diseased",
+      "filename": "000_chili_cercospora.jpg",
+      "is_plant_related": true
+    }
+  },
+  {
+    "inputs": {
+      "user_text": "Saya punya tanaman chili yang daunnya seperti ini. Ini apakah penyakit dan bagaimana cara menanganinya?",
+      "image_url": "https://thesis-assets.andyathsid.com/ood/evaluation/images/001_chili_cercospora.jpg"
+    },
+    "outputs": {
+      "reference_answer": "Berdasarkan gejala pada daun, tanaman cabai Anda kemungkinan besar terserang Penyakit Bercak Daun Cercospora (Cercospora leaf spot). Ini adalah penyakit jamur yang dapat menyebabkan kerusakan pada daun. Untuk penanganannya, Anda bisa membuang daun yang terinfeksi parah, memastikan sirkulasi udara yang baik, dan mempertimbangkan penggunaan fungisida jika infeksi parah.",
+      "reference_goal": "Lakukan triase visual pada gejala chili yang terlihat di gambar, gunakan alat identifikasi penyakit untuk mengonfirmasi Fungal (Cercospora capsici), lalu berikan panduan manajemen dan pengobatan berbasis bukti.",
+      "reference_context": "Tanaman: chili. Penyakit: Chili Cercospora. Gejala: Small, circular spots on leaves with gray centers and brown margins. Spots may coalesce to form larger necrotic areas. Leaves may yellow and drop prematurely.. Penanganan: ",
+      "reference_tool_calls": [
+        {
+          "name": "closed_set_leaf_detection",
+          "args": {}
+        },
+        {
+          "name": "plant_disease_identification",
+          "args": {}
+        },
+        {
+          "name": "knowledgebase_search",
+          "args": {}
+        }
+      ]
+    },
+    "metadata": {
+      "class": "Chili Cercospora",
+      "plant": "chili",
+      "pathogen_type": "fungal",
+      "prompt_type": "scenario_2_diseased",
+      "filename": "001_chili_cercospora.jpg",
+      "is_plant_related": true
+    }
+  },
+  {
+    "inputs": {
+      "user_text": "Tanaman saya kenapa ya? Apa ini penyakit dan bagaimana cara mengatasinya?",
+      "image_url": "https://thesis-assets.andyathsid.com/ood/evaluation/images/002_chili_cercospora.jpg"
+    },
+    "outputs": {
+      "reference_answer": "Tanaman Anda kemungkinan besar terserang penyakit bercak daun Cercospora. Ini adalah infeksi jamur yang menyebabkan bintik-bintik khas pada daun.",
+      "reference_goal": "Lakukan triase visual pada gejala chili yang terlihat di gambar, gunakan alat identifikasi penyakit untuk mengonfirmasi Fungal (Cercospora capsici), lalu berikan panduan manajemen dan pengobatan berbasis bukti.",
+      "reference_context": "Tanaman: chili. Penyakit: Chili Cercospora. Gejala: Small, circular spots on leaves with gray centers and brown margins. Spots may coalesce to form larger necrotic areas. Leaves may yellow and drop prematurely.. Penanganan: ",
+      "reference_tool_calls": [
+        {
+          "name": "plant_disease_identification",
+          "args": {}
+        },
+        {
+          "name": "knowledgebase_search",
+          "args": {}
+        }
+      ]
+    },
+    "metadata": {
+      "class": "Chili Cercospora",
+      "plant": "chili",
+      "pathogen_type": "fungal",
+      "prompt_type": "scenario_3_diseased",
+      "filename": "002_chili_cercospora.jpg",
+      "is_plant_related": true
+    }
+  },
+  {
+    "inputs": {
+      "user_text": "Chili saya memiliki daunnya terlihat agak keriting, ada bintik-bintik kecil, dan warnanya sedikit berubah. Ini kira-kira kenapa ya dan bagaimana cara mengobatinya?",
+      "image_url": "https://thesis-assets.andyathsid.com/ood/evaluation/images/000_chili_mites_and_trips.jpg"
+    },
+    "outputs": {
+      "reference_answer": "Berdasarkan gejala pada daun cabai Anda yang tampak keriting, memiliki bintik-bintik kecil (stippling), dan perubahan warna menjadi keperakan atau perunggu, kemungkinan besar tanaman Anda terinfeksi hama seperti tungau laba-laba. Tungau laba-laba sering menyebabkan daun menguning atau perunggu dengan bintik-bintik halus, dan terkadang terlihat jaring halus di bagian bawah daun atau di antara daun dan batang. Untuk penanganan awal, Anda bisa mencoba menyemprotkan air sabun ke daun secara rutin, terutama di bagian bawah daun. Penggunaan minyak neem juga efektif sebagai pestisida organik. Pastikan untuk menjaga kelembaban yang cukup di sekitar tanaman karena tungau laba-laba menyukai kondisi kering. Jika infestasi parah, pertimbangkan untuk menggunakan insektisida yang direkomendasikan untuk tungau.",
+      "reference_goal": "Lakukan triase visual pada gejala chili yang terlihat di gambar, gunakan alat identifikasi penyakit untuk mengonfirmasi Pests (Spider mites: Tetranychus spp.; Thrips: Thrips spp.), lalu berikan panduan manajemen dan pengobatan berbasis bukti.",
+      "reference_context": "Tanaman: chili. Penyakit: Chili Mites And Trips. Gejala: Silvery or bronze discoloration on leaves. Tiny white or yellow stippling marks. Curled or distorted leaves. Fine webbing may be visible (for mites). Black fecal spots on leaves.. Penanganan: ",
+      "reference_tool_calls": [
+        {
+          "name": "plant_disease_identification",
+          "args": {}
+        },
+        {
+          "name": "knowledgebase_search",
+          "args": {}
+        }
+      ]
+    },
+    "metadata": {
+      "class": "Chili Mites And Trips",
+      "plant": "chili",
+      "pathogen_type": "pest",
+      "prompt_type": "scenario_1_diseased",
+      "filename": "000_chili_mites_and_trips.jpg",
+      "is_plant_related": true
+    }
+  },
+  {
+    "inputs": {
+      "user_text": "Saya punya tanaman chili yang daunnya seperti ini. Ini apakah penyakit dan bagaimana cara menanganinya?",
+      "image_url": "https://thesis-assets.andyathsid.com/ood/evaluation/images/001_chili_mites_and_trips.jpg"
+    },
+    "outputs": {
+      "reference_answer": "Berdasarkan gambar dan gejala yang dijelaskan, tanaman chili Anda kemungkinan besar terserang tungau laba-laba. Gejala seperti perubahan warna keperakan atau perunggu, bintik-bintik kecil, daun yang melengkung atau terdistorsi, dan kemungkinan adanya jaring halus adalah tanda umum. Untuk penanganan awal, Anda bisa mencoba menyemprot daun dengan air bertekanan untuk menghilangkan tungau, atau menggunakan sabun insektisida yang aman untuk tanaman.",
+      "reference_goal": "Lakukan triase visual pada gejala chili yang terlihat di gambar, gunakan alat identifikasi penyakit untuk mengonfirmasi Pests (Spider mites: Tetranychus spp.; Thrips: Thrips spp.), lalu berikan panduan manajemen dan pengobatan berbasis bukti.",
+      "reference_context": "Tanaman: chili. Penyakit: Chili Mites And Trips. Gejala: Silvery or bronze discoloration on leaves. Tiny white or yellow stippling marks. Curled or distorted leaves. Fine webbing may be visible (for mites). Black fecal spots on leaves.. Penanganan: ",
+      "reference_tool_calls": [
+        {
+          "name": "plant_disease_identification",
+          "args": {}
+        },
+        {
+          "name": "knowledgebase_search",
+          "args": {}
+        }
+      ]
+    },
+    "metadata": {
+      "class": "Chili Mites And Trips",
+      "plant": "chili",
+      "pathogen_type": "pest",
+      "prompt_type": "scenario_2_diseased",
+      "filename": "001_chili_mites_and_trips.jpg",
+      "is_plant_related": true
+    }
+  },
+  {
+    "inputs": {
+      "user_text": "Kenapa tanaman saya jadi begini? Apa yang harus saya lakukan?",
+      "image_url": "https://thesis-assets.andyathsid.com/ood/evaluation/images/002_chili_mites_and_trips.jpg"
+    },
+    "outputs": {
+      "reference_answer": "Berdasarkan gambar, tanaman Anda kemungkinan besar terserang tungau laba-laba. Untuk mengatasinya, Anda bisa mencoba menyemprotkan air bertekanan pada daun untuk membersihkan hama, atau menggunakan sabun insektisida yang aman untuk tanaman.",
+      "reference_goal": "Lakukan triase visual pada gejala chili yang terlihat di gambar, gunakan alat identifikasi penyakit untuk mengonfirmasi Pests (Spider mites: Tetranychus spp.; Thrips: Thrips spp.), lalu berikan panduan manajemen dan pengobatan berbasis bukti.",
+      "reference_context": "Tanaman: chili. Penyakit: Chili Mites And Trips. Gejala: Silvery or bronze discoloration on leaves. Tiny white or yellow stippling marks. Curled or distorted leaves. Fine webbing may be visible (for mites). Black fecal spots on leaves.. Penanganan: ",
+      "reference_tool_calls": [
+        {
+          "name": "plant_disease_identification",
+          "args": {}
+        },
+        {
+          "name": "knowledgebase_search",
+          "args": {}
+        }
+      ]
+    },
+    "metadata": {
+      "class": "Chili Mites And Trips",
+      "plant": "chili",
+      "pathogen_type": "pest",
+      "prompt_type": "scenario_3_diseased",
+      "filename": "002_chili_mites_and_trips.jpg",
+      "is_plant_related": true
+    }
+  },
+  {
+    "inputs": {
+      "user_text": "chili saya memiliki daun yang menguning dan ada bintik-bintik. Ini kira-kira kenapa ya dan bagaimana cara mengobatinya?",
+      "image_url": "https://thesis-assets.andyathsid.com/ood/evaluation/images/000_chili_nutritional_deficiency.jpg"
+    },
+    "outputs": {
+      "reference_answer": "Berdasarkan gambar, daun cabai Anda menunjukkan gejala klorosis interveinal, yaitu menguning di antara urat daun sementara uratnya tetap hijau. Ini seringkali merupakan tanda kekurangan nutrisi, seperti zat besi, magnesium, atau mangan. Ada juga beberapa bintik coklat kecil yang terlihat. Untuk mengatasinya, Anda bisa mencoba menguji pH tanah dan memastikan tanaman mendapatkan semua nutrisi penting yang dibutuhkan. Pemberian pupuk yang seimbang atau suplemen nutrisi spesifik mungkin diperlukan.",
+      "reference_goal": "Lakukan triase visual pada gejala chili yang terlihat di gambar, gunakan alat identifikasi penyakit untuk mengonfirmasi Nutritional deficiency (nitrogen, phosphorus, potassium, magnesium, or micronutrients), lalu berikan panduan manajemen dan pengobatan berbasis bukti.",
+      "reference_context": "Tanaman: chili. Penyakit: Chili Nutritional Deficiency. Gejala: Yellowing of leaves (chlorosis), stunted growth, purple or reddish discoloration on leaves, leaf curling or distortion depending on specific nutrient lacking.. Penanganan: ",
+      "reference_tool_calls": [
+        {
+          "name": "plant_disease_identification",
+          "args": {}
+        },
+        {
+          "name": "knowledgebase_search",
+          "args": {}
+        }
+      ]
+    },
+    "metadata": {
+      "class": "Chili Nutritional Deficiency",
+      "plant": "chili",
+      "pathogen_type": "nutritional deficiency",
+      "prompt_type": "scenario_1_diseased",
+      "filename": "000_chili_nutritional_deficiency.jpg",
+      "is_plant_related": true
+    }
+  },
+  {
+    "inputs": {
+      "user_text": "Saya punya tanaman cabai yang daunnya seperti ini. Ini apakah penyakit dan bagaimana cara menanganinya?",
+      "image_url": "https://thesis-assets.andyathsid.com/ood/evaluation/images/001_chili_nutritional_deficiency.jpg"
+    },
+    "outputs": {
+      "reference_answer": "Tanaman cabai Anda kemungkinan besar mengalami kekurangan nutrisi.",
+      "reference_goal": "Lakukan triase visual pada gejala chili yang terlihat di gambar, gunakan alat identifikasi penyakit untuk mengonfirmasi Nutritional deficiency (nitrogen, phosphorus, potassium, magnesium, or micronutrients), lalu berikan panduan manajemen dan pengobatan berbasis bukti.",
+      "reference_context": "Tanaman: chili. Penyakit: Chili Nutritional Deficiency. Gejala: Yellowing of leaves (chlorosis), stunted growth, purple or reddish discoloration on leaves, leaf curling or distortion depending on specific nutrient lacking.. Penanganan: ",
+      "reference_tool_calls": [
+        {
+          "name": "plant_disease_identification",
+          "args": {}
+        },
+        {
+          "name": "knowledgebase_search",
+          "args": {}
+        }
+      ]
+    },
+    "metadata": {
+      "class": "Chili Nutritional Deficiency",
+      "plant": "chili",
+      "pathogen_type": "nutritional deficiency",
+      "prompt_type": "scenario_2_diseased",
+      "filename": "001_chili_nutritional_deficiency.jpg",
+      "is_plant_related": true
+    }
+  },
+  {
+    "inputs": {
+      "user_text": "Tanaman saya kenapa ya? Apa ada penyakit? Bagaimana cara mengatasinya?",
+      "image_url": "https://thesis-assets.andyathsid.com/ood/evaluation/images/002_chili_nutritional_deficiency.jpg"
+    },
+    "outputs": {
+      "reference_answer": "Berdasarkan gejala pada daun, tanaman Anda kemungkinan mengalami kekurangan nutrisi, yang menyebabkan daun menguning (klorosis) dan mungkin pertumbuhan terhambat. Ini bukan disebabkan oleh patogen penyakit. Untuk penanganan, perlu diidentifikasi nutrisi spesifik yang kurang dan diberikan suplemen nutrisi atau pupuk yang sesuai.",
+      "reference_goal": "Lakukan triase visual pada gejala chili yang terlihat di gambar, gunakan alat identifikasi penyakit untuk mengonfirmasi Nutritional deficiency (nitrogen, phosphorus, potassium, magnesium, or micronutrients), lalu berikan panduan manajemen dan pengobatan berbasis bukti.",
+      "reference_context": "Tanaman: chili. Penyakit: Chili Nutritional Deficiency. Gejala: Yellowing of leaves (chlorosis), stunted growth, purple or reddish discoloration on leaves, leaf curling or distortion depending on specific nutrient lacking.. Penanganan: ",
+      "reference_tool_calls": [
+        {
+          "name": "closed_set_leaf_detection",
+          "args": {}
+        },
+        {
+          "name": "plant_disease_identification",
+          "args": {}
+        },
+        {
+          "name": "knowledgebase_search",
+          "args": {}
+        }
+      ]
+    },
+    "metadata": {
+      "class": "Chili Nutritional Deficiency",
+      "plant": "chili",
+      "pathogen_type": "nutritional deficiency",
+      "prompt_type": "scenario_3_diseased",
+      "filename": "002_chili_nutritional_deficiency.jpg",
+      "is_plant_related": true
+    }
+  },
+  {
+    "inputs": {
+      "user_text": "Chili saya ada bercak putih seperti bedak di daunnya dan daunnya agak keriting, warnanya juga kekuningan. Ini kira-kira kenapa ya dan bagaimana cara mengobatinya?",
+      "image_url": "https://thesis-assets.andyathsid.com/ood/evaluation/images/000_chili_powdery_mildew.jpg"
+    },
+    "outputs": {
+      "reference_answer": "Berdasarkan gejala yang terlihat pada daun chili Anda, kemungkinan besar tanaman Anda terserang penyakit embun tepung (powdery mildew) yang merupakan infeksi jamur, ditandai dengan bercak putih seperti bedak",
+      "reference_goal": "Lakukan triase visual pada gejala chili yang terlihat di gambar, gunakan alat identifikasi penyakit untuk mengonfirmasi Fungal (Leveillula taurica), lalu berikan panduan manajemen dan pengobatan berbasis bukti.",
+      "reference_context": "Tanaman: chili. Penyakit: Chili Powdery Mildew. Gejala: White, powdery growth on underside of leaves which starts in patches but spreads across whole leaves, including top surface. Yellow-brown discoloration on underside of leaves. Leaves curling.. Penanganan: ",
+      "reference_tool_calls": [
+        {
+          "name": "plant_disease_identification",
+          "args": {}
+        },
+        {
+          "name": "knowledgebase_search",
+          "args": {}
+        }
+      ]
+    },
+    "metadata": {
+      "class": "Chili Powdery Mildew",
+      "plant": "chili",
+      "pathogen_type": "fungal",
+      "prompt_type": "scenario_1_diseased",
+      "filename": "000_chili_powdery_mildew.jpg",
+      "is_plant_related": true
+    }
+  },
+  {
+    "inputs": {
+      "user_text": "Saya punya tanaman chili yang daunnya seperti ini. Ini apakah penyakit dan bagaimana cara menanganinya?",
+      "image_url": "https://thesis-assets.andyathsid.com/ood/evaluation/images/001_chili_powdery_mildew.jpg"
+    },
+    "outputs": {
+      "reference_answer": "Tanaman chili Anda kemungkinan terserang embun tepung (powdery mildew), yang merupakan penyakit jamur. Untuk penanganan awal, Anda bisa membuang daun yang terinfeksi parah dan meningkatkan sirkulasi udara di sekitar tanaman.",
+      "reference_goal": "Lakukan triase visual pada gejala chili yang terlihat di gambar, gunakan alat identifikasi penyakit untuk mengonfirmasi Fungal (Leveillula taurica), lalu berikan panduan manajemen dan pengobatan berbasis bukti.",
+      "reference_context": "Tanaman: chili. Penyakit: Chili Powdery Mildew. Gejala: White, powdery growth on underside of leaves which starts in patches but spreads across whole leaves, including top surface. Yellow-brown discoloration on underside of leaves. Leaves curling.. Penanganan: ",
+      "reference_tool_calls": [
+        {
+          "name": "plant_disease_identification",
+          "args": {}
+        },
+        {
+          "name": "knowledgebase_search",
+          "args": {}
+        }
+      ]
+    },
+    "metadata": {
+      "class": "Chili Powdery Mildew",
+      "plant": "chili",
+      "pathogen_type": "fungal",
+      "prompt_type": "scenario_2_diseased",
+      "filename": "001_chili_powdery_mildew.jpg",
+      "is_plant_related": true
+    }
+  },
+  {
+    "inputs": {
+      "user_text": "Tanaman saya kenapa ya? Apakah ini penyakit? Bagaimana cara mengatasinya?",
+      "image_url": "https://thesis-assets.andyathsid.com/ood/evaluation/images/002_chili_powdery_mildew.jpg"
+    },
+    "outputs": {
+      "reference_answer": "Tanaman Anda menunjukkan gejala penyakit embun tepung (powdery mildew). Ini adalah penyakit jamur umum yang dapat menyebabkan pertumbuhan putih seperti bubuk pada daun, serta perubahan warna dan pengeritingan. Untuk mengatasinya, Anda dapat membuang daun yang terinfeksi parah, meningkatkan sirkulasi udara di sekitar tanaman, dan menggunakan fungisida yang sesuai.",
+      "reference_goal": "Lakukan triase visual pada gejala chili yang terlihat di gambar, gunakan alat identifikasi penyakit untuk mengonfirmasi Fungal (Leveillula taurica), lalu berikan panduan manajemen dan pengobatan berbasis bukti.",
+      "reference_context": "Tanaman: chili. Penyakit: Chili Powdery Mildew. Gejala: White, powdery growth on underside of leaves which starts in patches but spreads across whole leaves, including top surface. Yellow-brown discoloration on underside of leaves. Leaves curling.. Penanganan: ",
+      "reference_tool_calls": [
+        {
+          "name": "closed_set_leaf_detection",
+          "args": {}
+        },
+        {
+          "name": "plant_disease_identification",
+          "args": {}
+        },
+        {
+          "name": "knowledgebase_search",
+          "args": {}
+        }
+      ]
+    },
+    "metadata": {
+      "class": "Chili Powdery Mildew",
+      "plant": "chili",
+      "pathogen_type": "fungal",
+      "prompt_type": "scenario_3_diseased",
+      "filename": "002_chili_powdery_mildew.jpg",
+      "is_plant_related": true
+    }
+  },
+  {
+    "inputs": {
+      "user_text": "Guava saya memiliki bercak-bercak gelap dan terlihat kotor pada daunnya. Ini kira-kira kenapa ya dan bagaimana cara mengobatinya?",
+      "image_url": "https://thesis-assets.andyathsid.com/ood/evaluation/images/000_guava_anthracnose.jpg"
+    },
+    "outputs": {
+      "reference_answer": "Berdasarkan gejala yang terlihat pada daun guava Anda, kemungkinan besar tanaman Anda terinfeksi antraknosa. Penyakit ini disebabkan oleh jamur dan sering menyebabkan lesi gelap, cekung, dan bercak kecoklatan pada daun, buah, serta batang. Untuk mengatasinya, Anda bisa mulai dengan membuang dan memusnahkan daun atau bagian tanaman yang terinfeksi untuk mengurangi penyebaran. Pastikan juga sirkulasi udara di sekitar tanaman baik dan hindari penyiraman berlebihan pada daun. Jika infeksi parah, pertimbangkan penggunaan fungisida yang sesuai.",
+      "reference_goal": "Lakukan triase visual pada gejala guava yang terlihat di gambar, gunakan alat identifikasi penyakit untuk mengonfirmasi Fungal (Colletotrichum gloeosporioides), lalu berikan panduan manajemen dan pengobatan berbasis bukti.",
+      "reference_context": "Tanaman: guava. Penyakit: Guava Anthracnose. Gejala: Dark, sunken lesions on fruit, leaves, and stems. Fruit lesions may have pink spore masses in center. Leaves show brown spots that may expand. Can cause fruit rot and defoliation.. Penanganan: ",
+      "reference_tool_calls": [
+        {
+          "name": "plant_disease_identification",
+          "args": {}
+        },
+        {
+          "name": "knowledgebase_search",
+          "args": {}
+        }
+      ]
+    },
+    "metadata": {
+      "class": "Guava Anthracnose",
+      "plant": "guava",
+      "pathogen_type": "fungal",
+      "prompt_type": "scenario_1_diseased",
+      "filename": "000_guava_anthracnose.jpg",
+      "is_plant_related": true
+    }
+  },
+  {
+    "inputs": {
+      "user_text": "Tanaman guava saya menunjukkan gejala seperti ini. Ini penyakit apa dan bagaimana cara mengatasinya?",
+      "image_url": "https://thesis-assets.andyathsid.com/ood/evaluation/images/001_guava_anthracnose.jpg"
+    },
+    "outputs": {
+      "reference_answer": "Berdasarkan gambar, tanaman guava Anda kemungkinan besar terserang Antraknosa. Penyakit ini disebabkan oleh jamur dan dapat menyebabkan bercak gelap cekung pada buah, daun, dan batang. Untuk penanganannya, disarankan untuk memangkas bagian tanaman yang terinfeksi, meningkatkan sirkulasi udara, dan mempertimbangkan aplikasi fungisida yang sesuai.",
+      "reference_goal": "Lakukan triase visual pada gejala guava yang terlihat di gambar, gunakan alat identifikasi penyakit untuk mengonfirmasi Fungal (Colletotrichum gloeosporioides), lalu berikan panduan manajemen dan pengobatan berbasis bukti.",
+      "reference_context": "Tanaman: guava. Penyakit: Guava Anthracnose. Gejala: Dark, sunken lesions on fruit, leaves, and stems. Fruit lesions may have pink spore masses in center. Leaves show brown spots that may expand. Can cause fruit rot and defoliation.. Penanganan: ",
+      "reference_tool_calls": [
+        {
+          "name": "plant_disease_identification",
+          "args": {}
+        },
+        {
+          "name": "knowledgebase_search",
+          "args": {}
+        }
+      ]
+    },
+    "metadata": {
+      "class": "Guava Anthracnose",
+      "plant": "guava",
+      "pathogen_type": "fungal",
+      "prompt_type": "scenario_2_diseased",
+      "filename": "001_guava_anthracnose.jpg",
+      "is_plant_related": true
+    }
+  },
+  {
+    "inputs": {
+      "user_text": "Tanaman saya kenapa ya? Apa yang salah? Bagaimana cara mengatasinya?",
+      "image_url": "https://thesis-assets.andyathsid.com/ood/evaluation/images/002_guava_anthracnose.jpg"
+    },
+    "outputs": {
+      "reference_answer": "Berdasarkan gejala yang terlihat pada daun, tanaman Anda kemungkinan terserang antraknosa. Ini adalah penyakit jamur yang umum pada tanaman jambu biji. Untuk mengatasinya, Anda bisa memangkas bagian tanaman yang terinfeksi, memastikan sirkulasi udara yang baik, dan mempertimbangkan penggunaan fungisida.",
+      "reference_goal": "Lakukan triase visual pada gejala guava yang terlihat di gambar, gunakan alat identifikasi penyakit untuk mengonfirmasi Fungal (Colletotrichum gloeosporioides), lalu berikan panduan manajemen dan pengobatan berbasis bukti.",
+      "reference_context": "Tanaman: guava. Penyakit: Guava Anthracnose. Gejala: Dark, sunken lesions on fruit, leaves, and stems. Fruit lesions may have pink spore masses in center. Leaves show brown spots that may expand. Can cause fruit rot and defoliation.. Penanganan: ",
+      "reference_tool_calls": [
+        {
+          "name": "plant_disease_identification",
+          "args": {}
+        },
+        {
+          "name": "knowledgebase_search",
+          "args": {}
+        }
+      ]
+    },
+    "metadata": {
+      "class": "Guava Anthracnose",
+      "plant": "guava",
+      "pathogen_type": "fungal",
+      "prompt_type": "scenario_3_diseased",
+      "filename": "002_guava_anthracnose.jpg",
+      "is_plant_related": true
+    }
+  },
+  {
+    "inputs": {
+      "user_text": "Guava saya memiliki lubang-lubang di pinggir daun dan bintik-bint",
+      "image_url": "https://thesis-assets.andyathsid.com/ood/evaluation/images/000_guava_canker.jpg"
+    },
+    "outputs": {
+      "reference_answer": "",
+      "reference_goal": "Lakukan triase visual pada gejala guava yang terlihat di gambar, gunakan alat identifikasi penyakit untuk mengonfirmasi Fungal (Botryosphaeria rhodina), lalu berikan panduan manajemen dan pengobatan berbasis bukti.",
+      "reference_context": "Tanaman: guava. Penyakit: Guava Canker. Gejala: Sunken, dark lesions on branches and stems. Bark becomes cracked and dies back. Lesions may girdle branches causing dieback. Gum may ooze from infected areas.. Penanganan: ",
+      "reference_tool_calls": [
+        {
+          "name": "plant_disease_identification",
+          "args": {}
+        },
+        {
+          "name": "knowledgebase_search",
+          "args": {}
+        }
+      ]
+    },
+    "metadata": {
+      "class": "Guava Canker",
+      "plant": "guava",
+      "pathogen_type": "fungal",
+      "prompt_type": "scenario_1_diseased",
+      "filename": "000_guava_canker.jpg",
+      "is_plant_related": true
+    }
+  },
+  {
+    "inputs": {
+      "user_text": "Saya punya tanaman guava. Ini penyakit apa dan bagaimana cara mengatasinya?",
+      "image_url": "https://thesis-assets.andyathsid.com/ood/evaluation/images/001_guava_canker.jpg"
+    },
+    "outputs": {
+      "reference_answer": "Tanaman jambu biji Anda kemungkinan terserang penyakit Canker Jambu Biji. Ini disebabkan oleh bakteri dan dapat menyebabkan bercak pada daun, serta lesi cekung pada batang dan ranting. Untuk mengatasinya, Anda bisa memangkas bagian tanaman yang terinfeksi, menjaga kebersihan kebun, dan menyemprotkan bakterisida berbahan dasar tembaga.",
+      "reference_goal": "Lakukan triase visual pada gejala guava yang terlihat di gambar, gunakan alat identifikasi penyakit untuk mengonfirmasi Fungal (Botryosphaeria rhodina), lalu berikan panduan manajemen dan pengobatan berbasis bukti.",
+      "reference_context": "Tanaman: guava. Penyakit: Guava Canker. Gejala: Sunken, dark lesions on branches and stems. Bark becomes cracked and dies back. Lesions may girdle branches causing dieback. Gum may ooze from infected areas.. Penanganan: ",
+      "reference_tool_calls": [
+        {
+          "name": "plant_disease_identification",
+          "args": {}
+        },
+        {
+          "name": "knowledgebase_search",
+          "args": {}
+        }
+      ]
+    },
+    "metadata": {
+      "class": "Guava Canker",
+      "plant": "guava",
+      "pathogen_type": "fungal",
+      "prompt_type": "scenario_2_diseased",
+      "filename": "001_guava_canker.jpg",
+      "is_plant_related": true
+    }
+  },
+  {
+    "inputs": {
+      "user_text": "Tanaman saya kenapa ya? Apakah ini penyakit? Bagaimana cara mengatasinya?",
+      "image_url": "https://thesis-assets.andyathsid.com/ood/evaluation/images/002_guava_canker.jpg"
+    },
+    "outputs": {
+      "reference_answer": "Tanaman Anda menunjukkan gejala penyakit Canker pada jambu biji. Penyakit ini umumnya menyerang batang dan ranting, menyebabkan lesi cekung berwarna gelap, retakan pada kulit kayu, dan potensi dieback. Getah juga bisa keluar dari area yang terinfeksi.",
+      "reference_goal": "Lakukan triase visual pada gejala guava yang terlihat di gambar, gunakan alat identifikasi penyakit untuk mengonfirmasi Fungal (Botryosphaeria rhodina), lalu berikan panduan manajemen dan pengobatan berbasis bukti.",
+      "reference_context": "Tanaman: guava. Penyakit: Guava Canker. Gejala: Sunken, dark lesions on branches and stems. Bark becomes cracked and dies back. Lesions may girdle branches causing dieback. Gum may ooze from infected areas.. Penanganan: ",
+      "reference_tool_calls": [
+        {
+          "name": "plant_disease_identification",
+          "args": {}
+        },
+        {
+          "name": "knowledgebase_search",
+          "args": {}
+        }
+      ]
+    },
+    "metadata": {
+      "class": "Guava Canker",
+      "plant": "guava",
+      "pathogen_type": "fungal",
+      "prompt_type": "scenario_3_diseased",
+      "filename": "002_guava_canker.jpg",
+      "is_plant_related": true
+    }
+  },
+  {
+    "inputs": {
+      "user_text": "Guava saya memiliki bintik-bintik kecil kemerahan di daun. Ini kira-kira",
+      "image_url": "https://thesis-assets.andyathsid.com/ood/evaluation/images/000_guava_dot.jpg"
+    },
+    "outputs": {
+      "reference_answer": "",
+      "reference_goal": "Lakukan triase visual pada gejala guava yang terlihat di gambar, gunakan alat identifikasi penyakit untuk mengonfirmasi Fungal (Phomopsis psidii), lalu berikan panduan manajemen dan pengobatan berbasis bukti.",
+      "reference_context": "Tanaman: guava. Penyakit: Guava Dot. Gejala: Small, dark, circular spots on fruit that may be slightly raised or sunken. Spots may coalesce to form larger lesions. Fruit quality is reduced.. Penanganan: ",
+      "reference_tool_calls": [
+        {
+          "name": "plant_disease_identification",
+          "args": {}
+        },
+        {
+          "name": "knowledgebase_search",
+          "args": {}
+        }
+      ]
+    },
+    "metadata": {
+      "class": "Guava Dot",
+      "plant": "guava",
+      "pathogen_type": "fungal",
+      "prompt_type": "scenario_1_diseased",
+      "filename": "000_guava_dot.jpg",
+      "is_plant_related": true
+    }
+  },
+  {
+    "inputs": {
+      "user_text": "Saya punya tanaman guava yang daunnya seperti ini. Ini apakah penyakit dan bagaimana cara menanganinya",
+      "image_url": "https://thesis-assets.andyathsid.com/ood/evaluation/images/001_guava_dot.jpg"
+    },
+    "outputs": {
+      "reference_answer": "",
+      "reference_goal": "Lakukan triase visual pada gejala guava yang terlihat di gambar, gunakan alat identifikasi penyakit untuk mengonfirmasi Fungal (Phomopsis psidii), lalu berikan panduan manajemen dan pengobatan berbasis bukti.",
+      "reference_context": "Tanaman: guava. Penyakit: Guava Dot. Gejala: Small, dark, circular spots on fruit that may be slightly raised or sunken. Spots may coalesce to form larger lesions. Fruit quality is reduced.. Penanganan: ",
+      "reference_tool_calls": [
+        {
+          "name": "plant_disease_identification",
+          "args": {}
+        },
+        {
+          "name": "knowledgebase_search",
+          "args": {}
+        }
+      ]
+    },
+    "metadata": {
+      "class": "Guava Dot",
+      "plant": "guava",
+      "pathogen_type": "fungal",
+      "prompt_type": "scenario_2_diseased",
+      "filename": "001_guava_dot.jpg",
+      "is_plant_related": true
+    }
+  },
+  {
+    "inputs": {
+      "user_text": "Tanaman saya kenapa ya? Apakah ini penyakit? Bagaimana cara mengatasinya?",
+      "image_url": "https://thesis-assets.andyathsid.com/ood/evaluation/images/002_guava_dot.jpg"
+    },
+    "outputs": {
+      "reference_answer": "Berdasarkan gejala bintik-bintik gelap melingkar pada buah yang mungkin sedikit menonjol atau cekung, tanaman Anda",
+      "reference_goal": "Lakukan triase visual pada gejala guava yang terlihat di gambar, gunakan alat identifikasi penyakit untuk mengonfirmasi Fungal (Phomopsis psidii), lalu berikan panduan manajemen dan pengobatan berbasis bukti.",
+      "reference_context": "Tanaman: guava. Penyakit: Guava Dot. Gejala: Small, dark, circular spots on fruit that may be slightly raised or sunken. Spots may coalesce to form larger lesions. Fruit quality is reduced.. Penanganan: ",
+      "reference_tool_calls": [
+        {
+          "name": "closed_set_leaf_detection",
+          "args": {}
+        },
+        {
+          "name": "plant_disease_identification",
+          "args": {}
+        },
+        {
+          "name": "knowledgebase_search",
+          "args": {}
+        }
+      ]
+    },
+    "metadata": {
+      "class": "Guava Dot",
+      "plant": "guava",
+      "pathogen_type": "fungal",
+      "prompt_type": "scenario_3_diseased",
+      "filename": "002_guava_dot.jpg",
+      "is_plant_related": true
+    }
+  },
+  {
+    "inputs": {
+      "user_text": "Guava saya daunnya menguning dan ada bintik-bintik oranye kecoklatan. Ini kira-kira kenapa ya dan bagaimana cara mengobatinya?",
+      "image_url": "https://thesis-assets.andyathsid.com/ood/evaluation/images/000_guava_rust.jpg"
+    },
+    "outputs": {
+      "reference_answer": "Berdasarkan gejala yang terlihat pada daun guava Anda, kemungkinan besar tanaman Anda terserang karat guava (Guava Rust). Penyakit ini disebabkan oleh jamur. Untuk penanganannya, Anda bisa membuang daun yang terinfeksi parah, meningkatkan sirkulasi udara di sekitar tanaman, dan jika diperlukan, menggunakan fungisida yang sesuai untuk karat.",
+      "reference_goal": "Lakukan triase visual pada gejala guava yang terlihat di gambar, gunakan alat identifikasi penyakit untuk mengonfirmasi Fungal (Puccinia psidii), lalu berikan panduan manajemen dan pengobatan berbasis bukti.",
+      "reference_context": "Tanaman: guava. Penyakit: Guava Rust. Gejala: Orange to brown pustules on leaves and fruit. Leaves may yellow and drop prematurely. Severe infections can defoliate trees and reduce fruit quality.. Penanganan: ",
+      "reference_tool_calls": [
+        {
+          "name": "plant_disease_identification",
+          "args": {}
+        },
+        {
+          "name": "knowledgebase_search",
+          "args": {}
+        }
+      ]
+    },
+    "metadata": {
+      "class": "Guava Rust",
+      "plant": "guava",
+      "pathogen_type": "fungal",
+      "prompt_type": "scenario_1_diseased",
+      "filename": "000_guava_rust.jpg",
+      "is_plant_related": true
+    }
+  },
+  {
+    "inputs": {
+      "user_text": "Saya punya tanaman guava yang daunnya seperti ini. Ini apakah penyakit dan bagaimana cara menanganinya?",
+      "image_url": "https://thesis-assets.andyathsid.com/ood/evaluation/images/001_guava_rust.jpg"
+    },
+    "outputs": {
+      "reference_answer": "Berdasarkan gambar, tanaman jambu Anda kemungkinan besar terserang karat jambu (Guava Rust) yang disebabkan oleh jamur Puccinia psidii. Untuk penanganan, pangkas dan buang bagian tanaman yang terinfeksi, pastikan sirkulasi udara yang baik, dan jika diperlukan, gunakan fungisida yang sesuai.",
+      "reference_goal": "Lakukan triase visual pada gejala guava yang terlihat di gambar, gunakan alat identifikasi penyakit untuk mengonfirmasi Fungal (Puccinia psidii), lalu berikan panduan manajemen dan pengobatan berbasis bukti.",
+      "reference_context": "Tanaman: guava. Penyakit: Guava Rust. Gejala: Orange to brown pustules on leaves and fruit. Leaves may yellow and drop prematurely. Severe infections can defoliate trees and reduce fruit quality.. Penanganan: ",
+      "reference_tool_calls": [
+        {
+          "name": "plant_disease_identification",
+          "args": {}
+        },
+        {
+          "name": "knowledgebase_search",
+          "args": {}
+        }
+      ]
+    },
+    "metadata": {
+      "class": "Guava Rust",
+      "plant": "guava",
+      "pathogen_type": "fungal",
+      "prompt_type": "scenario_2_diseased",
+      "filename": "001_guava_rust.jpg",
+      "is_plant_related": true
+    }
+  },
+  {
+    "inputs": {
+      "user_text": "Kenapa daun tanaman saya jadi begini? Apa yang salah dan bagaimana cara mengatasinya?",
+      "image_url": "https://thesis-assets.andyathsid.com/ood/evaluation/images/002_guava_rust.jpg"
+    },
+    "outputs": {
+      "reference_answer": "Berdasarkan gejala pada daun, tanaman Anda kemungkinan terinfeksi karat jambu (Guava Rust). Penyakit ini disebabkan oleh jamur dan dapat menyebabkan pustula berwarna oranye hingga cokelat pada daun dan buah, daun menguning, dan rontok prematur. Untuk mengatasinya, Anda bisa memangkas bagian yang terinfeksi dan menggunakan fungisida.",
+      "reference_goal": "Lakukan triase visual pada gejala guava yang terlihat di gambar, gunakan alat identifikasi penyakit untuk mengonfirmasi Fungal (Puccinia psidii), lalu berikan panduan manajemen dan pengobatan berbasis bukti.",
+      "reference_context": "Tanaman: guava. Penyakit: Guava Rust. Gejala: Orange to brown pustules on leaves and fruit. Leaves may yellow and drop prematurely. Severe infections can defoliate trees and reduce fruit quality.. Penanganan: ",
+      "reference_tool_calls": [
+        {
+          "name": "plant_disease_identification",
+          "args": {}
+        },
+        {
+          "name": "knowledgebase_search",
+          "args": {}
+        }
+      ]
+    },
+    "metadata": {
+      "class": "Guava Rust",
+      "plant": "guava",
+      "pathogen_type": "fungal",
+      "prompt_type": "scenario_3_diseased",
+      "filename": "002_guava_rust.jpg",
+      "is_plant_related": true
+    }
+  },
+  {
+    "inputs": {
+      "user_text": "Guava saya memiliki bercak-bercak gelap dan seperti koreng di buahnya. Ini kira-kira kenapa ya dan bagaimana cara mengobatinya?",
+      "image_url": "https://thesis-assets.andyathsid.com/ood/evaluation/images/000_guava_scab.jpg"
+    },
+    "outputs": {
+      "reference_answer": "Berdasarkan gambar, buah guava Anda kemungkinan terinfeksi Kudis Guava (Guava Scab), yang disebabkan oleh jamur Elsinoe psidii. Gejalanya adalah lesi gelap, bersisik, dan menonjol pada buah. Untuk penanganan, disarankan untuk memangkas dan membuang bagian tanaman yang terinfeksi, serta menerapkan fungisida yang sesuai.",
+      "reference_goal": "Lakukan triase visual pada gejala guava yang terlihat di gambar, gunakan alat identifikasi penyakit untuk mengonfirmasi Fungal (Elsinoe psidii), lalu berikan panduan manajemen dan pengobatan berbasis bukti.",
+      "reference_context": "Tanaman: guava. Penyakit: Guava Scab. Gejala: Dark, scabby lesions on fruit, leaves, and stems. Lesions may be raised and corky. Fruit becomes distorted and unmarketable. Leaves may show spots and drop.. Penanganan: ",
+      "reference_tool_calls": [
+        {
+          "name": "open_vocabulary_plant_detection",
+          "args": {}
+        },
+        {
+          "name": "plant_disease_identification",
+          "args": {}
+        },
+        {
+          "name": "knowledgebase_search",
+          "args": {}
+        }
+      ]
+    },
+    "metadata": {
+      "class": "Guava Scab",
+      "plant": "guava",
+      "pathogen_type": "fungal",
+      "prompt_type": "scenario_1_diseased",
+      "filename": "000_guava_scab.jpg",
+      "is_plant_related": true
+    }
+  },
+  {
+    "inputs": {
+      "user_text": "Tanaman guava saya buahnya seperti ini. Ini penyakit apa dan bagaimana cara mengobatinya?",
+      "image_url": "https://thesis-assets.andyathsid.com/ood/evaluation/images/001_guava_scab.jpg"
+    },
+    "outputs": {
+      "reference_answer": "Berdasarkan gambar, buah jambu biji Anda kemungkinan besar terserang penyakit Kudis Jambu Biji (Guava Scab) yang disebabkan oleh jamur *Elsinoe psidii*. Penyakit ini menyebabkan lesi gelap, berkerak, dan dapat membuat buah menjadi cacat. Untuk penanganannya, Anda bisa melakukan pemangkasan bagian tanaman yang terinfeksi, menjaga kebersihan kebun, dan mengaplikasikan fungisida yang sesuai jika infeksi parah. Konsultasi dengan ahli pertanian lokal juga disarankan untuk rekomendasi spesifik.",
+      "reference_goal": "Lakukan triase visual pada gejala guava yang terlihat di gambar, gunakan alat identifikasi penyakit untuk mengonfirmasi Fungal (Elsinoe psidii), lalu berikan panduan manajemen dan pengobatan berbasis bukti.",
+      "reference_context": "Tanaman: guava. Penyakit: Guava Scab. Gejala: Dark, scabby lesions on fruit, leaves, and stems. Lesions may be raised and corky. Fruit becomes distorted and unmarketable. Leaves may show spots and drop.. Penanganan: ",
+      "reference_tool_calls": [
+        {
+          "name": "open_vocabulary_plant_detection",
+          "args": {}
+        },
+        {
+          "name": "plant_disease_identification",
+          "args": {}
+        },
+        {
+          "name": "knowledgebase_search",
+          "args": {}
+        }
+      ]
+    },
+    "metadata": {
+      "class": "Guava Scab",
+      "plant": "guava",
+      "pathogen_type": "fungal",
+      "prompt_type": "scenario_2_diseased",
+      "filename": "001_guava_scab.jpg",
+      "is_plant_related": true
+    }
+  },
+  {
+    "inputs": {
+      "user_text": "Tanaman saya kenapa ya? Apakah ini penyakit? Gimana cara mengatasinya?",
+      "image_url": "https://thesis-assets.andyathsid.com/ood/evaluation/images/002_guava_scab.jpg"
+    },
+    "outputs": {
+      "reference_answer": "Berdasarkan gambar, tanaman Anda kemungkinan terserang penyakit kudis jambu (Guava Scab), yang disebabkan oleh jamur. Penyakit ini menyebabkan lesi gelap dan berkerak pada buah, daun, dan batang, membuat buah menjadi cacat dan tidak layak jual. Untuk mengatasinya, Anda bisa melakukan pemangkasan bagian yang terinfeksi, menjaga kebersihan kebun, dan menerapkan fungisida yang sesuai.",
+      "reference_goal": "Lakukan triase visual pada gejala guava yang terlihat di gambar, gunakan alat identifikasi penyakit untuk mengonfirmasi Fungal (Elsinoe psidii), lalu berikan panduan manajemen dan pengobatan berbasis bukti.",
+      "reference_context": "Tanaman: guava. Penyakit: Guava Scab. Gejala: Dark, scabby lesions on fruit, leaves, and stems. Lesions may be raised and corky. Fruit becomes distorted and unmarketable. Leaves may show spots and drop.. Penanganan: ",
+      "reference_tool_calls": [
+        {
+          "name": "open_vocabulary_plant_detection",
+          "args": {}
+        },
+        {
+          "name": "plant_disease_identification",
+          "args": {}
+        },
+        {
+          "name": "knowledgebase_search",
+          "args": {}
+        }
+      ]
+    },
+    "metadata": {
+      "class": "Guava Scab",
+      "plant": "guava",
+      "pathogen_type": "fungal",
+      "prompt_type": "scenario_3_diseased",
+      "filename": "002_guava_scab.jpg",
+      "is_plant_related": true
+    }
+  },
+  {
+    "inputs": {
+      "user_text": "Guava saya ada busuk di ujung buahnya, jadi lembek dan agak bau. Ini kenapa ya dan bagaimana cara mengatasinya?",
+      "image_url": "https://thesis-assets.andyathsid.com/ood/evaluation/images/000_guava_styler_end_root.jpg"
+    },
+    "outputs": {
+      "reference_answer": "Berdasarkan gambar, buah guava Anda kemungkinan mengalami busuk ujung buah. Kondisi ini sering disebabkan oleh kekurangan kalsium atau fluktuasi air yang tidak teratur. Untuk mengatasinya, pastikan penyiraman tanaman konsisten dan pertimbangkan untuk menambahkan pupuk yang mengandung kalsium. Buah yang sudah menunjukkan gejala parah sebaiknya dibuang untuk mencegah penyebaran.",
+      "reference_goal": "Lakukan triase visual pada gejala guava yang terlihat di gambar, gunakan alat identifikasi penyakit untuk mengonfirmasi Fungal (Phytophthora spp.) or bacteria, lalu berikan panduan manajemen dan pengobatan berbasis bukti.",
+      "reference_context": "Tanaman: guava. Penyakit: Guava Styler End Root. Gejala: Rotting at the stylar end (blossom end) of fruit. Fruit becomes soft and watery. Lesions may expand to cover large portions of fruit. Foul odor may be present.. Penanganan: ",
+      "reference_tool_calls": [
+        {
+          "name": "open_vocabulary_plant_detection",
+          "args": {}
+        },
+        {
+          "name": "plant_disease_identification",
+          "args": {}
+        },
+        {
+          "name": "knowledgebase_search",
+          "args": {}
+        }
+      ]
+    },
+    "metadata": {
+      "class": "Guava Styler End Root",
+      "plant": "guava",
+      "pathogen_type": "fungal",
+      "prompt_type": "scenario_1_diseased",
+      "filename": "000_guava_styler_end_root.jpg",
+      "is_plant_related": true
+    }
+  },
+  {
+    "inputs": {
+      "user_text": "Saya punya tanaman guava. Ini penyakit apa dan bagaimana cara menanganinya?",
+      "image_url": "https://thesis-assets.andyathsid.com/ood/evaluation/images/001_guava_styler_end_root.jpg"
+    },
+    "outputs": {
+      "reference_answer": "",
+      "reference_goal": "Lakukan triase visual pada gejala guava yang terlihat di gambar, gunakan alat identifikasi penyakit untuk mengonfirmasi Fungal (Phytophthora spp.) or bacteria, lalu berikan panduan manajemen dan pengobatan berbasis bukti.",
+      "reference_context": "Tanaman: guava. Penyakit: Guava Styler End Root. Gejala: Rotting at the stylar end (blossom end) of fruit. Fruit becomes soft and watery. Lesions may expand to cover large portions of fruit. Foul odor may be present.. Penanganan: ",
+      "reference_tool_calls": [
+        {
+          "name": "open_vocabulary_plant_detection",
+          "args": {}
+        },
+        {
+          "name": "plant_disease_identification",
+          "args": {}
+        },
+        {
+          "name": "knowledgebase_search",
+          "args": {}
+        }
+      ]
+    },
+    "metadata": {
+      "class": "Guava Styler End Root",
+      "plant": "guava",
+      "pathogen_type": "fungal",
+      "prompt_type": "scenario_2_diseased",
+      "filename": "001_guava_styler_end_root.jpg",
+      "is_plant_related": true
+    }
+  },
+  {
+    "inputs": {
+      "user_text": "Kenapa buah tanaman saya jadi begini? Apa yang harus saya lakukan?",
+      "image_url": "https://thesis-assets.andyathsid.com/ood/evaluation/images/002_guava_styler_end_root.jpg"
+    },
+    "outputs": {
+      "reference_answer": "",
+      "reference_goal": "Lakukan triase visual pada gejala guava yang terlihat di gambar, gunakan alat identifikasi penyakit untuk mengonfirmasi Fungal (Phytophthora spp.) or bacteria, lalu berikan panduan manajemen dan pengobatan berbasis bukti.",
+      "reference_context": "Tanaman: guava. Penyakit: Guava Styler End Root. Gejala: Rotting at the stylar end (blossom end) of fruit. Fruit becomes soft and watery. Lesions may expand to cover large portions of fruit. Foul odor may be present.. Penanganan: ",
+      "reference_tool_calls": [
+        {
+          "name": "open_vocabulary_plant_detection",
+          "args": {}
+        },
+        {
+          "name": "plant_disease_identification",
+          "args": {}
+        },
+        {
+          "name": "knowledgebase_search",
+          "args": {}
+        }
+      ]
+    },
+    "metadata": {
+      "class": "Guava Styler End Root",
+      "plant": "guava",
+      "pathogen_type": "fungal",
+      "prompt_type": "scenario_3_diseased",
+      "filename": "002_guava_styler_end_root.jpg",
+      "is_plant_related": true
+    }
+  },
+  {
+    "inputs": {
+      "user_text": "Malabar spinach saya memiliki beberapa bintik gelap dan cekung di daunnya, dan sepertinya daunnya tidak sehat. Ini kira-kira kenapa ya dan bagaimana cara mengobatinya?",
+      "image_url": "https://thesis-assets.andyathsid.com/ood/evaluation/images/000_malabar_spinach_anthracnose.jpg"
+    },
+    "outputs": {
+      "reference_answer": "Tanaman malabar spinach Anda kemungkinan besar terkena Anthracnose, yaitu penyakit jamur. Gejalanya meliputi bintik-bintik gelap dan cekung yang kadang memiliki cincin konsentris pada daun dan batang. Ini dapat menyebabkan daun menguning dan rontok. Untuk mengatasinya, singkirkan dan musnahkan bagian tanaman yang terinfeksi, tingkatkan sirkulasi udara di sekitar tanaman, dan hindari penyiraman dari atas. Fungisida dapat dipertimbangkan untuk kasus yang parah.",
+      "reference_goal": "Lakukan triase visual pada gejala malabar spinach yang terlihat di gambar, gunakan alat identifikasi penyakit untuk mengonfirmasi Fungal (Colletotrichum spp.), lalu berikan panduan manajemen dan pengobatan berbasis bukti.",
+      "reference_context": "Tanaman: malabar spinach. Penyakit: Malabar Spinach Anthracnose. Gejala: Dark, sunken lesions on leaves, stems, and petioles. Lesions may have concentric rings. Leaves may yellow and drop. Severe infections can cause plant death.. Penanganan: ",
+      "reference_tool_calls": [
+        {
+          "name": "plant_disease_identification",
+          "args": {}
+        },
+        {
+          "name": "knowledgebase_search",
+          "args": {}
+        }
+      ]
+    },
+    "metadata": {
+      "class": "Malabar Spinach Anthracnose",
+      "plant": "malabar spinach",
+      "pathogen_type": "fungal",
+      "prompt_type": "scenario_1_diseased",
+      "filename": "000_malabar_spinach_anthracnose.jpg",
+      "is_plant_related": true
+    }
+  },
+  {
+    "inputs": {
+      "user_text": "Saya punya tanaman malabar spinach. Ini apakah penyakit dan bagaimana cara menanganinya?",
+      "image_url": "https://thesis-assets.andyathsid.com/ood/evaluation/images/001_malabar_spinach_anthracnose.jpg"
+    },
+    "outputs": {
+      "reference_answer": "Berdasarkan gejala yang dijelaskan, tanaman malabar spinach Anda kemungkinan besar terserang Antraknosa. Untuk penanganannya, Anda bisa melakukan beberapa langkah:1. Sanitasi: Buang dan musnahkan daun, batang, dan bagian tanaman lain yang terinfeksi untuk mengurangi sumber inokulum. Jangan mengkomposkan bahan tanaman yang sakit.2. Sirkulasi Udara: Pastikan jarak tanam yang cukup dan pangkas bagian tanaman yang terlalu rapat untuk meningkatkan sirkulasi udara dan mengurangi kelembaban.3. Irigasi: Siram tanaman di pagi hari di pangkal tanaman, hindari menyiram daun di sore atau malam hari agar daun cepat kering.4. Fungisida: Jika infeksi parah, pertimbangkan penggunaan fungisida yang sesuai dengan petunjuk pada label produk. Cari produk yang mengandung bahan aktif seperti mancozeb atau chlorothalonil.",
+      "reference_goal": "Lakukan triase visual pada gejala malabar spinach yang terlihat di gambar, gunakan alat identifikasi penyakit untuk mengonfirmasi Fungal (Colletotrichum spp.), lalu berikan panduan manajemen dan pengobatan berbasis bukti.",
+      "reference_context": "Tanaman: malabar spinach. Penyakit: Malabar Spinach Anthracnose. Gejala: Dark, sunken lesions on leaves, stems, and petioles. Lesions may have concentric rings. Leaves may yellow and drop. Severe infections can cause plant death.. Penanganan: ",
+      "reference_tool_calls": [
+        {
+          "name": "plant_disease_identification",
+          "args": {}
+        },
+        {
+          "name": "knowledgebase_search",
+          "args": {}
+        }
+      ]
+    },
+    "metadata": {
+      "class": "Malabar Spinach Anthracnose",
+      "plant": "malabar spinach",
+      "pathogen_type": "fungal",
+      "prompt_type": "scenario_2_diseased",
+      "filename": "001_malabar_spinach_anthracnose.jpg",
+      "is_plant_related": true
+    }
+  },
+  {
+    "inputs": {
+      "user_text": "Kenapa tanaman saya terlihat seperti ini? Apa yang menyebabkan masalah ini dan bagaimana cara mengatasinya?",
+      "image_url": "https://thesis-assets.andyathsid.com/ood/evaluation/images/002_malabar_spinach_anthracnose.jpg"
+    },
+    "outputs": {
+      "reference_answer": "Berdasarkan gejala yang terlihat pada gambar, tanaman Anda kemungkinan besar terserang Antraknosa (Anthracnose). Penyakit ini disebabkan oleh jamur dan dapat menyebabkan lesi gelap yang cekung pada daun, batang, dan tangkai daun, seringkali dengan cincin konsentris. Daun bisa menguning dan gugur, dan infeksi parah dapat menyebabkan kematian tanaman. Untuk mengatasinya, singkirkan dan musnahkan bagian tanaman yang terinfeksi, tingkatkan sirkulasi udara, hindari penyiraman berlebihan pada daun, dan pertimbangkan penggunaan fungisida jika infeksi parah.",
+      "reference_goal": "Lakukan triase visual pada gejala malabar spinach yang terlihat di gambar, gunakan alat identifikasi penyakit untuk mengonfirmasi Fungal (Colletotrichum spp.), lalu berikan panduan manajemen dan pengobatan berbasis bukti.",
+      "reference_context": "Tanaman: malabar spinach. Penyakit: Malabar Spinach Anthracnose. Gejala: Dark, sunken lesions on leaves, stems, and petioles. Lesions may have concentric rings. Leaves may yellow and drop. Severe infections can cause plant death.. Penanganan: ",
+      "reference_tool_calls": [
+        {
+          "name": "plant_disease_identification",
+          "args": {}
+        },
+        {
+          "name": "knowledgebase_search",
+          "args": {}
+        }
+      ]
+    },
+    "metadata": {
+      "class": "Malabar Spinach Anthracnose",
+      "plant": "malabar spinach",
+      "pathogen_type": "fungal",
+      "prompt_type": "scenario_3_diseased",
+      "filename": "002_malabar_spinach_anthracnose.jpg",
+      "is_plant_related": true
+    }
+  },
+  {
+    "inputs": {
+      "user_text": "malabar spinach saya memiliki bintik-bintik cokelat kemerahan di daunnya. Ini kira-kira kenapa ya dan bagaimana cara mengobatinya?",
+      "image_url": "https://thesis-assets.andyathsid.com/ood/evaluation/images/000_malabar_spinach_bacterial_spot.jpg"
+    },
+    "outputs": {
+      "reference_answer": "Tanaman malabar spinach Anda menunjukkan gejala penyakit bercak daun. Bintik-bintik yang awalnya tampak basah dan kemudian berubah menjadi cokelat kemerahan dengan kemungkinan halo kuning adalah ciri khas kondisi ini, yang sering disebabkan oleh infeksi jamur atau bakteri. Untuk penanganan awal, Anda bisa membuang daun yang terinfeksi untuk mencegah penyebaran lebih lanjut, memastikan sirkulasi udara yang baik di sekitar tanaman, dan menghindari penyiraman dari atas agar daun tidak terlalu lembap.",
+      "reference_goal": "Lakukan triase visual pada gejala malabar spinach yang terlihat di gambar, gunakan alat identifikasi penyakit untuk mengonfirmasi Bacterial (Xanthomonas spp.), lalu berikan panduan manajemen dan pengobatan berbasis bukti.",
+      "reference_context": "Tanaman: malabar spinach. Penyakit: Malabar Spinach Bacterial Spot. Gejala: Water-soaked spots on leaves that turn brown and may have yellow halos. Spots may coalesce to form larger necrotic areas. Leaves may drop prematurely.. Penanganan: ",
+      "reference_tool_calls": [
+        {
+          "name": "plant_disease_identification",
+          "args": {}
+        },
+        {
+          "name": "knowledgebase_search",
+          "args": {}
+        }
+      ]
+    },
+    "metadata": {
+      "class": "Malabar Spinach Bacterial Spot",
+      "plant": "malabar spinach",
+      "pathogen_type": "bacterial",
+      "prompt_type": "scenario_1_diseased",
+      "filename": "000_malabar_spinach_bacterial_spot.jpg",
+      "is_plant_related": true
+    }
+  },
+  {
+    "inputs": {
+      "user_text": "Saya punya tanaman malabar spinach yang daunnya terlihat tidak sehat. Ini penyakit apa dan bagaimana cara mengobatinya?",
+      "image_url": "https://thesis-assets.andyathsid.com/ood/evaluation/images/001_malabar_spinach_bacterial_spot.jpg"
+    },
+    "outputs": {
+      "reference_answer": "Tanaman malabar spinach Anda kemungkinan besar terserang Penyakit Bercak Daun Bakteri. Untuk penanganannya, Anda bisa membuang daun yang terinfeksi, memastikan sirkulasi udara yang baik, dan menghindari penyiraman dari atas.",
+      "reference_goal": "Lakukan triase visual pada gejala malabar spinach yang terlihat di gambar, gunakan alat identifikasi penyakit untuk mengonfirmasi Bacterial (Xanthomonas spp.), lalu berikan panduan manajemen dan pengobatan berbasis bukti.",
+      "reference_context": "Tanaman: malabar spinach. Penyakit: Malabar Spinach Bacterial Spot. Gejala: Water-soaked spots on leaves that turn brown and may have yellow halos. Spots may coalesce to form larger necrotic areas. Leaves may drop prematurely.. Penanganan: ",
+      "reference_tool_calls": [
+        {
+          "name": "plant_disease_identification",
+          "args": {}
+        },
+        {
+          "name": "knowledgebase_search",
+          "args": {}
+        }
+      ]
+    },
+    "metadata": {
+      "class": "Malabar Spinach Bacterial Spot",
+      "plant": "malabar spinach",
+      "pathogen_type": "bacterial",
+      "prompt_type": "scenario_2_diseased",
+      "filename": "001_malabar_spinach_bacterial_spot.jpg",
+      "is_plant_related": true
+    }
+  },
+  {
+    "inputs": {
+      "user_text": "Tanaman saya kenapa ya? Apa yang salah dengan daun ini? Bagaimana cara mengatasinya?",
+      "image_url": "https://thesis-assets.andyathsid.com/ood/evaluation/images/002_malabar_spinach_bacterial_spot.jpg"
+    },
+    "outputs": {
+      "reference_answer": "Berdasarkan gambar, tanaman Anda kemungkinan besar mengalami penyakit embun tepung (powdery mildew). Gejala yang terlihat berupa bercak-bercak basah yang berubah menjadi coklat dan mungkin memiliki lingkaran kuning. Bercak-bercak ini bisa menyatu membentuk area nekrotik yang lebih besar. Untuk mengatasinya, pastikan sirkulasi udara yang baik di sekitar tanaman, hindari penyiraman dari atas, dan pertimbangkan penggunaan fungisida jika infeksi parah.",
+      "reference_goal": "Lakukan triase visual pada gejala malabar spinach yang terlihat di gambar, gunakan alat identifikasi penyakit untuk mengonfirmasi Bacterial (Xanthomonas spp.), lalu berikan panduan manajemen dan pengobatan berbasis bukti.",
+      "reference_context": "Tanaman: malabar spinach. Penyakit: Malabar Spinach Bacterial Spot. Gejala: Water-soaked spots on leaves that turn brown and may have yellow halos. Spots may coalesce to form larger necrotic areas. Leaves may drop prematurely.. Penanganan: ",
+      "reference_tool_calls": [
+        {
+          "name": "plant_disease_identification",
+          "args": {}
+        },
+        {
+          "name": "knowledgebase_search",
+          "args": {}
+        }
+      ]
+    },
+    "metadata": {
+      "class": "Malabar Spinach Bacterial Spot",
+      "plant": "malabar spinach",
+      "pathogen_type": "bacterial",
+      "prompt_type": "scenario_3_diseased",
+      "filename": "002_malabar_spinach_bacterial_spot.jpg",
+      "is_plant_related": true
+    }
+  },
+  {
+    "inputs": {
+      "user_text": "Malabar spinach saya memiliki bintik-bintik kuning di permukaan atas daun dan ada sedikit pertumbuhan keabu-abuan di bagian bawah daunnya. Ini kira-kira kenapa ya dan bagaimana cara mengobatinya?",
+      "image_url": "https://thesis-assets.andyathsid.com/ood/evaluation/images/000_malabar_spinach_downy_mildew.jpg"
+    },
+    "outputs": {
+      "reference_answer": "Berdasarkan gejala yang Anda deskripsikan dan gambar yang diberikan, kemungkinan besar tanaman malabar spinach Anda terserang penyakit Embun Bulu (Downy Mildew). Penyakit ini disebabkan oleh jamur dan dapat menyebabkan daun menguning serta rontok jika tidak ditangani. Untuk mengatasinya, Anda bisa membuang daun yang terinfeksi parah, memastikan sirkulasi udara yang baik, dan menghindari penyiraman dari atas daun.",
+      "reference_goal": "Lakukan triase visual pada gejala malabar spinach yang terlihat di gambar, gunakan alat identifikasi penyakit untuk mengonfirmasi Oomycete (Peronospora spp.), lalu berikan panduan manajemen dan pengobatan berbasis bukti.",
+      "reference_context": "Tanaman: malabar spinach. Penyakit: Malabar Spinach Downy Mildew. Gejala: Yellow spots on upper leaf surfaces with fuzzy, gray-purple growth on undersides. Leaves may yellow and drop. Severe infections can defoliate plants.. Penanganan: ",
+      "reference_tool_calls": [
+        {
+          "name": "plant_disease_identification",
+          "args": {}
+        },
+        {
+          "name": "knowledgebase_search",
+          "args": {}
+        }
+      ]
+    },
+    "metadata": {
+      "class": "Malabar Spinach Downy Mildew",
+      "plant": "malabar spinach",
+      "pathogen_type": "N/A",
+      "prompt_type": "scenario_1_diseased",
+      "filename": "000_malabar_spinach_downy_mildew.jpg",
+      "is_plant_related": true
+    }
+  },
+  {
+    "inputs": {
+      "user_text": "Saya punya tanaman malabar spinach yang daunnya seperti ini. Ini apakah penyakit dan bagaimana cara menanganinya?",
+      "image_url": "https://thesis-assets.andyathsid.com/ood/evaluation/images/001_malabar_spinach_downy_mildew.jpg"
+    },
+    "outputs": {
+      "reference_answer": "Tanaman malabar spinach Anda kemungkinan terserang embun tepung palsu (Downy Mildew). Penyakit ini disebabkan oleh jamur dan dapat ditangani dengan beberapa cara.",
+      "reference_goal": "Lakukan triase visual pada gejala malabar spinach yang terlihat di gambar, gunakan alat identifikasi penyakit untuk mengonfirmasi Oomycete (Peronospora spp.), lalu berikan panduan manajemen dan pengobatan berbasis bukti.",
+      "reference_context": "Tanaman: malabar spinach. Penyakit: Malabar Spinach Downy Mildew. Gejala: Yellow spots on upper leaf surfaces with fuzzy, gray-purple growth on undersides. Leaves may yellow and drop. Severe infections can defoliate plants.. Penanganan: ",
+      "reference_tool_calls": [
+        {
+          "name": "plant_disease_identification",
+          "args": {}
+        },
+        {
+          "name": "knowledgebase_search",
+          "args": {}
+        }
+      ]
+    },
+    "metadata": {
+      "class": "Malabar Spinach Downy Mildew",
+      "plant": "malabar spinach",
+      "pathogen_type": "N/A",
+      "prompt_type": "scenario_2_diseased",
+      "filename": "001_malabar_spinach_downy_mildew.jpg",
+      "is_plant_related": true
+    }
+  },
+  {
+    "inputs": {
+      "user_text": "Tanaman saya kenapa ya? Apa yang harus saya lakukan untuk mengatasinya?",
+      "image_url": "https://thesis-assets.andyathsid.com/ood/evaluation/images/002_malabar_spinach_downy_mildew.jpg"
+    },
+    "outputs": {
+      "reference_answer": "Berdasarkan gejala pada daun, kemungkinan tanaman Anda terserang penyakit embun bulu (Downy Mildew). Penyakit ini disebabkan oleh organisme mirip jamur dan dapat menyebabkan bercak kuning pada permukaan atas daun serta pertumbuhan berbulu keabu-abuan di bagian bawah. Untuk mengatasinya, Anda bisa membuang daun yang terinfeksi parah, meningkatkan sirkulasi udara, dan menggunakan fungisida yang sesuai jika infeksi parah.",
+      "reference_goal": "Lakukan triase visual pada gejala malabar spinach yang terlihat di gambar, gunakan alat identifikasi penyakit untuk mengonfirmasi Oomycete (Peronospora spp.), lalu berikan panduan manajemen dan pengobatan berbasis bukti.",
+      "reference_context": "Tanaman: malabar spinach. Penyakit: Malabar Spinach Downy Mildew. Gejala: Yellow spots on upper leaf surfaces with fuzzy, gray-purple growth on undersides. Leaves may yellow and drop. Severe infections can defoliate plants.. Penanganan: ",
+      "reference_tool_calls": [
+        {
+          "name": "plant_disease_identification",
+          "args": {}
+        },
+        {
+          "name": "knowledgebase_search",
+          "args": {}
+        }
+      ]
+    },
+    "metadata": {
+      "class": "Malabar Spinach Downy Mildew",
+      "plant": "malabar spinach",
+      "pathogen_type": "N/A",
+      "prompt_type": "scenario_3_diseased",
+      "filename": "002_malabar_spinach_downy_mildew.jpg",
+      "is_plant_related": true
+    }
+  },
+  {
+    "inputs": {
+      "user_text": "malabar spinach saya memiliki lubang-lubang bekas gigitan, daunnya terlihat bergaris-garis coklat, dan ada bercak-bercak. Ini kira-kira kenapa ya dan bagaimana cara mengobatinya?",
+      "image_url": "https://thesis-assets.andyathsid.com/ood/evaluation/images/000_malabar_spinach_pest_damage.jpg"
+    },
+    "outputs": {
+      "reference_answer": "Berdasarkan gambar, daun malabar spinach Anda menunjukkan adanya lubang-lubang bekas gigitan dan garis-garis cokelat, yang sangat mungkin disebabkan oleh hama serangga. Serangga seperti ulat, belalang, atau siput seringkali memakan daun, meninggalkan lubang. Garis-garis cokelat bisa jadi merupakan jejak aktivitas serangga penggorok daun (leaf miners) atau kerusakan sekunder akibat gigitan dan gesekan.",
+      "reference_goal": "Lakukan triase visual pada gejala malabar spinach yang terlihat di gambar, gunakan alat identifikasi penyakit untuk mengonfirmasi Pests (caterpillars, aphids, mites, or other insects), lalu berikan panduan manajemen dan pengobatan berbasis bukti.",
+      "reference_context": "Tanaman: malabar spinach. Penyakit: Malabar Spinach Pest Damage. Gejala: Chewed holes in leaves, skeletonized foliage, sticky residue on leaves, visible insects or webbing. Leaves may be distorted or discolored.. Penanganan: ",
+      "reference_tool_calls": [
+        {
+          "name": "plant_disease_identification",
+          "args": {}
+        },
+        {
+          "name": "knowledgebase_search",
+          "args": {}
+        }
+      ]
+    },
+    "metadata": {
+      "class": "Malabar Spinach Pest Damage",
+      "plant": "malabar spinach",
+      "pathogen_type": "pest",
+      "prompt_type": "scenario_1_diseased",
+      "filename": "000_malabar_spinach_pest_damage.jpg",
+      "is_plant_related": true
+    }
+  },
+  {
+    "inputs": {
+      "user_text": "Saya punya tanaman malabar spinach. Ini apakah penyakit dan bagaimana cara menanganinya?",
+      "image_url": "https://thesis-assets.andyathsid.com/ood/evaluation/images/001_malabar_spinach_pest_damage.jpg"
+    },
+    "outputs": {
+      "reference_answer": "Berdasarkan gambar dan gejala yang Anda sebutkan (lubang gigitan, daun seperti kerangka, residu lengket), tanaman malabar spinach Anda kemungkinan besar terserang hama serangga. Untuk penanganan, Anda bisa membersihkan hama secara manual, menggunakan sabun insektisida atau minyak nimba, serta menjaga kebersihan dan sirkulasi udara di sekitar tanaman.",
+      "reference_goal": "Lakukan triase visual pada gejala malabar spinach yang terlihat di gambar, gunakan alat identifikasi penyakit untuk mengonfirmasi Pests (caterpillars, aphids, mites, or other insects), lalu berikan panduan manajemen dan pengobatan berbasis bukti.",
+      "reference_context": "Tanaman: malabar spinach. Penyakit: Malabar Spinach Pest Damage. Gejala: Chewed holes in leaves, skeletonized foliage, sticky residue on leaves, visible insects or webbing. Leaves may be distorted or discolored.. Penanganan: ",
+      "reference_tool_calls": [
+        {
+          "name": "plant_disease_identification",
+          "args": {}
+        },
+        {
+          "name": "knowledgebase_search",
+          "args": {}
+        }
+      ]
+    },
+    "metadata": {
+      "class": "Malabar Spinach Pest Damage",
+      "plant": "malabar spinach",
+      "pathogen_type": "pest",
+      "prompt_type": "scenario_2_diseased",
+      "filename": "001_malabar_spinach_pest_damage.jpg",
+      "is_plant_related": true
+    }
+  },
+  {
+    "inputs": {
+      "user_text": "Tanaman saya kenapa ya? Apakah ini penyakit? Gimana cara mengatasinya?",
+      "image_url": "https://thesis-assets.andyathsid.com/ood/evaluation/images/002_malabar_spinach_pest_damage.jpg"
+    },
+    "outputs": {
+      "reference_answer": "Berdasarkan gejala seperti lubang gigitan dan kemungkinan sisa lengket atau kerangka daun, tanaman Anda kemungkinan besar mengalami infestasi hama. Ini bukan penyakit, melainkan kerusakan yang disebabkan oleh serangga. Untuk mengatasinya, Anda bisa memulai dengan memeriksa tanaman secara cermat untuk mengidentifikasi hama. Setelah itu, Anda bisa mencoba metode organik seperti menyemprotkan air sabun atau minyak nimba, atau jika infestasi parah, pertimbangkan penggunaan insektisida botani yang aman untuk tanaman pangan.",
+      "reference_goal": "Lakukan triase visual pada gejala malabar spinach yang terlihat di gambar, gunakan alat identifikasi penyakit untuk mengonfirmasi Pests (caterpillars, aphids, mites, or other insects), lalu berikan panduan manajemen dan pengobatan berbasis bukti.",
+      "reference_context": "Tanaman: malabar spinach. Penyakit: Malabar Spinach Pest Damage. Gejala: Chewed holes in leaves, skeletonized foliage, sticky residue on leaves, visible insects or webbing. Leaves may be distorted or discolored.. Penanganan: ",
+      "reference_tool_calls": [
+        {
+          "name": "plant_disease_identification",
+          "args": {}
+        },
+        {
+          "name": "knowledgebase_search",
+          "args": {}
+        }
+      ]
+    },
+    "metadata": {
+      "class": "Malabar Spinach Pest Damage",
+      "plant": "malabar spinach",
+      "pathogen_type": "pest",
+      "prompt_type": "scenario_3_diseased",
+      "filename": "002_malabar_spinach_pest_damage.jpg",
+      "is_plant_related": true
+    }
+  },
+  {
+    "inputs": {
+      "user_text": "Okra saya memiliki bintik-bintik coklat kehitaman melingkar di daunnya, bahkan ada yang seperti cincin. Daunnya juga mulai menguning dan rontok. Ini kira-kira kenapa ya dan bagaimana cara mengobatinya?",
+      "image_url": "https://thesis-assets.andyathsid.com/ood/evaluation/images/000_okra_alternaria_leaf_spot.jpg"
+    },
+    "outputs": {
+      "reference_answer": "Berdasarkan gejala bintik-bintik coklat kehitaman melingkar dengan cincin konsentris yang Anda deskripsikan pada daun okra Anda, kemungkinan besar ini adalah penyakit Bercak Daun Alternaria atau Early Blight. Ini adalah penyakit jamur yang umum pada okra. Untuk penanganannya, Anda bisa membuang daun yang terinfeksi untuk mencegah penyebaran, memastikan sanitasi kebun yang baik, dan menggunakan fungisida yang sesuai jika infeksi parah. Rotasi tanaman juga dapat membantu mencegah kekambuhan.",
+      "reference_goal": "Lakukan triase visual pada gejala okra yang terlihat di gambar, gunakan alat identifikasi penyakit untuk mengonfirmasi Fungal (Alternaria spp.), lalu berikan panduan manajemen dan pengobatan berbasis bukti.",
+      "reference_context": "Tanaman: okra. Penyakit: Okra Alternaria Leaf Spot. Gejala: Dark brown to black circular spots on leaves with concentric rings. Spots may have yellow halos. Leaves may yellow and drop prematurely. Severe infections can defoliate plants.. Penanganan: ",
+      "reference_tool_calls": [
+        {
+          "name": "plant_disease_identification",
+          "args": {}
+        },
+        {
+          "name": "knowledgebase_search",
+          "args": {}
+        }
+      ]
+    },
+    "metadata": {
+      "class": "Okra Alternaria Leaf Spot",
+      "plant": "okra",
+      "pathogen_type": "fungal",
+      "prompt_type": "scenario_1_diseased",
+      "filename": "000_okra_alternaria_leaf_spot.jpg",
+      "is_plant_related": true
+    }
+  },
+  {
+    "inputs": {
+      "user_text": "Saya punya tanaman okra. Ini penyakit apa dan bagaimana cara mengatasinya?",
+      "image_url": "https://thesis-assets.andyathsid.com/ood/evaluation/images/001_okra_alternaria_leaf_spot.jpg"
+    },
+    "outputs": {
+      "reference_answer": "Tanaman okra Anda kemungkinan terserang Penyakit Bercak Daun Alternaria. Untuk mengatasinya, Anda bisa melakukan praktik budidaya yang baik dan mempertimbangkan penggunaan fungisida jika infeksi parah.",
+      "reference_goal": "Lakukan triase visual pada gejala okra yang terlihat di gambar, gunakan alat identifikasi penyakit untuk mengonfirmasi Fungal (Alternaria spp.), lalu berikan panduan manajemen dan pengobatan berbasis bukti.",
+      "reference_context": "Tanaman: okra. Penyakit: Okra Alternaria Leaf Spot. Gejala: Dark brown to black circular spots on leaves with concentric rings. Spots may have yellow halos. Leaves may yellow and drop prematurely. Severe infections can defoliate plants.. Penanganan: ",
+      "reference_tool_calls": [
+        {
+          "name": "closed_set_leaf_detection",
+          "args": {}
+        },
+        {
+          "name": "plant_disease_identification",
+          "args": {}
+        },
+        {
+          "name": "knowledgebase_search",
+          "args": {}
+        }
+      ]
+    },
+    "metadata": {
+      "class": "Okra Alternaria Leaf Spot",
+      "plant": "okra",
+      "pathogen_type": "fungal",
+      "prompt_type": "scenario_2_diseased",
+      "filename": "001_okra_alternaria_leaf_spot.jpg",
+      "is_plant_related": true
+    }
+  },
+  {
+    "inputs": {
+      "user_text": "Tanaman saya sepertinya ada masalah. Apa yang terjadi padanya dan bagaimana cara mengatasinya?",
+      "image_url": "https://thesis-assets.andyathsid.com/ood/evaluation/images/002_okra_alternaria_leaf_spot.jpg"
+    },
+    "outputs": {
+      "reference_answer": "Berdasarkan gejala yang dijelaskan, tanaman Anda kemungkinan besar mengalami bercak daun Cercospora. Ini adalah penyakit jamur yang menyebabkan bercak melingkar berwarna cokelat gelap hingga hitam dengan cincin konsentris, seringkali disertai lingkaran kuning. Untuk mengatasinya, Anda bisa membuang daun yang terinfeksi, memastikan sirkulasi udara yang baik, dan jika parah, pertimbangkan penggunaan fungisida yang sesuai.",
+      "reference_goal": "Lakukan triase visual pada gejala okra yang terlihat di gambar, gunakan alat identifikasi penyakit untuk mengonfirmasi Fungal (Alternaria spp.), lalu berikan panduan manajemen dan pengobatan berbasis bukti.",
+      "reference_context": "Tanaman: okra. Penyakit: Okra Alternaria Leaf Spot. Gejala: Dark brown to black circular spots on leaves with concentric rings. Spots may have yellow halos. Leaves may yellow and drop prematurely. Severe infections can defoliate plants.. Penanganan: ",
+      "reference_tool_calls": [
+        {
+          "name": "closed_set_leaf_detection",
+          "args": {}
+        },
+        {
+          "name": "plant_disease_identification",
+          "args": {}
+        },
+        {
+          "name": "knowledgebase_search",
+          "args": {}
+        }
+      ]
+    },
+    "metadata": {
+      "class": "Okra Alternaria Leaf Spot",
+      "plant": "okra",
+      "pathogen_type": "fungal",
+      "prompt_type": "scenario_3_diseased",
+      "filename": "002_okra_alternaria_leaf_spot.jpg",
+      "is_plant_related": true
+    }
+  },
+  {
+    "inputs": {
+      "user_text": "Okra saya memiliki bintik-bintik kecil pada daunnya yang kadang menyatu, dan",
+      "image_url": "https://thesis-assets.andyathsid.com/ood/evaluation/images/000_okra_cercospora_leaf_spot.jpg"
+    },
+    "outputs": {
+      "reference_answer": "",
+      "reference_goal": "Lakukan triase visual pada gejala okra yang terlihat di gambar, gunakan alat identifikasi penyakit untuk mengonfirmasi Fungal (Cercospora abelmoschi), lalu berikan panduan manajemen dan pengobatan berbasis bukti.",
+      "reference_context": "Tanaman: okra. Penyakit: Okra Cercospora Leaf Spot. Gejala: Small, circular spots with gray centers and brown margins on leaves. Spots may coalesce to form larger necrotic areas. Leaves may yellow and drop.. Penanganan: ",
+      "reference_tool_calls": [
+        {
+          "name": "plant_disease_identification",
+          "args": {}
+        },
+        {
+          "name": "knowledgebase_search",
+          "args": {}
+        }
+      ]
+    },
+    "metadata": {
+      "class": "Okra Cercospora Leaf Spot",
+      "plant": "okra",
+      "pathogen_type": "fungal",
+      "prompt_type": "scenario_1_diseased",
+      "filename": "000_okra_cercospora_leaf_spot.jpg",
+      "is_plant_related": true
+    }
+  },
+  {
+    "inputs": {
+      "user_text": "Saya punya tanaman okra yang daunnya seperti ini. Ini apakah penyakit dan bagaimana cara menanganinya?",
+      "image_url": "https://thesis-assets.andyathsid.com/ood/evaluation/images/001_okra_cercospora_leaf_spot.jpg"
+    },
+    "outputs": {
+      "reference_answer": "Berdasarkan gejala yang Anda sebutkan, tanaman okra Anda kemungkinan besar menderita Penyakit Bercak Daun Cercospora (Cercospora leaf spot). Ini adalah penyakit jamur umum pada okra. Untuk penanganannya, Anda bisa melakukan sanitasi dengan membuang daun yang terinfeksi, memastikan sirkulasi udara yang baik, dan menggunakan fungisida yang sesuai jika infeksi parah.",
+      "reference_goal": "Lakukan triase visual pada gejala okra yang terlihat di gambar, gunakan alat identifikasi penyakit untuk mengonfirmasi Fungal (Cercospora abelmoschi), lalu berikan panduan manajemen dan pengobatan berbasis bukti.",
+      "reference_context": "Tanaman: okra. Penyakit: Okra Cercospora Leaf Spot. Gejala: Small, circular spots with gray centers and brown margins on leaves. Spots may coalesce to form larger necrotic areas. Leaves may yellow and drop.. Penanganan: ",
+      "reference_tool_calls": [
+        {
+          "name": "plant_disease_identification",
+          "args": {}
+        },
+        {
+          "name": "knowledgebase_search",
+          "args": {}
+        }
+      ]
+    },
+    "metadata": {
+      "class": "Okra Cercospora Leaf Spot",
+      "plant": "okra",
+      "pathogen_type": "fungal",
+      "prompt_type": "scenario_2_diseased",
+      "filename": "001_okra_cercospora_leaf_spot.jpg",
+      "is_plant_related": true
+    }
+  },
+  {
+    "inputs": {
+      "user_text": "Tanaman saya kenapa ya? Apa yang salah dengan daunnya? Bagaimana cara mengatasinya?",
+      "image_url": "https://thesis-assets.andyathsid.com/ood/evaluation/images/002_okra_cercospora_leaf_spot.jpg"
+    },
+    "outputs": {
+      "reference_answer": "Berdasarkan gejala yang terlihat pada daun, tanaman Anda kemungkinan besar terserang Penyakit Bercak Daun (Leaf Spot) pada Okra. Penyakit ini sering disebabkan oleh jamur yang menyebabkan bintik-bintik melingkar kecil dengan pusat abu-abu dan tepi coklat. Bintik-bintik ini dapat menyatu membentuk area nekrotik yang lebih besar, dan daun bisa menguning lalu gugur. Untuk penanganan awal, Anda bisa membuang daun yang terinfeksi dan memastikan sirkulasi udara yang baik di sekitar tanaman.",
+      "reference_goal": "Lakukan triase visual pada gejala okra yang terlihat di gambar, gunakan alat identifikasi penyakit untuk mengonfirmasi Fungal (Cercospora abelmoschi), lalu berikan panduan manajemen dan pengobatan berbasis bukti.",
+      "reference_context": "Tanaman: okra. Penyakit: Okra Cercospora Leaf Spot. Gejala: Small, circular spots with gray centers and brown margins on leaves. Spots may coalesce to form larger necrotic areas. Leaves may yellow and drop.. Penanganan: ",
+      "reference_tool_calls": [
+        {
+          "name": "plant_disease_identification",
+          "args": {}
+        },
+        {
+          "name": "knowledgebase_search",
+          "args": {}
+        }
+      ]
+    },
+    "metadata": {
+      "class": "Okra Cercospora Leaf Spot",
+      "plant": "okra",
+      "pathogen_type": "fungal",
+      "prompt_type": "scenario_3_diseased",
+      "filename": "002_okra_cercospora_leaf_spot.jpg",
+      "is_plant_related": true
+    }
+  },
+  {
+    "inputs": {
+      "user_text": "Okra saya daunnya ada bintik-bintik kuning dan bagian bawahnya seperti ada bulu-bulu abu-abu keunguan. Ini kira-kira kenapa ya dan bagaimana cara mengobatinya?",
+      "image_url": "https://thesis-assets.andyathsid.com/ood/evaluation/images/000_okra_downy_mildew.jpg"
+    },
+    "outputs": {
+      "reference_answer": "Tanaman okra Anda kemungkinan besar terserang Embun Tepung (Downy Mildew). Penyakit ini disebabkan oleh organisme seperti jamur yang disebut oomycete. Gejalanya meliputi bintik-bintik kuning bersudut pada permukaan atas daun dan pertumbuhan berbulu abu-abu keunguan di bagian bawah daun. Untuk penanganannya, Anda bisa membuang daun yang terinfeksi parah, meningkatkan sirkulasi udara, dan menggunakan fungisida yang sesuai jika infeksi parah.",
+      "reference_goal": "Lakukan triase visual pada gejala okra yang terlihat di gambar, gunakan alat identifikasi penyakit untuk mengonfirmasi Oomycete (Pseudoperonospora sp.), lalu berikan panduan manajemen dan pengobatan berbasis bukti.",
+      "reference_context": "Tanaman: okra. Penyakit: Okra Downy Mildew. Gejala: Yellow angular spots on upper leaf surfaces with fuzzy, gray-purple growth on undersides. Leaves may yellow and drop. Severe infections can defoliate plants.. Penanganan: ",
+      "reference_tool_calls": [
+        {
+          "name": "plant_disease_identification",
+          "args": {}
+        },
+        {
+          "name": "knowledgebase_search",
+          "args": {}
+        }
+      ]
+    },
+    "metadata": {
+      "class": "Okra Downy Mildew",
+      "plant": "okra",
+      "pathogen_type": "N/A",
+      "prompt_type": "scenario_1_diseased",
+      "filename": "000_okra_downy_mildew.jpg",
+      "is_plant_related": true
+    }
+  },
+  {
+    "inputs": {
+      "user_text": "Saya punya tanaman okra yang daunnya seperti ini. Ini apakah penyakit dan bagaimana cara menanganinya?",
+      "image_url": "https://thesis-assets.andyathsid.com/ood/evaluation/images/001_okra_downy_mildew.jpg"
+    },
+    "outputs": {
+      "reference_answer": "Tanaman okra Anda kemungkinan terinfeksi penyakit embun berbulu halus (Downy Mildew). Untuk penanganannya, Anda bisa melakukan sanitasi kebun, meningkatkan sirkulasi udara, dan menggunakan fungisida jika diperlukan.",
+      "reference_goal": "Lakukan triase visual pada gejala okra yang terlihat di gambar, gunakan alat identifikasi penyakit untuk mengonfirmasi Oomycete (Pseudoperonospora sp.), lalu berikan panduan manajemen dan pengobatan berbasis bukti.",
+      "reference_context": "Tanaman: okra. Penyakit: Okra Downy Mildew. Gejala: Yellow angular spots on upper leaf surfaces with fuzzy, gray-purple growth on undersides. Leaves may yellow and drop. Severe infections can defoliate plants.. Penanganan: ",
+      "reference_tool_calls": [
+        {
+          "name": "closed_set_leaf_detection",
+          "args": {}
+        },
+        {
+          "name": "plant_disease_identification",
+          "args": {}
+        },
+        {
+          "name": "knowledgebase_search",
+          "args": {}
+        }
+      ]
+    },
+    "metadata": {
+      "class": "Okra Downy Mildew",
+      "plant": "okra",
+      "pathogen_type": "N/A",
+      "prompt_type": "scenario_2_diseased",
+      "filename": "001_okra_downy_mildew.jpg",
+      "is_plant_related": true
+    }
+  },
+  {
+    "inputs": {
+      "user_text": "Tanaman saya kenapa ya? Apakah ini penyakit? Bagaimana cara mengatasinya?",
+      "image_url": "https://thesis-assets.andyathsid.com/ood/evaluation/images/002_okra_downy_mildew.jpg"
+    },
+    "outputs": {
+      "reference_answer": "Berdasarkan gejala pada gambar, tanaman Anda kemungkinan besar terserang Penyakit Embun Bulu (Downy Mildew) pada Okra. Penyakit ini disebabkan oleh oomycetes yang menyebabkan bercak kuning bersudut pada permukaan atas daun dan pertumbuhan seperti jamur berwarna abu-abu keunguan di bagian bawah. Untuk mengatasinya, disarankan untuk membuang daun yang terinfeksi parah, meningkatkan sirkulasi udara, menghindari penyiraman berlebihan, dan menggunakan fungisida yang direkomendasikan jika infeksi parah.",
+      "reference_goal": "Lakukan triase visual pada gejala okra yang terlihat di gambar, gunakan alat identifikasi penyakit untuk mengonfirmasi Oomycete (Pseudoperonospora sp.), lalu berikan panduan manajemen dan pengobatan berbasis bukti.",
+      "reference_context": "Tanaman: okra. Penyakit: Okra Downy Mildew. Gejala: Yellow angular spots on upper leaf surfaces with fuzzy, gray-purple growth on undersides. Leaves may yellow and drop. Severe infections can defoliate plants.. Penanganan: ",
+      "reference_tool_calls": [
+        {
+          "name": "plant_disease_identification",
+          "args": {}
+        },
+        {
+          "name": "knowledgebase_search",
+          "args": {}
+        }
+      ]
+    },
+    "metadata": {
+      "class": "Okra Downy Mildew",
+      "plant": "okra",
+      "pathogen_type": "N/A",
+      "prompt_type": "scenario_3_diseased",
+      "filename": "002_okra_downy_mildew.jpg",
+      "is_plant_related": true
+    }
+  },
+  {
+    "inputs": {
+      "user_text": "Okra saya memiliki daun yang keriting, melintir, dan bentuknya tidak normal. Beberapa tepian daun juga terlihat menguning. Ini kira-kira kenapa ya dan bagaimana cara mengobatinya?",
+      "image_url": "https://thesis-assets.andyathsid.com/ood/evaluation/images/000_okra_leaf_curly_virus.jpg"
+    },
+    "outputs": {
+      "reference_answer": "Tanaman okra Anda menunjukkan gejala yang sangat konsisten dengan infeksi virus, kemungkinan besar Virus Mosaik Vena Kuning Okra (OYVMV). Gejala khasnya meliputi daun yang keriting, melintir, dan terdistorsi, serta menguning pada tepian daun, terutama di sekitar vena. Pertumbuhan tanaman juga bisa terhambat dan produksi polong berkurang. Virus ini biasanya disebarkan oleh serangga vektor seperti kutu kebul.\n\nKarena tidak ada obat langsung untuk infeksi virus pada tanaman, penanganan berfokus pada pencegahan dan pengelolaan:\n1.  **Sanitasi**: Segera buang dan musnahkan tanaman okra yang terinfeksi parah untuk mencegah penyebaran virus ke tanaman sehat.\n2.  **Pengendalian Vektor**: Kelola populasi kutu kebul yang menyebarkan virus. Anda bisa menggunakan insektisida yang sesuai atau metode organik seperti penyemprotan sabun insektisida atau menanam tanaman penarik serangga predator.\n3.  **Varietas Tahan**: Jika memungkinkan, tanam varietas okra yang diketahui memiliki ketahanan terhadap OYVMV di musim tanam berikutnya.\n4.  **Praktik Agronomi Baik**: Pastikan tanaman mendapatkan nutrisi dan air yang cukup untuk meningkatkan daya tahannya.",
+      "reference_goal": "Lakukan triase visual pada gejala okra yang terlihat di gambar, gunakan alat identifikasi penyakit untuk mengonfirmasi Viral (Okra leaf curl virus), lalu berikan panduan manajemen dan pengobatan berbasis bukti.",
+      "reference_context": "Tanaman: okra. Penyakit: Okra Leaf Curly Virus. Gejala: Leaves become curled, twisted, and distorted. Plants may be stunted. Leaf margins may show yellowing. Reduced pod production.. Penanganan: ",
+      "reference_tool_calls": [
+        {
+          "name": "closed_set_leaf_detection",
+          "args": {}
+        },
+        {
+          "name": "plant_disease_identification",
+          "args": {}
+        },
+        {
+          "name": "knowledgebase_search",
+          "args": {}
+        }
+      ]
+    },
+    "metadata": {
+      "class": "Okra Leaf Curly Virus",
+      "plant": "okra",
+      "pathogen_type": "viral",
+      "prompt_type": "scenario_1_diseased",
+      "filename": "000_okra_leaf_curly_virus.jpg",
+      "is_plant_related": true
+    }
+  },
+  {
+    "inputs": {
+      "user_text": "Saya punya tanaman okra. Ini apakah penyakit dan bagaimana cara menanganinya?",
+      "image_url": "https://thesis-assets.andyathsid.com/ood/evaluation/images/001_okra_leaf_curly_virus.jpg"
+    },
+    "outputs": {
+      "reference_answer": "Tanaman okra Anda kemungkinan besar terserang Virus Mosaik Vena Kuning Okra (Okra Yellow Vein Mosaic Virus atau OYVMV). Ini adalah penyakit virus yang ditularkan oleh kutu kebul.",
+      "reference_goal": "Lakukan triase visual pada gejala okra yang terlihat di gambar, gunakan alat identifikasi penyakit untuk mengonfirmasi Viral (Okra leaf curl virus), lalu berikan panduan manajemen dan pengobatan berbasis bukti.",
+      "reference_context": "Tanaman: okra. Penyakit: Okra Leaf Curly Virus. Gejala: Leaves become curled, twisted, and distorted. Plants may be stunted. Leaf margins may show yellowing. Reduced pod production.. Penanganan: ",
+      "reference_tool_calls": [
+        {
+          "name": "plant_disease_identification",
+          "args": {}
+        },
+        {
+          "name": "knowledgebase_search",
+          "args": {}
+        }
+      ]
+    },
+    "metadata": {
+      "class": "Okra Leaf Curly Virus",
+      "plant": "okra",
+      "pathogen_type": "viral",
+      "prompt_type": "scenario_2_diseased",
+      "filename": "001_okra_leaf_curly_virus.jpg",
+      "is_plant_related": true
+    }
+  },
+  {
+    "inputs": {
+      "user_text": "Tanaman saya kenapa ya? Apakah ini penyakit dan bagaimana cara mengatasinya?",
+      "image_url": "https://thesis-assets.andyathsid.com/ood/evaluation/images/002_okra_leaf_curly_virus.jpg"
+    },
+    "outputs": {
+      "reference_answer": "Berdasarkan gejala pada gambar, tanaman Anda kemungkinan besar mengalami Okra Yellow Vein Mosaic Virus. Penyakit ini menyebabkan daun menguning, mengeriting, dan terdistorsi, serta dapat menghambat pertumbuhan dan mengurangi produksi polong. Untuk penanganannya, disarankan untuk mencabut dan membuang tanaman yang terinfeksi untuk mencegah penyebaran. Selain itu, penting untuk mengendalikan vektor serangga seperti kutu kebul yang menyebarkan virus ini, dan jika memungkinkan, gunakan varietas okra yang tahan penyakit.",
+      "reference_goal": "Lakukan triase visual pada gejala okra yang terlihat di gambar, gunakan alat identifikasi penyakit untuk mengonfirmasi Viral (Okra leaf curl virus), lalu berikan panduan manajemen dan pengobatan berbasis bukti.",
+      "reference_context": "Tanaman: okra. Penyakit: Okra Leaf Curly Virus. Gejala: Leaves become curled, twisted, and distorted. Plants may be stunted. Leaf margins may show yellowing. Reduced pod production.. Penanganan: ",
+      "reference_tool_calls": [
+        {
+          "name": "plant_disease_identification",
+          "args": {}
+        },
+        {
+          "name": "knowledgebase_search",
+          "args": {}
+        }
+      ]
+    },
+    "metadata": {
+      "class": "Okra Leaf Curly Virus",
+      "plant": "okra",
+      "pathogen_type": "viral",
+      "prompt_type": "scenario_3_diseased",
+      "filename": "002_okra_leaf_curly_virus.jpg",
+      "is_plant_related": true
+    }
+  },
+  {
+    "inputs": {
+      "user_text": "Daun bawang saya ada garis-garis kuning dan terlihat agak keriting. Ini kira-kira kenapa ya dan bagaimana cara mengobatinya?",
+      "image_url": "https://thesis-assets.andyathsid.com/ood/evaluation/images/000_onion_iris_yellow_virus.jpg"
+    },
+    "outputs": {
+      "reference_answer": "Berdasarkan gejala yang Anda sebutkan dan terlihat pada daun bawang Anda, kemungkinan besar tanaman Anda terserang penyakit virus seperti Iris Yellow Spot Virus. Penyakit ini sering disebarkan oleh kutu trips.",
+      "reference_goal": "Lakukan triase visual pada gejala onion yang terlihat di gambar, gunakan alat identifikasi penyakit untuk mengonfirmasi Viral (Onion yellow dwarf virus), lalu berikan panduan manajemen dan pengobatan berbasis bukti.",
+      "reference_context": "Tanaman: onion. Penyakit: Onion Iris Yellow Virus. Gejala: Yellow streaks on leaves, particularly at bases. Leaves may be flattened or crinkled. Bulbs are undersized. Flower stalks yellow and twisted.. Penanganan: ",
+      "reference_tool_calls": [
+        {
+          "name": "closed_set_leaf_detection",
+          "args": {}
+        },
+        {
+          "name": "plant_disease_identification",
+          "args": {}
+        },
+        {
+          "name": "knowledgebase_search",
+          "args": {}
+        }
+      ]
+    },
+    "metadata": {
+      "class": "Onion Iris Yellow Virus",
+      "plant": "onion",
+      "pathogen_type": "viral",
+      "prompt_type": "scenario_1_diseased",
+      "filename": "000_onion_iris_yellow_virus.jpg",
+      "is_plant_related": true
+    }
+  },
+  {
+    "inputs": {
+      "user_text": "Saya punya tanaman onion. Ini apakah penyakit dan bagaimana cara menanganinya?",
+      "image_url": "https://thesis-assets.andyathsid.com/ood/evaluation/images/001_onion_iris_yellow_virus.jpg"
+    },
+    "outputs": {
+      "reference_answer": "Berdasarkan gejala yang terlihat, tanaman onion Anda kemungkinan besar terinfeksi Virus Kerdil Kuning Bawang (Onion Yellow Dwarf Virus - OYDV). Penyakit ini disebabkan oleh virus dan ditularkan terutama oleh kutu daun (aphid) atau melalui bahan tanam yang terinfeksi. Gejala umum meliputi garis-garis kuning pada daun, terutama di pangkal, daun mungkin pipih atau keriting, umbi berukuran kecil, dan tangkai bunga berwarna kuning serta bengkok. Tidak ada obat kimia untuk penyakit virus ini. Penanganan berfokus pada pencegahan dan pengendalian penyebaran. Anda harus segera membuang dan memusnahkan tanaman yang terinfeksi untuk mencegah penyebaran lebih lanjut. Kontrol populasi kutu daun dengan insektisida atau metode alami, dan pastikan menggunakan bibit atau umbi yang sehat dan bebas virus untuk penanaman berikutnya.",
+      "reference_goal": "Lakukan triase visual pada gejala onion yang terlihat di gambar, gunakan alat identifikasi penyakit untuk mengonfirmasi Viral (Onion yellow dwarf virus), lalu berikan panduan manajemen dan pengobatan berbasis bukti.",
+      "reference_context": "Tanaman: onion. Penyakit: Onion Iris Yellow Virus. Gejala: Yellow streaks on leaves, particularly at bases. Leaves may be flattened or crinkled. Bulbs are undersized. Flower stalks yellow and twisted.. Penanganan: ",
+      "reference_tool_calls": [
+        {
+          "name": "closed_set_leaf_detection",
+          "args": {}
+        },
+        {
+          "name": "plant_disease_identification",
+          "args": {}
+        },
+        {
+          "name": "knowledgebase_search",
+          "args": {}
+        }
+      ]
+    },
+    "metadata": {
+      "class": "Onion Iris Yellow Virus",
+      "plant": "onion",
+      "pathogen_type": "viral",
+      "prompt_type": "scenario_2_diseased",
+      "filename": "001_onion_iris_yellow_virus.jpg",
+      "is_plant_related": true
+    }
+  },
+  {
+    "inputs": {
+      "user_text": "Tanaman saya kenapa ya? Kelihatannya tidak sehat. Apa yang salah dan bagaimana cara mengatasinya?",
+      "image_url": "https://thesis-assets.andyathsid.com/ood/evaluation/images/002_onion_iris_yellow_virus.jpg"
+    },
+    "outputs": {
+      "reference_answer": "Berdasarkan gejala yang terlihat, tanaman Anda kemungkinan besar terinfeksi virus, seperti Virus Kerdil Kuning Bawang (Onion Yellow Dwarf Virus). Penyakit ini menyebabkan guratan kuning pada daun, daun keriput atau pipih, dan umbi yang kecil. Untuk penanganan, penting untuk membuang tanaman yang terinfeksi untuk mencegah penyebaran, mengelola serangga vektor seperti kutu daun, dan menggunakan bibit atau benih yang sehat.",
+      "reference_goal": "Lakukan triase visual pada gejala onion yang terlihat di gambar, gunakan alat identifikasi penyakit untuk mengonfirmasi Viral (Onion yellow dwarf virus), lalu berikan panduan manajemen dan pengobatan berbasis bukti.",
+      "reference_context": "Tanaman: onion. Penyakit: Onion Iris Yellow Virus. Gejala: Yellow streaks on leaves, particularly at bases. Leaves may be flattened or crinkled. Bulbs are undersized. Flower stalks yellow and twisted.. Penanganan: ",
+      "reference_tool_calls": [
+        {
+          "name": "plant_disease_identification",
+          "args": {}
+        },
+        {
+          "name": "knowledgebase_search",
+          "args": {}
+        }
+      ]
+    },
+    "metadata": {
+      "class": "Onion Iris Yellow Virus",
+      "plant": "onion",
+      "pathogen_type": "viral",
+      "prompt_type": "scenario_3_diseased",
+      "filename": "002_onion_iris_yellow_virus.jpg",
+      "is_plant_related": true
+    }
+  },
+  {
+    "inputs": {
+      "user_text": "onion saya memiliki bercak-bercak hijau gelap dan seperti ada garis-garis basah di daunnya. Ini kira-kira kenapa ya dan bagaimana cara mengobatinya?",
+      "image_url": "https://thesis-assets.andyathsid.com/ood/evaluation/images/000_onion_leaf_blight.jpg"
+    },
+    "outputs": {
+      "reference_answer": "Berdasarkan gejala yang terlihat pada daun bawang Anda, kemungkinan besar tanaman Anda terserang Penyakit Garis dan Busuk Bakteri (Bacterial streak and blight). Penyakit ini disebabkan oleh bakteri dan dapat menyebabkan lesi basah berwarna hijau gelap serta ujung daun mengering. Untuk penanganannya, disarankan untuk membuang bagian tanaman yang terinfeksi, memastikan drainase tanah yang baik, menghindari penyiraman berlebihan, dan mempertimbangkan penggunaan bakterisida jika infeksi parah.",
+      "reference_goal": "Lakukan triase visual pada gejala onion yang terlihat di gambar, gunakan alat identifikasi penyakit untuk mengonfirmasi Bacterial (Pseudomonas viridiflava), lalu berikan panduan manajemen dan pengobatan berbasis bukti.",
+      "reference_context": "Tanaman: onion. Penyakit: Onion Leaf Blight. Gejala: Water-soaked, dark green oval lesions or streaks on leaves. Tipburn of leaves. Dark spots on wrapper scales of bulbs. Reddish-brown discoloration of inner scales.. Penanganan: ",
+      "reference_tool_calls": [
+        {
+          "name": "closed_set_leaf_detection",
+          "args": {}
+        },
+        {
+          "name": "plant_disease_identification",
+          "args": {}
+        },
+        {
+          "name": "knowledgebase_search",
+          "args": {}
+        }
+      ]
+    },
+    "metadata": {
+      "class": "Onion Leaf Blight",
+      "plant": "onion",
+      "pathogen_type": "bacterial",
+      "prompt_type": "scenario_1_diseased",
+      "filename": "000_onion_leaf_blight.jpg",
+      "is_plant_related": true
+    }
+  },
+  {
+    "inputs": {
+      "user_text": "Saya punya tanaman onion. Ini penyakit apa dan bagaimana cara menanganinya?",
+      "image_url": "https://thesis-assets.andyathsid.com/ood/evaluation/images/001_onion_leaf_blight.jpg"
+    },
+    "outputs": {
+      "reference_answer": "Berdasarkan gejala yang terlihat, tanaman onion Anda kemungkinan besar terserang Busuk Lunak Bakteri (Bacterial Soft Rot). Penyakit ini disebabkan oleh bakteri dan dapat menyebabkan lesi berair, ujung daun mengering (tipburn), dan busuk pada umbi. Untuk penanganannya, pastikan drainase tanah baik, hindari penyiraman berlebihan, kurangi kelembaban di sekitar tanaman, dan buang bagian tanaman yang terinfeksi untuk mencegah penyebaran. Penggunaan varietas tahan juga dapat membantu.",
+      "reference_goal": "Lakukan triase visual pada gejala onion yang terlihat di gambar, gunakan alat identifikasi penyakit untuk mengonfirmasi Bacterial (Pseudomonas viridiflava), lalu berikan panduan manajemen dan pengobatan berbasis bukti.",
+      "reference_context": "Tanaman: onion. Penyakit: Onion Leaf Blight. Gejala: Water-soaked, dark green oval lesions or streaks on leaves. Tipburn of leaves. Dark spots on wrapper scales of bulbs. Reddish-brown discoloration of inner scales.. Penanganan: ",
+      "reference_tool_calls": [
+        {
+          "name": "closed_set_leaf_detection",
+          "args": {}
+        },
+        {
+          "name": "plant_disease_identification",
+          "args": {}
+        },
+        {
+          "name": "knowledgebase_search",
+          "args": {}
+        }
+      ]
+    },
+    "metadata": {
+      "class": "Onion Leaf Blight",
+      "plant": "onion",
+      "pathogen_type": "bacterial",
+      "prompt_type": "scenario_2_diseased",
+      "filename": "001_onion_leaf_blight.jpg",
+      "is_plant_related": true
+    }
+  },
+  {
+    "inputs": {
+      "user_text": "Tanaman saya kenapa ya? Apakah ini penyakit? Gimana cara mengatasinya?",
+      "image_url": "https://thesis-assets.andyathsid.com/ood/evaluation/images/002_onion_leaf_blight.jpg"
+    },
+    "outputs": {
+      "reference_answer": "Berdasarkan gambar, tanaman Anda menunjukkan gejala seperti ujung daun yang mengering dan perubahan warna, yang mengindikasikan kemungkinan adanya penyakit bakteri seperti hawar bakteri dan ujung daun. Penyakit ini dapat mempengaruhi kesehatan tanaman secara keseluruhan. Untuk penanganan, penting untuk menjaga kebersihan kebun dengan membuang bagian tanaman yang sakit, memastikan sirkulasi udara yang baik, dan menghindari penyiraman dari atas yang dapat menyebarkan bakteri. Penggunaan produk berbasis tembaga kadang direkomendasikan untuk membantu mengelola infeksi bakteri.",
+      "reference_goal": "Lakukan triase visual pada gejala onion yang terlihat di gambar, gunakan alat identifikasi penyakit untuk mengonfirmasi Bacterial (Pseudomonas viridiflava), lalu berikan panduan manajemen dan pengobatan berbasis bukti.",
+      "reference_context": "Tanaman: onion. Penyakit: Onion Leaf Blight. Gejala: Water-soaked, dark green oval lesions or streaks on leaves. Tipburn of leaves. Dark spots on wrapper scales of bulbs. Reddish-brown discoloration of inner scales.. Penanganan: ",
+      "reference_tool_calls": [
+        {
+          "name": "closed_set_leaf_detection",
+          "args": {}
+        },
+        {
+          "name": "plant_disease_identification",
+          "args": {}
+        },
+        {
+          "name": "knowledgebase_search",
+          "args": {}
+        }
+      ]
+    },
+    "metadata": {
+      "class": "Onion Leaf Blight",
+      "plant": "onion",
+      "pathogen_type": "bacterial",
+      "prompt_type": "scenario_3_diseased",
+      "filename": "002_onion_leaf_blight.jpg",
+      "is_plant_related": true
+    }
+  },
+  {
+    "inputs": {
+      "user_text": "onion saya ada bercak putih di batangnya. Ini kira-kira kenapa ya dan bagaimana cara mengobatinya?",
+      "image_url": "https://thesis-assets.andyathsid.com/ood/evaluation/images/000_onion_purple_blotch.jpg"
+    },
+    "outputs": {
+      "reference_answer": "Berdasarkan gejala pada bawang merah Anda, kemungkinan besar tanaman Anda terserang penyakit Bercak Ungu (Purple Blotch) yang disebabkan oleh jamur Alternaria porri. Untuk penanganan, Anda bisa mempertimbangkan penggunaan fungisida yang sesuai dan praktik sanitasi lahan yang baik, seperti membersihkan sisa-sisa tanaman terinfeksi dan memastikan drainase yang baik.",
+      "reference_goal": "Lakukan triase visual pada gejala onion yang terlihat di gambar, gunakan alat identifikasi penyakit untuk mengonfirmasi Fungal (Alternaria porri), lalu berikan panduan manajemen dan pengobatan berbasis bukti.",
+      "reference_context": "Tanaman: onion. Penyakit: Onion Purple Blotch. Gejala: Small water-soaked lesions on leaves or stalks with white centers. Lesions enlarge to become zonate and brown to purple with red or purple margin surrounded by yellow zone. Large lesions may coalesce and girdle leaf.. Penanganan: ",
+      "reference_tool_calls": [
+        {
+          "name": "plant_disease_identification",
+          "args": {}
+        },
+        {
+          "name": "knowledgebase_search",
+          "args": {}
+        }
+      ]
+    },
+    "metadata": {
+      "class": "Onion Purple Blotch",
+      "plant": "onion",
+      "pathogen_type": "fungal",
+      "prompt_type": "scenario_1_diseased",
+      "filename": "000_onion_purple_blotch.jpg",
+      "is_plant_related": true
+    }
+  },
+  {
+    "inputs": {
+      "user_text": "Saya punya tanaman onion. Ini penyakit apa dan bagaimana cara menanganinya?",
+      "image_url": "https://thesis-assets.andyathsid.com/ood/evaluation/images/001_onion_purple_blotch.jpg"
+    },
+    "outputs": {
+      "reference_answer": "Tanaman onion Anda kemungkinan besar terserang penyakit Bercak Ungu (Purple Blotch). Penyakit ini disebabkan oleh jamur Alternaria porri. Untuk penanganannya, disarankan untuk melakukan rotasi tanaman, menggunakan varietas tahan penyakit jika tersedia, memastikan drainase yang baik, dan menerapkan fungisida yang direkomendasikan jika infeksi parah.",
+      "reference_goal": "Lakukan triase visual pada gejala onion yang terlihat di gambar, gunakan alat identifikasi penyakit untuk mengonfirmasi Fungal (Alternaria porri), lalu berikan panduan manajemen dan pengobatan berbasis bukti.",
+      "reference_context": "Tanaman: onion. Penyakit: Onion Purple Blotch. Gejala: Small water-soaked lesions on leaves or stalks with white centers. Lesions enlarge to become zonate and brown to purple with red or purple margin surrounded by yellow zone. Large lesions may coalesce and girdle leaf.. Penanganan: ",
+      "reference_tool_calls": [
+        {
+          "name": "closed_set_leaf_detection",
+          "args": {}
+        },
+        {
+          "name": "plant_disease_identification",
+          "args": {}
+        },
+        {
+          "name": "knowledgebase_search",
+          "args": {}
+        }
+      ]
+    },
+    "metadata": {
+      "class": "Onion Purple Blotch",
+      "plant": "onion",
+      "pathogen_type": "fungal",
+      "prompt_type": "scenario_2_diseased",
+      "filename": "001_onion_purple_blotch.jpg",
+      "is_plant_related": true
+    }
+  },
+  {
+    "inputs": {
+      "user_text": "Tanaman saya kenapa ya? Apakah ini penyakit? Bagaimana cara menanganinya?",
+      "image_url": "https://thesis-assets.andyathsid.com/ood/evaluation/images/002_onion_purple_blotch.jpg"
+    },
+    "outputs": {
+      "reference_answer": "Berdasarkan gejala yang terlihat pada gambar, tanaman Anda kemungkinan besar terserang penyakit Bercak Ungu (Purple Blotch) yang disebabkan oleh jamur Alternaria porri. Penyakit ini menyebabkan lesi berair kecil dengan pusat putih yang kemudian membesar menjadi bercak coklat hingga ungu dengan cincin konsentris dan tepi kemerahan atau keunguan yang dikelilingi zona kuning. Lesi yang besar dapat menyatu dan melingkari daun. Untuk penanganan, disarankan melakukan rotasi tanaman, menggunakan benih bebas penyakit, menjaga jarak tanam yang tepat, menghindari irigasi overhead, serta menerapkan fungisida yang sesuai seperti mancozeb, chlorothalonil, atau azoxystrobin sebagai tindakan pencegahan atau pengobatan dini.",
+      "reference_goal": "Lakukan triase visual pada gejala onion yang terlihat di gambar, gunakan alat identifikasi penyakit untuk mengonfirmasi Fungal (Alternaria porri), lalu berikan panduan manajemen dan pengobatan berbasis bukti.",
+      "reference_context": "Tanaman: onion. Penyakit: Onion Purple Blotch. Gejala: Small water-soaked lesions on leaves or stalks with white centers. Lesions enlarge to become zonate and brown to purple with red or purple margin surrounded by yellow zone. Large lesions may coalesce and girdle leaf.. Penanganan: ",
+      "reference_tool_calls": [
+        {
+          "name": "closed_set_leaf_detection",
+          "args": {}
+        },
+        {
+          "name": "plant_disease_identification",
+          "args": {}
+        },
+        {
+          "name": "knowledgebase_search",
+          "args": {}
+        }
+      ]
+    },
+    "metadata": {
+      "class": "Onion Purple Blotch",
+      "plant": "onion",
+      "pathogen_type": "fungal",
+      "prompt_type": "scenario_3_diseased",
+      "filename": "002_onion_purple_blotch.jpg",
+      "is_plant_related": true
+    }
+  },
+  {
+    "inputs": {
+      "user_text": "Orka saya memiliki bintik-bintik kecil melingkar dengan tepi gelap dan bagian tengah terang di daunnya, dan beberapa daun mulai menguning. Ini kira-kira kenapa ya dan bagaimana cara mengobatinya?",
+      "image_url": "https://thesis-assets.andyathsid.com/ood/evaluation/images/000_orka_phyllosticta_leaf_spot.jpg"
+    },
+    "outputs": {
+      "reference_answer": "Gejala pada tanaman orka Anda, seperti bintik-bintik melingkar dengan tepi gelap dan bagian tengah terang, serta daun menguning, sangat mungkin disebabkan oleh penyakit Bercak Daun Cercospora. Ini adalah penyakit jamur yang umum pada orka. Untuk mengatasinya, Anda bisa membuang daun yang terinfeksi untuk mengurangi penyebaran. Pastikan sirkulasi udara yang baik antar tanaman dengan menjaga jarak tanam yang sesuai. Penggunaan fungisida yang direkomendasikan untuk bercak daun juga dapat membantu mengendalikan penyakit ini.",
+      "reference_goal": "Lakukan triase visual pada gejala orka yang terlihat di gambar, gunakan alat identifikasi penyakit untuk mengonfirmasi Fungal (Phyllosticta spp.), lalu berikan panduan manajemen dan pengobatan berbasis bukti.",
+      "reference_context": "Tanaman: orka. Penyakit: Orka Phyllosticta Leaf Spot. Gejala: Small, circular spots with dark borders and light centers on leaves. Spots may coalesce to form larger necrotic areas. Leaves may yellow and drop prematurely.. Penanganan: ",
+      "reference_tool_calls": [
+        {
+          "name": "closed_set_leaf_detection",
+          "args": {}
+        },
+        {
+          "name": "plant_disease_identification",
+          "args": {}
+        },
+        {
+          "name": "knowledgebase_search",
+          "args": {}
+        }
+      ]
+    },
+    "metadata": {
+      "class": "Orka Phyllosticta Leaf Spot",
+      "plant": "orka",
+      "pathogen_type": "fungal",
+      "prompt_type": "scenario_1_diseased",
+      "filename": "000_orka_phyllosticta_leaf_spot.jpg",
+      "is_plant_related": true
+    }
+  },
+  {
+    "inputs": {
+      "user_text": "Saya punya tanaman orka. Ini apakah penyakit dan bagaimana cara menanganinya?",
+      "image_url": "https://thesis-assets.andyathsid.com/ood/evaluation/images/001_orka_phyllosticta_leaf_spot.jpg"
+    },
+    "outputs": {
+      "reference_answer": "Tanaman orka Anda tampaknya menderita Penyakit Bercak Daun Cercospora, yang disebabkan oleh jamur. Untuk mengatasinya, singkirkan dan musnahkan daun yang terinfeksi, pastikan sirkulasi udara yang baik, hindari penyiraman dari atas, dan pertimbangkan penggunaan fungisida jika infeksinya parah.",
+      "reference_goal": "Lakukan triase visual pada gejala orka yang terlihat di gambar, gunakan alat identifikasi penyakit untuk mengonfirmasi Fungal (Phyllosticta spp.), lalu berikan panduan manajemen dan pengobatan berbasis bukti.",
+      "reference_context": "Tanaman: orka. Penyakit: Orka Phyllosticta Leaf Spot. Gejala: Small, circular spots with dark borders and light centers on leaves. Spots may coalesce to form larger necrotic areas. Leaves may yellow and drop prematurely.. Penanganan: ",
+      "reference_tool_calls": [
+        {
+          "name": "plant_disease_identification",
+          "args": {}
+        },
+        {
+          "name": "knowledgebase_search",
+          "args": {}
+        }
+      ]
+    },
+    "metadata": {
+      "class": "Orka Phyllosticta Leaf Spot",
+      "plant": "orka",
+      "pathogen_type": "fungal",
+      "prompt_type": "scenario_2_diseased",
+      "filename": "001_orka_phyllosticta_leaf_spot.jpg",
+      "is_plant_related": true
+    }
+  },
+  {
+    "inputs": {
+      "user_text": "Tanaman saya kenapa ya? Apakah ini penyakit? Gimana cara mengatasinya?",
+      "image_url": "https://thesis-assets.andyathsid.com/ood/evaluation/images/002_orka_phyllosticta_leaf_spot.jpg"
+    },
+    "outputs": {
+      "reference_answer": "Berdasarkan gejala yang terlihat, tanaman Anda kemungkinan besar mengalami penyakit bercak daun Cercospora. Ini adalah penyakit jamur yang umum pada tanaman okra.",
+      "reference_goal": "Lakukan triase visual pada gejala orka yang terlihat di gambar, gunakan alat identifikasi penyakit untuk mengonfirmasi Fungal (Phyllosticta spp.), lalu berikan panduan manajemen dan pengobatan berbasis bukti.",
+      "reference_context": "Tanaman: orka. Penyakit: Orka Phyllosticta Leaf Spot. Gejala: Small, circular spots with dark borders and light centers on leaves. Spots may coalesce to form larger necrotic areas. Leaves may yellow and drop prematurely.. Penanganan: ",
+      "reference_tool_calls": [
+        {
+          "name": "closed_set_leaf_detection",
+          "args": {}
+        },
+        {
+          "name": "plant_disease_identification",
+          "args": {}
+        },
+        {
+          "name": "knowledgebase_search",
+          "args": {}
+        }
+      ]
+    },
+    "metadata": {
+      "class": "Orka Phyllosticta Leaf Spot",
+      "plant": "orka",
+      "pathogen_type": "fungal",
+      "prompt_type": "scenario_3_diseased",
+      "filename": "002_orka_phyllosticta_leaf_spot.jpg",
+      "is_plant_related": true
+    }
+  },
+  {
+    "inputs": {
+      "user_text": "Radish saya memiliki bercak-bercak coklat kehitaman pada daunnya. Ini kira-kira kenapa ya dan bagaimana cara mengobatinya?",
+      "image_url": "https://thesis-assets.andyathsid.com/ood/evaluation/images/000_radish_black_leaf_spot.jpg"
+    },
+    "outputs": {
+      "reference_answer": "Berdasarkan gejala bercak coklat kehitaman melingkar pada daun radish Anda, kemungkinan besar tanaman Anda terserang penyakit Bercak Daun Alternaria (Alternaria leaf spot). Penyakit ini disebabkan oleh jamur dan dapat menyebabkan daun menguning serta rontok jika infeksinya parah. Untuk penanganannya, Anda bisa membuang daun yang terinfeksi, memastikan sirkulasi udara yang baik di sekitar tanaman, dan menghindari penyiraman dari atas daun. Jika infeksi meluas, penggunaan fungisida yang sesuai mungkin diperlukan.",
+      "reference_goal": "Lakukan triase visual pada gejala radish yang terlihat di gambar, gunakan alat identifikasi penyakit untuk mengonfirmasi Fungal (Alternaria spp.), lalu berikan panduan manajemen dan pengobatan berbasis bukti.",
+      "reference_context": "Tanaman: radish. Penyakit: Radish Black Leaf Spot. Gejala: Dark brown or black circular spots on leaves with concentric rings. Spots may have yellow halos. Leaves may yellow and drop. Severe infections can defoliate plants.. Penanganan: ",
+      "reference_tool_calls": [
+        {
+          "name": "plant_disease_identification",
+          "args": {}
+        },
+        {
+          "name": "knowledgebase_search",
+          "args": {}
+        }
+      ]
+    },
+    "metadata": {
+      "class": "Radish Black Leaf Spot",
+      "plant": "radish",
+      "pathogen_type": "fungal",
+      "prompt_type": "scenario_1_diseased",
+      "filename": "000_radish_black_leaf_spot.jpg",
+      "is_plant_related": true
+    }
+  },
+  {
+    "inputs": {
+      "user_text": "Saya punya tanaman radish yang daunnya seperti ini. Ini apakah penyakit dan bagaimana cara menanganinya?",
+      "image_url": "https://thesis-assets.andyathsid.com/ood/evaluation/images/001_radish_black_leaf_spot.jpg"
+    },
+    "outputs": {
+      "reference_answer": "Tanaman radish Anda kemungkinan besar terserang penyakit Alternaria Leaf Spot. Penyakit ini disebabkan oleh jamur dan dapat ditangani dengan beberapa metode seperti sanitasi kebun, rotasi tanaman, dan penggunaan fungisida jika diperlukan.",
+      "reference_goal": "Lakukan triase visual pada gejala radish yang terlihat di gambar, gunakan alat identifikasi penyakit untuk mengonfirmasi Fungal (Alternaria spp.), lalu berikan panduan manajemen dan pengobatan berbasis bukti.",
+      "reference_context": "Tanaman: radish. Penyakit: Radish Black Leaf Spot. Gejala: Dark brown or black circular spots on leaves with concentric rings. Spots may have yellow halos. Leaves may yellow and drop. Severe infections can defoliate plants.. Penanganan: ",
+      "reference_tool_calls": [
+        {
+          "name": "plant_disease_identification",
+          "args": {}
+        },
+        {
+          "name": "knowledgebase_search",
+          "args": {}
+        }
+      ]
+    },
+    "metadata": {
+      "class": "Radish Black Leaf Spot",
+      "plant": "radish",
+      "pathogen_type": "fungal",
+      "prompt_type": "scenario_2_diseased",
+      "filename": "001_radish_black_leaf_spot.jpg",
+      "is_plant_related": true
+    }
+  },
+  {
+    "inputs": {
+      "user_text": "Tanaman saya kenapa ya? Apakah ini penyakit? Bagaimana cara mengatasinya?",
+      "image_url": "https://thesis-assets.andyathsid.com/ood/evaluation/images/002_radish_black_leaf_spot.jpg"
+    },
+    "outputs": {
+      "reference_answer": "Berdasarkan gambar, tanaman Anda kemungkinan menderita Penyakit Bercak Daun Alternaria. Ini adalah penyakit jamur yang menyebabkan bercak gelap dengan cincin konsentris pada daun, seringkali disertai lingkaran kuning di sekitarnya. Untuk mengatasinya, Anda bisa membuang daun yang terinfeksi, memastikan sirkulasi udara yang baik, dan menggunakan fungisida jika infeksi parah.",
+      "reference_goal": "Lakukan triase visual pada gejala radish yang terlihat di gambar, gunakan alat identifikasi penyakit untuk mengonfirmasi Fungal (Alternaria spp.), lalu berikan panduan manajemen dan pengobatan berbasis bukti.",
+      "reference_context": "Tanaman: radish. Penyakit: Radish Black Leaf Spot. Gejala: Dark brown or black circular spots on leaves with concentric rings. Spots may have yellow halos. Leaves may yellow and drop. Severe infections can defoliate plants.. Penanganan: ",
+      "reference_tool_calls": [
+        {
+          "name": "plant_disease_identification",
+          "args": {}
+        },
+        {
+          "name": "knowledgebase_search",
+          "args": {}
+        }
+      ]
+    },
+    "metadata": {
+      "class": "Radish Black Leaf Spot",
+      "plant": "radish",
+      "pathogen_type": "fungal",
+      "prompt_type": "scenario_3_diseased",
+      "filename": "002_radish_black_leaf_spot.jpg",
+      "is_plant_related": true
+    }
+  },
+  {
+    "inputs": {
+      "user_text": "Radish saya memiliki bintik-bintik kuning di permukaan atas daun dan ada semacam bulu-bulu putih keabu-abuan di bagian bawahnya. Daunnya juga mulai menguning. Ini kira-kira kenapa ya dan bagaimana cara mengobatinya?",
+      "image_url": "https://thesis-assets.andyathsid.com/ood/evaluation/images/000_radish_downey_mildew.jpg"
+    },
+    "outputs": {
+      "reference_answer": "Berdasarkan gejala yang Anda jelaskan dan terlihat pada gambar, radish Anda kemungkinan besar terserang penyakit Embun Tepung (Downy Mildew). Untuk mengatasinya, Anda bisa mencoba beberapa langkah seperti membuang daun yang terinfeksi parah, memastikan sirkulasi udara yang baik di sekitar tanaman, menghindari penyiraman dari atas daun, dan menggunakan fungisida yang sesuai jika infeksi sudah parah.",
+      "reference_goal": "Lakukan triase visual pada gejala radish yang terlihat di gambar, gunakan alat identifikasi penyakit untuk mengonfirmasi Oomycete (Peronospora parasitica), lalu berikan panduan manajemen dan pengobatan berbasis bukti.",
+      "reference_context": "Tanaman: radish. Penyakit: Radish Downey Mildew. Gejala: Yellow spots on upper leaf surfaces with fuzzy, white to gray growth on undersides. Leaves may yellow and drop. Severe infections can defoliate plants.. Penanganan: ",
+      "reference_tool_calls": [
+        {
+          "name": "plant_disease_identification",
+          "args": {}
+        },
+        {
+          "name": "knowledgebase_search",
+          "args": {}
+        }
+      ]
+    },
+    "metadata": {
+      "class": "Radish Downey Mildew",
+      "plant": "radish",
+      "pathogen_type": "N/A",
+      "prompt_type": "scenario_1_diseased",
+      "filename": "000_radish_downey_mildew.jpg",
+      "is_plant_related": true
+    }
+  },
+  {
+    "inputs": {
+      "user_text": "Saya punya tanaman radish. Ini apakah penyakit dan bagaimana cara menanganinya?",
+      "image_url": "https://thesis-assets.andyathsid.com/ood/evaluation/images/001_radish_downey_mildew.jpg"
+    },
+    "outputs": {
+      "reference_answer": "Tanaman radish Anda menunjukkan gejala penyakit embun berbulu halus (Downy Mildew). Penyakit ini disebabkan oleh jamur dan dapat menyebabkan bercak kuning pada permukaan atas daun serta pertumbuhan berbulu halus berwarna putih keabu-abuan di bagian bawahnya. Untuk menanganinya, Anda bisa menggunakan fungisida dan memperbaiki praktik budidaya.",
+      "reference_goal": "Lakukan triase visual pada gejala radish yang terlihat di gambar, gunakan alat identifikasi penyakit untuk mengonfirmasi Oomycete (Peronospora parasitica), lalu berikan panduan manajemen dan pengobatan berbasis bukti.",
+      "reference_context": "Tanaman: radish. Penyakit: Radish Downey Mildew. Gejala: Yellow spots on upper leaf surfaces with fuzzy, white to gray growth on undersides. Leaves may yellow and drop. Severe infections can defoliate plants.. Penanganan: ",
+      "reference_tool_calls": [
+        {
+          "name": "plant_disease_identification",
+          "args": {}
+        },
+        {
+          "name": "knowledgebase_search",
+          "args": {}
+        }
+      ]
+    },
+    "metadata": {
+      "class": "Radish Downey Mildew",
+      "plant": "radish",
+      "pathogen_type": "N/A",
+      "prompt_type": "scenario_2_diseased",
+      "filename": "001_radish_downey_mildew.jpg",
+      "is_plant_related": true
+    }
+  },
+  {
+    "inputs": {
+      "user_text": "Tanaman saya kenapa ya? Apakah ini penyakit? Bagaimana cara mengatasinya?",
+      "image_url": "https://thesis-assets.andyathsid.com/ood/evaluation/images/002_radish_downey_mildew.jpg"
+    },
+    "outputs": {
+      "reference_answer": "Berdasarkan gejala yang terlihat pada daun, tanaman Anda kemungkinan besar terserang penyakit embun bulu (downy mildew). Penyakit ini sering menimbulkan bercak kuning pada permukaan atas daun serta pertumbuhan seperti jamur berwarna putih keabu-abuan di bagian bawah daun. Daun yang terinfeksi parah dapat menguning dan rontok. Untuk mengatasinya, Anda bisa mencoba beberapa langkah seperti membuang daun yang terinfeksi, memastikan sirkulasi udara yang baik, menghindari penyiraman di atas tajuk, dan mempertimbangkan penggunaan fungisida jika infeksi parah.",
+      "reference_goal": "Lakukan triase visual pada gejala radish yang terlihat di gambar, gunakan alat identifikasi penyakit untuk mengonfirmasi Oomycete (Peronospora parasitica), lalu berikan panduan manajemen dan pengobatan berbasis bukti.",
+      "reference_context": "Tanaman: radish. Penyakit: Radish Downey Mildew. Gejala: Yellow spots on upper leaf surfaces with fuzzy, white to gray growth on undersides. Leaves may yellow and drop. Severe infections can defoliate plants.. Penanganan: ",
+      "reference_tool_calls": [
+        {
+          "name": "plant_disease_identification",
+          "args": {}
+        },
+        {
+          "name": "knowledgebase_search",
+          "args": {}
+        }
+      ]
+    },
+    "metadata": {
+      "class": "Radish Downey Mildew",
+      "plant": "radish",
+      "pathogen_type": "N/A",
+      "prompt_type": "scenario_3_diseased",
+      "filename": "002_radish_downey_mildew.jpg",
+      "is_plant_related": true
+    }
+  },
+  {
+    "inputs": {
+      "user_text": "Radish saya daunnya bolong-bolong seperti dimakan. Ini kira-kira kenapa ya dan bagaimana cara mengobatinya?",
+      "image_url": "https://thesis-assets.andyathsid.com/ood/evaluation/images/000_radish_flea_beetle.jpg"
+    },
+    "outputs": {
+      "reference_answer": "Kerusakan pada daun radish Anda kemungkinan besar disebabkan oleh serangan hama kumbang kutu (flea beetle). Hama ini memakan jaringan daun, meninggalkan lubang-lubang kecil seperti tembakan atau bahkan membuat daun menjadi kerangka. Untuk mengatasinya, Anda bisa mencoba beberapa metode seperti menjaga kebersihan area tanam, menggunakan perangkap lengket kuning, atau menyemprotkan insektisida nabati seperti minyak mimba.",
+      "reference_goal": "Lakukan triase visual pada gejala radish yang terlihat di gambar, gunakan alat identifikasi penyakit untuk mengonfirmasi Pest (Flea beetles - Phyllotreta spp.), lalu berikan panduan manajemen dan pengobatan berbasis bukti.",
+      "reference_context": "Tanaman: radish. Penyakit: Radish Flea Beetle. Gejala: Small, shot-hole holes in leaves. Leaves may be skeletonized. Plants may be stunted. Severe infestations can destroy young seedlings.. Penanganan: ",
+      "reference_tool_calls": [
+        {
+          "name": "plant_disease_identification",
+          "args": {}
+        },
+        {
+          "name": "knowledgebase_search",
+          "args": {}
+        }
+      ]
+    },
+    "metadata": {
+      "class": "Radish Flea Beetle",
+      "plant": "radish",
+      "pathogen_type": "pest",
+      "prompt_type": "scenario_1_diseased",
+      "filename": "000_radish_flea_beetle.jpg",
+      "is_plant_related": true
+    }
+  },
+  {
+    "inputs": {
+      "user_text": "Saya punya tanaman radish. Ini apakah penyakit dan bagaimana cara menanganinya?",
+      "image_url": "https://thesis-assets.andyathsid.com/ood/evaluation/images/001_radish_flea_beetle.jpg"
+    },
+    "outputs": {
+      "reference_answer": "Berdasarkan gejala pada daun, tanaman radish Anda kemungkinan terserang kutu loncat (flea beetle). Untuk penanganannya, Anda bisa mencoba beberapa metode seperti menjaga kebersihan area tanam, menggunakan perangkap lengket, atau menyemprotkan insektisida nabati seperti minyak mimba jika serangan parah. Pastikan juga tanaman mendapatkan nutrisi yang cukup agar lebih tahan terhadap serangan hama.",
+      "reference_goal": "Lakukan triase visual pada gejala radish yang terlihat di gambar, gunakan alat identifikasi penyakit untuk mengonfirmasi Pest (Flea beetles - Phyllotreta spp.), lalu berikan panduan manajemen dan pengobatan berbasis bukti.",
+      "reference_context": "Tanaman: radish. Penyakit: Radish Flea Beetle. Gejala: Small, shot-hole holes in leaves. Leaves may be skeletonized. Plants may be stunted. Severe infestations can destroy young seedlings.. Penanganan: ",
+      "reference_tool_calls": [
+        {
+          "name": "plant_disease_identification",
+          "args": {}
+        },
+        {
+          "name": "knowledgebase_search",
+          "args": {}
+        }
+      ]
+    },
+    "metadata": {
+      "class": "Radish Flea Beetle",
+      "plant": "radish",
+      "pathogen_type": "pest",
+      "prompt_type": "scenario_2_diseased",
+      "filename": "001_radish_flea_beetle.jpg",
+      "is_plant_related": true
+    }
+  },
+  {
+    "inputs": {
+      "user_text": "Tanaman saya kenapa ya? Apa ini penyakit? Bagaimana cara mengatasinya?",
+      "image_url": "https://thesis-assets.andyathsid.com/ood/evaluation/images/002_radish_flea_beetle.jpg"
+    },
+    "outputs": {
+      "reference_answer": "Berdasarkan gejala lubang-lubang kecil pada daun, tanaman Anda kemungkinan terserang kutu daun (flea beetle). Kutu daun dapat menyebabkan kerusakan parah, terutama pada bibit muda. Untuk mengatasinya, Anda bisa menggunakan perangkap lengket kuning, menyemprotkan neem oil, atau menggunakan insektisida organik jika infestasi parah.",
+      "reference_goal": "Lakukan triase visual pada gejala radish yang terlihat di gambar, gunakan alat identifikasi penyakit untuk mengonfirmasi Pest (Flea beetles - Phyllotreta spp.), lalu berikan panduan manajemen dan pengobatan berbasis bukti.",
+      "reference_context": "Tanaman: radish. Penyakit: Radish Flea Beetle. Gejala: Small, shot-hole holes in leaves. Leaves may be skeletonized. Plants may be stunted. Severe infestations can destroy young seedlings.. Penanganan: ",
+      "reference_tool_calls": [
+        {
+          "name": "plant_disease_identification",
+          "args": {}
+        },
+        {
+          "name": "knowledgebase_search",
+          "args": {}
+        }
+      ]
+    },
+    "metadata": {
+      "class": "Radish Flea Beetle",
+      "plant": "radish",
+      "pathogen_type": "pest",
+      "prompt_type": "scenario_3_diseased",
+      "filename": "002_radish_flea_beetle.jpg",
+      "is_plant_related": true
+    }
+  },
+  {
+    "inputs": {
+      "user_text": "Radish saya memiliki pola seperti mosaik pada daunnya dengan area hijau terang dan gelap, dan daunnya juga terlihat agak aneh dan pertumbuhannya terhambat. Ini kira-kira kenapa ya dan bagaimana cara mengobatinya?",
+      "image_url": "https://thesis-assets.andyathsid.com/ood/evaluation/images/000_radish_mosaic_virus.jpg"
+    },
+    "outputs": {
+      "reference_answer": "Berdasarkan gejala yang Anda jelaskan, radish Anda kemungkinan terserang virus mosaik. Penyakit virus umumnya tidak bisa disembuhkan dengan pestisida. Langkah terbaik adalah segera membuang tanaman yang terinfeksi untuk mencegah penyebaran ke tanaman lain, mengendalikan serangga pembawa virus seperti kutu daun, dan memastikan menggunakan benih yang sehat di penanaman berikutnya.",
+      "reference_goal": "Lakukan triase visual pada gejala radish yang terlihat di gambar, gunakan alat identifikasi penyakit untuk mengonfirmasi Viral (Turnip mosaic virus), lalu berikan panduan manajemen dan pengobatan berbasis bukti.",
+      "reference_context": "Tanaman: radish. Penyakit: Radish Mosaic Virus. Gejala: Mosaic patterns on leaves with light and dark green areas. Leaves may be distorted and stunted. Plants show reduced growth and poor root development.. Penanganan: ",
+      "reference_tool_calls": [
+        {
+          "name": "plant_disease_identification",
+          "args": {}
+        },
+        {
+          "name": "knowledgebase_search",
+          "args": {}
+        }
+      ]
+    },
+    "metadata": {
+      "class": "Radish Mosaic Virus",
+      "plant": "radish",
+      "pathogen_type": "viral",
+      "prompt_type": "scenario_1_diseased",
+      "filename": "000_radish_mosaic_virus.jpg",
+      "is_plant_related": true
+    }
+  },
+  {
+    "inputs": {
+      "user_text": "Saya punya tanaman radish yang daunnya seperti ini. Ini apakah penyakit dan bagaimana cara menanganinya?",
+      "image_url": "https://thesis-assets.andyathsid.com/ood/evaluation/images/001_radish_mosaic_virus.jpg"
+    },
+    "outputs": {
+      "reference_answer": "Tanaman radish Anda kemungkinan besar terserang virus mosaik radish. Ini adalah penyakit virus yang tidak dapat disembuhkan, jadi fokusnya adalah pada pencegahan dan pengelolaan untuk menghentikan penyebarannya.",
+      "reference_goal": "Lakukan triase visual pada gejala radish yang terlihat di gambar, gunakan alat identifikasi penyakit untuk mengonfirmasi Viral (Turnip mosaic virus), lalu berikan panduan manajemen dan pengobatan berbasis bukti.",
+      "reference_context": "Tanaman: radish. Penyakit: Radish Mosaic Virus. Gejala: Mosaic patterns on leaves with light and dark green areas. Leaves may be distorted and stunted. Plants show reduced growth and poor root development.. Penanganan: ",
+      "reference_tool_calls": [
+        {
+          "name": "plant_disease_identification",
+          "args": {}
+        },
+        {
+          "name": "knowledgebase_search",
+          "args": {}
+        }
+      ]
+    },
+    "metadata": {
+      "class": "Radish Mosaic Virus",
+      "plant": "radish",
+      "pathogen_type": "viral",
+      "prompt_type": "scenario_2_diseased",
+      "filename": "001_radish_mosaic_virus.jpg",
+      "is_plant_related": true
+    }
+  },
+  {
+    "inputs": {
+      "user_text": "Tanaman saya kenapa ya? Apakah ini penyakit? Bagaimana cara mengatasinya?",
+      "image_url": "https://thesis-assets.andyathsid.com/ood/evaluation/images/002_radish_mosaic_virus.jpg"
+    },
+    "outputs": {
+      "reference_answer": "Tanaman Anda kemungkinan terinfeksi virus mosaik lobak (radish mosaic virus). Penyakit ini disebabkan oleh virus dan seringkali menyebabkan pola mosaik pada daun, daun menjadi keriput atau terdistorsi, serta pertumbuhan tanaman yang terhambat. Sayangnya, tidak ada obat kimia untuk penyakit virus. Untuk mengatasinya, Anda perlu mencabut dan membuang tanaman yang terinfeksi untuk mencegah penyebaran ke tanaman sehat lainnya. Pastikan juga untuk mengendalikan vektor serangga seperti kutu daun yang dapat menyebarkan virus.",
+      "reference_goal": "Lakukan triase visual pada gejala radish yang terlihat di gambar, gunakan alat identifikasi penyakit untuk mengonfirmasi Viral (Turnip mosaic virus), lalu berikan panduan manajemen dan pengobatan berbasis bukti.",
+      "reference_context": "Tanaman: radish. Penyakit: Radish Mosaic Virus. Gejala: Mosaic patterns on leaves with light and dark green areas. Leaves may be distorted and stunted. Plants show reduced growth and poor root development.. Penanganan: ",
+      "reference_tool_calls": [
+        {
+          "name": "plant_disease_identification",
+          "args": {}
+        },
+        {
+          "name": "knowledgebase_search",
+          "args": {}
+        }
+      ]
+    },
+    "metadata": {
+      "class": "Radish Mosaic Virus",
+      "plant": "radish",
+      "pathogen_type": "viral",
+      "prompt_type": "scenario_3_diseased",
+      "filename": "002_radish_mosaic_virus.jpg",
+      "is_plant_related": true
+    }
+  },
+  {
+    "inputs": {
+      "user_text": "Wheat saya memiliki bintik-bintik coklat kekuningan dengan pinggiran gelap dan daunnya mulai menguning. Ini kira-kira kenapa ya dan bagaimana cara mengobatinya?",
+      "image_url": "https://thesis-assets.andyathsid.com/ood/evaluation/images/000_wheat_septoria.jpg"
+    },
+    "outputs": {
+      "reference_answer": "Berdasarkan gejala pada daun wheat Anda, kemungkinan besar tanaman Anda terserang penyakit Septoria tritici blotch (juga dikenal sebagai bercak daun Septoria). Penyakit ini disebabkan oleh jamur dan dapat mengurangi hasil panen secara signifikan. Untuk penanganan, Anda bisa mempertimbangkan rotasi tanaman, menggunakan varietas yang tahan penyakit, dan dalam kasus infeksi parah, aplikasi fungisida yang tepat.",
+      "reference_goal": "Lakukan triase visual pada gejala wheat yang terlihat di gambar, gunakan alat identifikasi penyakit untuk mengonfirmasi Fungal (Septoria tritici), lalu berikan panduan manajemen dan pengobatan berbasis bukti.",
+      "reference_context": "Tanaman: wheat. Penyakit: Wheat Septoria. Gejala: Brown to tan lesions on leaves with dark borders. Small black fruiting bodies (pycnidia) visible in lesions. Leaves may yellow and die prematurely. Severe infections can reduce yield.. Penanganan: ",
+      "reference_tool_calls": [
+        {
+          "name": "plant_disease_identification",
+          "args": {}
+        },
+        {
+          "name": "knowledgebase_search",
+          "args": {}
+        }
+      ]
+    },
+    "metadata": {
+      "class": "Wheat Septoria",
+      "plant": "wheat",
+      "pathogen_type": "fungal",
+      "prompt_type": "scenario_1_diseased",
+      "filename": "000_wheat_septoria.jpg",
+      "is_plant_related": true
+    }
+  },
+  {
+    "inputs": {
+      "user_text": "Saya punya tanaman wheat. Ini apakah penyakit dan bagaimana cara menanganinya?",
+      "image_url": "https://thesis-assets.andyathsid.com/ood/evaluation/images/001_wheat_septoria.jpg"
+    },
+    "outputs": {
+      "reference_answer": "Berdasarkan gambar, tanaman wheat Anda kemungkinan terserang penyakit Septoria tritici blotch (juga dikenal sebagai bercak daun Septoria). Penyakit ini disebabkan oleh jamur Zymoseptoria tritici. Untuk penanganan, Anda bisa mempertimbangkan penggunaan varietas tahan penyakit, rotasi tanaman, pengelolaan residu tanaman, dan aplikasi fungisida jika diperlukan. Penting juga untuk memantau kondisi cuaca karena penyakit ini sering berkembang dalam kondisi lembab.",
+      "reference_goal": "Lakukan triase visual pada gejala wheat yang terlihat di gambar, gunakan alat identifikasi penyakit untuk mengonfirmasi Fungal (Septoria tritici), lalu berikan panduan manajemen dan pengobatan berbasis bukti.",
+      "reference_context": "Tanaman: wheat. Penyakit: Wheat Septoria. Gejala: Brown to tan lesions on leaves with dark borders. Small black fruiting bodies (pycnidia) visible in lesions. Leaves may yellow and die prematurely. Severe infections can reduce yield.. Penanganan: ",
+      "reference_tool_calls": [
+        {
+          "name": "plant_disease_identification",
+          "args": {}
+        },
+        {
+          "name": "knowledgebase_search",
+          "args": {}
+        }
+      ]
+    },
+    "metadata": {
+      "class": "Wheat Septoria",
+      "plant": "wheat",
+      "pathogen_type": "fungal",
+      "prompt_type": "scenario_2_diseased",
+      "filename": "001_wheat_septoria.jpg",
+      "is_plant_related": true
+    }
+  },
+  {
+    "inputs": {
+      "user_text": "Ada apa dengan tanaman saya? Apakah ini penyakit? Bagaimana cara mengatasinya?",
+      "image_url": "https://thesis-assets.andyathsid.com/ood/evaluation/images/002_wheat_septoria.jpg"
+    },
+    "outputs": {
+      "reference_answer": "Tanaman Anda kemungkinan besar terserang Septoria tritici blotch, yang disebabkan oleh jamur. Penyakit ini ditandai dengan lesi berwarna coklat hingga sawo matang pada daun, seringkali dengan batas gelap dan bintik-bintik hitam kecil (piknidia) di dalamnya. Daun yang terinfeksi dapat menguning dan mati sebelum waktunya, dan infeksi parah dapat mengurangi hasil panen secara signifikan. Untuk mengatasinya, disarankan untuk melakukan rotasi tanaman, menggunakan varietas yang tahan penyakit jika tersedia, dan mengelola residu tanaman yang terinfeksi. Fungisida dapat digunakan sebagai bagian dari strategi pengelolaan terpadu, terutama jika tingkat keparahan penyakit tinggi.",
+      "reference_goal": "Lakukan triase visual pada gejala wheat yang terlihat di gambar, gunakan alat identifikasi penyakit untuk mengonfirmasi Fungal (Septoria tritici), lalu berikan panduan manajemen dan pengobatan berbasis bukti.",
+      "reference_context": "Tanaman: wheat. Penyakit: Wheat Septoria. Gejala: Brown to tan lesions on leaves with dark borders. Small black fruiting bodies (pycnidia) visible in lesions. Leaves may yellow and die prematurely. Severe infections can reduce yield.. Penanganan: ",
+      "reference_tool_calls": [
+        {
+          "name": "plant_disease_identification",
+          "args": {}
+        },
+        {
+          "name": "knowledgebase_search",
+          "args": {}
+        }
+      ]
+    },
+    "metadata": {
+      "class": "Wheat Septoria",
+      "plant": "wheat",
+      "pathogen_type": "fungal",
+      "prompt_type": "scenario_3_diseased",
+      "filename": "002_wheat_septoria.jpg",
+      "is_plant_related": true
+    }
+  },
+  {
+    "inputs": {
+      "user_text": "Wheat saya memiliki bintik-bintik oranye kekuningan seperti garis-garis di daun. Ini kira-kira kenapa ya dan bagaimana cara mengobatinya?",
+      "image_url": "https://thesis-assets.andyathsid.com/ood/evaluation/images/000_wheat_stripe_rust.jpg"
+    },
+    "outputs": {
+      "reference_answer": "Tanaman wheat Anda kemungkinan besar terserang Penyakit Karat Garis (Stripe Rust) yang disebabkan oleh jamur Puccinia striiformis. Gejala khasnya adalah pustula berwarna kuning hingga oranye yang tersusun dalam garis-garis pada daun. Untuk penanganan, Anda bisa mempertimbangkan varietas yang resisten, pengelolaan gulma, dan aplikasi fungisida yang tepat jika infeksi parah.",
+      "reference_goal": "Lakukan triase visual pada gejala wheat yang terlihat di gambar, gunakan alat identifikasi penyakit untuk mengonfirmasi Fungal (Puccinia striiformis), lalu berikan panduan manajemen dan pengobatan berbasis bukti.",
+      "reference_context": "Tanaman: wheat. Penyakit: Wheat Stripe Rust. Gejala: Yellow to orange pustules arranged in stripes on leaves. Leaves may yellow and die prematurely. Severe infections can cause significant yield loss.. Penanganan: ",
+      "reference_tool_calls": [
+        {
+          "name": "closed_set_leaf_detection",
+          "args": {}
+        },
+        {
+          "name": "plant_disease_identification",
+          "args": {}
+        },
+        {
+          "name": "knowledgebase_search",
+          "args": {}
+        }
+      ]
+    },
+    "metadata": {
+      "class": "Wheat Stripe Rust",
+      "plant": "wheat",
+      "pathogen_type": "fungal",
+      "prompt_type": "scenario_1_diseased",
+      "filename": "000_wheat_stripe_rust.jpg",
+      "is_plant_related": true
+    }
+  },
+  {
+    "inputs": {
+      "user_text": "Saya punya tanaman wheat. Ini apakah penyakit dan bagaimana cara menanganinya?",
+      "image_url": "https://thesis-assets.andyathsid.com/ood/evaluation/images/001_wheat_stripe_rust.jpg"
+    },
+    "outputs": {
+      "reference_answer": "Tanaman wheat Anda kemungkinan terserang penyakit Karat Garis (Stripe Rust). Penyakit ini disebabkan oleh jamur dan dapat menyebabkan kehilangan hasil yang signifikan. Untuk penanganannya, disarankan menggunakan varietas tahan penyakit, praktik sanitasi yang baik, dan aplikasi fungisida jika diperlukan.",
+      "reference_goal": "Lakukan triase visual pada gejala wheat yang terlihat di gambar, gunakan alat identifikasi penyakit untuk mengonfirmasi Fungal (Puccinia striiformis), lalu berikan panduan manajemen dan pengobatan berbasis bukti.",
+      "reference_context": "Tanaman: wheat. Penyakit: Wheat Stripe Rust. Gejala: Yellow to orange pustules arranged in stripes on leaves. Leaves may yellow and die prematurely. Severe infections can cause significant yield loss.. Penanganan: ",
+      "reference_tool_calls": [
+        {
+          "name": "plant_disease_identification",
+          "args": {}
+        },
+        {
+          "name": "knowledgebase_search",
+          "args": {}
+        }
+      ]
+    },
+    "metadata": {
+      "class": "Wheat Stripe Rust",
+      "plant": "wheat",
+      "pathogen_type": "fungal",
+      "prompt_type": "scenario_2_diseased",
+      "filename": "001_wheat_stripe_rust.jpg",
+      "is_plant_related": true
+    }
+  },
+  {
+    "inputs": {
+      "user_text": "Tanaman saya kenapa ya? Apa yang salah dengan daunnya? Bagaimana cara mengatasinya?",
+      "image_url": "https://thesis-assets.andyathsid.com/ood/evaluation/images/002_wheat_stripe_rust.jpg"
+    },
+    "outputs": {
+      "reference_answer": "Berdasarkan gambar, tanaman Anda kemungkinan terserang penyakit Karat Garis (Stripe Rust). Penyakit ini disebabkan oleh jamur dan dapat menyebabkan daun menguning dan mati prematur, serta berpotensi menurunkan hasil panen secara signifikan.",
+      "reference_goal": "Lakukan triase visual pada gejala wheat yang terlihat di gambar, gunakan alat identifikasi penyakit untuk mengonfirmasi Fungal (Puccinia striiformis), lalu berikan panduan manajemen dan pengobatan berbasis bukti.",
+      "reference_context": "Tanaman: wheat. Penyakit: Wheat Stripe Rust. Gejala: Yellow to orange pustules arranged in stripes on leaves. Leaves may yellow and die prematurely. Severe infections can cause significant yield loss.. Penanganan: ",
+      "reference_tool_calls": [
+        {
+          "name": "plant_disease_identification",
+          "args": {}
+        },
+        {
+          "name": "knowledgebase_search",
+          "args": {}
+        }
+      ]
+    },
+    "metadata": {
+      "class": "Wheat Stripe Rust",
+      "plant": "wheat",
+      "pathogen_type": "fungal",
+      "prompt_type": "scenario_3_diseased",
+      "filename": "002_wheat_stripe_rust.jpg",
+      "is_plant_related": true
+    }
+  },
+  {
+    "inputs": {
+      "user_text": "Daun black gram saya ini terlihat hijau pekat dan segar dengan warna merata. Apakah ini tandanya pohon saya sehat? Ada tips untuk perawatannya?",
+      "image_url": "https://thesis-assets.andyathsid.com/ood/evaluation/images/000_black_gram_leaf.jpg"
+    },
+    "outputs": {
+      "reference_answer": "Berdasarkan gambar, daun black gram Anda terlihat sangat sehat dengan warna hijau pekat yang merata, tekstur kokoh, dan turgid, tanpa tanda-tanda penyakit atau kerusakan. Ini menunjukkan tanaman Anda dalam kondisi prima. Untuk menjaga kesehatan optimal, pastikan tanaman mendapatkan cukup sinar matahari penuh, penyiraman yang teratur namun tidak berlebihan (terutama saat berbunga dan berbuah), serta tanah yang gembur dan kaya nutrisi. Pemantauan rutin terhadap hama dan penyakit juga penting.",
+      "reference_goal": "Nilai status kesehatan black gram dari gambar, konfirmasi bahwa tanaman sehat, dan berikan rekomendasi perawatan dan pemeliharaan.",
+      "reference_context": "Tanaman: black gram. Status: Sehat. Pemeliharaan: ",
+      "reference_tool_calls": [
+        {
+          "name": "knowledgebase_search",
+          "args": {}
+        }
+      ]
+    },
+    "metadata": {
+      "class": "Black Gram Leaf",
+      "plant": "black gram",
+      "pathogen_type": "healthy",
+      "prompt_type": "healthy_scenario_1",
+      "filename": "000_black_gram_leaf.jpg",
+      "is_plant_related": true
+    }
+  },
+  {
+    "inputs": {
+      "user_text": "Apakah tanaman black gram saya ini terlihat sehat? Ada saran untuk perawatannya?",
+      "image_url": "https://thesis-assets.andyathsid.com/ood/evaluation/images/001_black_gram_leaf.jpg"
+    },
+    "outputs": {
+      "reference_answer": "Berdasarkan gambar, tanaman black gram Anda terlihat sehat. Daunnya berwarna hijau tua, mulus, dan tidak menunjukkan tanda-tanda penyakit atau kerusakan. Untuk menjaga kesehatannya, pastikan mendapatkan air dan nutrisi yang cukup, serta pencahayaan yang sesuai.",
+      "reference_goal": "Nilai status kesehatan black gram dari gambar, konfirmasi bahwa tanaman sehat, dan berikan rekomendasi perawatan dan pemeliharaan.",
+      "reference_context": "Tanaman: black gram. Status: Sehat. Pemeliharaan: ",
+      "reference_tool_calls": [
+        {
+          "name": "knowledgebase_search",
+          "args": {}
+        }
+      ]
+    },
+    "metadata": {
+      "class": "Black Gram Leaf",
+      "plant": "black gram",
+      "pathogen_type": "healthy",
+      "prompt_type": "healthy_scenario_2",
+      "filename": "001_black_gram_leaf.jpg",
+      "is_plant_related": true
+    }
+  },
+  {
+    "inputs": {
+      "user_text": "Apakah tanaman ini sehat? Bisakah Anda memberikan tips perawatan agar tetap tumbuh dengan baik?",
+      "image_url": "https://thesis-assets.andyathsid.com/ood/evaluation/images/002_black_gram_leaf.jpg"
+    },
+    "outputs": {
+      "reference_answer": "Berdasarkan gambar, tanaman Anda terlihat sehat. Daunnya berwarna hijau tua, halus, dan menunjukkan pertumbuhan yang kuat tanpa tanda-tanda penyakit. Untuk menjaga agar tanaman Anda tetap tumbuh dengan baik, pastikan mendapatkan cukup cahaya matahari, disiram secara teratur tetapi tidak berlebihan, dan diberikan pupuk sesuai kebutuhan.",
+      "reference_goal": "Nilai status kesehatan black gram dari gambar, konfirmasi bahwa tanaman sehat, dan berikan rekomendasi perawatan dan pemeliharaan.",
+      "reference_context": "Tanaman: black gram. Status: Sehat. Pemeliharaan: ",
+      "reference_tool_calls": [
+        {
+          "name": "knowledgebase_search",
+          "args": {}
+        }
+      ]
+    },
+    "metadata": {
+      "class": "Black Gram Leaf",
+      "plant": "black gram",
+      "pathogen_type": "healthy",
+      "prompt_type": "healthy_scenario_3",
+      "filename": "002_black_gram_leaf.jpg",
+      "is_plant_related": true
+    }
+  },
+  {
+    "inputs": {
+      "user_text": "Daun chili saya ini terlihat hijau dan segar. Apakah ini tandanya pohon saya sehat? Ada tips untuk perawatannya?",
+      "image_url": "https://thesis-assets.andyathsid.com/ood/evaluation/images/000_chili_leaf.jpg"
+    },
+    "outputs": {
+      "reference_answer": "Berdasarkan gambar, daun cabai Anda terlihat cukup sehat dengan warna hijau yang baik. Ini umumnya merupakan tanda tanaman yang sehat. Untuk perawatan cabai yang optimal, pastikan tanaman mendapatkan sinar matahari penuh, tanah yang drainasenya baik, dan penyiraman teratur saat tanah mulai kering. Anda juga bisa memberikan pupuk seimbang secara berkala. Perhatikan juga hama dan penyakit sejak dini.",
+      "reference_goal": "Nilai status kesehatan chili dari gambar, konfirmasi bahwa tanaman sehat, dan berikan rekomendasi perawatan dan pemeliharaan.",
+      "reference_context": "Tanaman: chili. Status: Sehat. Pemeliharaan: ",
+      "reference_tool_calls": [
+        {
+          "name": "knowledgebase_search",
+          "args": {}
+        }
+      ]
+    },
+    "metadata": {
+      "class": "Chili Leaf",
+      "plant": "chili",
+      "pathogen_type": "healthy",
+      "prompt_type": "healthy_scenario_1",
+      "filename": "000_chili_leaf.jpg",
+      "is_plant_related": true
+    }
+  },
+  {
+    "inputs": {
+      "user_text": "Apakah tanaman chili saya ini terlihat sehat? Ada saran untuk perawatannya?",
+      "image_url": "https://thesis-assets.andyathsid.com/ood/evaluation/images/001_chili_leaf.jpg"
+    },
+    "outputs": {
+      "reference_answer": "",
+      "reference_goal": "Nilai status kesehatan chili dari gambar, konfirmasi bahwa tanaman sehat, dan berikan rekomendasi perawatan dan pemeliharaan.",
+      "reference_context": "Tanaman: chili. Status: Sehat. Pemeliharaan: ",
+      "reference_tool_calls": [
+        {
+          "name": "knowledgebase_search",
+          "args": {}
+        }
+      ]
+    },
+    "metadata": {
+      "class": "Chili Leaf",
+      "plant": "chili",
+      "pathogen_type": "healthy",
+      "prompt_type": "healthy_scenario_2",
+      "filename": "001_chili_leaf.jpg",
+      "is_plant_related": true
+    }
+  },
+  {
+    "inputs": {
+      "user_text": "Apakah tanaman saya ini sehat? Bagaimana cara terbaik untuk merawatnya agar tetap tumbuh subur?",
+      "image_url": "https://thesis-assets.andyathsid.com/ood/evaluation/images/002_chili_leaf.jpg"
+    },
+    "outputs": {
+      "reference_answer": "Berdasarkan gambar, tanaman Anda terlihat sehat, dengan daun berwarna hijau tua yang merata dan tidak menunjukkan tanda-tanda penyakit atau hama. Untuk menjaga agar tanaman Anda tetap tumbuh subur, pastikan mendapatkan cahaya matahari yang cukup sesuai kebutuhannya, penyiraman teratur tanpa berlebihan, dan pemupukan yang seimbang. Periksa juga kondisi tanah dan drainase secara berkala.",
+      "reference_goal": "Nilai status kesehatan chili dari gambar, konfirmasi bahwa tanaman sehat, dan berikan rekomendasi perawatan dan pemeliharaan.",
+      "reference_context": "Tanaman: chili. Status: Sehat. Pemeliharaan: ",
+      "reference_tool_calls": [
+        {
+          "name": "knowledgebase_search",
+          "args": {}
+        }
+      ]
+    },
+    "metadata": {
+      "class": "Chili Leaf",
+      "plant": "chili",
+      "pathogen_type": "healthy",
+      "prompt_type": "healthy_scenario_3",
+      "filename": "002_chili_leaf.jpg",
+      "is_plant_related": true
+    }
+  },
+  {
+    "inputs": {
+      "user_text": "Daun jambu biji saya ini terlihat hijau tua dan segar. Apakah ini tandanya pohon saya sehat? Bolehkah saya meminta tips perawatannya agar tetap subur?",
+      "image_url": "https://thesis-assets.andyathsid.com/ood/evaluation/images/000_guava_leaf.jpg"
+    },
+    "outputs": {
+      "reference_answer": "Berdasarkan gambar, daun jambu biji Anda terlihat sangat sehat, dengan warna hijau tua yang mengkilap dan tekstur yang kokoh. Ini adalah tanda yang baik bahwa pohon Anda subur. Untuk menjaga kesehatannya, pastikan tanaman mendapatkan sinar matahari yang cukup (minimal 6 jam sehari), siram secara teratur terutama saat musim kemarau, dan berikan pupuk seimbang setiap beberapa bulan.",
+      "reference_goal": "Nilai status kesehatan guava dari gambar, konfirmasi bahwa tanaman sehat, dan berikan rekomendasi perawatan dan pemeliharaan.",
+      "reference_context": "Tanaman: guava. Status: Sehat. Pemeliharaan: ",
+      "reference_tool_calls": [
+        {
+          "name": "knowledgebase_search",
+          "args": {}
+        }
+      ]
+    },
+    "metadata": {
+      "class": "Guava Leaf",
+      "plant": "guava",
+      "pathogen_type": "healthy",
+      "prompt_type": "healthy_scenario_1",
+      "filename": "000_guava_leaf.jpg",
+      "is_plant_related": true
+    }
+  },
+  {
+    "inputs": {
+      "user_text": "Apakah tanaman guava saya ini terlihat sehat? Ada saran untuk perawatannya?",
+      "image_url": "https://thesis-assets.andyathsid.com/ood/evaluation/images/001_guava_leaf.jpg"
+    },
+    "outputs": {
+      "reference_answer": "Berdasarkan gambar, daun jambu biji Anda terlihat sehat dengan warna hijau gelap, permukaan halus, dan tekstur kokoh. Untuk perawatan, pastikan mendapatkan cukup sinar matahari, penyiraman teratur, dan nutrisi yang memadai.",
+      "reference_goal": "Nilai status kesehatan guava dari gambar, konfirmasi bahwa tanaman sehat, dan berikan rekomendasi perawatan dan pemeliharaan.",
+      "reference_context": "Tanaman: guava. Status: Sehat. Pemeliharaan: ",
+      "reference_tool_calls": [
+        {
+          "name": "knowledgebase_search",
+          "args": {}
+        }
+      ]
+    },
+    "metadata": {
+      "class": "Guava Leaf",
+      "plant": "guava",
+      "pathogen_type": "healthy",
+      "prompt_type": "healthy_scenario_2",
+      "filename": "001_guava_leaf.jpg",
+      "is_plant_related": true
+    }
+  },
+  {
+    "inputs": {
+      "user_text": "Apakah buah ini sehat? Bagaimana cara merawat tanaman agar buahnya tumbuh dengan baik?",
+      "image_url": "https://thesis-assets.andyathsid.com/ood/evaluation/images/002_guava_leaf.jpg"
+    },
+    "outputs": {
+      "reference_answer": "Berdasarkan gambar, buah ini terlihat sehat tanpa tanda-tanda penyakit atau hama yang jelas. Untuk menjaga kesehatan dan pertumbuhan buah yang optimal, pastikan tanaman mendapatkan cukup sinar matahari, penyiraman yang teratur namun tidak berlebihan, dan nutrisi yang cukup dari pemupukan seimbang. Lakukan pemangkasan rutin untuk meningkatkan sirkulasi udara dan membuang bagian yang tidak produktif.",
+      "reference_goal": "Nilai status kesehatan guava dari gambar, konfirmasi bahwa tanaman sehat, dan berikan rekomendasi perawatan dan pemeliharaan.",
+      "reference_context": "Tanaman: guava. Status: Sehat. Pemeliharaan: ",
+      "reference_tool_calls": [
+        {
+          "name": "knowledgebase_search",
+          "args": {}
+        }
+      ]
+    },
+    "metadata": {
+      "class": "Guava Leaf",
+      "plant": "guava",
+      "pathogen_type": "healthy",
+      "prompt_type": "healthy_scenario_3",
+      "filename": "002_guava_leaf.jpg",
+      "is_plant_related": true
+    }
+  },
+  {
+    "inputs": {
+      "user_text": "Daun malabar spinach saya ini terlihat hijau dan segar. Apakah ini tandanya pohon saya sehat? Ada tips untuk perawatannya?",
+      "image_url": "https://thesis-assets.andyathsid.com/ood/evaluation/images/000_malabar_spinach_leaf.jpg"
+    },
+    "outputs": {
+      "reference_answer": "Berdasarkan gambar, daun malabar spinach Anda terlihat hijau tua, mulus, dan tidak menunjukkan tanda-tanda penyakit atau hama, yang mengindikasikan bahwa tanaman Anda kemungkinan besar sehat. Untuk perawatannya, malabar spinach membutuhkan banyak sinar matahari, tanah yang lembab dan kaya nutrisi, serta dukungan untuk pertumbuhannya yang merambat.",
+      "reference_goal": "Nilai status kesehatan malabar spinach dari gambar, konfirmasi bahwa tanaman sehat, dan berikan rekomendasi perawatan dan pemeliharaan.",
+      "reference_context": "Tanaman: malabar spinach. Status: Sehat. Pemeliharaan: ",
+      "reference_tool_calls": [
+        {
+          "name": "knowledgebase_search",
+          "args": {}
+        }
+      ]
+    },
+    "metadata": {
+      "class": "Malabar Spinach Leaf",
+      "plant": "malabar spinach",
+      "pathogen_type": "healthy",
+      "prompt_type": "healthy_scenario_1",
+      "filename": "000_malabar_spinach_leaf.jpg",
+      "is_plant_related": true
+    }
+  },
+  {
+    "inputs": {
+      "user_text": "Apakah tanaman malabar spinach saya ini terlihat sehat? Ada saran untuk perawatannya?",
+      "image_url": "https://thesis-assets.andyathsid.com/ood/evaluation/images/001_malabar_spinach_leaf.jpg"
+    },
+    "outputs": {
+      "reference_answer": "Berdasarkan gambar, daun malabar spinach Anda terlihat sehat dan menunjukkan pertumbuhan yang baik. Untuk perawatannya, pastikan tanaman mendapatkan sinar matahari yang cukup (setidaknya 6 jam sehari), tanah yang lembab tetapi tidak tergenang air, dan berikan pupuk seimbang setiap 2-4 minggu selama musim tanam aktif.",
+      "reference_goal": "Nilai status kesehatan malabar spinach dari gambar, konfirmasi bahwa tanaman sehat, dan berikan rekomendasi perawatan dan pemeliharaan.",
+      "reference_context": "Tanaman: malabar spinach. Status: Sehat. Pemeliharaan: ",
+      "reference_tool_calls": [
+        {
+          "name": "knowledgebase_search",
+          "args": {}
+        }
+      ]
+    },
+    "metadata": {
+      "class": "Malabar Spinach Leaf",
+      "plant": "malabar spinach",
+      "pathogen_type": "healthy",
+      "prompt_type": "healthy_scenario_2",
+      "filename": "001_malabar_spinach_leaf.jpg",
+      "is_plant_related": true
+    }
+  },
+  {
+    "inputs": {
+      "user_text": "Apakah tanaman saya sehat? Bagaimana cara merawatnya agar tumbuh dengan baik?",
+      "image_url": "https://thesis-assets.andyathsid.com/ood/evaluation/images/002_malabar_spinach_leaf.jpg"
+    },
+    "outputs": {
+      "reference_answer": "Berdasarkan gambar, tanaman Anda terlihat sehat. Daunnya berwarna hijau tua dan tidak menunjukkan tanda-tanda penyakit seperti bintik, menguning, atau distorsi. Untuk menjaga pertumbuhannya tetap baik, pastikan ia mendapatkan cukup cahaya matahari, penyiraman yang teratur namun tidak berlebihan, dan nutrisi dari tanah yang subur.",
+      "reference_goal": "Nilai status kesehatan malabar spinach dari gambar, konfirmasi bahwa tanaman sehat, dan berikan rekomendasi perawatan dan pemeliharaan.",
+      "reference_context": "Tanaman: malabar spinach. Status: Sehat. Pemeliharaan: ",
+      "reference_tool_calls": [
+        {
+          "name": "knowledgebase_search",
+          "args": {}
+        }
+      ]
+    },
+    "metadata": {
+      "class": "Malabar Spinach Leaf",
+      "plant": "malabar spinach",
+      "pathogen_type": "healthy",
+      "prompt_type": "healthy_scenario_3",
+      "filename": "002_malabar_spinach_leaf.jpg",
+      "is_plant_related": true
+    }
+  },
+  {
+    "inputs": {
+      "user_text": "Daun okra saya ini terlihat hijau pekat dan mulus. Apakah ini tandanya tanaman saya sehat? Bisakah Anda berikan tips perawatan agar tetap subur?",
+      "image_url": "https://thesis-assets.andyathsid.com/ood/evaluation/images/000_okra_leaf.jpg"
+    },
+    "outputs": {
+      "reference_answer": "Berdasarkan gambar, daun okra Anda tampak sangat sehat, hijau pekat, dan mulus, tanpa tanda-tanda penyakit atau kekurangan nutrisi. Untuk menjaga kesuburannya, pastikan tanaman mendapatkan cukup sinar matahari (minimal 6-8 jam sehari), tanah yang gembur dan kaya nutrisi dengan drainase baik, serta penyiraman yang teratur namun tidak berlebihan. Pemberian pupuk seimbang secara berkala juga akan membantu.",
+      "reference_goal": "Nilai status kesehatan okra dari gambar, konfirmasi bahwa tanaman sehat, dan berikan rekomendasi perawatan dan pemeliharaan.",
+      "reference_context": "Tanaman: okra. Status: Sehat. Pemeliharaan: ",
+      "reference_tool_calls": [
+        {
+          "name": "knowledgebase_search",
+          "args": {}
+        }
+      ]
+    },
+    "metadata": {
+      "class": "Okra Leaf",
+      "plant": "okra",
+      "pathogen_type": "healthy",
+      "prompt_type": "healthy_scenario_1",
+      "filename": "000_okra_leaf.jpg",
+      "is_plant_related": true
+    }
+  },
+  {
+    "inputs": {
+      "user_text": "Apakah tanaman okra saya ini terlihat sehat? Ada saran untuk perawatannya?",
+      "image_url": "https://thesis-assets.andyathsid.com/ood/evaluation/images/001_okra_leaf.jpg"
+    },
+    "outputs": {
+      "reference_answer": "Ya, tanaman okra Anda terlihat sehat. Daunnya hijau pekat dan mulus, menunjukkan pertumbuhan yang kuat. Untuk perawatan, pastikan mendapatkan cukup sinar matahari, penyiraman teratur, dan berikan pupuk seimbang.",
+      "reference_goal": "Nilai status kesehatan okra dari gambar, konfirmasi bahwa tanaman sehat, dan berikan rekomendasi perawatan dan pemeliharaan.",
+      "reference_context": "Tanaman: okra. Status: Sehat. Pemeliharaan: ",
+      "reference_tool_calls": [
+        {
+          "name": "knowledgebase_search",
+          "args": {}
+        }
+      ]
+    },
+    "metadata": {
+      "class": "Okra Leaf",
+      "plant": "okra",
+      "pathogen_type": "healthy",
+      "prompt_type": "healthy_scenario_2",
+      "filename": "001_okra_leaf.jpg",
+      "is_plant_related": true
+    }
+  },
+  {
+    "inputs": {
+      "user_text": "Apakah tanaman saya sehat? Bagaimana cara merawatnya agar tumbuh dengan baik?",
+      "image_url": "https://thesis-assets.andyathsid.com/ood/evaluation/images/002_okra_leaf.jpg"
+    },
+    "outputs": {
+      "reference_answer": "Berdasarkan gambar, tanaman Anda terlihat sehat. Daunnya berwarna hijau tua, halus, dan tidak menunjukkan tanda-tanda penyakit seperti bintik, menguning, atau distorsi. Untuk menjaga pertumbuhan yang baik, pastikan tanaman mendapatkan cukup air, sinar matahari yang memadai, dan nutrisi dari tanah yang subur. Pemupukan secara teratur juga dapat mendukung pertumbuhan yang vigor.",
+      "reference_goal": "Nilai status kesehatan okra dari gambar, konfirmasi bahwa tanaman sehat, dan berikan rekomendasi perawatan dan pemeliharaan.",
+      "reference_context": "Tanaman: okra. Status: Sehat. Pemeliharaan: ",
+      "reference_tool_calls": [
+        {
+          "name": "knowledgebase_search",
+          "args": {}
+        }
+      ]
+    },
+    "metadata": {
+      "class": "Okra Leaf",
+      "plant": "okra",
+      "pathogen_type": "healthy",
+      "prompt_type": "healthy_scenario_3",
+      "filename": "002_okra_leaf.jpg",
+      "is_plant_related": true
+    }
+  },
+  {
+    "inputs": {
+      "user_text": "Daun bawang saya ini terlihat hijau dan segar. Apakah ini tandanya tanaman saya sehat? Ada tips untuk perawatannya?",
+      "image_url": "https://thesis-assets.andyathsid.com/ood/evaluation/images/000_onion_leaf.jpg"
+    },
+    "outputs": {
+      "reference_answer": "Berdasarkan gambar, daun bawang Anda terlihat hijau cerah, tegak, dan tidak menunjukkan tanda-tanda penyakit, yang merupakan indikator tanaman yang sehat. Untuk menjaga kesehatan bawang Anda, pastikan mereka mendapatkan sinar matahari penuh, tanah yang dikeringkan dengan baik, dan penyiraman teratur, terutama saat cuaca kering. Berikan pupuk seimbang di awal musim tanam.",
+      "reference_goal": "Nilai status kesehatan onion dari gambar, konfirmasi bahwa tanaman sehat, dan berikan rekomendasi perawatan dan pemeliharaan.",
+      "reference_context": "Tanaman: onion. Status: Sehat. Pemeliharaan: ",
+      "reference_tool_calls": [
+        {
+          "name": "knowledgebase_search",
+          "args": {}
+        }
+      ]
+    },
+    "metadata": {
+      "class": "Onion Leaf",
+      "plant": "onion",
+      "pathogen_type": "healthy",
+      "prompt_type": "healthy_scenario_1",
+      "filename": "000_onion_leaf.jpg",
+      "is_plant_related": true
+    }
+  },
+  {
+    "inputs": {
+      "user_text": "Apakah tanaman onion saya ini terlihat sehat? Ada saran untuk perawatannya?",
+      "image_url": "https://thesis-assets.andyathsid.com/ood/evaluation/images/001_onion_leaf.jpg"
+    },
+    "outputs": {
+      "reference_answer": "Berdasarkan gambar, tanaman bawang Anda terlihat sehat dengan daun yang seragam hijau dan tegak. Untuk perawatan, pastikan mendapatkan sinar matahari yang cukup, penyiraman teratur, dan tanah yang subur.",
+      "reference_goal": "Nilai status kesehatan onion dari gambar, konfirmasi bahwa tanaman sehat, dan berikan rekomendasi perawatan dan pemeliharaan.",
+      "reference_context": "Tanaman: onion. Status: Sehat. Pemeliharaan: ",
+      "reference_tool_calls": [
+        {
+          "name": "knowledgebase_search",
+          "args": {}
+        }
+      ]
+    },
+    "metadata": {
+      "class": "Onion Leaf",
+      "plant": "onion",
+      "pathogen_type": "healthy",
+      "prompt_type": "healthy_scenario_2",
+      "filename": "001_onion_leaf.jpg",
+      "is_plant_related": true
+    }
+  },
+  {
+    "inputs": {
+      "user_text": "Apakah tanaman saya sehat? Bagaimana cara merawatnya agar tumbuh dengan baik?",
+      "image_url": "https://thesis-assets.andyathsid.com/ood/evaluation/images/002_onion_leaf.jpg"
+    },
+    "outputs": {
+      "reference_answer": "Berdasarkan gambar, tanaman Anda terlihat sehat. Daun-daunnya berwarna hijau seragam, kokoh, dan tumbuh tegak tanpa menunjukkan tanda-tanda penyakit seperti bintik, menguning, atau distorsi. Untuk menjaga kesehatan tanaman, pastikan kebutuhan dasarnya terpenuhi.",
+      "reference_goal": "Nilai status kesehatan onion dari gambar, konfirmasi bahwa tanaman sehat, dan berikan rekomendasi perawatan dan pemeliharaan.",
+      "reference_context": "Tanaman: onion. Status: Sehat. Pemeliharaan: ",
+      "reference_tool_calls": [
+        {
+          "name": "knowledgebase_search",
+          "args": {}
+        }
+      ]
+    },
+    "metadata": {
+      "class": "Onion Leaf",
+      "plant": "onion",
+      "pathogen_type": "healthy",
+      "prompt_type": "healthy_scenario_3",
+      "filename": "002_onion_leaf.jpg",
+      "is_plant_related": true
+    }
+  },
+  {
+    "inputs": {
+      "user_text": "Daun radish saya ini terlihat hijau dan segar. Apakah ini tandanya pohon saya sehat? Ada tips untuk perawatannya?",
+      "image_url": "https://thesis-assets.andyathsid.com/ood/evaluation/images/000_radish_fresh_leaf.jpg"
+    },
+    "outputs": {
+      "reference_answer": "Berdasarkan gambar, daun radish Anda terlihat sehat. Daunnya berwarna hijau tua, turgid, tanpa tanda-tanda penyakit seperti bintik, menguning, atau distorsi. Untuk perawatannya, pastikan radish mendapatkan sinar matahari penuh, tanah yang gembur dan kaya nutrisi, serta penyiraman yang konsisten agar tanah tetap lembab.",
+      "reference_goal": "Nilai status kesehatan radish dari gambar, konfirmasi bahwa tanaman sehat, dan berikan rekomendasi perawatan dan pemeliharaan.",
+      "reference_context": "Tanaman: radish. Status: Sehat. Pemeliharaan: ",
+      "reference_tool_calls": [
+        {
+          "name": "knowledgebase_search",
+          "args": {}
+        }
+      ]
+    },
+    "metadata": {
+      "class": "Radish Fresh Leaf",
+      "plant": "radish",
+      "pathogen_type": "healthy",
+      "prompt_type": "healthy_scenario_1",
+      "filename": "000_radish_fresh_leaf.jpg",
+      "is_plant_related": true
+    }
+  },
+  {
+    "inputs": {
+      "user_text": "Apakah tanaman radish saya ini terlihat sehat? Ada saran untuk perawatannya?",
+      "image_url": "https://thesis-assets.andyathsid.com/ood/evaluation/images/001_radish_fresh_leaf.jpg"
+    },
+    "outputs": {
+      "reference_answer": "Berdasarkan gambar, tanaman radish Anda terlihat sehat. Daunnya berwarna hijau gelap, kokoh, dan tidak menunjukkan tanda-tanda penyakit seperti bintik, menguning, atau distorsi. Untuk perawatannya, pastikan tanah tetap lembab secara konsisten, berikan pencahayaan matahari penuh, dan gunakan pupuk seimbang jika diperlukan.",
+      "reference_goal": "Nilai status kesehatan radish dari gambar, konfirmasi bahwa tanaman sehat, dan berikan rekomendasi perawatan dan pemeliharaan.",
+      "reference_context": "Tanaman: radish. Status: Sehat. Pemeliharaan: ",
+      "reference_tool_calls": [
+        {
+          "name": "knowledgebase_search",
+          "args": {}
+        }
+      ]
+    },
+    "metadata": {
+      "class": "Radish Fresh Leaf",
+      "plant": "radish",
+      "pathogen_type": "healthy",
+      "prompt_type": "healthy_scenario_2",
+      "filename": "001_radish_fresh_leaf.jpg",
+      "is_plant_related": true
+    }
+  },
+  {
+    "inputs": {
+      "user_text": "Apakah tanaman saya sehat? Bagaimana cara merawatnya agar tumbuh dengan baik?",
+      "image_url": "https://thesis-assets.andyathsid.com/ood/evaluation/images/002_radish_fresh_leaf.jpg"
+    },
+    "outputs": {
+      "reference_answer": "Berdasarkan gambar, tanaman Anda terlihat sehat. Daunnya berwarna hijau gelap, kokoh, dan tidak menunjukkan tanda-tanda penyakit seperti bintik, menguning, atau distorsi. Untuk menjaga pertumbuhannya yang baik, pastikan tanaman mendapatkan cukup cahaya matahari, air, dan nutrisi yang sesuai. Rutin periksa kondisi tanah dan kelembaban.",
+      "reference_goal": "Nilai status kesehatan radish dari gambar, konfirmasi bahwa tanaman sehat, dan berikan rekomendasi perawatan dan pemeliharaan.",
+      "reference_context": "Tanaman: radish. Status: Sehat. Pemeliharaan: ",
+      "reference_tool_calls": [
+        {
+          "name": "knowledgebase_search",
+          "args": {}
+        }
+      ]
+    },
+    "metadata": {
+      "class": "Radish Fresh Leaf",
+      "plant": "radish",
+      "pathogen_type": "healthy",
+      "prompt_type": "healthy_scenario_3",
+      "filename": "002_radish_fresh_leaf.jpg",
+      "is_plant_related": true
+    }
+  },
+  {
+    "inputs": {
+      "user_text": "Daun gandum saya ini terlihat hijau segar dan tumbuh subur. Apakah ini menandakan tanaman saya sehat? Bisakah Anda berikan tips perawatan untuk menjaganya tetap sehat?",
+      "image_url": "https://thesis-assets.andyathsid.com/ood/evaluation/images/000_wheat_leaf.jpg"
+    },
+    "outputs": {
+      "reference_answer": "Berdasarkan gambar, tanaman gandum Anda tampak sangat sehat dengan daun hijau segar dan pertumbuhan yang subur. Untuk menjaga kesehatannya, pastikan mendapatkan cukup sinar matahari, penyiraman yang teratur namun tidak berlebihan, dan nutrisi tanah yang memadai. Rotasi tanaman juga dapat membantu menjaga kesehatan tanah dan mengurangi risiko penyakit.",
+      "reference_goal": "Nilai status kesehatan wheat dari gambar, konfirmasi bahwa tanaman sehat, dan berikan rekomendasi perawatan dan pemeliharaan.",
+      "reference_context": "Tanaman: wheat. Status: Sehat. Pemeliharaan: ",
+      "reference_tool_calls": [
+        {
+          "name": "knowledgebase_search",
+          "args": {}
+        }
+      ]
+    },
+    "metadata": {
+      "class": "Wheat Leaf",
+      "plant": "wheat",
+      "pathogen_type": "healthy",
+      "prompt_type": "healthy_scenario_1",
+      "filename": "000_wheat_leaf.jpg",
+      "is_plant_related": true
+    }
+  },
+  {
+    "inputs": {
+      "user_text": "Apakah tanaman wheat saya ini terlihat sehat? Ada saran perawatan yang bisa diberikan?",
+      "image_url": "https://thesis-assets.andyathsid.com/ood/evaluation/images/001_wheat_leaf.jpg"
+    },
+    "outputs": {
+      "reference_answer": "Berdasarkan gambar, tanaman wheat Anda terlihat sehat. Untuk menjaga kesehatannya, pastikan tanaman mendapatkan cukup sinar matahari, air yang memadai, dan nutrisi tanah yang cukup. Lakukan pemantauan rutin untuk tanda-tanda stres atau penyakit.",
+      "reference_goal": "Nilai status kesehatan wheat dari gambar, konfirmasi bahwa tanaman sehat, dan berikan rekomendasi perawatan dan pemeliharaan.",
+      "reference_context": "Tanaman: wheat. Status: Sehat. Pemeliharaan: ",
+      "reference_tool_calls": [
+        {
+          "name": "knowledgebase_search",
+          "args": {}
+        }
+      ]
+    },
+    "metadata": {
+      "class": "Wheat Leaf",
+      "plant": "wheat",
+      "pathogen_type": "healthy",
+      "prompt_type": "healthy_scenario_2",
+      "filename": "001_wheat_leaf.jpg",
+      "is_plant_related": true
+    }
+  },
+  {
+    "inputs": {
+      "user_text": "Apakah tanaman saya sehat? Bagaimana cara merawatnya agar tumbuh dengan baik?",
+      "image_url": "https://thesis-assets.andyathsid.com/ood/evaluation/images/002_wheat_leaf.jpg"
+    },
+    "outputs": {
+      "reference_answer": "Berdasarkan gambar yang Anda berikan, tanaman Anda terlihat sangat sehat. Daun-daunnya berwarna hijau cerah, tegak, dan tidak menunjukkan tanda-tanda penyakit seperti bintik, menguning, atau distorsi. Untuk menjaga pertumbuhan optimal, pastikan tanaman mendapatkan cukup air, nutrisi yang seimbang, dan pencahayaan yang sesuai dengan kebutuhannya.",
+      "reference_goal": "Nilai status kesehatan wheat dari gambar, konfirmasi bahwa tanaman sehat, dan berikan rekomendasi perawatan dan pemeliharaan.",
+      "reference_context": "Tanaman: wheat. Status: Sehat. Pemeliharaan: ",
+      "reference_tool_calls": [
+        {
+          "name": "knowledgebase_search",
+          "args": {}
+        }
+      ]
+    },
+    "metadata": {
+      "class": "Wheat Leaf",
+      "plant": "wheat",
+      "pathogen_type": "healthy",
+      "prompt_type": "healthy_scenario_3",
+      "filename": "002_wheat_leaf.jpg",
+      "is_plant_related": true
+    }
+  }
+]
