@@ -491,67 +491,6 @@ class SCOLDClassifier:
     def _get_fallback_results(self, top_k: int) -> List[dict]:
         raise RuntimeError("Qdrant client not available and no fallback data provided. Please ensure Qdrant is running and the collection is populated.")
     
-    def _rerank_with_jina(self, 
-                         query: str, 
-                         results, 
-                         top_n: int = 5,
-                         jina_api_key: Optional[str] = None) -> dict:
-        """
-        Rerank search results using Jina's multimodal reranker API.
-        
-        Args:
-            query: Text query
-            results: Qdrant search results with image URLs in payload
-            top_n: Number of top results to return
-            jina_api_key: Jina API key (optional, will use env var if not provided)
-            
-        Returns:
-            Reranked results with relevance scores
-        """
-        import os
-        api_key = jina_api_key or os.getenv("JINA_API_KEY")
-        
-        if not api_key:
-            print("Warning: JINA_API_KEY not found. Skipping reranking.")
-            return {"results": [{"index": i, "relevance_score": 0} for i in range(len(results.points))]}
-        
-        # Prepare documents for reranking
-        documents = []
-        for point in results.points:
-            doc = {
-                "image": point.payload.get("image_url", ""),
-                "text": point.payload.get("caption", "")
-            }
-            documents.append(doc)
-        
-        # Prepare request payload
-        payload = {
-            "model": "jina-reranker-m0",
-            "query": query,
-            "documents": documents,
-            "top_n": top_n,
-            "return_documents": False
-        }
-        
-        # Make API request
-        headers = {
-            "Content-Type": "application/json",
-            "Authorization": f"Bearer {api_key}"
-        }
-        
-        try:
-            response = requests.post(
-                "https://api.jina.ai/v1/rerank", 
-                json=payload, 
-                headers=headers
-            )
-            response.raise_for_status()
-            return response.json()
-        except requests.exceptions.RequestException as e:
-            print(f"Error calling Jina Reranker API: {e}")
-            if hasattr(e, 'response') and hasattr(e.response, 'text'):
-                print(f"Response: {e.response.text}")
-            return {"results": [{"index": i, "relevance_score": 0} for i in range(len(results.points))]}
     
     async def predict_with_reranking(self,
                                     image_input: Union[str, bytes],
@@ -562,10 +501,10 @@ class SCOLDClassifier:
                                     method: str = "text-to-image",
                                     label_filter: Optional[str] = None,
                                     use_reranker: bool = True,
-                                    jina_api_key: Optional[str] = None) -> Dict:
+                                    jina_api_key: Optional[str] = None) -> Dict:  # Parameter kept for compatibility but unused
         """
-        Enhanced prediction with filtering and reranking support.
-        
+        Enhanced prediction with filtering support (reranking removed).
+
         Args:
             image_input: Image URL or bytes
             candidate_boxes: Optional list of detection boxes for region-based analysis
@@ -574,49 +513,47 @@ class SCOLDClassifier:
             fetch_k: Number of candidates to fetch before reranking
             method: Search modality - "text-to-text", "text-to-image", "image-to-text", "image-to-image"
             label_filter: Optional case-insensitive label filter (class name)
-            use_reranker: Whether to apply Jina reranker
-            jina_api_key: Optional Jina API key
-            
+            use_reranker: Whether to apply Jina reranker (ignored since reranker removed)
+            jina_api_key: Optional Jina API key (ignored since reranker removed)
+
         Returns:
             Enhanced classification results with full metadata
         """
         valid_methods = ["text-to-text", "text-to-image", "image-to-image", "image-to-text"]
         if method not in valid_methods:
             raise ValueError(f"method must be one of {valid_methods}, got '{method}'")
-        
+
         if method in ["text-to-text", "text-to-image"] and query_text is None:
             raise ValueError(f"query_text is required for {method} classification")
         elif method in ["image-to-image", "image-to-text"] and query_text is not None:
             raise ValueError(f"query_text should not be provided for {method} classification")
-        
+
         # Load image
         image = await self._load_image(image_input)
-        
+
         # Process based on candidate_boxes
         if candidate_boxes:
-            result = await self._process_candidate_boxes_with_reranking(
-                image, candidate_boxes, query_text, top_k, fetch_k, 
-                method, label_filter, use_reranker, jina_api_key
+            result = await self._process_candidate_boxes_with_filtering(
+                image, candidate_boxes, query_text, top_k, fetch_k,
+                method, label_filter
             )
         else:
-            result = await self._process_full_image_with_reranking(
-                image, query_text, top_k, fetch_k, 
-                method, label_filter, use_reranker, jina_api_key
+            result = await self._process_full_image_with_filtering(
+                image, query_text, top_k, fetch_k,
+                method, label_filter
             )
-        
+
         return result
-    
-    async def _process_full_image_with_reranking(self,
+
+    async def _process_full_image_with_filtering(self,
                                                  image: Image.Image,
                                                  query_text: Optional[str],
                                                  top_k: int,
                                                  fetch_k: int,
                                                  method: str,
-                                                 label_filter: Optional[str],
-                                                 use_reranker: bool,
-                                                 jina_api_key: Optional[str]) -> Dict:
-        """Process full image with filtering and reranking."""
-        
+                                                 label_filter: Optional[str]) -> Dict:
+        """Process full image with filtering (reranking removed)."""
+
         # Build filter if label_filter is provided
         query_filter = None
         if label_filter:
@@ -628,95 +565,58 @@ class SCOLDClassifier:
                     )
                 ]
             )
-        
-        # Get initial results (more candidates if reranking)
-        limit = fetch_k if use_reranker else top_k
-        
+
+        # Get initial results (using fetch_k for consistency even though no reranking)
+        limit = fetch_k
+
         if method == "text-to-text":
             # Text query searching caption text vectors
             text_embedding = await self._encode_text(query_text)
             search_results = await self._search_adaptive_filtered(
                 text_embedding, "text", limit, query_filter
             )
-            rerank_query = query_text
-            
+
         elif method == "text-to-image":
             # Text query searching image vectors (cross-modal)
             text_embedding = await self._encode_text(query_text)
             search_results = await self._search_adaptive_filtered(
                 text_embedding, "text_to_image", limit, query_filter
             )
-            rerank_query = query_text
-            
+
         elif method == "image-to-text":
             # Image query searching caption text vectors (cross-modal)
             image_embedding = await self._encode_image(image)
             search_results = await self._search_adaptive_filtered(
                 image_embedding, "image_against_text", limit, query_filter
             )
-            # For image queries, use caption as rerank query
-            rerank_query = f"plant disease visual symptoms"
-            
+
         else:  # image-to-image
             # Image query searching image vectors
             image_embedding = await self._encode_image(image)
             search_results = await self._search_adaptive_filtered(
                 image_embedding, "image", limit, query_filter
             )
-            rerank_query = f"plant disease visual symptoms"
-        
-        # Apply reranking if enabled
-        if use_reranker and len(search_results) > 0 and rerank_query:
-            # Convert search results to Qdrant-like structure
-            class SearchResult:
-                def __init__(self, points):
-                    self.points = points
-            
-            qdrant_result = SearchResult([
-                type('Point', (), {
-                    'id': r['id'],
-                    'score': r['score'],
-                    'payload': r['payload']
-                })() for r in search_results
-            ])
-            
-            rerank_response = self._rerank_with_jina(
-                rerank_query, 
-                qdrant_result, 
-                top_n=top_k,
-                jina_api_key=jina_api_key
-            )
-            
-            # Map reranked results back
-            reranked_results = []
-            for rerank_item in rerank_response.get("results", []):
-                idx = rerank_item["index"]
-                if idx < len(search_results):
-                    result = search_results[idx].copy()
-                    result['rerank_score'] = rerank_item["relevance_score"]
-                    reranked_results.append(result)
-            
-            search_results = reranked_results[:top_k]
-        
+
+        # Take top_k results directly (no reranking)
+        search_results = search_results[:top_k]
+
         return self._format_results_enhanced(search_results, method)
-    
-    async def _process_candidate_boxes_with_reranking(self,
+
+    async def _process_candidate_boxes_with_filtering(self,
                                                       image: Image.Image,
                                                       candidate_boxes: List[dict],
                                                       query_text: Optional[str],
                                                       top_k: int,
                                                       fetch_k: int,
                                                       method: str,
-                                                      label_filter: Optional[str],
-                                                      use_reranker: bool,
-                                                      jina_api_key: Optional[str]) -> Dict:
-        """Process candidate boxes with filtering and reranking."""
+                                                      label_filter: Optional[str]) -> Dict:
+        """Process candidate boxes with filtering (reranking removed)."""
         results = []
-        
+
         for box in candidate_boxes:
             # Crop image to box
             cropped_image = self._crop_image(image, box['box'])
-            
+
             # Build filter if needed
             query_filter = None
             if label_filter:
@@ -728,63 +628,33 @@ class SCOLDClassifier:
                         )
                     ]
                 )
-            
+
             # Get embeddings and search based on method
-            limit = fetch_k if use_reranker else top_k
-            
+            limit = fetch_k
+
             if method in ["text-to-text", "text-to-image"]:
                 text_embedding = await self._encode_text(query_text)
                 search_type = "text" if method == "text-to-text" else "text_to_image"
                 search_results = await self._search_adaptive_filtered(
                     text_embedding, search_type, limit, query_filter
                 )
-                rerank_query = query_text
             else:
                 image_embedding = await self._encode_image(cropped_image)
                 search_type = "image_against_text" if method == "image-to-text" else "image"
                 search_results = await self._search_adaptive_filtered(
                     image_embedding, search_type, limit, query_filter
                 )
-                rerank_query = f"plant disease visual symptoms"
-            
-            # Apply reranking if enabled
-            if use_reranker and len(search_results) > 0:
-                class SearchResult:
-                    def __init__(self, points):
-                        self.points = points
-                
-                qdrant_result = SearchResult([
-                    type('Point', (), {
-                        'id': r['id'],
-                        'score': r['score'],
-                        'payload': r['payload']
-                    })() for r in search_results
-                ])
-                
-                rerank_response = self._rerank_with_jina(
-                    rerank_query,
-                    qdrant_result,
-                    top_n=top_k,
-                    jina_api_key=jina_api_key
-                )
-                
-                reranked_results = []
-                for rerank_item in rerank_response.get("results", []):
-                    idx = rerank_item["index"]
-                    if idx < len(search_results):
-                        result = search_results[idx].copy()
-                        result['rerank_score'] = rerank_item["relevance_score"]
-                        reranked_results.append(result)
-                
-                search_results = reranked_results[:top_k]
-            
+
+            # Take top_k results directly (no reranking)
+            search_results = search_results[:top_k]
+
             box_result = {
                 'box': box['box'],
                 'score': box.get('score', 1.0),
                 'classification': self._format_results_enhanced(search_results, method)
             }
             results.append(box_result)
-        
+
         return {'boxes': results}
     
     async def _search_adaptive_filtered(self,
@@ -835,45 +705,44 @@ class SCOLDClassifier:
         """Enhanced result formatting with full metadata."""
         if not search_results:
             return {
-                'label': 'unknown', 
-                'confidence': 0.0, 
+                'label': 'unknown',
+                'confidence': 0.0,
                 'label_scores': {},
-                'top_k': [], 
+                'top_k': [],
                 'top_k_details': []
             }
-        
+
         labels = [result['payload']['label'] for result in search_results]
-        scores = [result.get('rerank_score', result['score']) for result in search_results]
-        
+        scores = [result['score'] for result in search_results]
+
         label_votes = {}
         label_score_lists = {}
-        
+
         for label, score in zip(labels, scores):
             if label not in label_votes:
                 label_votes[label] = 0
                 label_score_lists[label] = []
             label_votes[label] += score
             label_score_lists[label].append(score)
-        
+
         best_label = max(label_votes.items(), key=lambda x: x[1])[0]
         confidence = float(np.mean(label_score_lists[best_label]))
-        
+
         label_avg_scores = {
-            label: float(np.mean(scores_list)) 
+            label: float(np.mean(scores_list))
             for label, scores_list in label_score_lists.items()
         }
-        
+
         # Include full metadata for each top-k result
         top_k_details = [
             {
                 'label': result['payload']['label'],
-                'score': result.get('rerank_score', result['score']),
-                'original_score': result['score'],
+                'score': result['score'],
                 'metadata': {k: v for k, v in result['payload'].items() if k != 'label'}
             }
             for result in search_results
         ]
-        
+
         return {
             'label': best_label,
             'confidence': confidence,

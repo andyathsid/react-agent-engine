@@ -1,3 +1,3 @@
-from agent.graph import graph
+from agent.graph import agent
 
-__all__ = ["graph"]
+__all__ = ["agent"]

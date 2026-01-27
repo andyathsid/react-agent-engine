@@ -1,11 +1,13 @@
 from langchain.agents.middleware import dynamic_prompt, ModelRequest
 from langsmith import Client
 import os
+from dotenv import load_dotenv
+load_dotenv()
 
 client = Client()
 
 # Load prompts from LangSmith for full agent
-system_prompt_template = client.pull_prompt("thesis")  
+system_prompt_template = client.pull_prompt("thesis-prompt")  
 
 # Placeholder functions for other prompts - these will be loaded from files
 def load_prompt_from_file(filename: str) -> str:
