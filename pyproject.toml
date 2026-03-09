@@ -24,8 +24,7 @@ dependencies = [
     "langchain-voyageai>=0.3.0",
     "langgraph>=1.0.3",
     "langgraph-sdk>=0.3.0",
-    "langgraph-cli[inmem]>=0.4.7",
-    "langgraph-api[inmem]>=0.6.0",
+    "aegra-cli>=0.6.0",
     "litellm>=1.80.11",
     "onnxruntime>=1.23.2",
     "openai>=2.14.0",
@@ -64,9 +63,8 @@ build-backend = "setuptools.build_meta"
 
 
 [tool.setuptools]
-packages = ["langgraph.templates.agent", "agent"]
+packages = ["agent"]
 [tool.setuptools.package-dir]
-"langgraph.templates.agent" = "src/agent"
 "agent" = "src/agent"
 
 [tool.setuptools.package-data]
