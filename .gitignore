@@ -18,3 +18,4 @@ data/corpus
 data/evaluation_cache
 .fastembed_cache
 models/scold
+qdrant_storage
