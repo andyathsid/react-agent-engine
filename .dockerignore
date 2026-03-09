@@ -1,0 +1,124 @@
+# Dependencies and Virtual Environments
+.venv/
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+
+# Environment variables
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+.env.staging.local
+
+# Git
+.git/
+.gitignore
+
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+desktop.ini
+
+# Logs
+*.log
+logs/
+*.out
+
+# Runtime data
+pids/
+*.pid
+*.seed
+*.pid.lock
+
+# Coverage directory
+.coverage
+.coverage.*
+.cache
+.tox/
+.nox/
+htmlcov/
+
+# Documentation
+docs/_build/
+
+# Jupyter notebooks checkpoints
+.ipynb_checkpoints/
+
+# Local development settings
+.settings/
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Testing
+.tests/
+.pytest_cache/
+.hypothesis/
+
+# Data and cache directories that shouldn't be in the container
+.data/
+.cache/
+.fastembed_cache/
+.tmp/
+.temp/
+
+# Language-specific files
+*.so
+*.dylib
+*.dll
+
+# Deployment artifacts that aren't needed in the container
+*.zip
+*.tar.gz
+*.rar
+*.7z
+
+# Evaluation and notebook files (unless needed in production)
+evaluation/
+notebooks/
+data/
+scripts/
+*.ipynb
+
+# Build outputs that aren't needed
+build/
+dist/
+*.egg-info/
+.sass-cache/
+
+# User-specific files
+*.user
+*.userprefs
+
+# Temporary files
+tmp/
+temp/
+.DS_Store
+*~
+Thumbs.db
+
+# Ignore all .md files except README.md if needed in container
+*.md
+!README.md
+
+# Configuration files that might contain sensitive info
+config/
+secrets/
+credentials.json
+qdrant_storage/

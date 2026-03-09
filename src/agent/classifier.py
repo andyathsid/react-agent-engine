@@ -18,11 +18,13 @@ class SCOLDClassifier:
                  model_path: str,
                  tokenizer_name: str = "roberta-base",
                  qdrant_url: str = "http://localhost:6333",
+                 qdrant_api_key: Optional[str] = None,
                  collection_name: str = "leaf_disease_collection"):
         
         self.model_path = model_path
         self.tokenizer_name = tokenizer_name
         self.qdrant_url = qdrant_url
+        self.qdrant_api_key = qdrant_api_key
         self.collection_name = collection_name
         
         # Load ONNX model
@@ -42,7 +44,7 @@ class SCOLDClassifier:
         
         # Initialize Qdrant client
         try:
-            self.qdrant_client = QdrantClient(url=self.qdrant_url)
+            self.qdrant_client = QdrantClient(url=self.qdrant_url, api_key=self.qdrant_api_key)
         except Exception as e:
             print(f"Warning: Could not connect to Qdrant at {self.qdrant_url}: {e}")
             self.qdrant_client = None

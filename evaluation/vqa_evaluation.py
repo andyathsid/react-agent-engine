@@ -2256,9 +2256,9 @@ async def main():
     print("\nStarting evaluations...")
     
     results = await run_evaluation(
-        dataset_name="thesis_vqa_id_scenario3",
-        experiment_name="experiment-vqa-id-scenario3",
-        description="Eksperimen VQA ID Scenario 3: Minimal",
+        dataset_name="thesis_vqa_ood_scenario2",
+        experiment_name="experiment-vqa-ood-scenario2",
+        description="Eksperimen VQA OOD Scenario 2: Hanya Spesies",
         max_concurrency=2
     )
     

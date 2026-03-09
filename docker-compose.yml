@@ -1,0 +1,22 @@
+# aegra dev  -> aegra dev (starts server with hot reload, manages DB automatically)
+# aegra up   -> docker compose up --build (full containerised stack)
+
+services:
+  agent:
+    build: .
+    container_name: react-agent-engine
+    ports:
+      - "${PORT:-8000}:8000"
+    env_file:
+      - .env
+    environment:
+      - AEGRA_CONFIG=aegra.json
+      - PORT=${PORT:-8000}
+    volumes:
+      - ./models:/app/models:ro
+      - ./src:/app/src:ro
+      - ./aegra.json:/app/aegra.json:ro
+    healthcheck:
+      test: ["CMD", "python", "-c", "import urllib.request; urllib.request.urlopen('http://localhost:8000/health')"]
+      interval: 30s
+      start_period: 30s

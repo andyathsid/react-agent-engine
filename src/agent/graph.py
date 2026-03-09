@@ -12,6 +12,7 @@ from typing_extensions import Annotated
 import operator
 import os
 import io
+import threading
 import uuid
 import requests
 
@@ -35,8 +36,6 @@ from langchain_google_genai import GoogleGenerativeAIEmbeddings
 from langchain.agents.middleware import AgentMiddleware, ToolRetryMiddleware, ModelRetryMiddleware
 from langchain.agents.middleware.model_fallback import ModelFallbackMiddleware
 
-from agent.classifier import SCOLDClassifier
-from agent.detector import OWLv2Detector, YOLOv11Detector
 from agent.prompts import get_system_prompt, get_system_prompt_no_tools, get_system_prompt_no_detection, get_system_prompt_no_retrieval
 
 # Load environment variables
@@ -60,30 +59,55 @@ class Config:
 
     FASTEMBED_CACHE_DIR = "./.fastembed_cache"
 
-# Initialize Qdrant client
-qdrant_client = QdrantClient(url=Config.QDRANT_URL)
+# Global clients (lazy initialized)
+_qdrant_client = None
+_gemini_embeddings = None
+_s3_client = None
 
-# Initialize embeddings for the new unified collection structure
-gemini_embeddings = GoogleGenerativeAIEmbeddings(
-    api_key=Config.GOOGLE_API_KEY,
-    model="models/gemini-embedding-001"  # Using gemini-1.5-flash embedding size (3072)
-)
+# Locks for thread-safe initialization
+_qdrant_lock = threading.Lock()
+_gemini_lock = threading.Lock()
+_s3_lock = threading.Lock()
+
+def get_qdrant_client():
+    global _qdrant_client
+    if _qdrant_client is None:
+        with _qdrant_lock:
+            if _qdrant_client is None:
+                _qdrant_client = QdrantClient(url=Config.QDRANT_URL, api_key=os.getenv("QDRANT_API_KEY"), timeout=60)
+    return _qdrant_client
+
+def get_gemini_embeddings():
+    global _gemini_embeddings
+    if _gemini_embeddings is None:
+        with _gemini_lock:
+            if _gemini_embeddings is None:
+                _gemini_embeddings = GoogleGenerativeAIEmbeddings(
+                    api_key=Config.GOOGLE_API_KEY,
+                    model="models/gemini-embedding-001"
+                )
+    return _gemini_embeddings
+
+def get_s3_client():
+    global _s3_client
+    if _s3_client is None:
+        with _s3_lock:
+            if _s3_client is None:
+                _s3_client = boto3.client(
+                    's3',
+                    endpoint_url=f'https://{Config.R2_ACCOUNT_ID}.r2.cloudflarestorage.com',
+                    aws_access_key_id=Config.R2_ACCESS_KEY_ID,
+                    aws_secret_access_key=Config.R2_SECRET_ACCESS_KEY,
+                    config=BotoConfig(signature_version='s3v4'),
+                    region_name='auto'
+                )
+    return _s3_client
 
 openai_embeddings = None  # Will initialize if needed for comparison
 # splade_embeddings = FastEmbedSparse(
 #     model_name="prithivida/Splade_PP_en_v1",
 #     cache_dir=Config.FASTEMBED_CACHE_DIR
 # )
-
-# Initialize R2 client
-s3_client = boto3.client(
-    's3',
-    endpoint_url=f'https://{Config.R2_ACCOUNT_ID}.r2.cloudflarestorage.com',
-    aws_access_key_id=Config.R2_ACCESS_KEY_ID,
-    aws_secret_access_key=Config.R2_SECRET_ACCESS_KEY,
-    config=BotoConfig(signature_version='s3v4'),
-    region_name='auto'
-)
 
 # Type definitions
 class State(AgentState):
@@ -106,48 +130,64 @@ _owlv2_detector = None
 _yolov11_detector = None
 _scold_classifier = None
 
+# Locks for thread-safe initialization
+_owlv2_lock = threading.Lock()
+_yolov11_lock = threading.Lock()
+_scold_lock = threading.Lock()
+
 def get_owlv2_detector():
     global _owlv2_detector
     if _owlv2_detector is None:
-        # Resolve paths relative to project root
-        current_dir = os.path.dirname(os.path.abspath(__file__))
-        project_root = os.path.dirname(os.path.dirname(current_dir))
-        model_path = os.path.join(project_root, "models", "owlv2", "owlv2.onnx")
-        processor_path = os.path.join(project_root, "models", "owlv2")
+        with _owlv2_lock:
+            if _owlv2_detector is None:
+                from agent.detector import OWLv2Detector
+                # Resolve paths relative to project root
+                current_dir = os.path.dirname(os.path.abspath(__file__))
+                project_root = os.path.dirname(os.path.dirname(current_dir))
+                model_path = os.path.join(project_root, "models", "owlv2", "owlv2.onnx")
+                processor_path = os.path.join(project_root, "models", "owlv2")
 
-        _owlv2_detector = OWLv2Detector(
-            model_path=model_path,
-            processor_path=processor_path,
-            device="cpu"
-        )
+                _owlv2_detector = OWLv2Detector(
+                    model_path=model_path,
+                    processor_path=processor_path,
+                    device="cpu"
+                )
     return _owlv2_detector
 
 def get_yolov11_detector():
     global _yolov11_detector
     if _yolov11_detector is None:
-        # Resolve model dir relative to project root
-        current_dir = os.path.dirname(os.path.abspath(__file__))
-        project_root = os.path.dirname(os.path.dirname(current_dir))
-        model_dir = os.path.join(project_root, "models", "yolov11")
+        with _yolov11_lock:
+            if _yolov11_detector is None:
+                from agent.detector import YOLOv11Detector
+                # Resolve model dir relative to project root
+                current_dir = os.path.dirname(os.path.abspath(__file__))
+                project_root = os.path.dirname(os.path.dirname(current_dir))
+                model_dir = os.path.join(project_root, "models", "yolov11")
 
-        _yolov11_detector = YOLOv11Detector(
-            model_dir=model_dir,
-            device="cpu"
-        )
+                _yolov11_detector = YOLOv11Detector(
+                    model_dir=model_dir,
+                    device="cpu"
+                )
     return _yolov11_detector
 
 def get_scold_classifier():
     global _scold_classifier
     if _scold_classifier is None:
-        # Resolve model path relative to project root (src/agent/graph.py -> src/agent -> src -> agent root)
-        current_dir = os.path.dirname(os.path.abspath(__file__))
-        project_root = os.path.dirname(os.path.dirname(current_dir))
-        model_path = os.path.join(project_root, "models", "scold", "scold.onnx")
+        with _scold_lock:
+            if _scold_classifier is None:
+                from agent.classifier import SCOLDClassifier
+                # Resolve model path relative to project root (src/agent/graph.py -> src/agent -> src -> agent root)
+                current_dir = os.path.dirname(os.path.abspath(__file__))
+                project_root = os.path.dirname(os.path.dirname(current_dir))
+                model_path = os.path.join(project_root, "models", "scold", "scold.onnx")
 
-        _scold_classifier = SCOLDClassifier(
-            model_path=model_path,
-            collection_name="plantwild_collection"
-        )
+                _scold_classifier = SCOLDClassifier(
+                    model_path=model_path,
+                    qdrant_url=Config.QDRANT_URL,
+                    qdrant_api_key=os.getenv("QDRANT_API_KEY"),
+                    collection_name="plantwild_collection"
+                )
     return _scold_classifier
 
 # R2 upload utility
@@ -167,7 +207,7 @@ def upload_detection_image_to_r2(image_bytes: bytes) -> str:
 
     # Upload to R2
     try:
-        s3_client.put_object(
+        get_s3_client().put_object(
             Bucket=Config.R2_BUCKET,
             Key=storage_path,
             Body=image_bytes,
@@ -397,10 +437,10 @@ def knowledgebase_search(
             qdrant_filter = models.Filter(must=must_conditions) if must_conditions else None
 
             # Generate dense vector for hybrid search and use BM25 for sparse part
-            dense_vec = gemini_embeddings.embed_query(query)
+            dense_vec = get_gemini_embeddings().embed_query(query)
 
             # Perform hybrid search using prefetch and fusion as in your ingestion script
-            search_results = qdrant_client.query_points(
+            search_results = get_qdrant_client().query_points(
                 collection_name=Config.QDRANT_COLLECTION_NAME,
                 prefetch=[
                     models.Prefetch(query=dense_vec, using="gemini", limit=k*2),  # Fetch more for reranking
@@ -623,14 +663,12 @@ async def open_vocabulary_object_detection(
 async def plant_disease_identification(
     query_text: Optional[str] = None,
     top_k: int = 5,
-    fetch_k: int = 20,
     method: str = "text-to-image",
     use_detections: bool = True,
     label_filter: Optional[str] = None,
-    use_reranker: bool = True,
     runtime: ToolRuntime[State] = None
 ) -> Command:
-    """Identify plant diseases using multimodal retrieval with SCOLD embeddings, filtering, and reranking.
+    """Identify plant diseases using multimodal retrieval with SCOLD embeddings and filtering.
 
     Supports 4 search modalities:
     - "text-to-text": Text query → Caption vectors (semantic text matching)
@@ -640,12 +678,10 @@ async def plant_disease_identification(
 
     Args:
         query_text: Symptom description (required for text-based methods)
-        top_k: Number of final disease candidates to return (default: 5)
-        fetch_k: Number of candidates to retrieve before reranking (default: 20)
+        top_k: Number of disease candidates to return (default: 5)
         method: Search modality - "text-to-text", "text-to-image", "image-to-text", or "image-to-image"
         use_detections: Use state.detections for region-based analysis (default: True)
         label_filter: Optional case-insensitive plant or disease filter (e.g., "apple", "blight", "bell pepper", "black rot")
-        use_reranker: Apply Jina multimodal reranker to improve results (default: True)
 
     Returns:
         Classification results with labels, confidence scores, image URLs, and top-k diseases
@@ -665,16 +701,14 @@ async def plant_disease_identification(
 
     classifier = get_scold_classifier()
 
-    # Enhanced prediction with filtering and reranking
+    # Enhanced prediction with filtering
     result = await classifier.predict_with_reranking(
         image_input=image_binary,
         candidate_boxes=candidate_boxes,
         query_text=query_text,
         top_k=top_k,
-        fetch_k=fetch_k,
         method=method,
         label_filter=label_filter,
-        use_reranker=use_reranker,
     )
 
     if candidate_boxes:
@@ -683,8 +717,6 @@ async def plant_disease_identification(
         summary += f"Analyzed {len(result['boxes'])} detected regions\n"
         if label_filter:
             summary += f"Filter: {label_filter}\n"
-        if use_reranker:
-            summary += f"Reranking: Enabled\n"
         summary += "\n"
 
         for idx, box_result in enumerate(result['boxes'], 1):
@@ -714,8 +746,6 @@ async def plant_disease_identification(
 
         if label_filter:
             summary += f"Filter: {label_filter}\n"
-        if use_reranker:
-            summary += f"Reranking: Enabled\n"
 
         summary += f"\nPredicted Label: {result['label']}\n"
         summary += f"Confidence: {result['confidence']:.4f}\n"
