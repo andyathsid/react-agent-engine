@@ -1,0 +1,11 @@
+{
+  "architectures": [
+    "SCOLDModel"
+  ],
+  "embedding_dim": 512,
+  "image_backbone": "swin_base_patch4_window7_224.ms_in22k",
+  "model_type": "scold",
+  "text_backbone": "roberta-base",
+  "torch_dtype": "float32",
+  "transformers_version": "4.54.0"
+}

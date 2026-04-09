@@ -6,16 +6,19 @@ src/react_agent_engine.egg-info
 *-venv/
 data/knowledge_base/
 old/
-owlv2.onnx
-yolov11/
-yolov12
+
+# Models
+*.onnx
+*.pt
+yolov12/
+
 .deepeval/
-notebooks/
-data/plantwild/evaluation/images
+data/plantwild/evaluation/images/*
+!data/plantwild/evaluation/images/.gitkeep
 .vscode/
 agent.egg-info/
 data/corpus
 data/evaluation_cache
 .fastembed_cache
-models/scold
-qdrant_storage
+qdrant_storage/*
+!qdrant_storage/.gitkeep

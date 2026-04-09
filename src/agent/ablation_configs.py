@@ -32,7 +32,7 @@ from dotenv import load_dotenv
 
 from agent.classifier import SCOLDClassifier
 from agent.detector import OWLv2Detector, YOLOv11Detector
-from agent.prompts import get_system_prompt, get_system_prompt_no_tools, get_system_prompt_no_detection, get_system_prompt_no_retrieval
+
 
 # Load environment variables
 load_dotenv()
